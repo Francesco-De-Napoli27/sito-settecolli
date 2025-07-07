@@ -194,17 +194,26 @@ th {
   text-align: center;
 }
 .sponsor-logos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 1rem;
+  display: flex; /* Cambia da grid a flex */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem; /* più ravvicinati ma con spazio elegante */
   align-items: center;
+  padding: 1rem 0;
 }
+
 .sponsor-logos img {
-  max-height: 80px;
+  max-height: 100px; /* aumenta dimensione */
   width: auto;
   object-fit: contain;
-  margin: 0 auto;
+  margin: 0 1rem;
+  transition: transform 0.3s ease;
 }
+
+.sponsor-logos img:hover {
+  transform: scale(1.1); /* effetto al passaggio */
+}
+
 .blue-background {
   background-color: #003366;
   color: white;
