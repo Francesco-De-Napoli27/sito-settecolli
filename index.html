@@ -111,6 +111,12 @@
 <script src="script.js"></script>
     
 <script>
+function normalizzaPercorsoLogo(path) {
+  // Estrae solo il nome del file e lo inserisce nella cartella corretta
+  const filename = path.split('/').pop(); // es. "logo settecolli.png"
+  return `images/${filename}`;
+}
+
 fetch('classifica_maschile.json')
   .then(response => response.json())
   .then(data => {
