@@ -127,6 +127,35 @@ body {
   color: #777;
 }
 
+.news-wrapper a.news-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.news-item {
+  max-width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-link:hover .news-item {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+.news-item img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.news-link:hover .news-item img {
+  transform: scale(1.05);
+}
+
+
 /* PARTITE */
 .prossime-partite {
   padding: 2rem 1rem;
