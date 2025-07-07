@@ -360,6 +360,7 @@ footer {
 .storia-logo img {
   max-width: 300px;
   height: auto;
+  background-color: transparent;
 }
 
 .storia-testo {
@@ -387,6 +388,7 @@ footer {
 
   .storia-logo img {
     max-width: 200px;
+    background-color: transparent;
   }
 
   .storia-testo {
