@@ -115,7 +115,7 @@ function creaRiga(item, index) {
   return `
     <tr>
       <td>${index + 1}</td>
-      <td style="display: flex; align-items: center; gap: 0.4em;">
+      <td style="display: flex; align-items: center; gap: 0.4em; white-space: nowrap;">
         <img src="${item.logo}" alt="${item.squadra}" 
              style="height: 1em; width: auto;"
              onerror="this.onerror=null;this.src='images/SenzaLogo.png';">
@@ -130,6 +130,7 @@ function creaRiga(item, index) {
     </tr>
   `;
 }
+
 
 function caricaClassifica(file, tableId) {
   fetch(file)
