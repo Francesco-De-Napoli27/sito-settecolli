@@ -117,6 +117,47 @@ function normalizzaPercorsoLogo(path) {
 }
 
 const logoPath = item.logo;
+function creaRiga(item, index) {
+  return `
+    <tr>
+      <td>${index + 1}</td>
+      <td style="display: flex; align-items: center; gap: 0.4em;">
+        <img src="${item.logo}" alt="${item.squadra}" 
+             style="height: 1em; width: auto;"
+             onerror="this.onerror=null;this.src='images/SenzaLogo.png';">
+        <span>${item.squadra}</span>
+      </td>
+      <td>${item.punti}</td>
+      <td>${item.giocate}</td>
+      <td>${item["giocate vinte"]}</td>
+      <td>${item["giocate perse"]}</td>
+      <td>${item["set vinti"]}</td>
+      <td>${item["set persi"]}</td>
+    </tr>
+  `;
+}
+
+function caricaClassifica(file, tableId) {
+  fetch(file)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`Errore caricamento ${file}`);
+      }
+      return response.json();
+    })
+    .then(data => {
+      const tbody = document.getElementById(tableId);
+      if (!tbody) return;
+      tbody.innerHTML = data.map((item, index) => creaRiga(item, index)).join('');
+    })
+    .catch(error => {
+      console.error("Errore nel caricamento della classifica:", error);
+    });
+}
+
+caricaClassifica('classifica_maschile.json', 'maschile-table-body');
+caricaClassifica('classifica_femminile.json', 'femminile-table-body');
+    
 </script>
 
 
