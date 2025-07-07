@@ -65,12 +65,12 @@ window.addEventListener('DOMContentLoaded', function () {
 });
 
 
-// MENU HAMBURGER
 document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.getElementById("menu-toggle");
-    const navbar = document.getElementById("navbar").querySelector("ul");
+    const navbar = document.querySelector("#navbar ul");
 
     menuToggle.addEventListener("click", function () {
         navbar.classList.toggle("show");
     });
 });
+
