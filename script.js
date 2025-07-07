@@ -1,17 +1,13 @@
 
-document.addEventListener("DOMContentLoaded", function () {
-    const toggle = document.getElementById("menu-toggle");
-    const nav = document.querySelector("nav ul");
+document.addEventListener('DOMContentLoaded', function () {
+    const toggleButton = document.getElementById('menu-toggle');
+    const mobileNav = document.querySelector('nav.mobile');
 
-    toggle.addEventListener("click", () => {
-        nav.classList.toggle("active");
-    });
-
-    // Chiudi menu al clic su un link
-    const links = document.querySelectorAll("nav ul li a");
-    links.forEach(link => {
-        link.addEventListener("click", () => {
-            nav.classList.remove("active");
-        });
+    toggleButton.addEventListener('click', function () {
+        if (mobileNav.style.display === 'block') {
+            mobileNav.style.display = 'none';
+        } else {
+            mobileNav.style.display = 'block';
+        }
     });
 });
