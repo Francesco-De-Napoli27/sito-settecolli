@@ -378,3 +378,19 @@ footer {
   line-height: 1.6;
   color: #222;
 }
+
+@media (max-width: 768px) {
+  .contenuto-storia {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .storia-logo img {
+    max-width: 200px;
+  }
+
+  .storia-testo {
+    padding: 1rem;
+  }
+}
+
