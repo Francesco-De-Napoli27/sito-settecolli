@@ -1,13 +1,8 @@
-
 document.addEventListener('DOMContentLoaded', function () {
-    const toggleButton = document.getElementById('menu-toggle');
-    const mobileNav = document.querySelector('nav.mobile');
+    const toggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('nav ul');
 
-    toggleButton.addEventListener('click', function () {
-        if (mobileNav.style.display === 'block') {
-            mobileNav.style.display = 'none';
-        } else {
-            mobileNav.style.display = 'block';
-        }
+    toggle.addEventListener('click', () => {
+        menu.classList.toggle('active');
     });
 });
