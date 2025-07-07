@@ -193,25 +193,16 @@ th {
   padding: 2rem 1rem;
   text-align: center;
 }
+
 .sponsor-logos {
-  display: flex; /* Cambia da grid a flex */
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5rem; /* più ravvicinati ma con spazio elegante */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* da 120px a 100px */
+  gap: 0.5rem; /* più ravvicinati */
   align-items: center;
-  padding: 1rem 0;
 }
 
 .sponsor-logos img {
   max-height: 100px; /* aumenta dimensione */
-  width: auto;
-  object-fit: contain;
-  margin: 0 1rem;
-  transition: transform 0.3s ease;
-}
-
-.sponsor-logos img:hover {
-  transform: scale(1.1); /* effetto al passaggio */
 }
 
 .blue-background {
