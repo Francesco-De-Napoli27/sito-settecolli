@@ -278,14 +278,3 @@ footer {
   overflow-x: auto;
   max-width: 100%;
 }
-
-
-/* Miglioramento mobile navbar a destra */
-@media screen and (max-width: 992px) {
-  .nav-menu {
-    left: auto;
-    right: 0;
-    text-align: right;
-    align-items: flex-end;
-  }
-}
