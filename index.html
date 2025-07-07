@@ -116,17 +116,20 @@ fetch('classifica_maschile.json')
   .then(data => {
     const tbody = document.getElementById('maschile-table-body');
     tbody.innerHTML = "";
-    data.forEach((item) => {
+    data.forEach((item, index) => {
       const row = document.createElement('tr');
       row.innerHTML = `
-        <td>${item.posizione}</td>
-        <td>${item.squadra}</td>
+        <td>${index + 1}</td>
+        <td>
+          <img src="${item.logo}" alt="${item.squadra}" style="height: 1em; vertical-align: middle; margin-right: 0.4em;">
+          ${item.squadra}
+        </td>
         <td>${item.punti}</td>
         <td>${item.giocate}</td>
-        <td>${item["giocate vinte"]}</td>
-        <td>${item["giocate perse"]}</td>
-        <td>${item["set vinti"]}</td>
-        <td>${item["set persi"]}</td>
+        <td>${item.vinte}</td>
+        <td>${item.perse}</td>
+        <td>${item.set_vinti}</td>
+        <td>${item.set_persi}</td>
       `;
       tbody.appendChild(row);
     });
@@ -137,17 +140,20 @@ fetch('classifica_femminile.json')
   .then(data => {
     const tbody = document.getElementById('femminile-table-body');
     tbody.innerHTML = "";
-    data.forEach((item) => {
+    data.forEach((item, index) => {
       const row = document.createElement('tr');
       row.innerHTML = `
-        <td>${item.posizione}</td>
-        <td>${item.squadra}</td>
+        <td>${index + 1}</td>
+        <td>
+          <img src="${item.logo}" alt="${item.squadra}" style="height: 1em; vertical-align: middle; margin-right: 0.4em;">
+          ${item.squadra}
+        </td>
         <td>${item.punti}</td>
         <td>${item.giocate}</td>
-        <td>${item["giocate vinte"]}</td>
-        <td>${item["giocate perse"]}</td>
-        <td>${item["set vinti"]}</td>
-        <td>${item["set persi"]}</td>
+        <td>${item.vinte}</td>
+        <td>${item.perse}</td>
+        <td>${item.set_vinti}</td>
+        <td>${item.set_persi}</td>
       `;
       tbody.appendChild(row);
     });
