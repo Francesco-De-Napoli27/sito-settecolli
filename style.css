@@ -232,3 +232,41 @@ footer {
     flex-direction: column;
   }
 }
+
+
+/* BORDI E CONTAINER PER SECTIONS */
+section {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 2rem 1rem;
+  padding: 2rem 1rem;
+  background-color: #fff;
+}
+
+/* Sezioni Prossime Partite - Maschile e Femminile separate */
+.squadra-maschile,
+.squadra-femminile {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+/* Classifiche con contenitori distinti */
+.classifica-maschile,
+.classifica-femminile {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+/* SPONSOR con sfondo blu mare */
+.sponsors {
+  background-color: #003366; /* Blu mare */
+  color: #fff;
+  border: none;
+}
+.sponsors h2 {
+  color: #fff;
+}
