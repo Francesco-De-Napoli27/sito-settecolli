@@ -2,6 +2,7 @@
     {
         "posizione": "1",
         "squadra": "Polisportiva Spes Praia Volley",
+        "logo": "images/loghi/Praia Femminile.png",
         "punti": "44",
         "giocate": "18",
         "giocate vinte": "15",
@@ -12,6 +13,7 @@
     {
         "posizione": "2",
         "squadra": "De Stefano Volley Scalea",
+        "logo": "images/loghi/volley scalea femminile.png",
         "punti": "42",
         "giocate": "18",
         "giocate vinte": "14",
@@ -22,6 +24,7 @@
     {
         "posizione": "3",
         "squadra": "Asd Volley Parenti",
+        "logo": "images/loghi/parenti femminile.png", 
         "punti": "36",
         "giocate": "18",
         "giocate vinte": "11",
@@ -32,6 +35,7 @@
     {
         "posizione": "4",
         "squadra": "Partycolare Volley Rogliano",
+        "logo": "images/loghi/volley rogliano femminile.png",
         "punti": "30",
         "giocate": "18",
         "giocate vinte": "10",
@@ -42,6 +46,7 @@
     {
         "posizione": "5",
         "squadra": "Volley Fagnano 2010",
+        "logo": "images/loghi/Fagnano Maschile.png",
         "punti": "29",
         "giocate": "18",
         "giocate vinte": "9",
@@ -52,6 +57,7 @@
     {
         "posizione": "6",
         "squadra": "Pallavolo Rossano A.s.d",
+        "logo": "images/loghi/Pallavolo Rossano Maschile.png",
         "punti": "25",
         "giocate": "18",
         "giocate vinte": "9",
@@ -62,6 +68,7 @@
     {
         "posizione": "7",
         "squadra": "Gts Nova Volley",
+        "logo": "images/loghi/Nova Volley Maschile.png",
         "punti": "23",
         "giocate": "18",
         "giocate vinte": "9",
@@ -72,6 +79,7 @@
     {
         "posizione": "8",
         "squadra": "Cosenza Volley Club",
+        "logo": "images/loghi/cosenza volley.png",
         "punti": "21",
         "giocate": "18",
         "giocate vinte": "7",
@@ -82,6 +90,7 @@
     {
         "posizione": "9",
         "squadra": "San Lucido Volley",
+        "logo": "images/loghi/sanlucido femminile.png",
         "punti": "19",
         "giocate": "18",
         "giocate vinte": "6",
@@ -92,6 +101,7 @@
     {
         "posizione": "10",
         "squadra": "Asd Polisportiva Settecolli",
+        "logo": "images/loghi/logo settecolli.png",
         "punti": "-2",
         "giocate": "18",
         "giocate vinte": "0",
