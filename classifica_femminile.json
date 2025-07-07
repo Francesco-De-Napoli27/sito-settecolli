@@ -13,7 +13,7 @@
     {
         "posizione": "2",
         "squadra": "De Stefano Volley Scalea",
-        "logo": "images/volley scalea femminile.png",
+        "logo": "images/volley scalea femminile.jpg",
         "punti": "42",
         "giocate": "18",
         "giocate vinte": "14",
@@ -24,7 +24,7 @@
     {
         "posizione": "3",
         "squadra": "Asd Volley Parenti",
-        "logo": "images/parenti femminile.png", 
+        "logo": "images/parenti femminile.jpg", 
         "punti": "36",
         "giocate": "18",
         "giocate vinte": "11",
@@ -46,7 +46,7 @@
     {
         "posizione": "5",
         "squadra": "Volley Fagnano 2010",
-        "logo": "images/Fagnano Maschile.png",
+        "logo": "images/Fagnano Maschile.jpg",
         "punti": "29",
         "giocate": "18",
         "giocate vinte": "9",
@@ -57,7 +57,7 @@
     {
         "posizione": "6",
         "squadra": "Pallavolo Rossano A.s.d",
-        "logo": "images/Pallavolo Rossano Maschile.png",
+        "logo": "images/Pallavolo Rossano Maschile.jpg",
         "punti": "25",
         "giocate": "18",
         "giocate vinte": "9",
@@ -68,7 +68,7 @@
     {
         "posizione": "7",
         "squadra": "Gts Nova Volley",
-        "logo": "images/Nova Volley Maschile.png",
+        "logo": "images/Nova Volley Maschile.jpg",
         "punti": "23",
         "giocate": "18",
         "giocate vinte": "9",
@@ -79,7 +79,7 @@
     {
         "posizione": "8",
         "squadra": "Cosenza Volley Club",
-        "logo": "images/cosenza volley.png",
+        "logo": "images/cosenza volley.jpg",
         "punti": "21",
         "giocate": "18",
         "giocate vinte": "7",
