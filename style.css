@@ -861,3 +861,41 @@ footer {
     font-size: 1em;
   }
 }
+
+
+
+/* MENU A TENDINA PER MOBILE */
+@media screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #b00;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 1000;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    background-color: #b00;
+    color: white;
+    font-size: 1.5em;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* NASCONDI IL BOTTONE SU DESKTOP */
+.menu-toggle {
+  display: none;
+}
