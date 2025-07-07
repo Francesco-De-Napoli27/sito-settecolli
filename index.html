@@ -116,56 +116,40 @@ function normalizzaPercorsoLogo(path) {
   return `images/${filename}`;
 }
 
+function creaRiga(item, index) {
+  const logoPath = normalizzaPercorsoLogo(item.logo);
+  return `
+    <tr>
+      <td>${index + 1}</td>
+      <td style="display: flex; align-items: center; gap: 0.4em;">
+        <img src="${logoPath}" alt="" style="height: 1em; width: auto;">
+        <span>${item.squadra}</span>
+      </td>
+      <td>${item.punti}</td>
+      <td>${item.giocate}</td>
+      <td>${item["giocate vinte"]}</td>
+      <td>${item["giocate perse"]}</td>
+      <td>${item["set vinti"]}</td>
+      <td>${item["set persi"]}</td>
+    </tr>
+  `;
+}
+
 fetch('classifica_maschile.json')
   .then(response => response.json())
   .then(data => {
     const tbody = document.getElementById('maschile-table-body');
-    tbody.innerHTML = "";
-    data.forEach((item, index) => {
-      const logoPath = normalizzaPercorsoLogo(item.logo);
-      const row = document.createElement('tr');
-      row.innerHTML = `
-        <td>${index + 1}</td>
-        <td>
-          <img src="${logoPath}" alt="${item.squadra}" style="height: 1em; vertical-align: middle; margin-right: 0.4em;">
-          ${item.squadra}
-        </td>
-        <td>${item.punti}</td>
-        <td>${item.giocate}</td>
-        <td>${item["giocate vinte"]}</td>
-        <td>${item["giocate perse"]}</td>
-        <td>${item["set vinti"]}</td>
-        <td>${item["set persi"]}</td>
-      `;
-      tbody.appendChild(row);
-    });
+    tbody.innerHTML = data.map((item, index) => creaRiga(item, index)).join('');
   });
 
 fetch('classifica_femminile.json')
   .then(response => response.json())
   .then(data => {
     const tbody = document.getElementById('femminile-table-body');
-    tbody.innerHTML = "";
-    data.forEach((item, index) => {
-      const logoPath = normalizzaPercorsoLogo(item.logo);
-      const row = document.createElement('tr');
-      row.innerHTML = `
-        <td>${index + 1}</td>
-        <td>
-          <img src="${logoPath}" alt="${item.squadra}" style="height: 1em; vertical-align: middle; margin-right: 0.4em;">
-          ${item.squadra}
-        </td>
-        <td>${item.punti}</td>
-        <td>${item.giocate}</td>
-        <td>${item["giocate vinte"]}</td>
-        <td>${item["giocate perse"]}</td>
-        <td>${item["set vinti"]}</td>
-        <td>${item["set persi"]}</td>
-      `;
-      tbody.appendChild(row);
-    });
+    tbody.innerHTML = data.map((item, index) => creaRiga(item, index)).join('');
   });
 </script>
+
 
 
 </body>
