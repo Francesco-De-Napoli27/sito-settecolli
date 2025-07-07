@@ -1,5 +1,5 @@
 
-/* Reset di base */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -9,87 +9,115 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
-  color: #000;
   background: #fff;
+  color: #000;
 }
 
-/* Header */
+/* Header completo */
 .site-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #920000;
+  background-color: #ffffff;
   padding: 0.5rem 1rem;
   position: sticky;
   top: 0;
   z-index: 999;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo-container {
+  flex-shrink: 0;
 }
 
 .logo {
-  height: 60px;
+  height: 55px;
   width: auto;
 }
 
 .navbar {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex: 1;
 }
 
 .nav-menu {
   display: flex;
   list-style: none;
-  gap: 1.5rem;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .nav-menu li a {
   text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-  padding: 0.5rem 0.75rem;
+  color: #000;
+  font-weight: 600;
+  padding: 0.5rem;
   transition: 0.3s;
 }
 
-.nav-menu li a.active,
-.nav-menu li a:hover {
-  background-color: #0066cc;
-  border-radius: 4px;
+.nav-menu li a:hover,
+.nav-menu li a.active {
+  border-bottom: 2px solid #0066cc;
 }
 
+/* Hamburger */
 .hamburger {
   display: none;
   flex-direction: column;
-  cursor: pointer;
   gap: 5px;
+  cursor: pointer;
+  padding-left: 10px;
 }
 
 .hamburger span {
   width: 25px;
   height: 3px;
-  background: #fff;
+  background: #000;
   display: block;
 }
 
 /* Hero */
-.hero {
-  width: 100%;
-  overflow: hidden;
-}
-
 .hero-image {
   width: 100%;
   height: auto;
+  display: block;
+}
+
+/* Sezione News */
+.news {
+  padding: 2rem 1rem;
+}
+
+.news h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.news-item {
+  text-align: center;
+}
+
+.news-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .nav-menu {
+    display: none;
     position: absolute;
     top: 70px;
-    right: 0;
-    background: #920000;
+    left: 0;
     flex-direction: column;
+    background: white;
     width: 100%;
-    display: none;
+    border-top: 1px solid #ccc;
+    padding: 1rem 0;
   }
 
   .nav-menu.active {
@@ -98,5 +126,13 @@ body {
 
   .hamburger {
     display: flex;
+  }
+
+  .navbar {
+    justify-content: flex-end;
+  }
+
+  .site-header {
+    flex-wrap: wrap;
   }
 }
