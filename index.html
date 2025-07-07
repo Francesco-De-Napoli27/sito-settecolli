@@ -111,12 +111,6 @@
 <script src="script.js"></script>
     
 <script>
-function normalizzaPercorsoLogo(path) {
-  const filename = path.split('/').pop();
-  return `images/${filename}`;
-}
-
-const logoPath = item.logo;
 function creaRiga(item, index) {
   return `
     <tr>
@@ -140,9 +134,7 @@ function creaRiga(item, index) {
 function caricaClassifica(file, tableId) {
   fetch(file)
     .then(response => {
-      if (!response.ok) {
-        throw new Error(`Errore caricamento ${file}`);
-      }
+      if (!response.ok) throw new Error(`Errore caricamento ${file}`);
       return response.json();
     })
     .then(data => {
@@ -155,9 +147,9 @@ function caricaClassifica(file, tableId) {
     });
 }
 
+// Avvia il caricamento delle classifiche
 caricaClassifica('classifica_maschile.json', 'maschile-table-body');
 caricaClassifica('classifica_femminile.json', 'femminile-table-body');
-    
 </script>
 
 
