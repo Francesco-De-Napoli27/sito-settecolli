@@ -114,3 +114,37 @@ nav ul li a {
   padding: 10px 15px;
   white-space: nowrap;
 }
+
+
+
+/* MENU ORIZZONTALE SEMPRE — ANCHE SU MOBILE */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  background-color: #b00;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+nav ul::-webkit-scrollbar {
+  display: none;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 12px 18px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  white-space: nowrap;
+}
