@@ -1,1 +1,102 @@
-null
+[
+    {
+        "posizione": "1",
+        "squadra": "Polisportiva Spes Praia Volley",
+        "punti": "44",
+        "giocate": "18",
+        "giocate vinte": "15",
+        "giocate perse": "3",
+        "set vinti": "48",
+        "set persi": "18"
+    },
+    {
+        "posizione": "2",
+        "squadra": "De Stefano Volley Scalea",
+        "punti": "42",
+        "giocate": "18",
+        "giocate vinte": "14",
+        "giocate perse": "4",
+        "set vinti": "46",
+        "set persi": "17"
+    },
+    {
+        "posizione": "3",
+        "squadra": "Asd Volley Parenti",
+        "punti": "36",
+        "giocate": "18",
+        "giocate vinte": "11",
+        "giocate perse": "7",
+        "set vinti": "42",
+        "set persi": "26"
+    },
+    {
+        "posizione": "4",
+        "squadra": "Partycolare Volley Rogliano",
+        "punti": "30",
+        "giocate": "18",
+        "giocate vinte": "10",
+        "giocate perse": "8",
+        "set vinti": "40",
+        "set persi": "35"
+    },
+    {
+        "posizione": "5",
+        "squadra": "Volley Fagnano 2010",
+        "punti": "29",
+        "giocate": "18",
+        "giocate vinte": "9",
+        "giocate perse": "9",
+        "set vinti": "37",
+        "set persi": "34"
+    },
+    {
+        "posizione": "6",
+        "squadra": "Pallavolo Rossano A.s.d",
+        "punti": "25",
+        "giocate": "18",
+        "giocate vinte": "9",
+        "giocate perse": "9",
+        "set vinti": "33",
+        "set persi": "35"
+    },
+    {
+        "posizione": "7",
+        "squadra": "Gts Nova Volley",
+        "punti": "23",
+        "giocate": "18",
+        "giocate vinte": "9",
+        "giocate perse": "9",
+        "set vinti": "32",
+        "set persi": "37"
+    },
+    {
+        "posizione": "8",
+        "squadra": "Cosenza Volley Club",
+        "punti": "21",
+        "giocate": "18",
+        "giocate vinte": "7",
+        "giocate perse": "11",
+        "set vinti": "32",
+        "set persi": "41"
+    },
+    {
+        "posizione": "9",
+        "squadra": "San Lucido Volley",
+        "punti": "19",
+        "giocate": "18",
+        "giocate vinte": "6",
+        "giocate perse": "12",
+        "set vinti": "23",
+        "set persi": "41"
+    },
+    {
+        "posizione": "10",
+        "squadra": "Asd Polisportiva Settecolli",
+        "punti": "-2",
+        "giocate": "18",
+        "giocate vinte": "0",
+        "giocate perse": "18",
+        "set vinti": "5",
+        "set persi": "54"
+    }
+]

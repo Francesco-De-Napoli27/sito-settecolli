@@ -1,1 +1,112 @@
-null
+[
+    {
+        "posizione": "1",
+        "squadra": "Asd Polisportiva Settecolli",
+        "punti": "44",
+        "giocate": "18",
+        "giocate vinte": "15",
+        "giocate perse": "3",
+        "set vinti": "47",
+        "set persi": "19"
+    },
+    {
+        "posizione": "2",
+        "squadra": "Pallavolo Rossano A.s.d",
+        "punti": "39",
+        "giocate": "18",
+        "giocate vinte": "14",
+        "giocate perse": "4",
+        "set vinti": "45",
+        "set persi": "26"
+    },
+    {
+        "posizione": "3",
+        "squadra": "Asd Pure Volley Academy",
+        "punti": "33",
+        "giocate": "18",
+        "giocate vinte": "12",
+        "giocate perse": "6",
+        "set vinti": "43",
+        "set persi": "29"
+    },
+    {
+        "posizione": "4",
+        "squadra": "Corigliano Volley",
+        "punti": "31",
+        "giocate": "18",
+        "giocate vinte": "10",
+        "giocate perse": "8",
+        "set vinti": "37",
+        "set persi": "29"
+    },
+    {
+        "posizione": "5",
+        "squadra": "Volley Belmonte",
+        "punti": "31",
+        "giocate": "18",
+        "giocate vinte": "10",
+        "giocate perse": "8",
+        "set vinti": "37",
+        "set persi": "32"
+    },
+    {
+        "posizione": "6",
+        "squadra": "La Boschiva Volley Sgf",
+        "punti": "30",
+        "giocate": "18",
+        "giocate vinte": "9",
+        "giocate perse": "9",
+        "set vinti": "36",
+        "set persi": "29"
+    },
+    {
+        "posizione": "7",
+        "squadra": "Bcc Mediocrati Vb1983",
+        "punti": "27",
+        "giocate": "18",
+        "giocate vinte": "9",
+        "giocate perse": "9",
+        "set vinti": "31",
+        "set persi": "31"
+    },
+    {
+        "posizione": "8",
+        "squadra": "Buildup Nova Volley",
+        "punti": "22",
+        "giocate": "18",
+        "giocate vinte": "8",
+        "giocate perse": "10",
+        "set vinti": "31",
+        "set persi": "35"
+    },
+    {
+        "posizione": "9",
+        "squadra": "Fattoria Didattica Terre Antiche",
+        "punti": "4",
+        "giocate": "18",
+        "giocate vinte": "2",
+        "giocate perse": "16",
+        "set vinti": "14",
+        "set persi": "50"
+    },
+    {
+        "posizione": "10",
+        "squadra": "Volley Fagnano 2010",
+        "punti": "0",
+        "giocate": "18",
+        "giocate vinte": "1",
+        "giocate perse": "17",
+        "set vinti": "12",
+        "set persi": "53"
+    },
+    {
+        "posizione": "11",
+        "squadra": "Autotrasporti Pisano Pall.taverna",
+        "punti": "-6",
+        "giocate": "0",
+        "giocate vinte": "0",
+        "giocate perse": "0",
+        "set vinti": "0",
+        "set persi": "0"
+    }
+]
