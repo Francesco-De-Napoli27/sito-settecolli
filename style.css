@@ -196,14 +196,21 @@ th {
 
 .sponsor-logos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* da 120px a 100px */
-  gap: 0.5rem; /* più ravvicinati */
+  grid-template-columns: repeat(6, 1fr); /* 6 loghi per riga */
+  gap: 0.5rem; /* meno spazio tra i loghi */
   align-items: center;
+  justify-items: center;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .sponsor-logos img {
-  max-height: 240px; /* aumenta dimensione */
+  width: 100%;
+  max-width: 120px; /* più grande rispetto a prima */
+  max-height: 70px;  /* leggermente più contenuto per restare nella sezione */
+  object-fit: contain;
 }
+
 
 .blue-background {
   background-color: #003366;
