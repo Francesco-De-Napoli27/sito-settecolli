@@ -13,6 +13,9 @@
         <a href="index.html"><img src="images/logo settecolli.png" alt="Logo Settecolli" class="logo"></a>
     </div>
     <nav class="navbar" id="navbar">
+        <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
         <ul class="nav-menu" id="nav-menu">
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="staff.html">Staff</a></li>
@@ -24,9 +27,6 @@
             <li><a href="galleria.html">Galleria</a></li>
             <li><a href="contatti.html">Contatti</a></li>
         </ul>
-        <div class="hamburger" id="hamburger">
-            <span></span><span></span><span></span>
-        </div>
     </nav>
 </header>
 
@@ -68,20 +68,32 @@
         <div class="classifica-maschile card-bordered">
             <h3>Prima Divisione Maschile</h3>
             <table>
-                <!-- Intestazioni e righe maschili -->
+                <thead>
+                    <tr><th>#</th><th>Squadra</th><th>P</th><th>G</th><th>GV</th><th>GP</th><th>SV</th><th>SP</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>Volley Belmonte</td><td>7</td><td>3</td><td>2</td><td>1</td><td>8</td><td>4</td></tr>
+                    <tr><td>2</td><td>Corigliano Volley</td><td>6</td><td>2</td><td>2</td><td>0</td><td>6</td><td>1</td></tr>
+                </tbody>
             </table>
         </div>
         <div class="classifica-femminile card-bordered">
             <h3>Prima Divisione Femminile</h3>
             <table>
-                <!-- Intestazioni e righe femminili -->
+                <thead>
+                    <tr><th>#</th><th>Squadra</th><th>P</th><th>G</th><th>GV</th><th>GP</th><th>SV</th><th>SP</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>Volley Scalea</td><td>19</td><td>8</td><td>6</td><td>2</td><td>21</td><td>6</td></tr>
+                    <tr><td>2</td><td>Volley Parenti</td><td>15</td><td>8</td><td>5</td><td>3</td><td>18</td><td>12</td></tr>
+                </tbody>
             </table>
         </div>
     </div>
 </section>
 
-<section id="sponsors" class="sponsors blue-background">
-    <h2>I Nostri Sponsor</h2>
+<section id="sponsors" class="sponsors" style="background-color: #003366;">
+    <h2 style="color:white;">I Nostri Sponsor</h2>
     <div class="sponsor-logos">
         <a><img src="images/Brasserie.png" alt="Sponsor 1"></a>
         <a><img src="images/Brillo Parlante.png" alt="Sponsor 2"></a>
