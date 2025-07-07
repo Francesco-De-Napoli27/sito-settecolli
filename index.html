@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -37,26 +36,28 @@
 
 <section id="news" class="news">
     <h2>Ultime Notizie</h2>
-    <div class="news-item">
-        <img src="images/Presentazione Squadra 24_25.jpg" alt="Notizia">
-        <h3>'Rinasce' la Polisportiva Acli Settecolli,<br> la prima squadra di Volley creata nella Provincia di Cosenza</h3>
-        <p class="subtitle">L'ASD Polisportiva Acli Settecolli nasce nel 1966 a Rogliano,<br> fondata da Franco De Napoli e l'ex Presidente Provinciale FIPAV Mario Calabrese.</p>
-        <p class="footer-text">Cosenza 2.0 - 26/10/2024</p>
+    <div class="news-wrapper">
+        <div class="news-item bordered">
+            <img src="images/Presentazione Squadra 24_25.jpg" alt="Notizia">
+            <h3>'Rinasce' la Polisportiva Acli Settecolli,<br> la prima squadra di Volley creata nella Provincia di Cosenza</h3>
+            <p class="subtitle">L'ASD Polisportiva Acli Settecolli nasce nel 1966 a Rogliano,<br> fondata da Franco De Napoli e l'ex Presidente Provinciale FIPAV Mario Calabrese.</p>
+            <p class="footer-text">Cosenza 2.0 - 26/10/2024</p>
+        </div>
     </div>
 </section>
 
 <section id="prossime-partite" class="prossime-partite">
     <h2>Prossime Partite!</h2>
     <div class="partita">
-        <div class="squadra-maschile">
+        <div class="squadra-maschile card-bordered">
             <h3>Squadra Maschile</h3>
             <img src="images/SettBelmMasch.png" alt="Prossima partita dei nostri ragazzi!" />
-            <p class="data-partita"><br>12/01/2025 Ore 20:00</p>
+            <p class="data-partita">12/01/2025 Ore 20:00</p>
         </div>
-        <div class="squadra-femminile">
+        <div class="squadra-femminile card-bordered">
             <h3>Squadra Femminile</h3>
             <img src="images/PraiaSetteFemm.png" alt="Prossima partita delle nostre ragazze!" />
-            <p class="data-partita"><br>12/01/2025 Ore 11:00</p>
+            <p class="data-partita">12/01/2025 Ore 11:00</p>
         </div>
     </div>
 </section>
@@ -64,12 +65,22 @@
 <section id="classifiche" class="classifiche">
     <h2>Le Nostre Classifiche</h2>
     <div class="classifica">
-        <div class="classifica-maschile">[TAB MASCHILE]</div>
-        <div class="classifica-femminile">[TAB FEMMINILE]</div>
+        <div class="classifica-maschile card-bordered">
+            <h3>Prima Divisione Maschile</h3>
+            <table>
+                <!-- Intestazioni e righe maschili -->
+            </table>
+        </div>
+        <div class="classifica-femminile card-bordered">
+            <h3>Prima Divisione Femminile</h3>
+            <table>
+                <!-- Intestazioni e righe femminili -->
+            </table>
+        </div>
     </div>
 </section>
 
-<section id="sponsors" class="sponsors">
+<section id="sponsors" class="sponsors blue-background">
     <h2>I Nostri Sponsor</h2>
     <div class="sponsor-logos">
         <a><img src="images/Brasserie.png" alt="Sponsor 1"></a>
