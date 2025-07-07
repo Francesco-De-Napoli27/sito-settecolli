@@ -766,3 +766,98 @@ footer {
     height: auto;
     display: block;
 }
+
+
+/* ----------------------------- */
+/* RESPONSIVE MEDIA QUERIES     */
+/* ----------------------------- */
+
+@media screen and (max-width: 1024px) {
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav ul li {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+
+  .classifica {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .classifica-maschile,
+  .classifica-femminile {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .news-item,
+  .squadra-maschile,
+  .squadra-femminile,
+  .classifica-maschile,
+  .classifica-femminile,
+  .staff-member,
+  .contatti-member,
+  .galleria-member,
+  .notizie-member,
+  .shop-member,
+  .sponsor-member,
+  .team-member,
+  .tv-member {
+    width: 95% !important;
+  }
+
+  .hero {
+    height: auto;
+    padding: 20px 0;
+    flex-direction: column;
+  }
+
+  .hero-image {
+    height: auto;
+    object-fit: contain;
+    position: static;
+  }
+
+  nav ul {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 0 10px;
+  }
+
+  nav ul li {
+    flex: 0 0 auto;
+  }
+
+  nav ul li a {
+    white-space: nowrap;
+  }
+
+  .sponsor-logos img {
+    transform: scale(1.3);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cta-button {
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+
+  .news-title,
+  .subtitle {
+    font-size: 0.9em;
+  }
+
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+}
