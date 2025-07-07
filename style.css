@@ -258,3 +258,23 @@ footer {
     display: flex;
   }
 }
+
+/* Centrare il menu su desktop */
+@media screen and (min-width: 993px) {
+  .navbar {
+    justify-content: center;
+  }
+}
+
+/* Footer con sfondo rosso Ferrari */
+footer {
+  background-color: #ff2800; /* Rosso Ferrari */
+  color: #fff;
+}
+
+/* Miglioramento tabelle classifiche */
+.classifica-maschile,
+.classifica-femminile {
+  overflow-x: auto;
+  max-width: 100%;
+}
