@@ -13,7 +13,7 @@
     {
         "posizione": "2",
         "squadra": "Pallavolo Rossano A.s.d",
-        "logo": "images/Pallavolo Rossano Maschile.png",
+        "logo": "images/Pallavolo Rossano Maschile.jpg",
         "punti": "39",
         "giocate": "18",
         "giocate vinte": "14",
@@ -24,7 +24,7 @@
     {
         "posizione": "3",
         "squadra": "Asd Pure Volley Academy",
-        "logo": "images/Pure Volley Accademy Maschile.png",
+        "logo": "images/Pure Volley Accademy Maschile.jpg",
         "punti": "33",
         "giocate": "18",
         "giocate vinte": "12",
@@ -35,7 +35,7 @@
     {
         "posizione": "4",
         "squadra": "Corigliano Volley",
-        "logo": "images/Corigliano Volley Maschile.png",
+        "logo": "images/Corigliano Volley Maschile.jpg",
         "punti": "31",
         "giocate": "18",
         "giocate vinte": "10",
@@ -46,7 +46,7 @@
     {
         "posizione": "5",
         "squadra": "Volley Belmonte",
-        "logo": "images/BelVolley Maschile.png",
+        "logo": "images/BelVolley Maschile.jpg",
         "punti": "31",
         "giocate": "18",
         "giocate vinte": "10",
@@ -57,7 +57,7 @@
     {
         "posizione": "6",
         "squadra": "La Boschiva Volley Sgf",
-        "logo": "images/SGF Maschile.png",
+        "logo": "images/SGF Maschile.jpg",
         "punti": "30",
         "giocate": "18",
         "giocate vinte": "9",
@@ -68,7 +68,7 @@
     {
         "posizione": "7",
         "squadra": "Bcc Mediocrati Vb1983",
-        "logo": "images/Volley Bisignano Maschile.png",
+        "logo": "images/Volley Bisignano Maschile.jpg",
         "punti": "27",
         "giocate": "18",
         "giocate vinte": "9",
@@ -79,7 +79,7 @@
     {
         "posizione": "8",
         "squadra": "Buildup Nova Volley",
-        "logo": "images/Nova Volley Maschile.png",
+        "logo": "images/Nova Volley Maschile.jpg",
         "punti": "22",
         "giocate": "18",
         "giocate vinte": "8",
@@ -90,7 +90,7 @@
     {
         "posizione": "9",
         "squadra": "Fattoria Didattica Terre Antiche",
-        "logo": "images/SenzaLogo.png",
+        "logo": "images/SenzaLogo.jpg",
         "punti": "4",
         "giocate": "18",
         "giocate vinte": "2",
@@ -101,7 +101,7 @@
     {
         "posizione": "10",
         "squadra": "Volley Fagnano 2010",
-        "logo": "images/Fagnano Maschile.png",
+        "logo": "images/Fagnano Maschile.jpg",
         "punti": "0",
         "giocate": "18",
         "giocate vinte": "1",
@@ -112,7 +112,7 @@
     {
         "posizione": "11",
         "squadra": "Autotrasporti Pisano Pall.taverna",
-        "logo": "images/SenzaLogo.png",
+        "logo": "images/SenzaLogo.jpg",
         "punti": "-6",
         "giocate": "0",
         "giocate vinte": "0",
