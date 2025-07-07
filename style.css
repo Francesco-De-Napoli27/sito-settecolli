@@ -1,7 +1,32 @@
 
-/* === MEDIA QUERY AVANZATE PER RESPONSIVITÀ === */
+/* Reset base per menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
 
-/* Smartphone piccoli (< 576px) */
+nav ul li a {
+    text-decoration: none;
+    color: #003366;
+    padding: 10px 15px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+/* Immagini fluide */
+img, .hero-image, .section-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+/* Responsive layout per smartphone */
 @media (max-width: 575.98px) {
     body {
         font-size: 14px;
@@ -10,6 +35,7 @@
 
     .hero h1 {
         font-size: 1.8em;
+        text-align: center;
     }
 
     .news-item,
@@ -26,56 +52,44 @@
         width: 100% !important;
     }
 
-    .news-item img,
-    .hero-image,
-    .section-image,
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-
+    .partita,
     .classifica {
-        flex-direction: column;
-    }
-
-    .classifica-maschile,
-    .classifica-femminile {
-        width: 100%;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    nav ul li a {
-        padding: 8px 10px;
-        font-size: 0.95em;
-    }
-}
-
-/* Tablet (< 768px) */
-@media (min-width: 576px) and (max-width: 767.98px) {
-    .hero h1 {
-        font-size: 2.2em;
-    }
-
-    .partita {
         flex-direction: column;
         align-items: center;
     }
 
-    .squadra-maschile,
-    .squadra-femminile {
-        width: 90% !important;
+    nav ul {
+        flex-direction: column;
+        gap: 4px;
     }
 
+    nav ul li a {
+        font-size: 1em;
+        padding: 8px 12px;
+    }
+}
+
+/* Responsive layout per tablet */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .hero h1 {
+        font-size: 2.2em;
+        text-align: center;
+    }
+
+    .partita,
     .classifica {
         flex-direction: column;
+        align-items: center;
     }
 
-    .classifica-maschile,
-    .classifica-femminile {
-        width: 100%;
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .news-item,
+    .squadra-maschile,
+    .squadra-femminile {
+        width: 95% !important;
     }
 }
