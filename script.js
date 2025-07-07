@@ -1,3 +1,4 @@
+
 const form = document.querySelector("form");
 if (form) {
     form.addEventListener("submit", function(event) {
@@ -62,15 +63,13 @@ window.addEventListener('DOMContentLoaded', function () {
             link.classList.remove("active");
         }
     });
-});
 
-
-document.addEventListener("DOMContentLoaded", function () {
+    // MENU RESPONSIVE: toggle hamburger
     const menuToggle = document.getElementById("menu-toggle");
-    const navbar = document.querySelector("#navbar ul");
-
-    menuToggle.addEventListener("click", function () {
-        navbar.classList.toggle("show");
-    });
+    const navbar = document.getElementById("navbar");
+    if (menuToggle && navbar) {
+        menuToggle.addEventListener("click", function () {
+            navbar.classList.toggle("show");
+        });
+    }
 });
-
