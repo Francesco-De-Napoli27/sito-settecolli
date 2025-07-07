@@ -41,7 +41,7 @@ body {
   display: flex;
   align-items: center;
   flex: 1;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .nav-menu {
@@ -133,6 +133,13 @@ body {
 .squadra-maschile,
 .squadra-femminile {
   flex: 1 1 300px;
+  max-width: 450px;
+}
+.squadra-maschile img,
+.squadra-femminile img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 .data-partita {
   font-weight: bold;
@@ -161,6 +168,7 @@ body {
 table {
   width: 100%;
   border-collapse: collapse;
+  min-width: 600px;
 }
 th, td {
   border: 1px solid #ddd;
@@ -177,14 +185,16 @@ th {
   text-align: center;
 }
 .sponsor-logos {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 1rem;
-  justify-content: center;
+  align-items: center;
 }
 .sponsor-logos img {
-  height: 80px;
+  max-height: 80px;
+  width: auto;
   object-fit: contain;
+  margin: 0 auto;
 }
 
 /* FOOTER */
@@ -198,6 +208,9 @@ footer {
 
 /* RESPONSIVE */
 @media screen and (max-width: 992px) {
+  .navbar {
+    justify-content: space-between;
+  }
   .nav-menu {
     display: none;
     position: absolute;
@@ -215,82 +228,7 @@ footer {
   .hamburger {
     display: flex;
   }
-}
-
-/* --- INTEGRAZIONE AGGIORNATA --- */
-
-/* Prossime Partite */
-.prossime-partite {
-  padding: 2rem 1rem;
-  text-align: center;
-}
-.partita {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-}
-.squadra-maschile,
-.squadra-femminile {
-  flex: 1 1 300px;
-  max-width: 450px;
-}
-.squadra-maschile img,
-.squadra-femminile img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-.data-partita {
-  font-weight: bold;
-  margin-top: 0.5rem;
-}
-
-/* Classifiche */
-.classifiche {
-  padding: 2rem 1rem;
-}
-.classifiche h2 {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-.classifica {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-.classifica-maschile,
-.classifica-femminile {
-  overflow-x: auto;
-}
-table {
-  width: 100%;
-  border-collapse: collapse;
-  min-width: 600px;
-}
-th, td {
-  border: 1px solid #ddd;
-  padding: 0.5rem;
-  text-align: center;
-}
-th {
-  background-color: #f0f0f0;
-}
-
-/* Sponsor */
-.sponsors {
-  padding: 2rem 1rem;
-  text-align: center;
-}
-.sponsor-logos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 1rem;
-  align-items: center;
-}
-.sponsor-logos img {
-  max-height: 80px;
-  width: auto;
-  object-fit: contain;
-  margin: 0 auto;
+  .classifica {
+    flex-direction: column;
+  }
 }
