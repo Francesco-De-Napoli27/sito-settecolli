@@ -354,9 +354,10 @@ footer {
 }
 
 .storia-logo img {
-  max-width: 280px;
+  max-width: 350px; /* aumentato da 280px */
   width: 100%;
   height: auto;
+  margin-right: 2rem; /* aggiunto margine */
 }
 
 .storia-testo {
