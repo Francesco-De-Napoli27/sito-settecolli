@@ -126,10 +126,10 @@ fetch('classifica_maschile.json')
         </td>
         <td>${item.punti}</td>
         <td>${item.giocate}</td>
-        <td>${item.vinte}</td>
-        <td>${item.perse}</td>
-        <td>${item.set_vinti}</td>
-        <td>${item.set_persi}</td>
+        <td>${item["giocate vinte"]}</td>
+        <td>${item["giocate perse"]}</td>
+        <td>${item["set vinti"]}</td>
+        <td>${item["set persi"]}</td>
       `;
       tbody.appendChild(row);
     });
@@ -150,14 +150,7 @@ fetch('classifica_femminile.json')
         </td>
         <td>${item.punti}</td>
         <td>${item.giocate}</td>
-        <td>${item.vinte}</td>
-        <td>${item.perse}</td>
-        <td>${item.set_vinti}</td>
-        <td>${item.set_persi}</td>
-      `;
-      tbody.appendChild(row);
-    });
-  });
+        <td>${item["giocate]()
 </script>
 
 </body>
