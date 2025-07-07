@@ -1,5 +1,5 @@
 
-/* Reset */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +13,7 @@ body {
   color: #000;
 }
 
-/* Header completo */
+/* HEADER */
 .site-header {
   display: flex;
   align-items: center;
@@ -24,6 +24,7 @@ body {
   top: 0;
   z-index: 999;
   border-bottom: 1px solid #ccc;
+  flex-wrap: wrap;
 }
 
 .logo-container {
@@ -35,11 +36,12 @@ body {
   width: auto;
 }
 
+/* NAVBAR */
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: center;
   flex: 1;
+  justify-content: flex-end;
 }
 
 .nav-menu {
@@ -63,13 +65,13 @@ body {
   border-bottom: 2px solid #0066cc;
 }
 
-/* Hamburger */
+/* HAMBURGER */
 .hamburger {
   display: none;
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
-  padding-left: 10px;
+  margin-left: 1rem;
 }
 
 .hamburger span {
@@ -79,34 +81,122 @@ body {
   display: block;
 }
 
-/* Hero */
+/* HERO */
+.hero {
+  width: 100%;
+  overflow: hidden;
+}
 .hero-image {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* Sezione News */
+/* NEWS */
 .news {
   padding: 2rem 1rem;
+  text-align: center;
 }
-
 .news h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
 }
-
-.news-item {
-  text-align: center;
-}
-
 .news-item img {
   max-width: 100%;
   height: auto;
   margin-bottom: 1rem;
 }
+.news-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.news-item .subtitle {
+  font-size: 1rem;
+  color: #555;
+}
+.news-item .footer-text {
+  font-size: 0.9rem;
+  color: #777;
+}
 
-/* Responsive */
+/* PARTITE */
+.prossime-partite {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+.partita {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.squadra-maschile,
+.squadra-femminile {
+  flex: 1 1 300px;
+}
+.data-partita {
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+/* CLASSIFICHE */
+.classifiche {
+  padding: 2rem 1rem;
+}
+.classifiche h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.classifica {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.classifica-maschile,
+.classifica-femminile {
+  flex: 1 1 500px;
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  text-align: center;
+}
+th {
+  background-color: #f0f0f0;
+}
+
+/* SPONSOR */
+.sponsors {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+.sponsor-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+.sponsor-logos img {
+  height: 80px;
+  object-fit: contain;
+}
+
+/* FOOTER */
+footer {
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  background-color: #f5f5f5;
+  margin-top: 2rem;
+}
+
+/* RESPONSIVE */
 @media screen and (max-width: 992px) {
   .nav-menu {
     display: none;
@@ -119,20 +209,10 @@ body {
     border-top: 1px solid #ccc;
     padding: 1rem 0;
   }
-
   .nav-menu.active {
     display: flex;
   }
-
   .hamburger {
     display: flex;
-  }
-
-  .navbar {
-    justify-content: flex-end;
-  }
-
-  .site-header {
-    flex-wrap: wrap;
   }
 }
