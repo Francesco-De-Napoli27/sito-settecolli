@@ -63,3 +63,14 @@ window.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+
+// MENU HAMBURGER
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menu-toggle");
+    const navbar = document.getElementById("navbar").querySelector("ul");
+
+    menuToggle.addEventListener("click", function () {
+        navbar.classList.toggle("show");
+    });
+});
