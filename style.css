@@ -1,55 +1,150 @@
 
-/* Reset di base */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #fff;
-  color: #000;
-}
-
-/* NAVBAR DESKTOP */
-nav {
-  background-color: #b80000;
-  padding: 10px 20px;
-}
-
+/* Reset base per menu */
 nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  flex-wrap: wrap;
-}
-
-nav ul li {
-  margin: 0 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
 
 nav ul li a {
+    text-decoration: none;
+    color: #003366;
+    padding: 10px 15px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+/* Immagini fluide */
+img, .hero-image, .section-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+/* Responsive layout per smartphone */
+@media (max-width: 575.98px) {
+    body {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .hero h1 {
+        font-size: 1.8em;
+        text-align: center;
+    }
+
+    .news-item,
+    .squadra-maschile,
+    .squadra-femminile,
+    .staff-member,
+    .team-member,
+    .shop-member,
+    .sponsor-member,
+    .tv-member,
+    .notizie-member,
+    .contatti-member,
+    .galleria-member {
+        width: 100% !important;
+    }
+
+    .partita,
+    .classifica {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+        padding: 8px 12px;
+    }
+}
+
+/* Responsive layout per tablet */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .hero h1 {
+        font-size: 2.2em;
+        text-align: center;
+    }
+
+    .partita,
+    .classifica {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .news-item,
+    .squadra-maschile,
+    .squadra-femminile {
+        width: 95% !important;
+    }
+}
+
+
+
+/* MENU SCROLLABILE ORIZZONTALE SU MOBILE */
+nav ul {
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+nav ul::-webkit-scrollbar {
+  display: none;
+}
+nav ul li a {
+  display: inline-block;
+  padding: 10px 15px;
+  white-space: nowrap;
+}
+
+
+
+/* MENU ORIZZONTALE SEMPRE — ANCHE SU MOBILE */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  background-color: #b00;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+nav ul::-webkit-scrollbar {
+  display: none;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 12px 18px;
   text-decoration: none;
   color: white;
   font-weight: bold;
-  padding: 6px 12px;
-}
-
-nav ul li a.active,
-nav ul li a:hover {
-  background-color: #004080;
-  border-radius: 4px;
-}
-
-/* Responsività senza pulsante */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav ul li {
-    margin: 10px 0;
-  }
+  white-space: nowrap;
 }
