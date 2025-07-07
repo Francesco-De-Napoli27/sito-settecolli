@@ -196,21 +196,31 @@ th {
 
 .sponsor-logos {
   display: grid;
-  grid-template-columns: repeat(6, 1fr); /* 6 loghi per riga */
-  gap: 0.5rem; /* meno spazio tra i loghi */
+  grid-template-columns: repeat(6, 1fr); /* 6 colonne fisse */
+  gap: 0.2rem; /* spazio minimo tra i loghi */
   align-items: center;
   justify-items: center;
   max-width: 100%;
-  overflow: hidden;
+  padding: 0 1rem;
 }
 
 .sponsor-logos img {
   width: 100%;
-  max-width: 120px; /* più grande rispetto a prima */
-  max-height: 70px;  /* leggermente più contenuto per restare nella sezione */
+  max-width: 160px;  /* aumentato da 120px → 160px */
+  max-height: 100px; /* aumentato da 70px → 100px */
   object-fit: contain;
 }
 
+@media (max-width: 768px) {
+  .sponsor-logos {
+    grid-template-columns: repeat(3, 1fr); /* 3 colonne su mobile */
+  }
+
+  .sponsor-logos img {
+    max-width: 100px;
+    max-height: 70px;
+  }
+}
 
 .blue-background {
   background-color: #003366;
