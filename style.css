@@ -620,3 +620,52 @@ footer {
 .tv-chat {
   flex: 1 1 500px;
 }
+
+/* SHOP SECTION */
+.shop {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.shop h2 {
+  font-size: 1.8rem;
+  margin: 2rem 0;
+}
+
+.shop-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+  margin-top: 2rem;
+}
+
+.shop-item {
+  background-color: #ffffff;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 200px;
+}
+
+.shop-item:hover {
+  transform: scale(1.05);
+  border-color: #003366;
+}
+
+.shop-item img {
+  width: 100%;
+  aspect-ratio: 2/3;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+
+.shop-item h3 {
+  font-size: 1.1rem;
+  margin: 0.5rem 0 0;
+  color: #003366;
+}
