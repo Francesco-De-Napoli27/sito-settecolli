@@ -33,5 +33,25 @@
       auth.signOut().then(() => window.location.href = "login.html");
     }
   </script>
+
+  // Logout (da usare in area-riservata.html)
+  window.logout = function () {
+    signOut(auth).then(() => {
+      alert("Disconnessione avvenuta.");
+      window.location.href = "login.html";
+    });
+  };
+
+  // Protezione (da usare in area-riservata.html)
+  window.checkAuth = function () {
+    onAuthStateChanged(auth, user => {
+      if (!user) {
+        alert("Non sei autenticato. Reindirizzamento al login...");
+        window.location.href = "login.html";
+      }
+    });
+  };
+
+
 </body>
 </html>
