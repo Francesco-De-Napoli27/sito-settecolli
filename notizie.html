@@ -1,37 +1,58 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Staff - Polisportiva Acli Settecolli</title>
-    <link rel="stylesheet" href="style.css"> <!-- Usa lo stesso CSS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notizie - Polisportiva Acli Settecolli</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="staff.html" class="active">Staff</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="notizie.html">Notizie</a></li>
-                <li><a href="sponsor.html">Sponsor</a></li>
-                <li><a href="tv.html">Settecolli TV</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="galleria.html">Galleria</a></li>
-                <li><a href="contatti.html">Contatti</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section id="notizie-home">
-            <img src="images/notizie home.png" alt="Staff" class="notizie-image">
-        </section>
-    </main>
+<header class="site-header">
+  <div class="logo-container">
+    <a href="index.html"><img src="images/logo settecolli.png" alt="Logo Settecolli" class="logo"></a>
+  </div>
+  <nav class="navbar" id="navbar">
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="staff.html">Staff</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="notizie.html" class="active">Notizie</a></li>
+      <li><a href="sponsor.html">Sponsor</a></li>
+      <li><a href="tv.html">Settecolli TV</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="galleria.html">Galleria</a></li>
+      <li><a href="contatti.html">Contatti</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <footer>
-        <p>&copy; 2025 Polisportiva Acli Settecolli | Tutti i diritti riservati</p>
-    </footer>
+<section class="notizie-banner">
+  <img src="images/notizie home.png" alt="Banner Notizie" class="hero-image">
+</section>
+
+<section class="sezione-notizie">
+  <h2>Le Ultime Notizie</h2>
+  <div class="news-wrapper">
+    <!-- Inserisci qui i tuoi articoli come card -->
+    <a href="link-articolo.html" class="news-link">
+      <div class="news-item bordered">
+        <img src="images/articolo1.jpg" alt="Articolo 1">
+        <h3>Titolo dell’articolo</h3>
+        <p class="subtitle">Breve introduzione o sottotitolo dell’articolo.</p>
+        <p class="footer-text">Data - Fonte</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Polisportiva Acli Settecolli | Tutti i diritti riservati</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
