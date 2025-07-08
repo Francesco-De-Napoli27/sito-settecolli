@@ -1,175 +1,67 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Settecolli TV - Polisportiva Acli Settecolli</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Settecolli TV - Polisportiva Acli Settecolli</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="staff.html">Staff</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="notizie.html">Notizie</a></li>
-                <li><a href="sponsor.html">Sponsor</a></li>
-                <li><a href="tv.html" class="active">Settecolli TV</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="galleria.html">Galleria</a></li>
-                <li><a href="contatti.html">Contatti</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section id="tv-home">
-            <img src="images/tv home.png" alt="TV Home" class="tv-image">
-        </section>
+  <header class="site-header">
+    <div class="logo-container">
+      <a href="index.html"><img src="images/logo settecolli.png" alt="Logo Settecolli" class="logo" /></a>
+    </div>
+    <nav class="navbar" id="navbar">
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="staff.html">Staff</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="notizie.html">Notizie</a></li>
+        <li><a href="sponsor.html">Sponsor</a></li>
+        <li><a href="tv.html" class="active">Settecolli TV</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="galleria.html">Galleria</a></li>
+        <li><a href="contatti.html">Contatti</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <section id="tv-streaming" class="tv-section">
-            <div class="tv-content">
-                <!-- Video Player -->
-                <div class="tv-player">
-                    <iframe
-                        src="https://www.youtube.com/embed/TUO_LINK_STREAMING"
-                        title="TV Streaming"
-                        allowfullscreen>
-                    </iframe>
-                </div>
+  <section class="staff-banner">
+    <img src="images/tv home.png" alt="TV Banner" class="hero-image" />
+  </section>
 
-                <!-- Chat -->
-                <div class="chat-container">
-                    <div class="chat-header">Chat della Streaming</div>
-                    <div class="chat-messages" id="chatMessages">
-                        <!-- Messaggi chat verranno aggiunti qui -->
-                    </div>
-                    <div class="chat-input">
-                        <input type="text" id="chatInput" placeholder="Scrivi un messaggio...">
-                        <button id="sendMessage">Invia</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+  <section class="tv-live-section">
+    <h2>Settecolli TV in Diretta</h2>
+    <div class="tv-container">
+      <div class="tv-video">
+        <!-- Sostituisci l'ID nel link con quello del tuo live stream -->
+        <iframe width="100%" height="400" src="https://www.youtube.com/embed/live_stream?channel=TUO_CHANNEL_ID" 
+          title="Diretta Settecolli TV"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="tv-chat">
+        <iframe width="100%" height="400" src="https://www.youtube.com/live_chat?v=ID_VIDEO_LIVE&embed_domain=TUO_DOMINIO"
+          frameborder="0">
+        </iframe>
+      </div>
+    </div>
+  </section>
 
-   .tv-section {
-            padding: 20px;
-            background-color: #ffffff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin: 20px auto;
-            width: 90%;
-            max-width: 1200px;
-            border-radius: 8px;
-        }
+  <footer>
+    <p>&copy; 2025 Polisportiva Acli Settecolli | Tutti i diritti riservati</p>
+  </footer>
 
-   .tv-image {
-            display: block;
-            margin: 0 auto 20px;
-            max-width: 100%;
-            border-radius: 8px;
-        }
+  <script src="script.js"></script>
+</body>
+</html>
 
-   .tv-content {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-   .tv-player {
-            flex: 2;
-            background-color: #000; /* Sfondo del lettore */
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-   .tv-player iframe,
-   .tv-player video {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-
-   .chat-container {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            background-color: #ffffff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-   .chat-header {
-            background-color: #007bff;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            font-weight: bold;
-        }
-
-   .chat-messages {
-            flex: 1;
-            padding: 10px;
-            overflow-y: auto;
-            background-color: #f9f9f9;
-        }
-
-   .chat-input {
-            display: flex;
-            border-top: 1px solid #ddd;
-        }
-
-   .chat-input input {
-            flex: 1;
-            padding: 10px;
-            border: none;
-            border-right: 1px solid #ddd;
-        }
-
-   .chat-input button {
-            padding: 10px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-        }
-
-   .chat-input button:hover {
-            background-color: #0056b3;
-        }
-
-   footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #007bff;
-            color: #fff;
-            position: relative;
-            margin-top: 20px;
-        }
-
-    <footer>
-        <p>&copy; 2025 Polisportiva Acli Settecolli | Tutti i diritti riservati</p>
-    </footer>
-
-    <script>
-        // Esempio di script per gestire la chat
-        const chatMessages = document.getElementById('chatMessages');
-        const chatInput = document.getElementById('chatInput');
-        const sendMessage = document.getElementById('sendMessage');
-
-        // Aggiungi un semplice evento per inviare messaggi
-        sendMessage.addEventListener('click', () => {
-            const message = chatInput.value.trim();
-            if (message !== '') {
-                const msgDiv = document.createElement('div');
-                msgDiv.textContent = `Tu: ${message}`;
-                chatMessages.appendChild(msgDiv);
-                chatMessages.scrollTop = chatMessages.scrollHeight;
-                chatInput.value = '';
-            }
         });
     </script>
 </body>
