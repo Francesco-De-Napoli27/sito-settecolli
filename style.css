@@ -673,3 +673,63 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+.galleria-foto {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.galleria-foto h2 {
+  font-size: 2rem;
+  margin: 2rem 0 1rem;
+  text-align: center;
+}
+
+.galleria-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Due per riga */
+  gap: 1.5rem;
+  justify-items: center;
+  padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+  .galleria-grid {
+    grid-template-columns: 1fr; /* Una per riga su mobile */
+  }
+}
+
+.galleria-card {
+  background-color: #fff;
+  border: 2px solid #003366;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #000;
+  width: 90%;
+  max-width: 300px;
+  padding: 0.5rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.galleria-card:hover {
+  transform: scale(1.02);
+}
+
+.galleria-card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.galleria-card h3 {
+  font-size: 1rem;
+  text-align: center;
+  margin: 0;
+}
