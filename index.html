@@ -228,7 +228,20 @@ async function sendMessage() {
 }
 </script>
 
+<script>
+async function inviaMessaggioUtente(messaggioUtente) {
+  const response = await fetch('http://localhost:3000/api/chat', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ message: messaggioUtente })
+  });
 
+  const data = await response.json();
+  mostraRispostaAI(data.reply);  // funzione che stampa la risposta nella chat
+}
+</script>
 
 
 </body>
