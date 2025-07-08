@@ -93,6 +93,35 @@
     </div>
   </div>
 </section>
+
+<section class="contatti-staff">
+  <div class="contatti-wrapper">
+    <div class="contatti-testo">
+      <h2>Contattaci Ora</h2>
+      <p>Per qualsiasi informazione contattaci.<br>Siamo qui per te!</p>
+      <img src="images/squadra-contatto.jpg" alt="Foto squadra" class="contatti-immagine">
+    </div>
+
+    <form action="https://formsubmit.co/acli.settecolli@gmail.com" method="POST" class="contatti-form">
+      <label for="nome">Inserisci il tuo nome</label>
+      <input type="text" name="nome" placeholder="Nome e cognome qui" required>
+
+      <label for="email">Inserisci la tua email*</label>
+      <input type="email" name="email" placeholder="Email valida richiesta" required>
+
+      <label for="messaggio">Scrivi il tuo messaggio*</label>
+      <textarea name="messaggio" rows="4" placeholder="Messaggio qui per noi" required></textarea>
+
+      <button type="submit">Invia la tua richiesta</button>
+
+      <!-- Opzionale: evita lo spam -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="box">
+      <input type="hidden" name="_subject" value="Nuovo Messaggio dal Sito STAFF">
+    </form>
+  </div>
+</section>
+
     
 <footer>
     <p>&copy; 2025 Polisportiva Acli Settecolli | Tutti i diritti riservati</p>
