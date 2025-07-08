@@ -746,3 +746,32 @@ footer {
   justify-content: center;
   gap: 2rem;
 }
+
+.contatti-testo {
+  position: relative;
+  flex: 1 1 500px;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  color: white;
+  z-index: 0;
+}
+
+.contatti-bg-blur {
+  position: absolute;
+  inset: 0;
+  background: url('images/sfondo-contatti.jpg') center center / cover no-repeat;
+  filter: blur(6px) brightness(0.6);
+  z-index: -1;
+}
+
+.contatti-content {
+  position: relative;
+  z-index: 2;
+}
+
+.contatti-content a {
+  color: #ffdd57;
+  font-weight: bold;
+  text-decoration: underline;
+}
