@@ -416,43 +416,41 @@ footer {
   gap: 2rem;
 }
 
-.staff-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5rem;
-  padding: 2rem 1rem;
-}
-
-.card {
-  width: 100px;
+.staff-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  padding: 1.5rem;
   text-align: center;
-  background: white;
-  border: 2px solid #003366;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s;
 }
 
-.card:hover {
+.staff-card:hover {
   transform: translateY(-5px);
 }
 
-.card img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
+.staff-card img {
+  width: 120px;
+  height: 120px;
   object-fit: cover;
-  border-bottom: 2px solid #003366;
+  border-radius: 50%;
+  margin-bottom: 1rem;
 }
 
-.card h3 {
-  font-size: 1rem;
+.staff-card h3 {
+  font-size: 1.2rem;
   color: #003366;
-  margin: 0.5rem 0 0.2rem;
+  margin-bottom: 0.5rem;
 }
 
-.card p {
-  font-size: 0.95rem;
-  color: #555;
-  margin-bottom: 0.8rem;
+.staff-card .role {
+  font-weight: bold;
+  color: #555555;
+  margin-bottom: 0.5rem;
+}
+
+.staff-card .bio {
+  font-size: 0.9rem;
+  color: #777777;
 }
