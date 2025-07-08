@@ -540,48 +540,69 @@ footer {
 }
 
 
-.sponsor-card-section {
-  padding: 2rem 1rem;
+/* Contenitore card sponsor */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 per riga */
+  gap: 2rem;
+  padding: 2rem;
+  justify-items: center;
 }
 
+/* Singola card */
 .sponsor-card {
   display: flex;
   align-items: center;
+  width: 100%;
+  max-width: 700px;  /* Larghezza massima della card */
   background-color: white;
   border: 2px solid #ccc;
   border-radius: 12px;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+/* Logo sponsor */
 .sponsor-card img {
-  width: 100px;
-  height: 100px;
+  width: 140px;
+  height: 140px;
   object-fit: contain;
   border-radius: 8px;
-  margin-right: 1rem;
+  margin-right: 1.5rem;
 }
 
+/* Testo e link */
 .sponsor-info h3 {
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .sponsor-info .bio {
-  font-size: 0.95rem;
-  color: #555;
+  font-size: 1rem;
+  color: #444;
   margin: 0.5rem 0;
 }
 
 .sponsor-info .links a {
   color: #003366;
   text-decoration: none;
-  font-size: 0.9rem;
+  margin-right: 0.5rem;
 }
 
 .sponsor-info .links a:hover {
   text-decoration: underline;
+}
+
+/* Responsività */
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+  .sponsor-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .sponsor-card img {
+    margin: 0 0 1rem 0;
+  }
 }
