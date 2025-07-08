@@ -156,16 +156,15 @@ function caricaClassifica(file, tableId) {
     });
 }
 
-<!-- BOTTONCINO CHAT -->
-<div id="chatbot-toggle">&#128172;</div>
-
-<!-- FINESTRA CHAT -->
-<div id="chatbot-window" class="hidden">
-  <div id="chatbot-header">Chatta con noi</div>
-  <div id="chatbot-messages"></div>
-  <div id="chatbot-input-area">
-    <input type="text" id="chatbot-input" placeholder="Scrivi qui..." />
-    <button id="chatbot-send">Invia</button>
+<!-- chatbot.html -->
+<div class="chatbot-container">
+  <div class="chat-header">💬 Chatta con Settecolli AI</div>
+  <div class="chat-body" id="chat-body">
+    <!-- Messaggi appariranno qui -->
+  </div>
+  <div class="chat-input-container">
+    <input type="text" id="user-input" placeholder="Scrivi qui..." />
+    <button onclick="sendMessage()">Invia</button>
   </div>
 </div>
 
@@ -176,35 +175,30 @@ caricaClassifica('classifica_femminile.json', 'femminile-table-body');
 </script>
 
 <script>
-  const toggleBtn = document.getElementById('chatbot-toggle');
-  const chatbotWindow = document.getElementById('chatbot-window');
-  const sendBtn = document.getElementById('chatbot-send');
-  const input = document.getElementById('chatbot-input');
-  const messages = document.getElementById('chatbot-messages');
+function sendMessage() {
+  const input = document.getElementById("user-input");
+  const message = input.value.trim();
+  if (!message) return;
 
-  toggleBtn.addEventListener('click', () => {
-    chatbotWindow.classList.toggle('hidden');
-  });
+  // Aggiungi messaggio utente
+  const chatBody = document.getElementById("chat-body");
+  const userMessage = document.createElement("div");
+  userMessage.className = "user-message";
+  userMessage.innerText = message;
+  chatBody.appendChild(userMessage);
+  input.value = "";
 
-  sendBtn.addEventListener('click', sendMessage);
-  input.addEventListener('keypress', e => {
-    if (e.key === 'Enter') sendMessage();
-  });
+  // Risposta fittizia per test
+  const botMessage = document.createElement("div");
+  botMessage.className = "bot-message";
+  botMessage.innerText = "Sto pensando... (qui risponderà l'AI)";
+  chatBody.appendChild(botMessage);
 
-  function sendMessage() {
-    const text = input.value.trim();
-    if (!text) return;
-
-    messages.innerHTML += `<div><strong>Tu:</strong> ${text}</div>`;
-    input.value = '';
-
-    // Risposta placeholder (verrà sostituita dall'AI)
-    setTimeout(() => {
-      messages.innerHTML += `<div><strong>AI:</strong> Sto elaborando la risposta su "${text}"...</div>`;
-      messages.scrollTop = messages.scrollHeight;
-    }, 500);
-  }
+  // Scroll automatico
+  chatBody.scrollTop = chatBody.scrollHeight;
+}
 </script>
+
 
 
 </body>
