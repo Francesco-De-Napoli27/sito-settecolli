@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Area Riservata | Polisportiva Acli Settecolli</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="contatti-staff" onload="checkAuth()">
+
+  <div class="contatti-wrapper">
+    <div class="contatti-testo">
+      <h2>Benvenuto nell'Area Riservata</h2>
+      <p>Accesso consentito solo agli utenti registrati.</p>
+    </div>
+    <div class="contatti-form">
+      <button onclick="logout()">Esci</button>
+    </div>
+  </div>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
+    import { getAuth, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyDRf3Q_-D7nsVIPKSxxIm78rz1Nn5QY1cQ",
+      authDomain: "settecollisite.firebaseapp.com",
+      projectId: "settecollisite",
+      storageBucket: "settecollisite.firebasestorage.app",
+      messagingSenderId: "928590715316",
+      appId: "1:928590715316:web:031eae061e38bd5ef9bae1",
+      measurementId: "G-HG7C6G0ZPV"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+
+    window.checkAuth = function () {
+      onAuthStateChanged(auth, user => {
+        if (!user) {
+          alert("Non sei autenticato.");
+          window.location.href = "login.html";
+        }
+      });
+    };
+
+    window.logout = function () {
+      signOut(auth).then(() => {
+        alert("Sei stato disconnesso.");
+        window.location.href = "login.html";
+      });
+    };
+  </script>
+</body>
+</html>

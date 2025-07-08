@@ -1,61 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
-  <title>Login - Settecolli</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login | Polisportiva Acli Settecolli</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <h2>Accedi o Registrati</h2>
+<body class="contatti-staff">
 
-  <input type="email" id="email" placeholder="Email"><br>
-  <input type="password" id="password" placeholder="Password"><br>
-  <button onclick="register()">Registrati</button>
-  <button onclick="login()">Accedi</button>
+  <div class="contatti-wrapper">
+    <div class="contatti-testo">
+      <h2>Accesso Area Riservata</h2>
+      <p>Inserisci le tue credenziali per accedere.</p>
+    </div>
+
+    <form class="contatti-form" onsubmit="event.preventDefault();">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Inserisci la tua email" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Inserisci la tua password" required>
+
+      <button onclick="login()">Accedi</button>
+      <button onclick="register()">Registrati</button>
+    </form>
+  </div>
 
   <script type="module">
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
-  import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
+    import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
 
-  const firebaseConfig = {
-    apiKey: "AIzaSyDRf3Q_-D7nsVIPKSxxIm78rz1Nn5QY1cQ",
-    authDomain: "settecollisite.firebaseapp.com",
-    projectId: "settecollisite",
-    storageBucket: "settecollisite.firebasestorage.app",
-    messagingSenderId: "928590715316",
-    appId: "1:928590715316:web:031eae061e38bd5ef9bae1",
-    measurementId: "G-HG7C6G0ZPV"
-  };
+    const firebaseConfig = {
+      apiKey: "AIzaSyDRf3Q_-D7nsVIPKSxxIm78rz1Nn5QY1cQ",
+      authDomain: "settecollisite.firebaseapp.com",
+      projectId: "settecollisite",
+      storageBucket: "settecollisite.firebasestorage.app",
+      messagingSenderId: "928590715316",
+      appId: "1:928590715316:web:031eae061e38bd5ef9bae1",
+      measurementId: "G-HG7C6G0ZPV"
+    };
 
-  const app = initializeApp(firebaseConfig);
-  const auth = getAuth(app);
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
 
-  // Registrazione
-  window.register = function () {
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
-    createUserWithEmailAndPassword(auth, email, password)
-      .then(userCredential => {
-        alert("Registrazione avvenuta!");
-        window.location.href = "area-riservata.html";
-      })
-      .catch(error => {
-        alert(error.message);
-      });
-  };
+    window.register = function () {
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+      createUserWithEmailAndPassword(auth, email, password)
+        .then(() => {
+          alert("Registrazione avvenuta!");
+          window.location.href = "area-riservata.html";
+        })
+        .catch(error => alert(error.message));
+    };
 
-  // Login
-  window.login = function () {
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
-    signInWithEmailAndPassword(auth, email, password)
-      .then(userCredential => {
-        alert("Login effettuato!");
-        window.location.href = "area-riservata.html";
-      })
-      .catch(error => {
-        alert(error.message);
-      });
-  };
-</script>
-
+    window.login = function () {
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+      signInWithEmailAndPassword(auth, email, password)
+        .then(() => {
+          alert("Login effettuato!");
+          window.location.href = "area-riservata.html";
+        })
+        .catch(error => alert(error.message));
+    };
+  </script>
 </body>
 </html>
