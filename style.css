@@ -538,3 +538,50 @@ footer {
   margin-bottom: 2rem;
   font-size: 2rem;
 }
+
+
+.sponsor-card-section {
+  padding: 2rem 1rem;
+}
+
+.sponsor-card {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sponsor-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-right: 1rem;
+}
+
+.sponsor-info h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.sponsor-info .bio {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0.5rem 0;
+}
+
+.sponsor-info .links a {
+  color: #003366;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.sponsor-info .links a:hover {
+  text-decoration: underline;
+}
