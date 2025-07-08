@@ -1,37 +1,104 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Staff - Polisportiva Acli Settecolli</title>
-    <link rel="stylesheet" href="style.css"> <!-- Usa lo stesso CSS -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Team - Polisportiva Acli Settecolli</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="staff.html" class="active">Staff</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="notizie.html">Notizie</a></li>
-                <li><a href="sponsor.html">Sponsor</a></li>
-                <li><a href="#settecolli-tv">Settecolli TV</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="galleria.html">Galleria</a></li>
-                <li><a href="contatti.html">Contatti</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section id="team-home">
-            <img src="images/team home.png" alt="Staff" class="team-image">
-        </section>
-    </main>
+<header class="site-header">
+  <div class="logo-container">
+    <a href="index.html"><img src="images/logo settecolli.png" alt="Logo Settecolli" class="logo" /></a>
+  </div>
+  <nav class="navbar" id="navbar">
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="staff.html">Staff</a></li>
+      <li><a href="team.html" class="active">Team</a></li>
+      <li><a href="notizie.html">Notizie</a></li>
+      <li><a href="sponsor.html">Sponsor</a></li>
+      <li><a href="tv.html">Settecolli TV</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="galleria.html">Galleria</a></li>
+      <li><a href="contatti.html">Contatti</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <footer>
-        <p>&copy; 2025 Polisportiva Acli Settecolli | Tutti i diritti riservati</p>
-    </footer>
+<section class="staff-banner">
+  <img src="images/team home.png" alt="Team Banner" class="hero-image" />
+</section>
+
+<section class="storia-settecolli">
+  <div class="contenuto-storia">
+    <div class="storia-logo">
+      <img src="images/logo settecolli.png" alt="Logo Settecolli" />
+    </div>
+    <div class="storia-testo">
+      <h2>Il nostro Team sul campo</h2>
+      <p>
+        Il nostro Team è composto da atleti e tecnici preparati che portano avanti con passione il progetto sportivo Settecolli.<br><br>
+        Scopri chi sono i protagonisti della nostra stagione pallavolistica!
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="staff-dirigenziale">
+  <h2>Il Nostro Team</h2>
+  <div class="card-container">
+    <div class="staff-card">
+      <img src="images/giocatore1.jpg" alt="Nome Atleta" />
+      <h3>Mario Rossi</h3>
+      <p class="role">Palleggiatore</p>
+      <p class="bio">Giocatore esperto, regista del gioco.</p>
+    </div>
+    <div class="staff-card">
+      <img src="images/allenatore1.jpg" alt="Allenatore" />
+      <h3>Luca Bianchi</h3>
+      <p class="role">Allenatore</p>
+      <p class="bio">Guida tecnica della prima squadra.</p>
+    </div>
+    <!-- Aggiungi altre card giocatori o staff tecnico -->
+  </div>
+</section>
+
+<section class="contatti-staff">
+  <div class="contatti-wrapper">
+    <div class="contatti-testo">
+      <h2>Contattaci Ora</h2>
+      <p>Per qualsiasi informazione sul nostro team, siamo a disposizione!</p>
+      <img src="images/squadra-contatto.jpg" alt="Contatti team" class="contatti-immagine" />
+    </div>
+
+    <form action="https://formsubmit.co/acli.settecolli@gmail.com" method="POST" class="contatti-form">
+      <label for="nome">Inserisci il tuo nome</label>
+      <input type="text" name="nome" placeholder="Nome e cognome qui" required />
+
+      <label for="email">Inserisci la tua email*</label>
+      <input type="email" name="email" placeholder="Email valida richiesta" required />
+
+      <label for="messaggio">Scrivi il tuo messaggio*</label>
+      <textarea name="messaggio" rows="4" placeholder="Messaggio qui per noi" required></textarea>
+
+      <button type="submit">Invia la tua richiesta</button>
+
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_template" value="box" />
+      <input type="hidden" name="_subject" value="Nuovo Messaggio dal Sito TEAM" />
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Polisportiva Acli Settecolli | Tutti i diritti riservati</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
