@@ -779,26 +779,53 @@ footer {
   text-decoration: underline;
 }
 
-/* Icona login stile navbar */
+/* Posizionamento icona login */
 .login-icon {
   font-size: 1.5rem;
   padding: 0.5rem;
   text-decoration: none;
   color: #000;
   font-weight: bold;
+  display: block;
 }
 
-/* Layout mobile */
-@media (max-width: 992px) {
+/* Impostazioni layout navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0.5rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+}
+
+/* Desktop: logo a sinistra, menu al centro, login a destra */
+@media screen and (min-width: 993px) {
   .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    position: relative;
+  }
+
+  .logo-container {
+    position: absolute;
+    left: 1rem;
   }
 
   .login-icon {
-    order: 0;              /* prima del menu hamburger */
-    margin-right: auto;    /* spinge hamburger a destra */
+    position: absolute;
+    right: 1rem;
+  }
+}
+
+/* Mobile: login a sinistra, hamburger a destra */
+@media screen and (max-width: 992px) {
+  .login-icon {
+    order: 0;
+    margin-right: auto;
   }
 
   .hamburger {
@@ -808,19 +835,8 @@ footer {
   .nav-menu {
     order: 2;
   }
-}
 
-/* Layout desktop */
-@media (min-width: 993px) {
   .navbar {
-    justify-content: center;
-    position: relative;
-  }
-
-  .login-icon {
-    position: absolute;
-    right: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
+    justify-content: space-between;
   }
 }
