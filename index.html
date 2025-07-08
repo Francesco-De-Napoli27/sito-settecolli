@@ -156,11 +156,55 @@ function caricaClassifica(file, tableId) {
     });
 }
 
+<!-- BOTTONCINO CHAT -->
+<div id="chatbot-toggle">&#128172;</div>
+
+<!-- FINESTRA CHAT -->
+<div id="chatbot-window" class="hidden">
+  <div id="chatbot-header">Chatta con noi</div>
+  <div id="chatbot-messages"></div>
+  <div id="chatbot-input-area">
+    <input type="text" id="chatbot-input" placeholder="Scrivi qui..." />
+    <button id="chatbot-send">Invia</button>
+  </div>
+</div>
+
+    
 // Avvia il caricamento delle classifiche
 caricaClassifica('classifica_maschile.json', 'maschile-table-body');
 caricaClassifica('classifica_femminile.json', 'femminile-table-body');
 </script>
 
+<script>
+  const toggleBtn = document.getElementById('chatbot-toggle');
+  const chatbotWindow = document.getElementById('chatbot-window');
+  const sendBtn = document.getElementById('chatbot-send');
+  const input = document.getElementById('chatbot-input');
+  const messages = document.getElementById('chatbot-messages');
+
+  toggleBtn.addEventListener('click', () => {
+    chatbotWindow.classList.toggle('hidden');
+  });
+
+  sendBtn.addEventListener('click', sendMessage);
+  input.addEventListener('keypress', e => {
+    if (e.key === 'Enter') sendMessage();
+  });
+
+  function sendMessage() {
+    const text = input.value.trim();
+    if (!text) return;
+
+    messages.innerHTML += `<div><strong>Tu:</strong> ${text}</div>`;
+    input.value = '';
+
+    // Risposta placeholder (verrà sostituita dall'AI)
+    setTimeout(() => {
+      messages.innerHTML += `<div><strong>AI:</strong> Sto elaborando la risposta su "${text}"...</div>`;
+      messages.scrollTop = messages.scrollHeight;
+    }, 500);
+  }
+</script>
 
 
 </body>
