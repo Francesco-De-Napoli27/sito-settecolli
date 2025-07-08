@@ -281,14 +281,14 @@ footer {
 /* RESPONSIVE */
 @media screen and (max-width: 992px) {
   .navbar {
-    justify-content: flex-start;
+    justify-content: space-between; /* separa logo e menu */
   }
 
   .hamburger {
     display: flex;
-    order: -1;
-    margin-left: 0;
-    margin-right: 1rem;
+    order: 1;
+    margin-right: 1rem; /* allinea a destra */
+    margin-left: auto;
   }
 
   .nav-menu {
