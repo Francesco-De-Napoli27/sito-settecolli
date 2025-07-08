@@ -737,3 +737,12 @@ footer {
   justify-content: center;
   gap: 0.5rem; /* o anche meno, tipo 0.25rem */
 }
+
+/* STAFF / TEAM */
+.card-container.staff,
+.card-container.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
