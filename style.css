@@ -779,3 +779,26 @@ footer {
   text-decoration: underline;
 }
 
+.login-desktop {
+  display: none;
+  font-size: 1.5rem;
+  margin-left: auto;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+.login-mobile {
+  display: none;
+}
+
+@media screen and (min-width: 993px) {
+  .login-desktop {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .login-mobile {
+    display: block;
+  }
+}
