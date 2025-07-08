@@ -1,37 +1,79 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Staff - Polisportiva Acli Settecolli</title>
-    <link rel="stylesheet" href="style.css"> <!-- Usa lo stesso CSS -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contatti - Polisportiva Acli Settecolli</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="staff.html" class="active">Staff</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="notizie.html">Notizie</a></li>
-                <li><a href="sponsor.html">Sponsor</a></li>
-                <li><a href="tv.html">Settecolli TV</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="galleria.html">Galleria</a></li>
-                <li><a href="contatti.html">Contatti</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section id="contatti-home">
-            <img src="images/contatti home.png" alt="Staff" class="contatti-image">
-        </section>
-    </main>
+<header class="site-header">
+  <div class="logo-container">
+    <a href="index.html">
+      <img src="images/logo settecolli.png" alt="Logo Settecolli" class="logo" />
+    </a>
+  </div>
+  <nav class="navbar" id="navbar">
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="staff.html">Staff</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="notizie.html">Notizie</a></li>
+      <li><a href="sponsor.html">Sponsor</a></li>
+      <li><a href="tv.html">Settecolli TV</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="galleria.html">Galleria</a></li>
+      <li><a href="contatti.html" class="active">Contatti</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <footer>
-        <p>&copy; 2025 Polisportiva Acli Settecolli | Tutti i diritti riservati</p>
-    </footer>
+<section class="staff-banner">
+  <img src="images/contatti home.png" alt="Contatti" class="hero-image" />
+</section>
+
+<section class="contatti-staff">
+  <div class="contatti-wrapper">
+    <div class="contatti-testo">
+      <h2>Contattaci</h2>
+      <p>Puoi trovarci e scriverci anche sui social:</p>
+      <ul style="list-style: none; padding: 0; margin: 1rem 0;">
+        <li><strong>Email:</strong> <a href="mailto:acli.settecolli@gmail.com">acli.settecolli@gmail.com</a></li>
+        <li><strong>Instagram:</strong> <a href="https://www.instagram.com/aclisettecolli" target="_blank">instagram.com/aclisettecolli</a></li>
+        <li><strong>Facebook:</strong> <a href="https://www.facebook.com/aclisettecolli" target="_blank">facebook.com/aclisettecolli</a></li>
+        <li><strong>TikTok:</strong> <a href="https://www.tiktok.com/@aclisettecolli" target="_blank">tiktok.com/@aclisettecolli</a></li>
+        <li><strong>YouTube:</strong> <a href="https://www.youtube.com/@aclisettecolli" target="_blank">youtube.com/@aclisettecolli</a></li>
+      </ul>
+    </div>
+
+    <form action="https://formsubmit.co/acli.settecolli@gmail.com" method="POST" class="contatti-form">
+      <label for="nome">Nome completo</label>
+      <input type="text" name="nome" required placeholder="Inserisci il tuo nome" />
+
+      <label for="email">Email</label>
+      <input type="email" name="email" required placeholder="La tua email" />
+
+      <label for="messaggio">Messaggio</label>
+      <textarea name="messaggio" rows="4" required placeholder="Scrivici il tuo messaggio"></textarea>
+
+      <button type="submit">Invia</button>
+
+      <!-- Opzioni anti-spam -->
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_template" value="box" />
+      <input type="hidden" name="_subject" value="Nuovo messaggio da pagina Contatti" />
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Polisportiva Acli Settecolli | Tutti i diritti riservati</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
