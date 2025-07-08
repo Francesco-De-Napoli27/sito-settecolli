@@ -850,3 +850,53 @@ footer {
   cursor: pointer;
 }
 
+#chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  background: white;
+  border: 2px solid #003366;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  font-family: sans-serif;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+}
+
+#chat-header {
+  background: #003366;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#chat-body {
+  padding: 10px;
+  height: 250px;
+  overflow-y: auto;
+  background: #f9f9f9;
+}
+
+#chat-input-area {
+  display: flex;
+  border-top: 1px solid #ccc;
+}
+
+#chat-input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+#chat-send {
+  background: #003366;
+  color: white;
+  border: none;
+  padding: 0 15px;
+  cursor: pointer;
+}
