@@ -1,37 +1,58 @@
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Staff - Polisportiva Acli Settecolli</title>
-    <link rel="stylesheet" href="style.css"> <!-- Usa lo stesso CSS -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop - Polisportiva Acli Settecolli</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="staff.html" class="active">Staff</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="notizie.html">Notizie</a></li>
-                <li><a href="sponsor.html">Sponsor</a></li>
-                <li><a href="tv.html">Settecolli TV</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="galleria.html">Galleria</a></li>
-                <li><a href="contatti.html">Contatti</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section id="shop-home">
-            <img src="images/shop home.png" alt="Staff" class="shop-image">
-        </section>
-    </main>
+<header class="site-header">
+  <div class="logo-container">
+    <a href="index.html"><img src="images/logo settecolli.png" alt="Logo Settecolli" class="logo" /></a>
+  </div>
+  <nav class="navbar" id="navbar">
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="staff.html">Staff</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="notizie.html">Notizie</a></li>
+      <li><a href="sponsor.html">Sponsor</a></li>
+      <li><a href="tv.html">Settecolli TV</a></li>
+      <li><a href="shop.html" class="active">Shop</a></li>
+      <li><a href="galleria.html">Galleria</a></li>
+      <li><a href="contatti.html">Contatti</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <footer>
-        <p>&copy; 2025 Polisportiva Acli Settecolli | Tutti i diritti riservati</p>
-    </footer>
+<section class="shop-section">
+  <h2>Acquista il tuo merch ufficiale!</h2>
+  <div class="shop-grid">
+    <a href="https://example.com/prodotto1" class="shop-item">
+      <img src="images/prodotto1.png" alt="Maglia Ufficiale" />
+      <h3>Maglia Ufficiale</h3>
+    </a>
+    <a href="https://example.com/prodotto2" class="shop-item">
+      <img src="images/prodotto2.png" alt="Felpa Team" />
+      <h3>Felpa Team</h3>
+    </a>
+    <a href="https://example.com/prodotto3" class="shop-item">
+      <img src="images/prodotto3.png" alt="Zaino Volley" />
+      <h3>Zaino Volley</h3>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Polisportiva Acli Settecolli | Tutti i diritti riservati</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
