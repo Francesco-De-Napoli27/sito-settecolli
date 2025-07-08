@@ -175,29 +175,59 @@ caricaClassifica('classifica_femminile.json', 'femminile-table-body');
 </script>
 
 <script>
-function sendMessage() {
+async function sendMessage() {
   const input = document.getElementById("user-input");
   const message = input.value.trim();
   if (!message) return;
 
-  // Aggiungi messaggio utente
   const chatBody = document.getElementById("chat-body");
+
+  // Mostra il messaggio utente
   const userMessage = document.createElement("div");
   userMessage.className = "user-message";
   userMessage.innerText = message;
   chatBody.appendChild(userMessage);
   input.value = "";
 
-  // Risposta fittizia per test
+  // Mostra messaggio temporaneo
   const botMessage = document.createElement("div");
   botMessage.className = "bot-message";
-  botMessage.innerText = "Sto pensando... (qui risponderà l'AI)";
+  botMessage.innerText = "Sto pensando...";
   chatBody.appendChild(botMessage);
 
-  // Scroll automatico
+  chatBody.scrollTop = chatBody.scrollHeight;
+
+  // Chiave API (⬅️ SOSTITUISCI CON LA TUA)
+  const apiKey = "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";
+
+  try {
+    const response = await fetch("https://api.openai.com/v1/chat/completions", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${apiKey}`
+      },
+      body: JSON.stringify({
+        model: "gpt-3.5-turbo",
+        messages: [
+          { role: "system", content: "Sei un assistente AI esperto della Polisportiva Acli Settecolli. Rispondi solo a domande sulla squadra, la storia, i risultati, lo staff, e le attività sociali." },
+          { role: "user", content: message }
+        ],
+        temperature: 0.7
+      })
+    });
+
+    const data = await response.json();
+    botMessage.innerText = data.choices[0].message.content.trim();
+  } catch (error) {
+    botMessage.innerText = "Errore nella risposta. Riprova più tardi.";
+    console.error(error);
+  }
+
   chatBody.scrollTop = chatBody.scrollHeight;
 }
 </script>
+
 
 
 
