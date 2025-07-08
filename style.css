@@ -640,15 +640,12 @@ footer {
   margin-top: 2rem;
 }
 
-.shop-item {
-  background-color: #ffffff;
-  border: 2px solid #ccc;
-  border-radius: 10px;
-  padding: 1rem;
-  text-align: center;
-  transition: transform 0.3s ease;
-  width: 100%;
-  max-width: 200px;
+.shop-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  justify-items: center;
+  padding: 2rem 1rem;
 }
 
 .shop-item:hover {
@@ -668,4 +665,11 @@ footer {
   font-size: 1.1rem;
   margin: 0.5rem 0 0;
   color: #003366;
+}
+
+/* ✅ Responsive: su mobile solo 1 prodotto per riga */
+@media (max-width: 768px) {
+  .shop-items {
+    grid-template-columns: 1fr;
+  }
 }
