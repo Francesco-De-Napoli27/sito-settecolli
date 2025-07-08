@@ -700,17 +700,14 @@ footer {
 }
 
 .galleria-card {
-  background-color: #fff;
+  width: 220px;
   border: 2px solid #003366;
-  border-radius: 10px;
-  text-decoration: none;
-  color: #000;
-  width: 90%;
-  max-width: 300px;
   padding: 0.5rem;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease;
+  text-align: center;
+  background-color: white;
+  margin: 0; /* niente margine extra */
 }
+
 
 .galleria-card:hover {
   transform: scale(1.02);
@@ -735,8 +732,8 @@ footer {
 }
 
 .galleria-wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Due per riga */
-  gap: 0.5rem; /* RIDUCE lo spazio tra le card */
-  justify-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem; /* o anche meno, tipo 0.25rem */
 }
