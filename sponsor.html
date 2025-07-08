@@ -3,35 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Staff - Polisportiva Acli Settecolli</title>
-    <link rel="stylesheet" href="style.css"> <!-- Usa lo stesso CSS -->
+    <title>Sponsor - Polisportiva Acli Settecolli</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="staff.html" class="active">Staff</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="notizie.html">Notizie</a></li>
-                <li><a href="sponsor.html">Sponsor</a></li>
-                <li><a href="tv.html">Settecolli TV</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="galleria.html">Galleria</a></li>
-                <li><a href="contatti.html">Contatti</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section id="sponsor-home">
-            <img src="images/sponsor home.png" alt="Staff" class="sponsor-image">
-        </section>
-    </main>
+<header class="site-header">
+    <div class="logo-container">
+        <a href="index.html"><img src="images/logo settecolli.png" alt="Logo Settecolli" class="logo"></a>
+    </div>
+    <nav class="navbar" id="navbar">
+        <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="staff.html">Staff</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="notizie.html">Notizie</a></li>
+            <li><a href="sponsor.html" class="active">Sponsor</a></li>
+            <li><a href="tv.html">Settecolli TV</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="galleria.html">Galleria</a></li>
+            <li><a href="contatti.html">Contatti</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <footer>
-        <p>&copy; 2025 Polisportiva Acli Settecolli | Tutti i diritti riservati</p>
-    </footer>
+<section class="staff-banner">
+    <img src="images/sponsor home.png" alt="Sponsor Banner" class="hero-image">
+</section>
+
+<section class="sponsor-descrizione" style="padding: 2rem; text-align: center; background-color: #f0f0f0;">
+    <h2 style="font-size: 1.8rem; margin-bottom: 1rem;">I Nostri Sponsor</h2>
+    <p style="max-width: 800px; margin: 0 auto; font-weight: bold;">
+        Le aziende che supportano il nostro progetto sportivo sono parte fondamentale della nostra famiglia. 
+        Li chiamiamo Settecolli Member perché condividono i nostri valori e ci aiutano a crescere ogni giorno, dentro e fuori dal campo.
+    </p>
+</section>
+
+<section class="sponsor-card-section">
+  <div class="card-container">
+    <!-- ESEMPIO DI UNA CARD SPONSOR -->
+    <div class="sponsor-card">
+      <img src="images/Brasserie.png" alt="Brasserie">
+      <div class="sponsor-info">
+        <h3>Brasserie</h3>
+        <p class="bio">Ristorante e birreria artigianale, partner storico della nostra società.</p>
+        <p class="links">
+          <a href="https://www.brasserie.it" target="_blank">🌐 Sito Web</a> | 
+          <a href="https://www.facebook.com/brasserie" target="_blank">📘 Facebook</a> | 
+          <a href="https://www.instagram.com/brasserie" target="_blank">📸 Instagram</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- DUPLICA QUESTO BLOCCO PER ALTRI SPONSOR -->
+    <!-- ... -->
+  </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Polisportiva Acli Settecolli | Tutti i diritti riservati</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
