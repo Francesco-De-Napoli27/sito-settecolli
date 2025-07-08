@@ -779,26 +779,48 @@ footer {
   text-decoration: underline;
 }
 
-.login-desktop {
-  display: none;
+/* Icona login stile navbar */
+.login-icon {
   font-size: 1.5rem;
-  margin-left: auto;
   padding: 0.5rem;
   text-decoration: none;
+  color: #000;
+  font-weight: bold;
 }
 
-.login-mobile {
-  display: none;
-}
+/* Layout mobile */
+@media (max-width: 992px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-@media screen and (min-width: 993px) {
-  .login-desktop {
-    display: inline-block;
+  .login-icon {
+    order: 0;              /* prima del menu hamburger */
+    margin-right: auto;    /* spinge hamburger a destra */
+  }
+
+  .hamburger {
+    order: 1;
+  }
+
+  .nav-menu {
+    order: 2;
   }
 }
 
-@media screen and (max-width: 992px) {
-  .login-mobile {
-    display: block;
+/* Layout desktop */
+@media (min-width: 993px) {
+  .navbar {
+    justify-content: center;
+    position: relative;
+  }
+
+  .login-icon {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
