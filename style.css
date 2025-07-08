@@ -66,13 +66,16 @@ body {
 }
 
 /* HAMBURGER */
+/* HAMBURGER RIPOSIZIONATO A DESTRA */
 .hamburger {
   display: none;
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
-  margin-left: 1rem;
+  margin-left: auto; /* questo spinge tutto a destra */
+  margin-right: 1rem;
 }
+
 
 .hamburger span {
   width: 25px;
