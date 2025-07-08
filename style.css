@@ -425,35 +425,34 @@ footer {
 }
 
 .card {
-  width: 220px;
+  width: 100px;
   text-align: center;
   background: white;
-  border: 2px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border: 2px solid #003366;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
 }
 
 .card:hover {
-  transform: scale(1.05);
+  transform: translateY(-5px);
 }
 
 .card img {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  border-radius: 0; /* no cerchio */
   border-bottom: 2px solid #003366;
 }
 
 .card h3 {
-  margin: 0.5rem 0 0;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #003366;
+  margin: 0.5rem 0 0.2rem;
 }
 
 .card p {
   font-size: 0.95rem;
   color: #555;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
 }
