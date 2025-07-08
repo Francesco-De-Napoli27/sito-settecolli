@@ -531,3 +531,10 @@ footer {
 .contatti-form button:hover {
   background-color: #295f90;
 }
+
+.sezione-notizie h2 {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
