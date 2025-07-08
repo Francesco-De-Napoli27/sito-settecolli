@@ -688,7 +688,7 @@ footer {
 .galleria-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Due per riga */
-  gap: 0.5rem;
+  gap: 1.5rem;
   justify-items: center;
   padding: 0 1rem;
 }
@@ -732,4 +732,11 @@ footer {
   font-size: 1rem;
   text-align: center;
   margin: 0;
+}
+
+.galleria-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Due per riga */
+  gap: 0.5rem; /* RIDUCE lo spazio tra le card */
+  justify-items: center;
 }
