@@ -96,8 +96,7 @@ body {
   }
 
   .navbar-center {
-    display: block;
-    width: 100%;
+    display: none;
   }
 
   .navbar-right {
