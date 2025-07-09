@@ -21,7 +21,6 @@ body {
   z-index: 999;
   border-bottom: 1px solid #ccc;
   flex-wrap: wrap;
-  position: relative;
 }
 
 .navbar-left,
