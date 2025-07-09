@@ -133,26 +133,27 @@ body {
   .nav-menu.active {
     display: flex !important;
   }
+
+  .nav-menu li {
+    padding-left: 10px; /* sposta le voci leggermente a sinistra */
+  }
+
+  .nav-menu li a {
+    font-size: 1.1rem;
+    padding: 0.6rem 0.8rem;
+    border-radius: 6px;
+    transition: background-color 0.2s, color 0.2s;
+  }
+
+  /* Evidenziazione al tocco / hover */
+  .nav-menu li a:active,
+  .nav-menu li a:hover {
+    background-color: #f0f0f0; /* colore evidenziato */
+    border: 1px solid #ccc;    /* bordo visibile */
+    color: #0066cc;            /* colore testo al tap */
+  }
 }
 
-.nav-menu li {
-  padding-left: 20px; /* sposta le voci leggermente a sinistra */
-}
-
-.nav-menu li a {
-  font-size: 1.1rem;
-  padding: 0.6rem 0.8rem;
-  border-radius: 6px;
-  transition: background-color 0.2s, color 0.2s;
-}
-
-/* Evidenziazione al tocco / hover */
-.nav-menu li a:active,
-.nav-menu li a:hover {
-  background-color: #f0f0f0; /* colore evidenziato */
-  border: 1px solid #ccc;    /* bordo visibile */
-  color: #0066cc;            /* colore testo al tap */
-}
 
 
 /* Desktop: centro menu, logo sinistra, login destra */
