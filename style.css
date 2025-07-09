@@ -840,3 +840,53 @@ footer {
     justify-content: space-between;
   }
 }
+
+/* Nuove regole navbar aggiornate */
+@media screen and (max-width: 992px) {
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .login-icon {
+    order: 1;
+    margin-left: auto;
+    margin-right: 0.5rem;
+  }
+
+  .hamburger {
+    order: 2;
+    margin-right: 1rem;
+  }
+
+  .nav-menu {
+    order: 3;
+    right: 0;
+    left: auto;
+    align-items: flex-end;
+    text-align: right;
+    border-top: 1px solid #ccc;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .navbar {
+    justify-content: center;
+    position: relative;
+  }
+
+  .logo-container {
+    position: absolute;
+    left: 1rem;
+  }
+
+  .login-icon {
+    position: absolute;
+    right: 1rem;
+  }
+}
+
+/* Elimina linea blu sotto navbar */
+.nav-menu li a:hover,
+.nav-menu li a.active {
+  border-bottom: none;
+}
