@@ -136,6 +136,14 @@ body {
   }
 }
 
+.nav-menu li {
+  padding-left: 10px; /* sposta le voci leggermente a sinistra */
+}
+
+.nav-menu li a {
+  font-size: 1.1rem; /* opzionale: leggermente più grande per leggibilità */
+}
+
 /* Desktop: centro menu, logo sinistra, login destra */
 @media (min-width: 993px) {
   .navbar {
