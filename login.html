@@ -6,130 +6,154 @@
   <title>Login | Polisportiva Acli Settecolli</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="contatti-staff">
+<body>
 
-<!-- Navbar identica a index.html -->
-  <header class="navbar">
-    <div class="navbar-left">
-      <a href="index.html" class="logo-link">
-        <img src="images/logo settecolli.png" alt="Logo" class="logo" />
-      </a>
-    </div>
-
-    <nav class="navbar-center">
-      <ul class="nav-menu" id="navMenu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="staff.html">Staff</a></li>
-        <li><a href="team.html">Team</a></li>
-        <li><a href="notizie.html">Notizie</a></li>
-        <li><a href="sponsor.html">Sponsor</a></li>
-        <li><a href="tv.html">Settecolli TV</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="galleria.html">Galleria</a></li>
-        <li><a href="contatti.html">Contatti</a></li>
-      </ul>
-    </nav>
-
-    <div class="navbar-right">
-      <a href="login.html" class="login-icon">👤</a>
-      <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-  </header>
-  
-  <div class="contatti-wrapper">
-    <div class="contatti-testo">
-      <h2>Accesso Area Riservata</h2>
-      <p>Inserisci le tue credenziali per accedere.</p>
-    </div>
-
-    <form class="contatti-form" onsubmit="event.preventDefault();">
-      <label for="email">Email</label>
-      <input type="email" id="email" placeholder="Inserisci la tua email" required>
-
-      <label for="password">Password</label>
-      <input type="password" id="password" placeholder="Inserisci la tua password" required>
-
-      <button onclick="login()">Accedi</button>
-      <button onclick="register()">Registrati</button>
-    </form>
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="navbar-left">
+    <a href="index.html" class="logo-link">
+      <img src="images/logo settecolli.png" alt="Logo" class="logo" />
+    </a>
   </div>
 
-  <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
-    import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
+  <nav class="navbar-center">
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="staff.html">Staff</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="notizie.html">Notizie</a></li>
+      <li><a href="sponsor.html">Sponsor</a></li>
+      <li><a href="tv.html">Settecolli TV</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="galleria.html">Galleria</a></li>
+      <li><a href="contatti.html">Contatti</a></li>
+    </ul>
+  </nav>
 
-    const firebaseConfig = {
-      apiKey: "AIzaSyDRf3Q_-D7nsVIPKSxxIm78rz1Nn5QY1cQ",
-      authDomain: "settecollisite.firebaseapp.com",
-      projectId: "settecollisite",
-      storageBucket: "settecollisite.firebasestorage.app",
-      messagingSenderId: "928590715316",
-      appId: "1:928590715316:web:031eae061e38bd5ef9bae1",
-      measurementId: "G-HG7C6G0ZPV"
+  <div class="navbar-right">
+    <a href="login.html" class="login-icon">👤</a>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</header>
+
+<!-- IMMAGINE HERO -->
+<section class="hero">
+  <img src="images/hero.png" alt="Polisportiva Acli Settecolli" class="hero-image">
+</section>
+
+<!-- FORM LOGIN -->
+<section class="contatti-wrapper">
+  <div class="contatti-testo">
+    <h2>Accesso Area Riservata</h2>
+    <p>Inserisci le tue credenziali per accedere.</p>
+  </div>
+
+  <form class="contatti-form" onsubmit="event.preventDefault();">
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Inserisci la tua email" required>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" placeholder="Inserisci la tua password" required>
+
+    <button onclick="login()">Accedi</button>
+    <button onclick="register()">Registrati</button>
+  </form>
+</section>
+
+<!-- CHATBOT -->
+<script>
+(function(){
+  if(!window.chatbase || window.chatbase("getState") !== "initialized") {
+    window.chatbase = (...args) => {
+      if(!window.chatbase.q) window.chatbase.q = [];
+      window.chatbase.q.push(args);
     };
-
-    const app = initializeApp(firebaseConfig);
-    const auth = getAuth(app);
-
-    window.register = function () {
-      const email = document.getElementById("email").value;
-      const password = document.getElementById("password").value;
-      createUserWithEmailAndPassword(auth, email, password)
-        .then(() => {
-          alert("Registrazione avvenuta!");
-          window.location.href = "area-riservata.html";
-        })
-        .catch(error => alert(error.message));
-    };
-
-    window.login = function () {
-      const email = document.getElementById("email").value;
-      const password = document.getElementById("password").value;
-      signInWithEmailAndPassword(auth, email, password)
-        .then(() => {
-          alert("Login effettuato!");
-          window.location.href = "area-riservata.html";
-        })
-        .catch(error => alert(error.message));
-    };
-  </script>
-
-  <!-- Script Chatbase -->
-  <script>
-    (function(){
-      if(!window.chatbase || window.chatbase("getState") !== "initialized") {
-        window.chatbase = (...args) => {
-          if(!window.chatbase.q) window.chatbase.q = [];
-          window.chatbase.q.push(args);
-        };
-        window.chatbase = new Proxy(window.chatbase, {
-          get(target, prop) {
-            if (prop === "q") return target.q;
-            return (...args) => target(prop, ...args);
-          }
-        });
+    window.chatbase = new Proxy(window.chatbase, {
+      get(target, prop) {
+        if (prop === "q") return target.q;
+        return (...args) => target(prop, ...args);
       }
-      const onLoad = function() {
-        const script = document.createElement("script");
-        script.src = "https://www.chatbase.co/embed.min.js";
-        script.id = "-WQ2tdwDWxK2KlnPxENJP";
-        script.domain = "www.chatbase.co";
-        document.body.appendChild(script);
-      };
-      if (document.readyState === "complete") {
-        onLoad();
-      } else {
-        window.addEventListener("load", onLoad);
-      }
-    })();
-  </script>
+    });
+  }
+  const onLoad = function() {
+    const script = document.createElement("script");
+    script.src = "https://www.chatbase.co/embed.min.js";
+    script.id = "-WQ2tdwDWxK2KlnPxENJP";
+    script.domain = "www.chatbase.co";
+    document.body.appendChild(script);
+  };
+  if (document.readyState === "complete") {
+    onLoad();
+  } else {
+    window.addEventListener("load", onLoad);
+  }
+})();
+</script>
 
-  <script src="script.js"></script>
-  
-  
+<!-- SCRIPT MENU MOBILE -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.getElementById("hamburger");
+  const navMenu = document.getElementById("navMenu");
+
+  if (hamburger && navMenu) {
+    hamburger.addEventListener("click", function () {
+      navMenu.classList.toggle("active");
+    });
+
+    document.addEventListener("click", function (e) {
+      if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+        navMenu.classList.remove("active");
+      }
+    });
+  }
+});
+</script>
+
+<!-- SCRIPT LOGIN -->
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
+  import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyDRf3Q_-D7nsVIPKSxxIm78rz1Nn5QY1cQ",
+    authDomain: "settecollisite.firebaseapp.com",
+    projectId: "settecollisite",
+    storageBucket: "settecollisite.firebasestorage.app",
+    messagingSenderId: "928590715316",
+    appId: "1:928590715316:web:031eae061e38bd5ef9bae1",
+    measurementId: "G-HG7C6G0ZPV"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+
+  window.register = function () {
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    createUserWithEmailAndPassword(auth, email, password)
+      .then(() => {
+        alert("Registrazione avvenuta!");
+        window.location.href = "area-riservata.html";
+      })
+      .catch(error => alert(error.message));
+  };
+
+  window.login = function () {
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    signInWithEmailAndPassword(auth, email, password)
+      .then(() => {
+        alert("Login effettuato!");
+        window.location.href = "area-riservata.html";
+      })
+      .catch(error => alert(error.message));
+  };
+</script>
+
 </body>
 </html>
