@@ -1,4 +1,3 @@
-
 /* RESET */
 * {
   margin: 0;
@@ -8,27 +7,20 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
-  background: #fff;
-  color: #000;
 }
 
-/* HEADER */
-.site-header {
-  background-color: #ffffff;
+/* NAVBAR */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 0.8rem 1rem;
   position: sticky;
   top: 0;
   z-index: 999;
   border-bottom: 1px solid #ccc;
-}
-
-/* NAVBAR STRUCTURE */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
-  padding: 0.5rem 1rem;
 }
 
 .navbar-left,
@@ -38,93 +30,61 @@ body {
   align-items: center;
 }
 
-/* Desktop */
-.navbar-left {
-  justify-content: flex-start;
-  flex: 1;
-}
-.navbar-center {
-  justify-content: center;
-  flex: 2;
-}
-.navbar-right {
-  justify-content: flex-end;
-  flex: 1;
-  gap: 1rem;
-}
-
-/* LOGO */
+/* Logo */
 .logo {
-  height: 40px;
+  height: 45px;
   width: auto;
 }
 
-/* MENU */
+.logo-link {
+  display: inline-block;
+}
+
+/* Nav Menu */
 .nav-menu {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 1.2rem;
-  padding: 0;
-  margin: 0;
+  gap: 1.5rem;
 }
 
 .nav-menu li a {
   text-decoration: none;
-  color: black;
+  color: #000;
   font-weight: bold;
+  transition: color 0.3s;
 }
 
-.nav-menu li a:hover,
-.nav-menu li a.active {
-  border-bottom: none;
+.nav-menu li a:hover {
+  color: #0066cc;
 }
 
-/* LOGIN ICON */
+/* Login Icon */
 .login-icon {
   font-size: 1.5rem;
-  color: black;
+  margin-right: 1rem;
   text-decoration: none;
+  color: #000;
 }
 
-/* HAMBURGER */
+/* Hamburger */
 .hamburger {
   display: none;
   flex-direction: column;
   cursor: pointer;
 }
+
 .hamburger span {
   height: 3px;
   width: 25px;
-  background: black;
+  background-color: #000;
   margin: 4px 0;
 }
 
-/* RESPONSIVE */
+/* Responsive */
 @media (max-width: 992px) {
   .navbar {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .navbar-right {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
-    margin-left: auto;
-  }
-
-  .login-icon {
-    order: 1;
-    margin: 0;
-  }
-
-  .hamburger {
-    order: 2;
-    display: flex;
-    margin: 0;
+    flex-wrap: nowrap;
   }
 
   .nav-menu {
@@ -133,19 +93,62 @@ body {
     width: 100%;
     background-color: white;
     position: absolute;
-    top: 80px;
+    top: 70px;
     right: 0;
     padding: 1rem;
-    text-align: right;
     z-index: 999;
     border-top: 1px solid #ccc;
+    text-align: right;
   }
 
   .nav-menu.active {
     display: flex;
   }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar-center {
+    flex: 1 1 100%;
+    order: 3;
+  }
+
+  .navbar-left {
+    order: 1;
+  }
+
+  .navbar-right {
+    order: 2;
+    margin-left: auto;
+    gap: 0.5rem;
+  }
 }
 
+/* Desktop: centro menu, logo sinistra, login destra */
+@media (min-width: 993px) {
+  .navbar {
+    justify-content: center;
+    position: relative;
+  }
+
+  .navbar-left {
+    position: absolute;
+    left: 1rem;
+  }
+
+  .navbar-right {
+    position: absolute;
+    right: 1rem;
+  }
+}
+
+/* Hero section */
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
 
 /* HERO */
