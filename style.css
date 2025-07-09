@@ -931,6 +931,6 @@ footer {
 }
 
 .hero.hero-login .hero-image {
-  max-height: 250px; /* o qualsiasi altezza tu voglia */
+  max-height: 320px; /* o qualsiasi altezza tu voglia */
   object-fit: cover;
 }
