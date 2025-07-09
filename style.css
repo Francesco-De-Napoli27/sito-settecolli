@@ -84,6 +84,24 @@ body {
 
 /* Responsive */
 @media (max-width: 992px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: white;
+    border-top: 1px solid #ccc;
+    padding: 1rem;
+    text-align: right;
+    z-index: 999;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+  
   .navbar-center {
     display: none;
   }
@@ -103,24 +121,6 @@ body {
   }
 
   .hamburger {
-    display: flex;
-  }
-
-  .nav-menu {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    position: absolute;
-    top: 70px;
-    right: 0;
-    background-color: white;
-    border-top: 1px solid #ccc;
-    padding: 1rem;
-    text-align: right;
-    z-index: 999;
-  }
-
-  .nav-menu.active {
     display: flex;
   }
 }
