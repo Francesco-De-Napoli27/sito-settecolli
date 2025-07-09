@@ -88,28 +88,39 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative; /* necessario per nav-menu assoluto */
+    padding: 0.8rem 1rem;
   }
 
   .navbar-left {
-    flex: 0 0 auto;
-  }
-
-  .navbar-center {
-    display: block;
-    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
   }
 
   .navbar-right {
+    flex: 1;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
-    gap: 0.5rem; /* Spazio tra login e hamburger */
+    gap: 0.8rem;
   }
 
-  .login-icon {
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: black;
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background-color: white;
+    padding: 1rem;
+    z-index: 999;
+    border-top: 1px solid #ccc;
+    text-align: right;
+  }
+
+  .nav-menu.active {
+    display: flex !important;
   }
 
   .hamburger {
@@ -125,21 +136,10 @@ body {
     margin: 4px 0;
   }
 
-  .nav-menu {
-    display: none;
-    flex-direction: column;
-    background-color: white;
-    position: absolute;
-    top: 70px;
-    right: 0;
-    width: 100%;
-    padding: 1rem;
-    border-top: 1px solid #ccc;
-    z-index: 999;
-  }
-
-  .nav-menu.active {
-    display: flex !important;
+  .login-icon {
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
   }
 }
 
