@@ -1,3 +1,4 @@
+
 /* RESET */
 * {
   margin: 0;
@@ -14,75 +15,134 @@ body {
 
 /* HEADER */
 .site-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   background-color: #ffffff;
-  padding: 0.5rem 1rem;
   position: sticky;
   top: 0;
   z-index: 999;
   border-bottom: 1px solid #ccc;
+}
+
+/* NAVBAR STRUCTURE */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
+  padding: 0.5rem 1rem;
 }
 
-.logo-container {
-  flex-shrink: 0;
+.navbar-left,
+.navbar-center,
+.navbar-right {
+  display: flex;
+  align-items: center;
 }
 
+/* Desktop */
+.navbar-left {
+  justify-content: flex-start;
+  flex: 1;
+}
+.navbar-center {
+  justify-content: center;
+  flex: 2;
+}
+.navbar-right {
+  justify-content: flex-end;
+  flex: 1;
+  gap: 1rem;
+}
+
+/* LOGO */
 .logo {
-  height: 55px;
+  height: 40px;
   width: auto;
 }
 
-
-/* NAVBAR */
-.navbar {
-  display: flex;
-  align-items: center;
-  flex: 1;
-  justify-content: flex-end;
-}
-
+/* MENU */
 .nav-menu {
-  display: flex;
   list-style: none;
-  gap: 1rem;
-  justify-content: center;
+  display: flex;
   flex-wrap: wrap;
+  gap: 1.2rem;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-menu li a {
   text-decoration: none;
-  color: #000;
-  font-weight: 600;
-  padding: 0.5rem;
-  transition: 0.3s;
+  color: black;
+  font-weight: bold;
 }
 
 .nav-menu li a:hover,
 .nav-menu li a.active {
-  border-bottom: 2px solid #0066cc;
+  border-bottom: none;
+}
+
+/* LOGIN ICON */
+.login-icon {
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
 }
 
 /* HAMBURGER */
-/* HAMBURGER RIPOSIZIONATO A DESTRA */
 .hamburger {
   display: none;
   flex-direction: column;
-  gap: 5px;
   cursor: pointer;
-  margin-left: auto; /* questo spinge tutto a destra */
-  margin-right: 1rem;
 }
-
-
 .hamburger span {
-  width: 25px;
   height: 3px;
-  background: #000;
-  display: block;
+  width: 25px;
+  background: black;
+  margin: 4px 0;
 }
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .navbar {
+    flex-direction: row;
+  }
+
+  .navbar-left {
+    flex: 1;
+  }
+
+  .navbar-center {
+    display: none;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    padding: 1rem;
+    text-align: right;
+    z-index: 999;
+    border-top: 1px solid #ccc;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .login-icon {
+    order: 1;
+    margin-left: auto;
+    margin-right: 1rem;
+  }
+}
+
 
 /* HERO */
 .hero {
@@ -779,318 +839,3 @@ footer {
   text-decoration: underline;
 }
 
-/* Posizionamento icona login */
-.login-icon {
-  font-size: 1.5rem;
-  padding: 0.5rem;
-  text-decoration: none;
-  color: #000;
-  font-weight: bold;
-  display: block;
-}
-
-/* Impostazioni layout navbar */
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 0.5rem 1rem;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  border-bottom: 1px solid #ccc;
-  background-color: #fff;
-}
-
-/* Desktop: logo a sinistra, menu al centro, login a destra */
-@media screen and (min-width: 993px) {
-  .navbar {
-    justify-content: center;
-    position: relative;
-  }
-
-  .logo-container {
-    position: absolute;
-    left: 1rem;
-  }
-
-  .login-icon {
-    position: absolute;
-    right: 1rem;
-  }
-}
-
-/* Mobile: login a sinistra, hamburger a destra */
-@media screen and (max-width: 992px) {
-  .login-icon {
-    order: 0;
-    margin-right: auto;
-  }
-
-  .hamburger {
-    order: 1;
-  }
-
-  .nav-menu {
-    order: 2;
-  }
-
-  .navbar {
-    justify-content: space-between;
-  }
-}
-
-/* Nuove regole navbar aggiornate */
-@media screen and (max-width: 992px) {
-  .navbar {
-    justify-content: space-between;
-  }
-
-  .login-icon {
-    order: 1;
-    margin-left: auto;
-    margin-right: 0.5rem;
-  }
-
-  .hamburger {
-    order: 2;
-    margin-right: 1rem;
-  }
-
-  .nav-menu {
-    order: 3;
-    right: 0;
-    left: auto;
-    align-items: flex-end;
-    text-align: right;
-    border-top: 1px solid #ccc;
-  }
-}
-
-@media screen and (min-width: 993px) {
-  .navbar {
-    justify-content: center;
-    position: relative;
-  }
-
-  .logo-container {
-    position: absolute;
-    left: 1rem;
-  }
-
-  .login-icon {
-    position: absolute;
-    right: 1rem;
-  }
-}
-
-/* Elimina linea blu sotto navbar */
-.nav-menu li a:hover,
-.nav-menu li a.active {
-  border-bottom: none;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem 1rem;
-  flex-wrap: wrap;
-}
-
-.navbar-section {
-  display: flex;
-  align-items: center;
-}
-
-/* Specifico per sezioni */
-.navbar-left {
-  flex: 1;
-  justify-content: flex-start;
-}
-.navbar-center {
-  flex: 2;
-  justify-content: center;
-}
-.navbar-right {
-  flex: 1;
-  justify-content: flex-end;
-  gap: 1rem;
-}
-
-/* LOGO */
-.logo {
-  height: 40px;
-}
-
-/* NAV MENU */
-.nav-menu {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.2rem;
-  padding: 0;
-  margin: 0;
-}
-.nav-menu li a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-
-/* LOGIN ICON */
-.login-icon {
-  font-size: 1.5rem;
-  color: black;
-  text-decoration: none;
-}
-
-/* HAMBURGER MENU PER MOBILE */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
-.hamburger span {
-  height: 3px;
-  width: 25px;
-  background: black;
-  margin: 4px 0;
-}
-
-/* RESPONSIVE */
-@media (max-width: 992px) {
-  .navbar {
-    flex-direction: row;
-  }
-  .nav-menu {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: white;
-    position: absolute;
-    top: 80px;
-    right: 0;
-    padding: 1rem;
-    text-align: right;
-    z-index: 999;
-  }
-  .nav-menu.active {
-    display: flex;
-  }
-  .hamburger {
-    display: flex;
-  }
-}
-
-/* NAVBAR LAYOUT CORRETTO */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.navbar-left,
-.navbar-center,
-.navbar-right {
-  display: flex;
-  align-items: center;
-}
-
-/* Spaziatura desktop */
-.navbar-left {
-  justify-content: flex-start;
-  flex: 1;
-}
-
-.navbar-center {
-  justify-content: center;
-  flex: 2;
-}
-
-.navbar-right {
-  justify-content: flex-end;
-  flex: 1;
-  gap: 1rem;
-}
-
-/* Menu navbar */
-.nav-menu {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.2rem;
-  padding: 0;
-  margin: 0;
-}
-
-.nav-menu li a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-
-/* LOGIN ICON */
-.login-icon {
-  font-size: 1.5rem;
-  color: black;
-  text-decoration: none;
-}
-
-/* HAMBURGER MENU PER MOBILE */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
-
-.hamburger span {
-  height: 3px;
-  width: 25px;
-  background: black;
-  margin: 4px 0;
-}
-
-/* Responsive: mobile view */
-@media (max-width: 992px) {
-  .navbar {
-    flex-direction: row;
-  }
-
-  .nav-menu {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: white;
-    position: absolute;
-    top: 80px;
-    right: 0;
-    padding: 1rem;
-    text-align: right;
-    z-index: 999;
-  }
-
-  .nav-menu.active {
-    display: flex;
-  }
-
-  .hamburger {
-    display: flex;
-  }
-
-  .login-icon {
-    order: 1;
-    margin-left: auto;
-    margin-right: 1rem;
-  }
-
-  .navbar-left {
-    flex: 1;
-  }
-
-  .navbar-center {
-    display: none; /* Nasconde menu al centro su mobile */
-  }
-}
