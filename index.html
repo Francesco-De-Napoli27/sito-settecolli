@@ -8,51 +8,50 @@
 </head>
 <body>
 
-<header class="site-header">
-  <div class="logo-container">
-    <a href="index.html">
-      <img src="images/logo.png" alt="Logo" class="logo">
-    </a>
-  </div>
-
-  <div class="navbar-right">
-    <a href="login.html" class="login-icon">👤</a>
-    <div class="hamburger" id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
+<header class="navbar">
+    <div class="navbar-left">
+      <a href="index.html" class="logo-link">
+        <img src="images/logo.png" alt="Logo" class="logo" />
+      </a>
     </div>
-  </div>
 
-  <ul class="nav-menu" id="nav-menu">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="#">Staff</a></li>
-    <li><a href="#">Team</a></li>
-    <li><a href="#">Notizie</a></li>
-    <li><a href="#">Sponsor</a></li>
-    <li><a href="#">Settecolli TV</a></li>
-    <li><a href="#">Shop</a></li>
-    <li><a href="#">Galleria</a></li>
-    <li><a href="#">Contatti</a></li>
-  </ul>
-</header>
+    <div class="navbar-center">
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="staff.html">Staff</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="notizie.html">Notizie</a></li>
+        <li><a href="sponsor.html">Sponsor</a></li>
+        <li><a href="tv.html">Settecolli TV</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="galleria.html">Galleria</a></li>
+        <li><a href="contatti.html">Contatti</a></li>
+      </ul>
+    </div>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
+    <div class="navbar-right">
+      <a href="login.html" class="login-icon">👤</a>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero o contenuto principale -->
+  <section class="hero">
+    <img src="images/hero.jpg" alt="Hero" class="hero-image" />
+  </section>
+
+  <script>
     const hamburger = document.getElementById('hamburger');
-    const navMenu = document.getElementById('nav-menu');
+    const navMenu = document.getElementById('navMenu');
 
-    hamburger.addEventListener('click', function () {
+    hamburger.addEventListener('click', () => {
       navMenu.classList.toggle('active');
     });
-
-    document.addEventListener('click', function (e) {
-      if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
-        navMenu.classList.remove('active');
-      }
-    });
-  });
-</script>
+  </script>
     
 <section class="hero">
     <img src="images/hero.png" alt="Polisportiva Acli Settecolli" class="hero-image">
