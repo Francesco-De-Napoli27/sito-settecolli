@@ -136,7 +136,7 @@ body {
 }
 
 .nav-menu li {
-  padding-left: 10px; /* sposta le voci leggermente a sinistra */
+  padding-left: 20px; /* sposta le voci leggermente a sinistra */
 }
 
 .nav-menu li a {
