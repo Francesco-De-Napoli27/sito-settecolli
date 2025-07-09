@@ -929,3 +929,8 @@ footer {
   font-size: 0.9rem;
   color: #666;
 }
+
+.hero.hero-login .hero-image {
+  max-height: 250px; /* o qualsiasi altezza tu voglia */
+  object-fit: cover;
+}
