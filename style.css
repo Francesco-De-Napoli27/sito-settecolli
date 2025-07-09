@@ -16,11 +16,12 @@ body {
   justify-content: space-between;
   background-color: white;
   padding: 0.8rem 1rem;
-  position: relative;
+  position: sticky;
   top: 0;
   z-index: 999;
   border-bottom: 1px solid #ccc;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .navbar-left,
