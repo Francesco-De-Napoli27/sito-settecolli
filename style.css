@@ -579,12 +579,13 @@ footer {
 .contatti-testo h2 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
+  color: #FFFFFF;
 }
 
 .contatti-testo p {
   font-size: 1.1rem;
   margin-bottom: 1rem;
-  color: blue;
+  color: #444;
 }
 
 .contatti-immagine {
