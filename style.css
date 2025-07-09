@@ -48,6 +48,10 @@ body {
   gap: 1.5rem;
 }
 
+.nav-menu.active {
+  display: flex;
+}
+
 .nav-menu li a {
   text-decoration: none;
   color: #000;
