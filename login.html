@@ -141,6 +141,23 @@
   };
 </script>
 
+<script>
+function toggleRegister() {
+  const extra = document.getElementById("register-extra");
+  const confPass = document.getElementById("confirm-password");
+  extra.style.display = "block";
+  confPass.required = true;
+
+  // Cambia comportamento del bottone
+  const form = document.getElementById("auth-form");
+  form.onsubmit = function (e) {
+    e.preventDefault();
+    register();
+  };
+}
+</script>
+
+  
 <script src="script.js"></script>
   
 </body>
