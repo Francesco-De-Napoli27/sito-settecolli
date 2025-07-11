@@ -87,6 +87,51 @@
       });
     };
   </script>
+
+<!-- Firebase SDK -->
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+  import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyDRf3Q_-D7nsVIPKSxxIm78rz1Nn5QY1cQ",
+    authDomain: "settecollisite.firebaseapp.com",
+    projectId: "settecollisite",
+    storageBucket: "settecollisite.appspot.com",
+    messagingSenderId: "928590715316",
+    appId: "1:928590715316:web:031eae061e38bd5ef9bae1",
+    measurementId: "G-HG7C6G0ZPV"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+
+  // Mostra il menu se l'utente è loggato
+  onAuthStateChanged(auth, (user) => {
+    const userIcon = document.getElementById("user-icon");
+    const userDropdown = document.getElementById("user-dropdown");
+
+    if (user) {
+      userIcon.addEventListener("click", () => {
+        userDropdown.style.display = userDropdown.style.display === "block" ? "none" : "block";
+      });
+    } else {
+      // Se non loggato, rimanda a login
+      userIcon.addEventListener("click", () => {
+        window.location.href = "login.html";
+      });
+    }
+  });
+
+  // Funzione logout
+  window.logout = function () {
+    signOut(auth).then(() => {
+      window.location.href = "index.html";
+    });
+  };
+</script>
+
+  
 </body>
   
 </html>
