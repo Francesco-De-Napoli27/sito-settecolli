@@ -31,13 +31,20 @@
   </nav>
 
   <div class="navbar-right">
-    <a href="login.html" class="login-icon">👤</a>
-    <div class="hamburger" id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
+  <div class="login-wrapper">
+    <a href="#" class="login-icon" id="user-icon">👤</a>
+    <div class="dropdown-login" id="user-dropdown" style="display: none;">
+      <a href="area-riservata.html">Gestione Account</a>
+      <a href="#" onclick="logout()">Logout</a>
     </div>
   </div>
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
 </header>
 
 <section class="hero hero-login">
