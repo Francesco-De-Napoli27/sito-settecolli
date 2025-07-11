@@ -280,6 +280,49 @@ if (loginIcon) {
   };
 </script>
 
+//script Firebase
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
+  import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyDRf3Q_-D7nsVIPKSxxIm78rz1Nn5QY1cQ",
+    authDomain: "settecollisite.firebaseapp.com",
+    projectId: "settecollisite",
+    storageBucket: "settecollisite.firebasestorage.app",
+    messagingSenderId: "928590715316",
+    appId: "1:928590715316:web:031eae061e38bd5ef9bae1",
+    measurementId: "G-HG7C6G0ZPV"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+
+  const loginIcon = document.getElementById("user-icon");
+  const dropdown = document.getElementById("user-dropdown");
+
+  onAuthStateChanged(auth, user => {
+    if (user) {
+      // Utente loggato: mostra dropdown
+      loginIcon.addEventListener("click", e => {
+        e.preventDefault();
+        dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+      });
+    } else {
+      // Utente non loggato: link normale a login.html
+      loginIcon.setAttribute("href", "login.html");
+    }
+  });
+
+  window.logout = function () {
+    signOut(auth).then(() => {
+      alert("Logout effettuato");
+      window.location.reload();
+    });
+  };
+</script>
+
+
 
 <script src="script.js"></script>
 
