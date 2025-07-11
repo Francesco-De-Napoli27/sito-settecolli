@@ -203,6 +203,76 @@ caricaClassifica('classifica_femminile.json', 'femminile-table-body');
 })();
 </script>
 
+//login 
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
+import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDRf3Q_-D7nsVIPKSxxIm78rz1Nn5QY1cQ",
+  authDomain: "settecollisite.firebaseapp.com",
+  projectId: "settecollisite",
+  storageBucket: "settecollisite.appspot.com",
+  messagingSenderId: "928590715316",
+  appId: "1:928590715316:web:031eae061e38bd5ef9bae1"
+};
+
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+
+const loginIcon = document.querySelector(".login-icon");
+const menu = document.createElement("div");
+menu.classList.add("user-menu");
+menu.style.display = "none";
+menu.style.position = "absolute";
+menu.style.background = "#fff";
+menu.style.border = "1px solid #ccc";
+menu.style.padding = "0.5rem";
+menu.innerHTML = `
+  <a href="area-riservata.html">Gestione Account</a><br>
+  <a href="#" id="logout-link">Logout</a>
+`;
+document.body.appendChild(menu);
+
+// Gestisci click
+if (loginIcon) {
+  loginIcon.addEventListener("click", (e) => {
+    e.preventDefault();
+    menu.style.top = (loginIcon.getBoundingClientRect().bottom + window.scrollY) + "px";
+    menu.style.left = (loginIcon.getBoundingClientRect().left + window.scrollX) + "px";
+    menu.style.display = menu.style.display === "none" ? "block" : "none";
+  });
+}
+
+// Logout
+document.addEventListener("click", function (e) {
+  if (!menu.contains(e.target) && e.target !== loginIcon) {
+    menu.style.display = "none";
+  }
+});
+
+document.addEventListener("click", function (e) {
+  if (e.target.id === "logout-link") {
+    e.preventDefault();
+    signOut(auth).then(() => {
+      alert("Logout effettuato!");
+      window.location.href = "index.html";
+    });
+  }
+});
+
+// Cambia icona o mostra menu solo se loggato
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    loginIcon.textContent = "👥";
+  } else {
+    loginIcon.textContent = "👤";
+  }
+});
+</script>
+
+
+
 <script src="script.js"></script>
 
 
