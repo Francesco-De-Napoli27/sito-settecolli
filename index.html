@@ -244,33 +244,34 @@ if (loginIcon) {
   });
 }
 
-// Logout
-document.addEventListener("click", function (e) {
-  if (!menu.contains(e.target) && e.target !== loginIcon) {
-    menu.style.display = "none";
-  }
-});
+<script type="module">
+  import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js";
 
-document.addEventListener("click", function (e) {
-  if (e.target.id === "logout-link") {
-    e.preventDefault();
+  const auth = getAuth();
+  const userMenu = document.getElementById("user-menu");
+
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
+      userMenu.innerHTML = `
+        <div class="dropdown">
+          <button class="login-icon">👤</button>
+          <div class="dropdown-content">
+            <a href="account.html">Gestione Account</a>
+            <a href="#" onclick="logout()">Logout</a>
+          </div>
+        </div>
+      `;
+    } else {
+      userMenu.innerHTML = `<a href="login.html" class="login-icon">👤</a>`;
+    }
+  });
+
+  window.logout = function () {
     signOut(auth).then(() => {
-      alert("Logout effettuato!");
       window.location.href = "index.html";
     });
-  }
-});
-
-// Cambia icona o mostra menu solo se loggato
-onAuthStateChanged(auth, (user) => {
-  if (user) {
-    loginIcon.textContent = "👥";
-  } else {
-    loginIcon.textContent = "👤";
-  }
-});
+  };
 </script>
-
 
 
 <script src="script.js"></script>
