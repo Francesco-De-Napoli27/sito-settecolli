@@ -970,6 +970,7 @@ footer {
 }
 
 .news {
+  background-image: url("immagini/news.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -983,6 +984,7 @@ footer {
 }
 
 .classifiche {
+  background-image: url("immagini/classifica.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
