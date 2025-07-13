@@ -970,12 +970,12 @@ footer {
 }
 
 .news {
-  background-image: url('images/news.png');
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
-  padding: 60px 20px;
-  color: white; /* o nero, a seconda del contrasto */
+  background-attachment: scroll;
+  background-blend-mode: normal;
+  background-color: #000000; /* fallback */
 }
 
 #articolo {
@@ -983,12 +983,12 @@ footer {
 }
 
 .classifiche {
-  background-image: url('images/classifica.png');
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
-  padding: 60px 20px;
-  color: white; /* o nero, a seconda del contrasto */
+  background-attachment: scroll;
+  background-blend-mode: normal;
+  background-color: #000000; /* fallback */
 }
 
 
@@ -1009,24 +1009,11 @@ footer {
   color: black;
 }
 
-
+/* Mobile responsiveness */
 @media (max-width: 768px) {
-  #news, #classifica {
-    background-attachment: scroll;
+  .news,
+  .classifica {
     background-size: contain;
-    background-position: top;
-  }
-
-  .news-item {
-    margin-bottom: 30px;
-  }
-
-  .news-wrapper {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  #classifica .table {
-    font-size: 14px;
+    background-position: top center;
   }
 }
