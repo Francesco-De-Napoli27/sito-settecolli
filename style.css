@@ -1008,3 +1008,25 @@ footer {
 .classifica-table td {
   color: black;
 }
+
+
+@media (max-width: 768px) {
+  #news, #classifica {
+    background-attachment: scroll;
+    background-size: contain;
+    background-position: top;
+  }
+
+  .news-item {
+    margin-bottom: 30px;
+  }
+
+  .news-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  #classifica .table {
+    font-size: 14px;
+  }
+}
