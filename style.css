@@ -975,8 +975,6 @@ footer {
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-blend-mode: normal;
-  background-color: #000000; /* fallback */
 }
 
 #articolo {
@@ -989,8 +987,6 @@ footer {
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-blend-mode: normal;
-  background-color: #000000; /* fallback */
 }
 
 
@@ -1017,5 +1013,6 @@ footer {
   .classifica {
     background-size: contain;
     background-position: top center;
+    background-repeat: no-repeat;
   }
 }
