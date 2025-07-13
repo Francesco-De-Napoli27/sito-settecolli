@@ -963,3 +963,23 @@ footer {
 .dropdown-login a:hover {
   background-color: #eee;
 }
+
+
+#news-ultime {
+  color: white
+}
+
+.news {
+  background-image: url('images/news-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+  color: white; /* o nero, a seconda del contrasto */
+}
+
+.news .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 8px;
+}
