@@ -971,10 +971,6 @@ footer {
 
 .news {
   background-image: url("immagini/news.png");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
 }
 
 #articolo {
@@ -983,10 +979,6 @@ footer {
 
 .classifiche {
   background-image: url("immagini/classifica.png");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
 }
 
 
@@ -1005,14 +997,4 @@ footer {
 /* Celle della tabella */
 .classifica-table td {
   color: black;
-}
-
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-  .news,
-  .classifica {
-    background-size: contain;
-    background-position: top center;
-    background-repeat: no-repeat;
-  }
 }
