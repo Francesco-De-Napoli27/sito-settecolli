@@ -981,3 +981,12 @@ footer {
 #articolo {
   color: black
 }
+
+.classifiche {
+  background-image: url('images/classifica.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+  color: white; /* o nero, a seconda del contrasto */
+}
