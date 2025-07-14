@@ -1,16 +1,17 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const hamburger = document.getElementById('hamburger');
-  const navMenu = document.getElementById('navMenu');
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.querySelector('.nav-menu');
 
-  hamburger.addEventListener('click', function (e) {
-    e.stopPropagation(); // evita che il click venga intercettato da altri handler
-    navMenu.classList.toggle('active');
-  });
+    if (hamburger && navMenu) {
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
 
-  // Chiudi il menu se clicchi fuori
-  document.addEventListener('click', function (e) {
-    if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
-      navMenu.classList.remove('active');
+        // Chiudi cliccando fuori
+        document.addEventListener('click', function (e) {
+            if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+                navMenu.classList.remove('active');
+            }
+        });
     }
-  });
 });
