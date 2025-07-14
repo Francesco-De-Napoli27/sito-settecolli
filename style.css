@@ -323,13 +323,17 @@ th {
 .sponsors {
   padding: 2rem 1rem;
   text-align: center;
-  background-image: url('images/sponsor-bg.png'); /* Cambia il path se serve */
+
+  /* SFONDO IMMAGINE */
+  background-image: url('images/sponsor-sito.png'); /* usa il path corretto */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
   min-height: 100vh;
   width: 100%;
 }
+
 
 @media (max-width: 768px) {
   .sponsors {
