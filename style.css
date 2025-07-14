@@ -1008,3 +1008,31 @@ footer {
 .classifica-table td {
   color: black;
 }
+
+@media (max-width: 768px) {
+  .news,
+  .classifiche {
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+
+  .news h2,
+  .classifiche h2 {
+    font-size: 1.4rem;
+  }
+
+  .news .news-item,
+  .classifiche .classifica-maschile,
+  .classifiche .classifica-femminile {
+    background-color: rgba(255, 255, 255, 0.9); /* leggibilità migliore */
+    color: #000;
+  }
+
+  .classifica-table th,
+  .classifica-table td {
+    background-color: white;
+    color: #000;
+  }
+}
