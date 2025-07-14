@@ -321,17 +321,33 @@ th {
 
 /* SPONSOR */
 .sponsors {
+  margin: 0;
+  padding: 0;
+}
+
+/* Parte alta con titolo su sfondo */
+.sponsor-header {
+  background-color: #003366; /* colore dello sfondo dell’immagine */
+  color: white;
   padding: 2rem 1rem;
   text-align: center;
+}
 
-  /* SFONDO IMMAGINE */
-  background-image: url('images/sponsor-sito.png'); /* usa il path corretto */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  min-height: 100vh;
+/* Parte bassa con immagine */
+.sponsor-body {
+  background-color: transparent;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.sponsor-body img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
 
 
