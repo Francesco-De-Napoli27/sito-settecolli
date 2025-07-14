@@ -1009,10 +1009,9 @@ footer {
   color: black;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px), only screen and (max-height: 500px) {
   .news, .classifiche {
-    background-size: cover;
-    background-position: center center;
     min-height: 100vh;
   }
 }
+
