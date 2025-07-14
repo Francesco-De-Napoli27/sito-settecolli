@@ -1009,9 +1009,16 @@ footer {
   color: black;
 }
 
-@media only screen and (max-width: 768px), only screen and (max-height: 500px) {
+@media only screen and (max-width: 768px) {
   .news, .classifiche {
+    background-size: 100% auto; /* LARGHEZZA completa, altezza proporzionale */
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: scroll;
     min-height: 100vh;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
+
 
