@@ -1015,11 +1015,14 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: scroll;
-    min-height: 100%;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 40px 20px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 }
+
+
