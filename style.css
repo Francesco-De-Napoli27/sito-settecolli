@@ -117,21 +117,26 @@ body {
     cursor: pointer;
   }
 
+  /* Menù mobile dinamico */
   .nav-menu {
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
     flex-direction: column;
     background-color: white;
     position: absolute;
     top: 70px;
     right: 0;
     width: 100%;
-    padding: 1rem;
+    padding: 0 1rem;
     border-top: 1px solid #ccc;
     z-index: 999;
   }
 
+  /* Quando è attivo */
   .nav-menu.active {
-    display: flex !important;
+    max-height: 400px; /* o più, se il tuo menù è più lungo */
+    padding: 1rem;
   }
 
   .nav-menu li {
