@@ -135,7 +135,7 @@ body {
 
   /* Quando è attivo */
   .nav-menu.active {
-    max-height: 400px; /* o più, se il tuo menù è più lungo */
+    max-height: 450px; /* o più, se il tuo menù è più lungo */
     padding: 1rem;
   }
 
