@@ -341,8 +341,6 @@ th {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  margin-bottom: 0;
-  padding-bottom: 0;
 }
 
 .sponsor-body img {
@@ -350,7 +348,14 @@ th {
   height: auto;
   display: block;
   object-fit: cover;
+  margin-bottom: 0;
 }
+
+#sponsors {
+  margin: 0;
+  padding: 0;
+}
+
 
 
 @media (max-width: 768px) {
