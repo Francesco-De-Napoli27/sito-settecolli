@@ -1010,19 +1010,12 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
-  .news, .classifiche {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: scroll;
-    width: 100vw;
-    min-height: 100vh;
-    padding: 40px 20px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  .news {
+    background-image: url("images/news-mobile.png");
   }
+  .classifiche {
+    backgroud-image: url("images/classifiche-mobile.png")
 }
+
 
 
