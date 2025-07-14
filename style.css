@@ -1011,14 +1011,15 @@ footer {
 
 @media only screen and (max-width: 768px) {
   .news, .classifiche {
-    background-size: 100% auto; /* LARGHEZZA completa, altezza proporzionale */
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: center;
     background-attachment: scroll;
-    min-height: 100vh;
+    min-height: 100%;
     padding-top: 40px;
     padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
-
-
