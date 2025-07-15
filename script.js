@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
     navMenu.style.maxHeight = '0px';
     navMenu.classList.remove('active');
     isOpen = false;
+    hamburger.classList.remove('active');
   }
 
   hamburger.addEventListener('click', () => {
@@ -32,6 +33,9 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
       openMenu();
     }
+
+     // Attiva/disattiva animazione hamburger → X
+     hamburger.classList.toggle('active');
   });
 
   // Chiudi cliccando fuori dal menù
