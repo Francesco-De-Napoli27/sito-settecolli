@@ -114,7 +114,21 @@ body {
   .hamburger {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     cursor: pointer;
+    width: 30px;
+    height: 25px;
+    z-index: 1001;
+    transition: all 0.3s ease;
+  }
+
+  .hamburger span {
+    height: 3px;
+    width: 100%;
+    background-color: #000;
+    margin: 3px 0;
+    border-radius: 2px;
+    transition: all 0.3s ease;
   }
 
   /* Trasformazione in "X" */
@@ -129,13 +143,8 @@ body {
   .hamburger.active span:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
   }
-    
-  /* Menu responsive con animazione a scorrimento verticale */
-  
 
- /* NAV MOBILE BASE */
-/* NAV MOBILE ANIMATO */
-@media (max-width: 992px) {
+  /* Menu responsive con animazione */
   .nav-menu {
     display: flex;
     flex-direction: column;
@@ -174,8 +183,6 @@ body {
     transform: translateY(0);
   }
 }
-
-
 
 
 
