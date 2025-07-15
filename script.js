@@ -1,55 +1,43 @@
 document.addEventListener('DOMContentLoaded', function () {
   const hamburger = document.getElementById('hamburger');
   const navMenu = document.querySelector('.nav-menu');
+  const menuItems = navMenu.querySelectorAll('li');
+
   let isOpen = false;
 
+  function openMenu() {
+    navMenu.classList.add('active');
+    navMenu.style.maxHeight = navMenu.scrollHeight + 'px';
+
+    menuItems.forEach((item, index) => {
+      item.style.transitionDelay = `${index * 80}ms`;
+    });
+
+    isOpen = true;
+  }
+
+  function closeMenu() {
+    menuItems.forEach((item) => {
+      item.style.transitionDelay = `0ms`;
+    });
+
+    navMenu.style.maxHeight = '0px';
+    navMenu.classList.remove('active');
+    isOpen = false;
+  }
+
   hamburger.addEventListener('click', () => {
-    isOpen = !isOpen;
-
     if (isOpen) {
-      navMenu.classList.add('active');
-      const scrollHeight = navMenu.scrollHeight;
-      navMenu.style.maxHeight = scrollHeight + 'px';
-
-      // Aggiungi delay progressivo
-      const items = navMenu.querySelectorAll('li');
-      items.forEach((item, index) => {
-        item.style.transitionDelay = `${index * 100}ms`;
-      });
-
+      closeMenu();
     } else {
-      // Chiusura progressiva inversa
-      const items = navMenu.querySelectorAll('li');
-      items.forEach((item, index) => {
-        item.style.transitionDelay = `${(items.length - index) * 50}ms`;
-        item.style.opacity = '0';
-        item.style.transform = 'translateY(-10px)';
-      });
-
-      // Dopo la durata della transizione, chiudi il menu
-      setTimeout(() => {
-        navMenu.classList.remove('active');
-        navMenu.style.maxHeight = null;
-      }, items.length * 50 + 200);
+      openMenu();
     }
   });
 
-  // Chiudi cliccando fuori
+  // Chiudi cliccando fuori dal menù
   document.addEventListener('click', function (e) {
-    if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
-      isOpen = false;
-      const items = navMenu.querySelectorAll('li');
-      items.forEach((item, index) => {
-        item.style.transitionDelay = `${(items.length - index) * 50}ms`;
-        item.style.opacity = '0';
-        item.style.transform = 'translateY(-10px)';
-      });
-
-      setTimeout(() => {
-        navMenu.classList.remove('active');
-        navMenu.style.maxHeight = null;
-      }, items.length * 50 + 200);
+    if (!hamburger.contains(e.target) && !navMenu.contains(e.target) && isOpen) {
+      closeMenu();
     }
   });
 });
-
