@@ -121,12 +121,14 @@ body {
   
 
  /* NAV MOBILE BASE */
+/* NAV MOBILE ANIMATO */
 .nav-menu {
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
   max-height: 0;
+  overflow: hidden;
   opacity: 0;
-  transition: max-height 0.5s ease, opacity 0.5s ease;
-  pointer-events: none;
+  transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
   position: absolute;
   top: 70px;
   right: 0;
@@ -135,24 +137,24 @@ body {
   padding: 0 1rem;
   border-top: 1px solid #ccc;
   z-index: 999;
-  flex-direction: column;
+  pointer-events: none;
 }
 
-/* Stato attivo: si attiva da JS dinamicamente */
+/* Stato attivo */
 .nav-menu.active {
   opacity: 1;
   pointer-events: auto;
   padding: 1rem;
 }
 
-/* Voci animate singolarmente */
+/* Animazione verticale delle voci */
 .nav-menu li {
   opacity: 0;
   transform: translateY(-10px);
-  transition: opacity 0.4s ease, transform 0.4s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-/* Ingresso progressivo */
+/* Quando attivo, appaiono verso il basso */
 .nav-menu.active li {
   opacity: 1;
   transform: translateY(0);
