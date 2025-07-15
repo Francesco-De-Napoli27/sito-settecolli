@@ -122,42 +122,44 @@ body {
 
  /* NAV MOBILE BASE */
 /* NAV MOBILE ANIMATO */
-.nav-menu {
-  display: flex;
-  flex-direction: column;
-  max-height: 0;
-  overflow: hidden;
-  opacity: 0;
-  transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
-  position: absolute;
-  top: 70px;
-  right: 0;
-  width: 100%;
-  background-color: white;
-  padding: 0 1rem;
-  border-top: 1px solid #ccc;
-  z-index: 999;
-  pointer-events: none;
-}
+@media (max-width: 992px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background-color: white;
+    padding: 0 1rem;
+    border-top: 1px solid #ccc;
+    z-index: 999;
+    pointer-events: none;
+  }
 
-/* Stato attivo */
-.nav-menu.active {
-  opacity: 1;
-  pointer-events: auto;
-  padding: 1rem;
-}
+  .nav-menu.active {
+    opacity: 1;
+    pointer-events: auto;
+    padding: 1rem;
+  }
 
-/* Animazione verticale delle voci */
-.nav-menu li {
-  opacity: 0;
-  transform: translateY(-10px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
+  .nav-menu li {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    width: 100%;
+    padding: 0.5rem 0;
+  }
 
-/* Quando attivo, appaiono verso il basso */
-.nav-menu.active li {
-  opacity: 1;
-  transform: translateY(0);
+  .nav-menu.active li {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Animazione progressiva */
