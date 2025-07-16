@@ -1061,6 +1061,16 @@ footer {
 }
 
 
+.staff {
+  background-image: url('images/staff-sfondo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+  color: white; /* o nero, a seconda del contrasto */
+}
+
+
 @media only screen and (max-width: 768px) {
   .news {
     background-image: url("images/news-mobile.png");
@@ -1070,6 +1080,9 @@ footer {
   }
   .prossime-partite {
     background-image: url("images/partite-mobile.png")
+  }
+  .staff {
+    background-image: url("images/staff-mobile.png")
   }
 }
 
