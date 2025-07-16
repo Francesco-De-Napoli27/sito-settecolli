@@ -1102,6 +1102,15 @@ footer {
   color: white; /* o nero, a seconda del contrasto */
 }
 
+#team-titolo{
+  color: #ff2d2d; /* o #e60000 */
+  text-shadow: 1px 1px 3px black;
+}
+
+#descrizione-team{
+  color: white;
+}
+
 
 @media only screen and (max-width: 768px) {
   .news {
