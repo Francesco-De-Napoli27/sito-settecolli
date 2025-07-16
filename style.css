@@ -620,7 +620,7 @@ footer {
 .contatti-testo h2 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
-  color: blue;
+  color: white;
 }
 
 .contatti-testo p {
@@ -1092,6 +1092,16 @@ footer {
   color: white;
 }
 
+.contatti-staff{
+  background-image: url('images/contattaci-staff.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+  color: white; /* o nero, a seconda del contrasto */
+}
+
+
 @media only screen and (max-width: 768px) {
   .news {
     background-image: url("images/news-mobile.png");
@@ -1107,6 +1117,9 @@ footer {
   }
   .storia-settecolli {
     background-image: url("images/storia-mobile.png")
+  }
+  .contatti-staff{
+    background-image: url("images/contattaci-mobile.png")
   }
 }
 
