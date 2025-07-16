@@ -647,6 +647,7 @@ footer {
   display: block;
   margin-top: 1rem;
   font-weight: 600;
+  color: black;
 }
 
 .contatti-form input,
