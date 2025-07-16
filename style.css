@@ -1084,11 +1084,12 @@ footer {
 }
 
 #staff-storia{
-  color: white;
+  color: black;
+  text-shadow: 1px 1px 3px white;
 }
 
 #descrizione-storia{
-  color: black;
+  color: white;
 }
 
 @media only screen and (max-width: 768px) {
