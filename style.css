@@ -689,6 +689,14 @@ footer {
   margin-bottom: 10px;
 }
 
+.footer-news {
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin: 0;
+  border: none;
+}
 
 
 /* Contenitore card sponsor */
