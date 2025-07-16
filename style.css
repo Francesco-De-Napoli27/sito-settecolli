@@ -1084,8 +1084,8 @@ footer {
 }
 
 #staff-storia{
-  color: black;
-  text-shadow: 1px 1px 3px white;
+  color: #ff2d2d; /* o #e60000 */
+  text-shadow: 1px 1px 3px black;
 }
 
 #descrizione-storia{
