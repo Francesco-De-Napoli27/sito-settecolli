@@ -1061,7 +1061,7 @@ footer {
 }
 
 
-.staff {
+.staff-dirigenziale {
   background-image: url('images/staff-sfondo.png');
   background-size: cover;
   background-position: center;
@@ -1081,7 +1081,7 @@ footer {
   .prossime-partite {
     background-image: url("images/partite-mobile.png")
   }
-  .staff {
+  .staff-dirigenziale {
     background-image: url("images/staff-mobile.png")
   }
 }
