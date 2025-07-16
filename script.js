@@ -4,9 +4,16 @@ document.addEventListener('DOMContentLoaded', function () {
   const menuItems = navMenu.querySelectorAll('li');
 
   let isOpen = false;
+  let isAnimating = false;
 
   function openMenu() {
+    if (isAnimating) return;
+    isAnimating = true;
+
     navMenu.classList.add('active');
+
+    // Forza layout e calcola altezza
+    navMenu.style.maxHeight = navMenu.scrollHeight + 'px';
     hamburger.classList.add('active');
 
     menuItems.forEach((item, index) => {
@@ -15,10 +22,26 @@ document.addEventListener('DOMContentLoaded', function () {
       item.style.transform = 'translateY(0)';
     });
 
-    isOpen = true;
+    setTimeout(() => {
+      navMenu.style.maxHeight = 'none'; // rimuove il limite dopo l'apertura
+      isOpen = true;
+      isAnimating = false;
+    }, 500); // durata max-height transition
   }
 
   function closeMenu() {
+    if (isAnimating) return;
+    isAnimating = true;
+
+    // Ripristina altezza attuale prima di ridurre
+    navMenu.style.maxHeight = navMenu.scrollHeight + 'px';
+
+    // Forza reflow per riapplicare la transizione ↓
+    void navMenu.offsetHeight;
+
+    navMenu.style.maxHeight = '0';
+    hamburger.classList.remove('active');
+
     menuItems.forEach((item, index) => {
       item.style.transitionDelay = `${(menuItems.length - index) * 40}ms`;
       item.style.opacity = '0';
@@ -27,10 +50,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     setTimeout(() => {
       navMenu.classList.remove('active');
-      hamburger.classList.remove('active');
-    }, menuItems.length * 40 + 300);
-
-    isOpen = false;
+      isOpen = false;
+      isAnimating = false;
+    }, 500);
   }
 
   hamburger.addEventListener('click', () => {
@@ -41,10 +63,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  document.addEventListener('click', (e) => {
+  document.addEventListener('click', function (e) {
     if (!hamburger.contains(e.target) && !navMenu.contains(e.target) && isOpen) {
       closeMenu();
     }
   });
 });
-
