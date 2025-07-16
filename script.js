@@ -22,11 +22,12 @@ document.addEventListener('DOMContentLoaded', function () {
       item.style.transform = 'translateY(0)';
     });
 
-    setTimeout(() => {
-      navMenu.style.maxHeight = 'none'; // rimuove il limite dopo l'apertura
-      isOpen = true;
-      isAnimating = false;
-    }, 500); // durata max-height transition
+   setTimeout(() => {
+     navMenu.style.maxHeight = 'none'; // libera completamente lo spazio
+     navMenu.style.overflow = 'visible'; // abilita scroll naturale se servisse
+     isOpen = true;
+     isAnimating = false;
+   }, 500);
   }
 
   function closeMenu() {
