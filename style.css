@@ -1074,7 +1074,14 @@ footer {
   color: white;
 }
 
-.
+.storia-settecolli{
+  background-image: url('images/storia-logo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+  color: white; /* o nero, a seconda del contrasto */
+}
 
 @media only screen and (max-width: 768px) {
   .news {
@@ -1088,6 +1095,9 @@ footer {
   }
   .staff-dirigenziale {
     background-image: url("images/staff-mobile.png")
+  }
+  .storia-settecolli {
+    background-image: url("images/storia-mobile.png")
   }
 }
 
