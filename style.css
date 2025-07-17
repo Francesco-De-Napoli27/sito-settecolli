@@ -1127,7 +1127,7 @@ footer {
 }
 
 
-.sponsor-descrizione{
+.sponsor-card-section{
   background-image: url('images/sfondo-sezioni.png');
   background-size: cover;
   background-position: center;
@@ -1163,7 +1163,7 @@ footer {
   .contatti-staff{
     background-image: url("images/contattaci-mobile.png")
   }
-  .sponsor-descrizione{
+  .sponsor-card-section{
     background-image: url("images/sfondo-sezioni-mobile.png")
   }
 }
