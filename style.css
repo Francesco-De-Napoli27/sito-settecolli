@@ -1140,34 +1140,33 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto 50px;
+  gap: 60px;
+  flex-wrap: wrap;
 }
 
 .sponsor-intro-logo img {
-  width: 200px;
-  max-width: 100%;
+  width: 250px;
   height: auto;
 }
 
 .sponsor-intro-text {
-  text-align: center;
   max-width: 600px;
+  text-align: left;
 }
 
 .sponsor-intro-text h2 {
-  font-size: 2rem;
-  color: #ff2a2a;
+  font-size: 2.5rem;
+  color: #ffffff;
   margin-bottom: 15px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
 }
 
 .sponsor-intro-text p {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   line-height: 1.6;
-  margin-bottom: 10px;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
 }
 
 @media only screen and (max-width: 768px) {
@@ -1194,15 +1193,16 @@ footer {
   }
   .sponsor-intro {
     flex-direction: column;
+    text-align: center;
   }
   .sponsor-intro-text h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   .sponsor-intro-text p {
     font-size: 1rem;
   }
   .sponsor-intro-logo img {
-    width: 150px;
+    width: 180px;
   }
 }
 
