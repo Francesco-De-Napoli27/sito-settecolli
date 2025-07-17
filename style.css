@@ -1127,6 +1127,16 @@ footer {
 }
 
 
+.sponsor-card-section{
+  background-image: url('images/sponsor-sfondo.png')
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+  color: white;
+}
+
+
 @media only screen and (max-width: 768px) {
   .news {
     background-image: url("images/news-mobile.png");
@@ -1145,6 +1155,9 @@ footer {
   }
   .contatti-staff{
     background-image: url("images/contattaci-mobile.png")
+  }
+  .sponsor-card-section{
+    background-image: url("images/sponsor-sfondo-mobile.png")
   }
 }
 
