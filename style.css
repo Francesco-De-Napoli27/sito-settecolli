@@ -1157,14 +1157,14 @@ footer {
 }
 
 .sponsor-intro-text h2 {
-  font-size: 32px;
+  font-size: 120px;
   color: #ffffff;
   margin-bottom: 15px;
   text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
 }
 
 .sponsor-intro-text p {
-  font-size: 1.15rem;
+  font-size: 7.5rem;
   line-height: 1.6;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
 }
