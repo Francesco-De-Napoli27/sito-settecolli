@@ -714,11 +714,11 @@ footer {
   align-items: center;
   width: 100%;
   max-width: 700px;  /* Larghezza massima della card */
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.95);
   border: 2px solid #ccc;
   border-radius: 12px;
   padding: 1.5rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Logo sponsor */
