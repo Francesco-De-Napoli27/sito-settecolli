@@ -1128,7 +1128,7 @@ footer {
 
 
 .sponsor-card-section{
-  background-image: url('images/sponsor-sfondo.png')
+  background-image: url('images/sponsor-sfondo.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
