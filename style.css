@@ -389,12 +389,12 @@ th {
 }
 
 
-
 @media (max-width: 768px) {
   .sponsors {
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
+    /* min-height: 100vh;  ⛔ Rimuovi o commenta questa riga */
+    padding-bottom: 1rem; /* se vuoi un po' di spazio sotto */
   }
 }
 
