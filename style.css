@@ -1217,6 +1217,10 @@ footer {
   justify-content: center;
 }
 
+.contatti-wrapper p{
+  color: black;
+}
+
 @media only screen and (max-width: 768px) {
   .news {
     background-image: url("images/news-mobile.png");
