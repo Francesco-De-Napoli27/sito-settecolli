@@ -144,22 +144,27 @@ body {
     transform: rotate(-45deg) translate(5px, -5px);
   }
 
-  /* Menu responsive con animazione */
- .nav-menu {
+
+   /* Menu responsive con animazione */
+  .nav-menu {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
     max-height: 0;
     opacity: 0;
     transition: max-height 0.5s ease-in-out, opacity 0.4s ease-in-out;
     position: absolute;
     top: 70px;
-    right: 0;
+    left: 0;
     width: 100%;
-    background-color: white;
-    padding: 0 1rem;
-    border-top: 1px solid #ccc;
+    height: 100vh;
+    background-image: url('images/menu-mobile-bg.png'); /* sfondo rosso-blu */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
     z-index: 999;
     pointer-events: none;
   }
@@ -167,24 +172,58 @@ body {
   .nav-menu.active {
     opacity: 1;
     pointer-events: auto;
-    padding: 1rem;
+    padding: 1rem 0;
   }
-
-
 
   .nav-menu li {
     opacity: 0;
     transform: translateY(-10px);
     transition: opacity 0.3s ease, transform 0.3s ease;
     width: 100%;
-    padding: 0.5rem 0;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
 
   .nav-menu.active li {
     opacity: 1;
     transform: translateY(0);
   }
-}
+
+  .nav-menu li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .nav-menu li a:hover {
+    text-decoration: underline;
+  }
+
+  .nav-menu::before {
+    content: "";
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75%;
+    height: 75%;
+    background-image: url('images/logo_settecolli_white_watermark.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.05;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .nav-menu li,
+  .nav-menu li a {
+    position: relative;
+    z-index: 1;
+  }
 
 
 
