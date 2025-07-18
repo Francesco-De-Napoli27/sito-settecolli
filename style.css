@@ -786,8 +786,16 @@ footer {
 }
 
 .interviste-section h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
+  font-size: 2.5rem;                    /* Dimensione visibile e importante */
+  color: #ffffff;                       /* Testo bianco per contrasto */
+  font-family: 'Montserrat', sans-serif; /* Font moderno e leggibile */
+  font-weight: 600;                     /* Semi-bold, non troppo pesante */
+  text-align: center;                   /* Allineamento centrale */
+  text-transform: uppercase;            /* Tutto maiuscolo per impatto */
+  letter-spacing: 1.2px;                /* Leggero spazio tra lettere */
+  margin: 40px auto 20px;               /* Più spazio sopra */
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5); /* Profondità */
+  background: none;                     /* Niente sfondo bianco! */
 }
 
 .interviste-grid {
