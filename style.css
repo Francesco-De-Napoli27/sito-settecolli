@@ -1205,6 +1205,15 @@ footer {
   color: white; /* o nero, a seconda del contrasto */
 }
 
+.contatti-wrapper{
+  background-image: url('images/contatti-sfondo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+  color: white;
+}
+
 @media only screen and (max-width: 768px) {
   .news {
     background-image: url("images/news-mobile.png");
