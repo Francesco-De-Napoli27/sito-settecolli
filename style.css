@@ -1206,7 +1206,6 @@ footer {
 }
 
 .contatti-wrapper{
-.login-section {
   background-image: url('images/login-sfondo.png'); /* o .png */
   background-size: cover;          /* Scala l’immagine per riempire */
   background-position: center;     /* Centra l’immagine */
@@ -1216,8 +1215,6 @@ footer {
   display: flex;                   /* Facoltativo: per centrare i contenuti */
   align-items: center;
   justify-content: center;
-}
-
 }
 
 .contatti-wrapper p{
