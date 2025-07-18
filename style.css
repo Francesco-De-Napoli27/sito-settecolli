@@ -1170,15 +1170,6 @@ footer {
 }
 
 .tv-live-section{
-  background-image: url('images/tv-sfondo.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 60px 20px;
-  color: white;
-}
-
-.interviste-section{
   background-image: url('images/interviste-sfondo.png');
   background-size: cover;
   background-position: center;
