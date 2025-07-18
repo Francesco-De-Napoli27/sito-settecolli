@@ -1157,7 +1157,7 @@ footer {
 }
 
 .sponsor-intro-logo img {
-  width: 500px;
+  width: 700px;
   height: auto;
 }
 
@@ -1237,12 +1237,9 @@ footer {
     width: 180px;
   }
   .tv-live-section{
-    background-image: url("images/tv-sfondo-mobile.png")
-  }
-  .interviste-section{
     background-image: url("images/interviste-sfondo-mobile.png")
   }
-  .galleria-sfondo-mobile{
+  .galleria-foto{
     background-image: url("images/galleria-sfondo-mobile.png")
   }
 }
