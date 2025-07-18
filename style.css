@@ -160,7 +160,7 @@ body {
     left: 0;
     width: 100%;
     height: 100vh;
-    background-image: url('images/menu-mobile-bg.png'); /* sfondo rosso-blu */
+    background-image: url('images/sfondo-menu.png'); /* sfondo rosso-blu */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -210,7 +210,6 @@ body {
     transform: translateX(-50%);
     width: 75%;
     height: 75%;
-    background-image: url('images/logo_settecolli_white_watermark.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
