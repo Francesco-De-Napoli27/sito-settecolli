@@ -1192,6 +1192,15 @@ footer {
   color:white;
 }
 
+.galleria-foto{
+  background-image: url('images/galleria-sfondo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+  color: white; /* o nero, a seconda del contrasto */
+}
+
 @media only screen and (max-width: 768px) {
   .news {
     background-image: url("images/news-mobile.png");
@@ -1232,6 +1241,9 @@ footer {
   }
   .interviste-section{
     background-image: url("images/interviste-sfondo-mobile.png")
+  }
+  .galleria-sfondo-mobile{
+    background-image: url("images/galleria-sfondo-mobile.png")
   }
 }
 
