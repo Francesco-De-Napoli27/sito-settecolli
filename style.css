@@ -160,7 +160,7 @@ body {
     left: 0;
     width: 100%;
     height: 100vh;
-    background-image: url('images/sfondo-menu.png'); /* sfondo rosso-blu */
+    background-image: url('images/sfondo-menu.png'); /* ← usa il nuovo sfondo */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -173,6 +173,7 @@ body {
     opacity: 1;
     pointer-events: auto;
     padding: 1rem 0;
+    max-height: 100vh;
   }
 
   .nav-menu li {
@@ -181,7 +182,7 @@ body {
     transition: opacity 0.3s ease, transform 0.3s ease;
     width: 100%;
     text-align: center;
-    padding: 1rem 0;
+    padding: 1.2rem 0;
     font-size: 20px;
     font-weight: bold;
     color: white;
@@ -196,34 +197,13 @@ body {
   .nav-menu li a {
     color: white;
     text-decoration: none;
+    display: block;
+    width: 100%;
   }
 
   .nav-menu li a:hover {
     text-decoration: underline;
   }
-
-  .nav-menu::before {
-    content: "";
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 75%;
-    height: 75%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.05;
-    z-index: 0;
-    pointer-events: none;
-  }
-
-  .nav-menu li,
-  .nav-menu li a {
-    position: relative;
-    z-index: 1;
-  }
-
 
 
 /* Desktop: centro menu, logo sinistra, login destra */
