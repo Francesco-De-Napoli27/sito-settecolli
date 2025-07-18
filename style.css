@@ -1206,12 +1206,18 @@ footer {
 }
 
 .contatti-wrapper{
+.login-section {
   background-image: url('images/login-sfondo.png'); /* o .png */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 60px 20px;
-  color: white; /* o nero, a seconda del contrasto */
+  background-size: cover;          /* Scala l’immagine per riempire */
+  background-position: center;     /* Centra l’immagine */
+  background-repeat: no-repeat;    /* Evita la ripetizione */
+  height: 100vh;                   /* Occupa tutta l’altezza della finestra */
+  width: 100%;                     /* Occupa tutta la larghezza */
+  display: flex;                   /* Facoltativo: per centrare i contenuti */
+  align-items: center;
+  justify-content: center;
+}
+
 }
 
 .contatti-wrapper p{
