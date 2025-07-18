@@ -1206,15 +1206,19 @@ footer {
 }
 
 .contatti-wrapper{
-  background-image: url('images/login-sfondo.png'); /* o .png */
-  background-size: cover;          /* Scala l’immagine per riempire */
-  background-position: center;     /* Centra l’immagine */
-  background-repeat: no-repeat;    /* Evita la ripetizione */
-  height: 100vh;                   /* Occupa tutta l’altezza della finestra */
-  width: 100%;                     /* Occupa tutta la larghezza */
-  display: flex;                   /* Facoltativo: per centrare i contenuti */
+  background-image: url('images/login-sfondo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;         /* forza la larghezza intera */
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 .contatti-wrapper p{
