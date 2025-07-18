@@ -780,6 +780,52 @@ footer {
   flex: 1 1 500px;
 }
 
+.interviste-section {
+  padding: 2rem 1rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.interviste-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.interviste-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.intervista-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.intervista-card iframe {
+  width: 100%;
+  height: 180px;
+  border: none;
+  margin-bottom: 0.8rem;
+}
+
+.intervista-card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+  color: #003366;
+}
+
+.intervista-card p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+
+
 /* SHOP SECTION */
 .shop {
   padding: 2rem 1rem;
@@ -943,49 +989,6 @@ footer {
   color: white
 }
 
-.interviste-section {
-  padding: 2rem 1rem;
-  background-color: #f9f9f9;
-  text-align: center;
-}
-
-.interviste-section h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-}
-
-.interviste-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-}
-
-.intervista-card {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  overflow: hidden;
-  padding: 1rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.intervista-card iframe {
-  width: 100%;
-  height: 180px;
-  border: none;
-  margin-bottom: 0.8rem;
-}
-
-.intervista-card h3 {
-  font-size: 1rem;
-  margin-bottom: 0.4rem;
-  color: #003366;
-}
-
-.intervista-card p {
-  font-size: 0.9rem;
-  color: #666;
-}
 
 .hero.hero-login .hero-image {
   max-height: 320px; /* o qualsiasi altezza tu voglia */
