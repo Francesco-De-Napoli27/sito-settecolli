@@ -201,6 +201,10 @@ body {
     transition: opacity 0.3s ease, transform 0.3s ease;
     width: 100%;
     padding: 0.5rem 0;
+
+    /* ✅ Nuovo codice */
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* linea separatrice elegante */
   }
 
   .nav-menu.active li {
@@ -216,6 +220,21 @@ body {
     position: relative;
     z-index: 1;
     color: white; /* cambia se il tuo sfondo è chiaro */
+  }
+
+
+  /* Stilizza i link (<a>) nel menu */
+  .nav-menu li a {
+    display: block;
+    width: 100%;
+    font-size: 1.4rem; /* puoi aumentare a 1.6rem per più impatto */
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    padding: 1rem 0; /* maggiore spaziatura verticale */
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white; /* già presente, ma ribadiamolo */
   }
 }
 
