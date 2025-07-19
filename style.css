@@ -145,7 +145,7 @@ body {
   }
 
   /* Menu responsive con animazione */
- .nav-menu {
+  .nav-menu {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -153,7 +153,7 @@ body {
     max-height: 0;
     opacity: 0;
     transition: max-height 0.5s ease-in-out, opacity 0.4s ease-in-out;
-    position: absolute;
+    position: relative; /* ERA ABSOLUTE */
     top: 70px;
     right: 0;
     width: 100%;
@@ -167,9 +167,25 @@ body {
    
     padding: 0 1rem;
     border-top: 1px solid #ccc;
-    z-index: 999;
+    z-index: 0; /* era 999 */
     pointer-events: none;
   }
+
+
+  /* Questo crea uno sfondo effettivo sotto tutto il contenuto del menu che si adatta automaticamente alla sua altezza. */
+  .nav-menu::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('images/sfondo-menu.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    z-index: -1;
+  }
+
+  
 
   .nav-menu.active {
     opacity: 1;
@@ -177,7 +193,6 @@ body {
     padding: 1rem;
     max-height: none; /* Per adattare immagine sfondo menù */
   }
-
 
 
   .nav-menu li {
@@ -192,8 +207,17 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
-}
 
+
+  /* Questo serve a evitare che i link <a> o i <li> coprano lo sfondo con un fondo bianco o grigio. */
+  .nav-menu li,
+  .nav-menu li a {
+    background-color: transparent !important;
+    position: relative;
+    z-index: 1;
+    color: white; /* cambia se il tuo sfondo è chiaro */
+  }
+}
 
 
 /* Desktop: centro menu, logo sinistra, login destra */
