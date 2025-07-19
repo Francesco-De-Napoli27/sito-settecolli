@@ -175,6 +175,7 @@ body {
     opacity: 1;
     pointer-events: auto;
     padding: 1rem;
+    max-height: none; /* Per adattare immagine sfondo menù */
   }
 
 
