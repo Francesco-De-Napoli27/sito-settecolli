@@ -1118,7 +1118,7 @@ footer {
   color: white;
 }
 
-.contatti-staff-1{
+.contatti-staff{
   background-image: url('images/contattaci-staff.png');
   background-size: cover;
   background-position: center;
@@ -1205,7 +1205,7 @@ footer {
   color: white; /* o nero, a seconda del contrasto */
 }
 
-.contatti-wrapper{
+.contatti-wrapper-1{
   background-image: url('images/login-sfondo.png');
   background-size: cover;
   background-position: center;
@@ -1223,7 +1223,7 @@ footer {
   color: white; /* o nero, a seconda del contrasto */
 }
 
-.contatti-wrapper p{
+.contatti-wrapper-1 p{
   color: black;
 }
 
@@ -1268,7 +1268,7 @@ footer {
   .galleria-foto{
     background-image: url("images/galleria-sfondo-mobile.png")
   }
-  .contatti-wrapper{
+  .contatti-wrapper-1{
     background-image: url("images/login-sfondo-mobile.png")
   }
 }
