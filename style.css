@@ -227,10 +227,10 @@ body {
   .nav-menu li a {
     display: block;
     width: 100%;
-    font-size: 1.4rem; /* puoi aumentare a 1.6rem per più impatto */
+    font-size: 1.2rem; /* puoi aumentare a 1.6rem per più impatto */
     font-weight: bold;
     letter-spacing: 0.5px;
-    padding: 1rem 0; /* maggiore spaziatura verticale */
+    padding: 0.6rem 0; /* maggiore spaziatura verticale */
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
