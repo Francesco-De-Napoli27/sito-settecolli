@@ -885,6 +885,7 @@ footer {
 
 
 /* SHOP SECTION */
+/* SHOP SECTION */
 .shop {
   padding: 2rem 1rem;
   text-align: center;
@@ -897,30 +898,30 @@ footer {
 
 .shop-items {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1.5rem;
-  justify-items: center;
-  margin-top: 2rem;
-}
-
-.shop-items {
-  display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   justify-items: center;
   padding: 2rem 1rem;
 }
 
-.shop-item:hover {
-  transform: scale(1.05);
-  border-color: #003366;
+.shop-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  background: rgba(255, 255, 255, 0.6); /* sfondo trasparente */
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* effetto spessore */
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .shop-item img {
   width: 100%;
   aspect-ratio: 2/3;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 10px;
   margin-bottom: 0.5rem;
 }
 
@@ -928,6 +929,11 @@ footer {
   font-size: 1.1rem;
   margin: 0.5rem 0 0;
   color: #003366;
+}
+
+.shop-item:hover {
+  transform: scale(1.05); /* ingrandimento */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* più ombra al passaggio */
 }
 
 /* ✅ Responsive: su mobile solo 1 prodotto per riga */
