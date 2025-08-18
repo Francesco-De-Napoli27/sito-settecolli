@@ -894,6 +894,7 @@ footer {
 .shop h2 {
   font-size: 1.8rem;
   margin: 2rem 0;
+  test-align: center;
 }
 
 .shop-items {
@@ -910,30 +911,35 @@ footer {
   align-items: center;
   text-decoration: none;
   color: inherit;
-  background: rgba(255, 255, 255, 0.6); /* sfondo trasparente */
+  background: rgba(255, 255, 255, 0.6);
   padding: 1rem;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* effetto spessore */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+  /* 🔹 dimensioni compatte */
+  width: 180px;
+  height: 260px;
 }
 
 .shop-item img {
   width: 100%;
-  aspect-ratio: 2/3;
-  object-fit: cover;
-  border-radius: 10px;
+  height: 70%;              /* occupa il 70% della card */
+  object-fit: cover;        /* taglia e adatta l'immagine */
+  border-radius: 8px;
   margin-bottom: 0.5rem;
 }
 
 .shop-item h3 {
-  font-size: 1.1rem;
-  margin: 0.5rem 0 0;
+  font-size: 0.95rem;
+  margin: 0.3rem 0 0;
   color: #003366;
+  text-align: center;
 }
 
 .shop-item:hover {
-  transform: scale(1.05); /* ingrandimento */
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* più ombra al passaggio */
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 /* ✅ Responsive: su mobile solo 1 prodotto per riga */
