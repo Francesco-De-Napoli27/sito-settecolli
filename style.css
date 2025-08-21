@@ -1268,6 +1268,15 @@ footer {
   color: white; /* o nero, a seconda del contrasto */
 }
 
+.shop-section{
+  background-image: url('image/shop-sfondo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+  color: white;
+}
+
 .contatti-wrapper-1{
   background-image: url('images/login-sfondo.png');
   background-size: cover;
@@ -1334,6 +1343,8 @@ footer {
   .contatti-wrapper-1{
     background-image: url("images/login-sfondo-mobile.png")
   }
+  .shop-section{
+    background-image: url("images/shop-sfondo-mobile.png")
 }
 
 /* SCROLL REVEAL EFFECT */
