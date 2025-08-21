@@ -1268,15 +1268,6 @@ footer {
   color: white; /* o nero, a seconda del contrasto */
 }
 
-.shop-section{
-  background-image: url('image/shop-sfondo.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 60px 20px;
-  color: white;
-}
-
 .contatti-wrapper-1{
   background-image: url('images/login-sfondo.png');
   background-size: cover;
@@ -1298,6 +1289,17 @@ footer {
 .contatti-wrapper-1 p{
   color: black;
 }
+
+
+.shop-section {
+  background-image: url('images/shop-sfondo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+  color: white; /* o nero, a seconda del contrasto */
+}
+
 
 @media only screen and (max-width: 768px) {
   .news {
