@@ -153,10 +153,9 @@ function creaRiga(item, index) {
   return `
     <tr>
       <td>${index + 1}</td>
-      <td style="display: flex; align-items: center; gap: 0.4em; white-space: nowrap;">
-        <img src="${item.logo}" alt="${item.squadra}" 
-             style="height: 1em; width: auto;"
-             onerror="this.onerror=null;this.src='images/SenzaLogo.png';">
+      <td style="display:flex;align-items:center;gap:.4em;white-space:nowrap;">
+        <img src="${item.logo}" alt="${item.squadra}" style="height:1em;width:auto;"
+             onerror="this.onerror=null;this.src='/images/SenzaLogo.png';">
         <span>${item.squadra}</span>
       </td>
       <td>${item.punti}</td>
@@ -169,28 +168,34 @@ function creaRiga(item, index) {
   `;
 }
 
-
-function caricaClassifica(file, tableId) {
-  fetch(file)
-    .then(response => {
-      if (!response.ok) throw new Error(`Errore caricamento ${file}`);
-      return response.json();
-    })
-    .then(data => {
-      const tbody = document.getElementById(tableId);
-      if (!tbody) return;
-      tbody.innerHTML = data.map((item, index) => creaRiga(item, index)).join('');
-    })
-    .catch(error => {
-      console.error("Errore nel caricamento della classifica:", error);
-    });
+function urlAssoluta(file) {
+  const path = file.startsWith("/") ? file : `/${file}`;
+  const v = new Date().toISOString().slice(0,10); // cache-buster giornaliero
+  return `${path}?v=${v}`;
 }
 
+async function caricaClassifica(file, tableId) {
+  const url = urlAssoluta(file);
+  try {
+    const res = await fetch(url, { cache: "no-store" });
+    if (!res.ok) throw new Error(`HTTP ${res.status} su ${url}`);
+    const data = await res.json();
+    const rows = Array.isArray(data) ? data : (Array.isArray(data.rows) ? data.rows : []);
+    const tbody = document.getElementById(tableId);
+    if (!tbody) throw new Error(`tbody id="${tableId}" non trovato`);
+    tbody.innerHTML = rows.map(creaRiga).join("");
+  } catch (e) {
+    console.error(e);
+    const tbody = document.getElementById(tableId);
+    if (tbody) tbody.innerHTML = `<tr><td colspan="8">⚠️ Impossibile caricare la classifica.</td></tr>`;
+  }
+}
 
-    
-// Avvia il caricamento delle classifiche
-caricaClassifica('classifica_maschile.json', 'maschile-table-body');
-caricaClassifica('classifica_femminile.json', 'femminile-table-body');
+document.addEventListener("DOMContentLoaded", () => {
+  // se i file sono nella root; se sono in /data/ cambia i percorsi
+  caricaClassifica('/classifica_maschile.json', 'maschile-table-body');
+  caricaClassifica('/classifica_femminile.json', 'femminile-table-body');
+});
 </script>
 
 
