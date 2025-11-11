@@ -208,34 +208,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 </script>
 
-<script>
-(async function debugU18(){
-  const url = '/classifica_under18f.json?v=' + new Date().toISOString().slice(0,10);
-  const tbodyId = 'under18f-table-body';
-  const boxId = 'debug-u18';
-  let d = document.getElementById(boxId);
-  if(!d){
-    d = document.createElement('div');
-    d.id = boxId;
-    d.style.cssText = 'position:fixed;left:1rem;bottom:1rem;background:#111;color:#fff;padding:.5rem .75rem;border-radius:.5rem;font:12px system-ui;z-index:99999';
-    d.innerHTML = '<b>DEBUG U18</b><br>';
-    document.body.appendChild(d);
-  }
-  const log = m => d.innerHTML += m + '<br>';
-
-  log('tbody esiste: ' + !!document.getElementById(tbodyId));
-  try {
-    const r = await fetch(url, { cache:'no-store' });
-    log('HTTP: ' + r.status);
-    const text = await r.text();
-    let data;
-    try { data = JSON.parse(text); } catch(e){ log('JSON invalido: ' + e); return; }
-    log('righe nel JSON: ' + (Array.isArray(data) ? data.length : (Array.isArray(data?.rows) ? data.rows.length : 0)));
-  } catch(e) {
-    log('Errore fetch: ' + e);
-  }
-})();
-</script>
  
 
 <!-- ChatGPT Chatbase Bot -->
