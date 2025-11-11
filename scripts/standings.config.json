@@ -1,5 +1,5 @@
 [
-  { "url": "https://www.fipavonline.it/main/classifica/58796", "out": "public/classifica_maschile.json" },
-  { "url": "https://www.fipavonline.it/main/classifica/59475",  "out": "public/classifica_femminile.json" },
-  { "url": "https://www.fipavonline.it/main/classifica/59278",  "out": "public/classifica_under18f.json" }
+  { "url": "https://www.fipavonline.it/main/classifica/58796", "out": "classifica_maschile.json" },
+  { "url": "https://www.fipavonline.it/main/classifica/59475",  "out": "classifica_femminile.json" },
+  { "url": "https://www.fipavonline.it/main/classifica/59278",  "out": "classifica_under18f.json" }
 ]
