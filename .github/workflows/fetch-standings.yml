@@ -2,7 +2,7 @@ name: Aggiorna Classifiche FIPAV
 
 on:
   schedule:
-    - cron: "0 6 * * *"
+    - cron: "0 6 * * *"   # ogni giorno alle 06:00 UTC
   workflow_dispatch:
 
 permissions:
@@ -15,7 +15,7 @@ jobs:
       - name: Checkout del branch main
         uses: actions/checkout@v4
         with:
-          ref: main            # ⬅️ forza il ramo
+          ref: main
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -33,8 +33,11 @@ jobs:
         with:
           node-version: 20
 
-      - name: Installa dipendenze
+      - name: Installa dipendenze npm
         run: npm ci || npm install
+
+      - name: Installa browser per Playwright (Chromium)
+        run: npx playwright install --with-deps chromium
 
       - name: Mostra config scraper
         run: |
@@ -71,16 +74,9 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@users.noreply.github.com"
-          # attenzione: aggiunge tutto ciò che è cambiato in repo
           git add -A
           git status
           git commit -m "Aggiornamento automatico classifiche [skip ci]" || echo "Nessuna modifica"
           git push origin HEAD:main
-
-      - name: Installa dipendenze
-        run: npm ci || npm install
-
-      - name: Installa browser per Playwright
-        run: npx playwright install --with-deps chromium
 
 
