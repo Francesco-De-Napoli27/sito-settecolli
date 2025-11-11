@@ -8,6 +8,8 @@
   },
   "dependencies": {
     "cheerio": "^1.0.0",
-    "undici": "^6.19.8"
+    "undici": "^6.19.8",
+    "playwright": "^1.48.0"
   }
 }
+
