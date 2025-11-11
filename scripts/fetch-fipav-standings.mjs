@@ -31,11 +31,38 @@ async function fetchHtmlPlaywright(url) {
   try {
     const ctx = await browser.newContext({
       userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123 Safari/537.36",
-      viewport: { width: 1280, height: 1000 }
+      viewport: { width: 1366, height: 900 },
+      locale: "it-IT"
     });
     const page = await ctx.newPage();
     await page.goto(url, { waitUntil: "domcontentloaded", timeout: 60000 });
-    await page.waitForTimeout(1200);
+
+    // 1) Prova a chiudere cookie banner (vari testi/selector comuni)
+    const cookieSelectors = [
+      'button:has-text("Accetta")',
+      'button:has-text("Accetto")',
+      'button:has-text("Accetta tutti")',
+      'button:has-text("Accept All")',
+      '#cookie-accept', '.cookie-accept', '[data-testid="cookie-accept"]'
+    ];
+    for (const sel of cookieSelectors) {
+      try { await page.locator(sel).first().click({ timeout: 1000 }); } catch {}
+    }
+
+    // 2) Aspetta che compaia almeno UNA tabella con righe corpo
+    //    (alcune pagine montano via JS)
+    try {
+      await page.waitForSelector('table tbody tr', { timeout: 8000 });
+    } catch {
+      // piccolo scroll per innescare lazy load, poi ultimo tentativo
+      await page.mouse.wheel(0, 1000);
+      await page.waitForTimeout(1000);
+    }
+
+    // 3) Dai tempo al DOM di “assestarsi”
+    await page.waitForLoadState('networkidle', { timeout: 8000 }).catch(() => {});
+    await page.waitForTimeout(500);
+
     const html = await page.content();
     await ctx.close();
     return html;
@@ -43,6 +70,7 @@ async function fetchHtmlPlaywright(url) {
     await browser.close();
   }
 }
+
 
 async function fetchHtml(url) {
   try {
@@ -60,63 +88,65 @@ function normalizeHeaders(ths){
 function extractStandings(html, baseUrl){
   const $ = cheerio.load(html);
 
+  // 1) Trova una tabella candidata: thead o almeno 8 colonne nella prima riga
   let table = null;
-  $("table").each((_, el) => {
-    const hs = normalizeHeaders($(el).find("thead th, thead td").map((_,th)=>$(th).text()).get());
-    const ok =
-      hs.some(h => /squadra|team|società/.test(h)) &&
-      hs.some(h => /^pt$|^p(unti)?$/.test(h)) &&
-      hs.some(h => /^g$|^giocate$/.test(h)) &&
-      hs.some(h => /^v$|vinte/.test(h)) &&
-      hs.some(h => /^p$|perse$/.test(h)) &&
-      hs.some(h => /^sv$|set vinti/.test(h)) &&
-      hs.some(h => /^sp$|set persi/.test(h));
-    if (ok) { table = el; return false; }
+  $('table').each((_, el) => {
+    const headTxt = $(el).find('thead').text().toLowerCase();
+    const hasKeywords =
+      /squadra|societ|team/.test(headTxt) &&
+      /(pt|punti)\b/.test(headTxt) &&
+      /\bg\b/.test(headTxt);
+    const firstCols = $(el).find('tbody tr:first-child td').length;
+    if (hasKeywords || firstCols >= 8) { table = el; return false; }
   });
-  if (!table) table = $("table").filter((_,el)=>$(el).find("tbody tr:first-child td").length>=6).get(0);
   if (!table) throw new Error("Tabella classifica non trovata (headers non riconosciuti)");
 
-  const headers = $(table).find("thead th, thead td").map((_,th)=>$(th).text().trim()).get();
-  const H = headers.map(h => h.toLowerCase());
+  // 2) Prova mappatura per intestazioni note (robusta)
+  const headers = $(table).find('thead th, thead td').map((_,th)=>$(th).text().trim().toLowerCase()).get();
+  const H = headers.map(h => h.normalize('NFD').replace(/\p{Diacritic}/gu,''));
   const idx = {
-    pos:     H.findIndex(h => /#|pos|posizione|n°/.test(h)),
-    squadra: H.findIndex(h => /squadra|team|società/.test(h)),
-    punti:   H.findIndex(h => /^pt$|^p(unti)?$/.test(h)),
-    g:       H.findIndex(h => /^g$|^giocate$/.test(h)),
-    v:       H.findIndex(h => /^v$|vinte/.test(h)),
-    p:       (()=>{ const all = H.map((h,i)=>({h,i})).filter(o=>/^p$|perse$/.test(o.h)); return all.length ? all[all.length-1].i : H.findIndex(h=>/perse/.test(h)); })(),
-    sv:      H.findIndex(h => /^sv$|set vinti/.test(h)),
-    sp:      H.findIndex(h => /^sp$|set persi/.test(h)),
+    pos:     H.findIndex(h => /#|pos|posizione|n/.test(h)),
+    squadra: H.findIndex(h => /squadra|societ|team/.test(h)),
+    pt:      H.findIndex(h => /^(pt|punti)\b/.test(h)),
+    g:       H.findIndex(h => /^g\b|giocate/.test(h)),
+    v:       H.findIndex(h => /^v\b|vinte/.test(h)),
+    p:       H.findIndex(h => /^p\b(?!t)|perse/.test(h)),  // "P" come perse (non punti)
+    sv:      H.findIndex(h => /^sv\b|set vinti/.test(h)),
+    sp:      H.findIndex(h => /^sp\b|set persi/.test(h)),
   };
 
-  const valAt = (cells, i, $row) => (i < 0 ? "" : $(cells[i]).text().trim());
-  const parseN = s => Number(String(s).replace(/[^\d\-]/g,"")) || 0;
+  const valAt = (cells, i) => i>=0 && cells[i] ? $(cells[i]).text().trim() : "";
+  const parseN = s => Number(String(s).replace(/[^\d\-]/g,'')) || 0;
 
   const rows = [];
-  $(table).find("tbody tr").each((_, tr) => {
-    const tds = $(tr).find("td").get();
+  $(table).find('tbody tr').each((_, tr) => {
+    const tds = $(tr).find('td').get();
     if (!tds.length) return;
 
-    const cellSquadra = idx.squadra >= 0 ? $(tds[idx.squadra]) : $(tds[0]);
-    const squadra = cellSquadra.text().replace(/\s+/g," ").trim();
-    const img = cellSquadra.find("img").attr("src") || "";
-    const logo = img ? new URL(img, baseUrl).toString() : "";
+    // 3) Se thead non aiuta, fallback POSIZIONALE comune:
+    //    [0]=pos, [1]=squadra, [2]=pt, [3]=G, [4]=V, [5]=P, [6]=SV, [7]=SP
+    const usePositional = headers.length === 0 || idx.squadra < 0 || idx.pt < 0;
+    const col = (name, pos) => usePositional ? pos : idx[name];
 
-    const pos = parseN(valAt(tds, idx.pos));
-    const punti = parseN(valAt(tds, idx.punti));
-    const g     = parseN(valAt(tds, idx.g));
-    const v     = parseN(valAt(tds, idx.v));
-    const p     = parseN(valAt(tds, idx.p));
-    const sv    = parseN(valAt(tds, idx.sv));
-    const sp    = parseN(valAt(tds, idx.sp));
-    const giocate = g || (v + p) || 0;
+    const squadraCell = usePositional ? tds[1] : tds[idx.squadra];
+    const squadra = $(squadraCell || tds[1] || tds[0]).text().replace(/\s+/g,' ').trim();
+    const img = $(squadraCell).find('img').attr('src') || "";
+
+    const posizione = parseN(valAt(tds, col('pos', 0)));
+    const punti     = parseN(valAt(tds, col('pt', 2)));
+    const g         = parseN(valAt(tds, col('g', 3)));
+    const v         = parseN(valAt(tds, col('v', 4)));
+    const p         = parseN(valAt(tds, col('p', 5)));
+    const sv        = parseN(valAt(tds, col('sv', 6)));
+    const sp        = parseN(valAt(tds, col('sp', 7)));
+    const giocate   = g || (v + p) || 0;
 
     if (!squadra || (punti===0 && v===0 && sv===0 && sp===0)) return;
 
     rows.push({
-      ...(pos ? { posizione: pos } : {}),
+      ...(posizione ? { posizione } : {}),
       squadra,
-      logo,
+      logo: img ? new URL(img, baseUrl).toString() : "",
       punti,
       giocate,
       "giocate vinte": v,
@@ -126,15 +156,13 @@ function extractStandings(html, baseUrl){
     });
   });
 
-  rows.sort((a, b) => {
+  if (!rows.length) throw new Error("Nessuna riga utile estratta.");
+  rows.sort((a,b) => {
     if (b.punti !== a.punti) return b.punti - a.punti;
-    const diffA = a["set vinti"] - a["set persi"];
-    const diffB = b["set vinti"] - b["set persi"];
-    if (diffB !== diffA) return diffB - diffA;
+    const da = a["set vinti"] - a["set persi"], db = b["set vinti"] - b["set persi"];
+    if (db !== da) return db - da;
     return b["set vinti"] - a["set vinti"];
   });
-
-  if (!rows.length) throw new Error("Nessuna riga utile estratta dalla tabella.");
   return rows;
 }
 
