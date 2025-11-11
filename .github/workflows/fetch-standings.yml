@@ -77,3 +77,10 @@ jobs:
           git commit -m "Aggiornamento automatico classifiche [skip ci]" || echo "Nessuna modifica"
           git push origin HEAD:main
 
+      - name: Installa dipendenze
+        run: npm ci || npm install
+
+      - name: Installa browser per Playwright
+        run: npx playwright install --with-deps chromium
+
+
