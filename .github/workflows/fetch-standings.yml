@@ -2,8 +2,11 @@ name: Aggiorna Classifiche FIPAV
 
 on:
   schedule:
-    - cron: "0 6 * * *"    # ogni giorno alle 06:00 UTC (~07:00 italiane)
-  workflow_dispatch:        # consente di eseguirla anche manualmente
+    - cron: "0 6 * * *"   # ogni giorno alle 06:00 UTC (~07:00 italiane)
+  workflow_dispatch:        # permette di lanciarla manualmente
+
+permissions:
+  contents: write           # necessario per fare commit/push
 
 jobs:
   update-standings:
@@ -12,6 +15,9 @@ jobs:
     steps:
       - name: Checkout del repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -22,14 +28,24 @@ jobs:
         run: |
           npm ci || npm install
 
-      - name: Esegui script di aggiornamento classifiche
+      - name: Esegui script (genera i JSON)
         run: |
           npm run fetch:all
+          echo "--- Contenuto repo dopo lo script ---"
+          ls -la
+          echo "public/ (se esiste):"
+          ls -la public || true
 
-      - name: Commit & Push dei file JSON aggiornati
+      - name: Allinea con il branch remoto
+        run: |
+          git config pull.rebase true
+          git pull --rebase origin "${GITHUB_REF_NAME:-main}" || true
+
+      - name: Commit & Push dei JSON aggiornati
         run: |
           git config user.name "github-actions"
           git config user.email "actions@users.noreply.github.com"
-          git add public/classifica_*.json
-          git commit -m "Aggiornamento automatico classifiche [skip ci]" || echo "Nessuna modifica"
-          git push
+          git add -A
+          git status
+          git commit -m "Aggiornamento automatico classifiche [skip ci]" || echo "Nessuna modifica da committare"
+          git push origin HEAD:"${GITHUB_REF_NAME:-main}"
