@@ -42,4 +42,6 @@ async function caricaClassifica(url, containerId) {
 document.addEventListener("DOMContentLoaded", () => {
     caricaClassifica("classifica_maschile.json", "classifica-maschile");
     caricaClassifica("classifica_femminile.json", "classifica-femminile");
+    caricaClassifica("classifica_under18f.json", "classifica-under18f");
 });
+
