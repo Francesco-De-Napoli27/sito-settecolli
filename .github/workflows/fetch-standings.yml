@@ -1,0 +1,35 @@
+name: Aggiorna Classifiche FIPAV
+
+on:
+  schedule:
+    - cron: "0 6 * * *"    # ogni giorno alle 06:00 UTC (~07:00 italiane)
+  workflow_dispatch:        # consente di eseguirla anche manualmente
+
+jobs:
+  update-standings:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout del repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Installa dipendenze
+        run: |
+          npm ci || npm install
+
+      - name: Esegui script di aggiornamento classifiche
+        run: |
+          npm run fetch:all
+
+      - name: Commit & Push dei file JSON aggiornati
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@users.noreply.github.com"
+          git add public/classifica_*.json
+          git commit -m "Aggiornamento automatico classifiche [skip ci]" || echo "Nessuna modifica"
+          git push
