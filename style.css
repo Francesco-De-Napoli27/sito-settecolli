@@ -382,7 +382,8 @@ body {
   gap: 2rem;
 }
 .classifica-maschile,
-.classifica-femminile {
+.classifica-femminile,
+.classifica-under18f {
   overflow-x: auto;
 }
 .classifica h3 {
@@ -514,7 +515,8 @@ footer {
 
 /* Miglioramento tabelle classifiche */
 .classifica-maschile,
-.classifica-femminile {
+.classifica-femminile
+.classifica-under18f {
   overflow-x: auto;
   max-width: 100%;
 }
