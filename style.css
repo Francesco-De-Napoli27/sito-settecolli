@@ -1372,7 +1372,7 @@ footer {
 
 .sezione-magazine h2 {
   font-size: 2rem;
-  margin-bottom: 1.5rem;
+  margin: 0 0 1.5rem;   /* niente margin-top → sparisce la banda bianca sopra */
 }
 
 /* Griglia responsive: 1 col mobile, 2 tablet, 3 desktop medio, 4 desktop grande */
@@ -1381,7 +1381,7 @@ footer {
   gap: 2rem;
   justify-items: center;
   max-width: 1200px;
-  margin: 0 auto 3rem;
+  margin: 0 auto 0rem;
   grid-template-columns: repeat(1, minmax(0, 1fr));   /* mobile */
 }
 
