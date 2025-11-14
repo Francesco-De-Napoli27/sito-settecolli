@@ -1349,6 +1349,8 @@ footer {
   }
   .shop-section{
     background-image: url("images/shop-sfondo-mobile.png")
+  .sezione-magazine{
+    background-image: url("images/magazine-sfondo-mobile.png")
 }
 
 /* SCROLL REVEAL EFFECT */
@@ -1450,4 +1452,13 @@ footer {
   margin: 0;
   font-size: 0.85rem;
   color: #666;
+}
+
+.sezione-magazine{
+  background-image: url('images/magazine-sfondo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+  color: white; /* o nero, a seconda del contrasto */
 }
