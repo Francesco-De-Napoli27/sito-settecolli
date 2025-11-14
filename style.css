@@ -736,11 +736,6 @@ footer {
   font-size: 2rem;
 }
 
-.sezione-magazine {
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
 
 .footer-news {
   background-color: #ff2800;
@@ -1459,6 +1454,9 @@ footer {
 }
 
 .sezione-magazine{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
   background-image: url('images/magazine-sfondo.png');
   background-size: cover;
   background-position: center;
