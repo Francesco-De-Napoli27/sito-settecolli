@@ -404,7 +404,7 @@ th {
 }
 
 /* SPONSOR */
-.sponsors {
+.home-sponsors-section {
   margin: 0;
   padding: 3rem 1rem 3.5rem;
   text-align: center;
@@ -413,7 +413,7 @@ th {
   background: radial-gradient(circle at 0% 0%, #b72025 0%, #5a0030 35%, #001a3a 100%);
 }
 
-.sponsor h2 {
+.home-sponsor-section h2 {
   font-size: 2rem;
   margin: 0;
   letter-spacing: 0.08em;
