@@ -403,6 +403,70 @@ th {
   background-color: #f0f0f0;
 }
 
+/* ===== Sezione Sponsor in HOME (index) ===== */
+/* (non tocca la pagina sponsor con .sponsor-card-section) */
+
+.home-sponsor-section {
+  margin: 0;
+  padding: 3rem 1rem 3.5rem;
+  text-align: center;
+  color: #ffffff;
+  /* sfondo in continuità con le altre sezioni e il footer rosso */
+  background: radial-gradient(circle at 0% 0%, #b72025 0%, #5a0030 35%, #001a3a 100%);
+}
+
+.home-sponsor-section h2 {
+  font-size: 2rem;
+  margin: 0;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+/* GRIGLIA logo: 2 per riga su mobile, 5 per riga su desktop */
+.home-sponsor-grid {
+  display: grid;
+  gap: 1.5rem 2rem;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 2.5rem auto 0;
+  grid-template-columns: repeat(2, minmax(0, 1fr));   /* mobile: 2 colonne */
+}
+
+@media (min-width: 992px) {
+  .home-sponsor-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr)); /* desktop: 5 colonne */
+  }
+}
+
+/* Box del singolo logo: dimensione STANDARD */
+.home-sponsor-logo {
+  width: 170px;   /* larghezza fissa per tutti */
+  height: 90px;   /* altezza fissa per tutti */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* Immagine del logo */
+.home-sponsor-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.25s ease, filter 0.25s ease;
+  filter: drop-shadow(0 0 10px rgba(0,0,0,0.35));
+}
+
+/* Hover: leggero ingrandimento come le card */
+.home-sponsor-logo:hover img {
+  transform: scale(1.07);
+  filter: drop-shadow(0 0 18px rgba(0,0,0,0.6));
+}
+
 
 /* FOOTER */
 footer {
