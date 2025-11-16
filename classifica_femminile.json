@@ -1,6 +1,28 @@
 [
   {
     "posizione": 1,
+    "squadra": "Belvolley Centro Diagnostico Impieri",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810072/logo.jpg",
+    "punti": 6,
+    "giocate": 2,
+    "giocate vinte": 2,
+    "giocate perse": 0,
+    "set vinti": 6,
+    "set persi": 0
+  },
+  {
+    "posizione": 2,
+    "squadra": "Acli Settecolli Castrolibero",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810226/logo.png",
+    "punti": 6,
+    "giocate": 2,
+    "giocate vinte": 2,
+    "giocate perse": 0,
+    "set vinti": 6,
+    "set persi": 2
+  },
+  {
+    "posizione": 3,
     "squadra": "Cusunical Asd",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810213/logo.png",
     "punti": 3,
@@ -11,31 +33,9 @@
     "set persi": 0
   },
   {
-    "posizione": 2,
-    "squadra": "Belvolley Centro Diagnostico Impieri",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810072/logo.jpg",
-    "punti": 3,
-    "giocate": 1,
-    "giocate vinte": 1,
-    "giocate perse": 0,
-    "set vinti": 3,
-    "set persi": 0
-  },
-  {
-    "posizione": 3,
+    "posizione": 4,
     "squadra": "Yes We Call San Lucido",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810116/logo.jpg",
-    "punti": 3,
-    "giocate": 1,
-    "giocate vinte": 1,
-    "giocate perse": 0,
-    "set vinti": 3,
-    "set persi": 1
-  },
-  {
-    "posizione": 4,
-    "squadra": "Acli Settecolli Castrolibero",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810226/logo.png",
     "punti": 3,
     "giocate": 1,
     "giocate vinte": 1,
@@ -48,11 +48,33 @@
     "squadra": "Bigmat F.lli Crusco Diamante Sport",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810202/logo.jpg",
     "punti": 3,
+    "giocate": 2,
+    "giocate vinte": 1,
+    "giocate perse": 1,
+    "set vinti": 3,
+    "set persi": 4
+  },
+  {
+    "posizione": 11,
+    "squadra": "Volley Fagnano 2010 - Tirrenia Energia",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/no-logo-ios4.png",
+    "punti": 0,
+    "giocate": 1,
+    "giocate vinte": 0,
+    "giocate perse": 1,
+    "set vinti": 0,
+    "set persi": 1
+  },
+  {
+    "posizione": 6,
+    "squadra": "Sabatino Ortofrutta Volley Amantea",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810173/logo.jpg",
+    "punti": 0,
     "giocate": 1,
     "giocate vinte": 1,
-    "giocate perse": 0,
-    "set vinti": 3,
-    "set persi": 1
+    "giocate perse": 1,
+    "set vinti": 1,
+    "set persi": 3
   },
   {
     "posizione": 7,
@@ -92,21 +114,10 @@
     "squadra": "Don Russo Cetraro",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810122/logo.png",
     "punti": 0,
-    "giocate": 1,
+    "giocate": 2,
     "giocate vinte": 0,
-    "giocate perse": 1,
-    "set vinti": 0,
-    "set persi": 3
-  },
-  {
-    "posizione": 11,
-    "squadra": "Sabatino Ortofrutta Volley Amantea",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810173/logo.jpg",
-    "punti": 0,
-    "giocate": 1,
-    "giocate vinte": 0,
-    "giocate perse": 1,
-    "set vinti": 0,
-    "set persi": 3
+    "giocate perse": 2,
+    "set vinti": 1,
+    "set persi": 6
   }
 ]
