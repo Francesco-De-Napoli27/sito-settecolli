@@ -47,12 +47,12 @@
     "posizione": 5,
     "squadra": "Asd School Volley Taurianova",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170820313/logo.jpg",
-    "punti": 10,
-    "giocate": 6,
-    "giocate vinte": 4,
+    "punti": 12,
+    "giocate": 7,
+    "giocate vinte": 5,
     "giocate perse": 2,
-    "set vinti": 13,
-    "set persi": 10
+    "set vinti": 16,
+    "set persi": 12
   },
   {
     "posizione": 6,
@@ -67,8 +67,8 @@
   },
   {
     "posizione": 7,
-    "squadra": "Abvt Cosenza Us Acli",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810194/logo.png",
+    "squadra": "Volley Bianco Bovalino",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170820301/logo.jpg",
     "punti": 9,
     "giocate": 7,
     "giocate vinte": 3,
@@ -78,14 +78,14 @@
   },
   {
     "posizione": 8,
-    "squadra": "Volley Bianco Bovalino",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170820301/logo.jpg",
-    "punti": 8,
-    "giocate": 6,
+    "squadra": "Abvt Cosenza Us Acli",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810194/logo.png",
+    "punti": 9,
+    "giocate": 7,
     "giocate vinte": 3,
-    "giocate perse": 3,
-    "set vinti": 11,
-    "set persi": 13
+    "giocate perse": 4,
+    "set vinti": 13,
+    "set persi": 16
   },
   {
     "posizione": 9,

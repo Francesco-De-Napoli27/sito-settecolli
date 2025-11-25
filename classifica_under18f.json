@@ -12,19 +12,19 @@
   },
   {
     "posizione": 2,
-    "squadra": "Galliano Cosenza Volley",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810214/logo.png",
-    "punti": 6,
-    "giocate": 3,
-    "giocate vinte": 2,
+    "squadra": "Pallavolo Rossano A.s.d",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810012/logo.jpg",
+    "punti": 9,
+    "giocate": 4,
+    "giocate vinte": 3,
     "giocate perse": 1,
-    "set vinti": 7,
+    "set vinti": 10,
     "set persi": 3
   },
   {
     "posizione": 3,
-    "squadra": "Pallavolo Rossano A.s.d",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810012/logo.jpg",
+    "squadra": "Galliano Cosenza Volley",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810214/logo.png",
     "punti": 6,
     "giocate": 3,
     "giocate vinte": 2,
@@ -45,36 +45,25 @@
   },
   {
     "posizione": 5,
-    "squadra": "San Lucido Volley",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810116/logo.jpg",
-    "punti": 6,
-    "giocate": 3,
-    "giocate vinte": 2,
-    "giocate perse": 1,
-    "set vinti": 6,
-    "set persi": 4
-  },
-  {
-    "posizione": 6,
     "squadra": "Craticam Volley Academy",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810212/logo.jpg",
-    "punti": 3,
-    "giocate": 3,
-    "giocate vinte": 1,
+    "punti": 6,
+    "giocate": 4,
+    "giocate vinte": 2,
     "giocate perse": 2,
-    "set vinti": 3,
+    "set vinti": 6,
     "set persi": 6
   },
   {
-    "posizione": 7,
-    "squadra": "Sabatino Ortofrutta Volley Amantea",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810173/logo.jpg",
-    "punti": 0,
-    "giocate": 3,
-    "giocate vinte": 0,
-    "giocate perse": 3,
-    "set vinti": 1,
-    "set persi": 9
+    "posizione": 6,
+    "squadra": "San Lucido Volley",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810116/logo.jpg",
+    "punti": 6,
+    "giocate": 4,
+    "giocate vinte": 2,
+    "giocate perse": 2,
+    "set vinti": 6,
+    "set persi": 7
   },
   {
     "posizione": 8,
@@ -86,5 +75,16 @@
     "giocate perse": 3,
     "set vinti": 0,
     "set persi": 9
+  },
+  {
+    "posizione": 7,
+    "squadra": "Sabatino Ortofrutta Volley Amantea",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810173/logo.jpg",
+    "punti": 0,
+    "giocate": 4,
+    "giocate vinte": 0,
+    "giocate perse": 4,
+    "set vinti": 1,
+    "set persi": 12
   }
 ]
