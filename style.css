@@ -353,12 +353,14 @@ body {
   gap: 2rem;
 }
 .squadra-maschile,
-.squadra-femminile {
+.squadra-femminile 
+.squadra-u18femminile {
   flex: 1 1 300px;
   max-width: 450px;
 }
 .squadra-maschile img,
-.squadra-femminile img {
+.squadra-femminile img 
+.squadra-u18femminile img {
   width: 100%;
   height: auto;
   border-radius: 8px;
