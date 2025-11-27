@@ -3,11 +3,11 @@
     "posizione": 1,
     "squadra": "Ascensori Montanaro Avolio Nova Volley",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810002/logo.png",
-    "punti": 9,
-    "giocate": 3,
-    "giocate vinte": 3,
+    "punti": 12,
+    "giocate": 4,
+    "giocate vinte": 4,
     "giocate perse": 0,
-    "set vinti": 9,
+    "set vinti": 12,
     "set persi": 1
   },
   {
@@ -34,17 +34,6 @@
   },
   {
     "posizione": 4,
-    "squadra": "Silan Volley Asd",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810181/logo.jpg",
-    "punti": 6,
-    "giocate": 3,
-    "giocate vinte": 2,
-    "giocate perse": 1,
-    "set vinti": 6,
-    "set persi": 4
-  },
-  {
-    "posizione": 5,
     "squadra": "Craticam Volley Academy",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810212/logo.jpg",
     "punti": 6,
@@ -53,6 +42,17 @@
     "giocate perse": 2,
     "set vinti": 6,
     "set persi": 6
+  },
+  {
+    "posizione": 5,
+    "squadra": "Silan Volley Asd",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810181/logo.jpg",
+    "punti": 6,
+    "giocate": 4,
+    "giocate vinte": 2,
+    "giocate perse": 2,
+    "set vinti": 6,
+    "set persi": 7
   },
   {
     "posizione": 6,
