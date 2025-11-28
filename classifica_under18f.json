@@ -12,8 +12,8 @@
   },
   {
     "posizione": 2,
-    "squadra": "Pallavolo Rossano A.s.d",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810012/logo.jpg",
+    "squadra": "Galliano Cosenza Volley",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810214/logo.png",
     "punti": 9,
     "giocate": 4,
     "giocate vinte": 3,
@@ -23,13 +23,13 @@
   },
   {
     "posizione": 3,
-    "squadra": "Galliano Cosenza Volley",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810214/logo.png",
-    "punti": 6,
-    "giocate": 3,
-    "giocate vinte": 2,
+    "squadra": "Pallavolo Rossano A.s.d",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810012/logo.jpg",
+    "punti": 9,
+    "giocate": 4,
+    "giocate vinte": 3,
     "giocate perse": 1,
-    "set vinti": 7,
+    "set vinti": 10,
     "set persi": 3
   },
   {
@@ -66,17 +66,6 @@
     "set persi": 7
   },
   {
-    "posizione": 8,
-    "squadra": "Acli Settecolli Castrolibero",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810226/logo.png",
-    "punti": 0,
-    "giocate": 3,
-    "giocate vinte": 0,
-    "giocate perse": 3,
-    "set vinti": 0,
-    "set persi": 9
-  },
-  {
     "posizione": 7,
     "squadra": "Sabatino Ortofrutta Volley Amantea",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810173/logo.jpg",
@@ -85,6 +74,17 @@
     "giocate vinte": 0,
     "giocate perse": 4,
     "set vinti": 1,
+    "set persi": 12
+  },
+  {
+    "posizione": 8,
+    "squadra": "Acli Settecolli Castrolibero",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810226/logo.png",
+    "punti": 0,
+    "giocate": 4,
+    "giocate vinte": 0,
+    "giocate perse": 4,
+    "set vinti": 0,
     "set persi": 12
   }
 ]
