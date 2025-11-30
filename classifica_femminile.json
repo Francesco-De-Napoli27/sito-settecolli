@@ -3,11 +3,11 @@
     "posizione": 1,
     "squadra": "Cusunical Asd",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810213/logo.png",
-    "punti": 9,
-    "giocate": 3,
-    "giocate vinte": 3,
+    "punti": 12,
+    "giocate": 4,
+    "giocate vinte": 4,
     "giocate perse": 0,
-    "set vinti": 9,
+    "set vinti": 12,
     "set persi": 0
   },
   {
@@ -48,11 +48,11 @@
     "squadra": "Sprovieri Volley Corigliano",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810164/logo.png",
     "punti": 5,
-    "giocate": 3,
+    "giocate": 4,
     "giocate vinte": 2,
-    "giocate perse": 1,
+    "giocate perse": 2,
     "set vinti": 7,
-    "set persi": 6
+    "set persi": 9
   },
   {
     "posizione": 6,
@@ -78,6 +78,17 @@
   },
   {
     "posizione": 8,
+    "squadra": "Volley Fagnano 2010 - Tirrenia Energia",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810235/logo.png",
+    "punti": 3,
+    "giocate": 3,
+    "giocate vinte": 1,
+    "giocate perse": 2,
+    "set vinti": 3,
+    "set persi": 7
+  },
+  {
+    "posizione": 9,
     "squadra": "Pallavolo Rossano A.s.d.",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810012/logo.jpg",
     "punti": 0,
@@ -89,19 +100,8 @@
   },
   {
     "posizione": 11,
-    "squadra": "Volley Fagnano 2010 - Tirrenia Energia",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/no-logo-ios4.png",
-    "punti": 0,
-    "giocate": 2,
-    "giocate vinte": 0,
-    "giocate perse": 2,
-    "set vinti": 0,
-    "set persi": 6
-  },
-  {
-    "posizione": 9,
-    "squadra": "Don Russo Cetraro",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810122/logo.png",
+    "squadra": "Games Solution Volley Scalea",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810217/logo.jpg",
     "punti": 0,
     "giocate": 3,
     "giocate vinte": 0,
@@ -111,13 +111,13 @@
   },
   {
     "posizione": 10,
-    "squadra": "Games Solution Volley Scalea",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810217/logo.jpg",
+    "squadra": "Don Russo Cetraro",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810122/logo.png",
     "punti": 0,
-    "giocate": 3,
+    "giocate": 4,
     "giocate vinte": 0,
-    "giocate perse": 3,
-    "set vinti": 1,
-    "set persi": 9
+    "giocate perse": 4,
+    "set vinti": 2,
+    "set persi": 12
   }
 ]

@@ -12,6 +12,17 @@
   },
   {
     "posizione": 2,
+    "squadra": "Umipas Volley Academy",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810212/logo.jpg",
+    "punti": 18,
+    "giocate": 8,
+    "giocate vinte": 6,
+    "giocate perse": 2,
+    "set vinti": 21,
+    "set persi": 10
+  },
+  {
+    "posizione": 3,
     "squadra": "Don Russo Elio Group Cetraro",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810122/logo.png",
     "punti": 16,
@@ -22,18 +33,18 @@
     "set persi": 8
   },
   {
-    "posizione": 3,
-    "squadra": "Umipas Volley Academy",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810212/logo.jpg",
-    "punti": 16,
-    "giocate": 7,
+    "posizione": 4,
+    "squadra": "Asd School Volley Taurianova",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170820313/logo.jpg",
+    "punti": 13,
+    "giocate": 8,
     "giocate vinte": 5,
-    "giocate perse": 2,
+    "giocate perse": 3,
     "set vinti": 18,
-    "set persi": 8
+    "set persi": 15
   },
   {
-    "posizione": 4,
+    "posizione": 5,
     "squadra": "Acli Settecolli Castrolibero",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810226/logo.png",
     "punti": 13,
@@ -42,17 +53,6 @@
     "giocate perse": 3,
     "set vinti": 14,
     "set persi": 11
-  },
-  {
-    "posizione": 5,
-    "squadra": "Asd School Volley Taurianova",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170820313/logo.jpg",
-    "punti": 12,
-    "giocate": 7,
-    "giocate vinte": 5,
-    "giocate perse": 2,
-    "set vinti": 16,
-    "set persi": 12
   },
   {
     "posizione": 6,
