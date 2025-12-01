@@ -45,6 +45,17 @@
   },
   {
     "posizione": 5,
+    "squadra": "Bigmat F.lli Crusco Diamante Sport",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810202/logo.jpg",
+    "punti": 6,
+    "giocate": 4,
+    "giocate vinte": 2,
+    "giocate perse": 2,
+    "set vinti": 6,
+    "set persi": 7
+  },
+  {
+    "posizione": 6,
     "squadra": "Sprovieri Volley Corigliano",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810164/logo.png",
     "punti": 5,
@@ -55,29 +66,29 @@
     "set persi": 9
   },
   {
-    "posizione": 6,
-    "squadra": "Sabatino Ortofrutta Volley Amantea",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810173/logo.jpg",
+    "posizione": 7,
+    "squadra": "Pallavolo Rossano A.s.d.",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810012/logo.jpg",
     "punti": 3,
-    "giocate": 2,
+    "giocate": 3,
     "giocate vinte": 1,
-    "giocate perse": 1,
-    "set vinti": 3,
-    "set persi": 3
+    "giocate perse": 2,
+    "set vinti": 5,
+    "set persi": 6
   },
   {
-    "posizione": 7,
-    "squadra": "Bigmat F.lli Crusco Diamante Sport",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810202/logo.jpg",
+    "posizione": 8,
+    "squadra": "Sabatino Ortofrutta Volley Amantea",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810173/logo.jpg",
     "punti": 3,
     "giocate": 3,
     "giocate vinte": 1,
     "giocate perse": 2,
     "set vinti": 3,
-    "set persi": 7
+    "set persi": 6
   },
   {
-    "posizione": 8,
+    "posizione": 9,
     "squadra": "Volley Fagnano 2010 - Tirrenia Energia",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810235/logo.png",
     "punti": 3,
@@ -88,28 +99,6 @@
     "set persi": 7
   },
   {
-    "posizione": 9,
-    "squadra": "Pallavolo Rossano A.s.d.",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810012/logo.jpg",
-    "punti": 0,
-    "giocate": 2,
-    "giocate vinte": 0,
-    "giocate perse": 2,
-    "set vinti": 2,
-    "set persi": 6
-  },
-  {
-    "posizione": 11,
-    "squadra": "Games Solution Volley Scalea",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810217/logo.jpg",
-    "punti": 0,
-    "giocate": 3,
-    "giocate vinte": 0,
-    "giocate perse": 3,
-    "set vinti": 1,
-    "set persi": 9
-  },
-  {
     "posizione": 10,
     "squadra": "Don Russo Cetraro",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810122/logo.png",
@@ -118,6 +107,17 @@
     "giocate vinte": 0,
     "giocate perse": 4,
     "set vinti": 2,
+    "set persi": 12
+  },
+  {
+    "posizione": 11,
+    "squadra": "Games Solution Volley Scalea",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810217/logo.jpg",
+    "punti": 0,
+    "giocate": 4,
+    "giocate vinte": 0,
+    "giocate perse": 4,
+    "set vinti": 1,
     "set persi": 12
   }
 ]
