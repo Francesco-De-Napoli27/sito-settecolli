@@ -14,11 +14,11 @@
     "posizione": 2,
     "squadra": "Belvolley Centro Diagnostico Impieri",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810072/logo.jpg",
-    "punti": 9,
-    "giocate": 3,
-    "giocate vinte": 3,
+    "punti": 12,
+    "giocate": 4,
+    "giocate vinte": 4,
     "giocate perse": 0,
-    "set vinti": 9,
+    "set vinti": 12,
     "set persi": 0
   },
   {
@@ -37,11 +37,11 @@
     "squadra": "Yes We Call San Lucido",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810116/logo.jpg",
     "punti": 7,
-    "giocate": 3,
+    "giocate": 4,
     "giocate vinte": 2,
-    "giocate perse": 1,
+    "giocate perse": 2,
     "set vinti": 8,
-    "set persi": 4
+    "set persi": 7
   },
   {
     "posizione": 5,
