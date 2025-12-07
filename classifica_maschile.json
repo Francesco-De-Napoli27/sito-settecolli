@@ -12,6 +12,17 @@
   },
   {
     "posizione": 2,
+    "squadra": "Umipas Volley Academy",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810212/logo.jpg",
+    "punti": 21,
+    "giocate": 9,
+    "giocate vinte": 7,
+    "giocate perse": 2,
+    "set vinti": 24,
+    "set persi": 10
+  },
+  {
+    "posizione": 3,
     "squadra": "Don Russo Elio Group Cetraro",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810122/logo.png",
     "punti": 19,
@@ -22,29 +33,18 @@
     "set persi": 8
   },
   {
-    "posizione": 3,
-    "squadra": "Umipas Volley Academy",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810212/logo.jpg",
-    "punti": 18,
-    "giocate": 8,
-    "giocate vinte": 6,
-    "giocate perse": 2,
-    "set vinti": 21,
-    "set persi": 10
-  },
-  {
-    "posizione": 5,
+    "posizione": 4,
     "squadra": "Asd School Volley Taurianova",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170820313/logo.jpg",
-    "punti": 13,
-    "giocate": 8,
-    "giocate vinte": 5,
+    "punti": 16,
+    "giocate": 9,
+    "giocate vinte": 6,
     "giocate perse": 3,
-    "set vinti": 18,
+    "set vinti": 21,
     "set persi": 15
   },
   {
-    "posizione": 4,
+    "posizione": 5,
     "squadra": "La Boschiva Volley San Giovanni In Fiore",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810058/logo.jpg",
     "punti": 13,
@@ -92,21 +92,10 @@
     "squadra": "Abvt Cosenza Us Acli",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810194/logo.png",
     "punti": 9,
-    "giocate": 8,
+    "giocate": 9,
     "giocate vinte": 3,
-    "giocate perse": 5,
+    "giocate perse": 6,
     "set vinti": 13,
-    "set persi": 19
-  },
-  {
-    "posizione": 11,
-    "squadra": "Fabbridea Filadelfia",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/171020014/logo.png",
-    "punti": 6,
-    "giocate": 8,
-    "giocate vinte": 1,
-    "giocate perse": 7,
-    "set vinti": 12,
     "set persi": 22
   },
   {
@@ -119,6 +108,17 @@
     "giocate perse": 6,
     "set vinti": 9,
     "set persi": 21
+  },
+  {
+    "posizione": 11,
+    "squadra": "Fabbridea Filadelfia",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/171020014/logo.png",
+    "punti": 6,
+    "giocate": 9,
+    "giocate vinte": 1,
+    "giocate perse": 8,
+    "set vinti": 12,
+    "set persi": 25
   },
   {
     "posizione": 12,
