@@ -45,6 +45,17 @@
   },
   {
     "posizione": 5,
+    "squadra": "Sprovieri Volley Corigliano",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810164/logo.png",
+    "punti": 8,
+    "giocate": 5,
+    "giocate vinte": 3,
+    "giocate perse": 2,
+    "set vinti": 10,
+    "set persi": 10
+  },
+  {
+    "posizione": 6,
     "squadra": "Yes We Call San Lucido",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810116/logo.jpg",
     "punti": 7,
@@ -55,7 +66,7 @@
     "set persi": 7
   },
   {
-    "posizione": 6,
+    "posizione": 7,
     "squadra": "Pallavolo Rossano A.s.d.",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810012/logo.jpg",
     "punti": 6,
@@ -64,28 +75,6 @@
     "giocate perse": 2,
     "set vinti": 8,
     "set persi": 7
-  },
-  {
-    "posizione": 7,
-    "squadra": "Sprovieri Volley Corigliano",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810164/logo.png",
-    "punti": 5,
-    "giocate": 4,
-    "giocate vinte": 2,
-    "giocate perse": 2,
-    "set vinti": 7,
-    "set persi": 9
-  },
-  {
-    "posizione": 8,
-    "squadra": "Sabatino Ortofrutta Volley Amantea",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810173/logo.jpg",
-    "punti": 3,
-    "giocate": 3,
-    "giocate vinte": 1,
-    "giocate perse": 2,
-    "set vinti": 3,
-    "set persi": 6
   },
   {
     "posizione": 9,
@@ -97,6 +86,17 @@
     "giocate perse": 2,
     "set vinti": 3,
     "set persi": 7
+  },
+  {
+    "posizione": 8,
+    "squadra": "Sabatino Ortofrutta Volley Amantea",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810173/logo.jpg",
+    "punti": 3,
+    "giocate": 4,
+    "giocate vinte": 1,
+    "giocate perse": 3,
+    "set vinti": 4,
+    "set persi": 9
   },
   {
     "posizione": 10,
