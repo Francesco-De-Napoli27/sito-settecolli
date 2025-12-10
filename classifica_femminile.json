@@ -23,6 +23,17 @@
   },
   {
     "posizione": 3,
+    "squadra": "Yes We Call San Lucido",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810116/logo.jpg",
+    "punti": 10,
+    "giocate": 5,
+    "giocate vinte": 3,
+    "giocate perse": 2,
+    "set vinti": 11,
+    "set persi": 7
+  },
+  {
+    "posizione": 4,
     "squadra": "Acli Settecolli Castrolibero",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810226/logo.png",
     "punti": 9,
@@ -33,7 +44,7 @@
     "set persi": 5
   },
   {
-    "posizione": 4,
+    "posizione": 5,
     "squadra": "Bigmat F.lli Crusco Diamante Sport",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810202/logo.jpg",
     "punti": 9,
@@ -44,7 +55,7 @@
     "set persi": 7
   },
   {
-    "posizione": 5,
+    "posizione": 6,
     "squadra": "Sprovieri Volley Corigliano",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810164/logo.png",
     "punti": 8,
@@ -53,17 +64,6 @@
     "giocate perse": 2,
     "set vinti": 10,
     "set persi": 10
-  },
-  {
-    "posizione": 6,
-    "squadra": "Yes We Call San Lucido",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810116/logo.jpg",
-    "punti": 7,
-    "giocate": 4,
-    "giocate vinte": 2,
-    "giocate perse": 2,
-    "set vinti": 8,
-    "set persi": 7
   },
   {
     "posizione": 7,
@@ -77,17 +77,6 @@
     "set persi": 7
   },
   {
-    "posizione": 9,
-    "squadra": "Volley Fagnano 2010 - Tirrenia Energia",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810235/logo.png",
-    "punti": 3,
-    "giocate": 3,
-    "giocate vinte": 1,
-    "giocate perse": 2,
-    "set vinti": 3,
-    "set persi": 7
-  },
-  {
     "posizione": 8,
     "squadra": "Sabatino Ortofrutta Volley Amantea",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810173/logo.jpg",
@@ -97,6 +86,17 @@
     "giocate perse": 3,
     "set vinti": 4,
     "set persi": 9
+  },
+  {
+    "posizione": 9,
+    "squadra": "Volley Fagnano 2010 - Tirrenia Energia",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810235/logo.png",
+    "punti": 3,
+    "giocate": 4,
+    "giocate vinte": 1,
+    "giocate perse": 3,
+    "set vinti": 3,
+    "set persi": 10
   },
   {
     "posizione": 10,
