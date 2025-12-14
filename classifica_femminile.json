@@ -3,22 +3,22 @@
     "posizione": 1,
     "squadra": "Belvolley Centro Diagnostico Impieri",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810072/logo.jpg",
-    "punti": 15,
-    "giocate": 5,
-    "giocate vinte": 5,
+    "punti": 18,
+    "giocate": 6,
+    "giocate vinte": 6,
     "giocate perse": 0,
-    "set vinti": 15,
+    "set vinti": 18,
     "set persi": 0
   },
   {
     "posizione": 2,
     "squadra": "Cusunical Asd",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810213/logo.png",
-    "punti": 12,
-    "giocate": 4,
-    "giocate vinte": 4,
+    "punti": 15,
+    "giocate": 5,
+    "giocate vinte": 5,
     "giocate perse": 0,
-    "set vinti": 12,
+    "set vinti": 15,
     "set persi": 0
   },
   {
@@ -70,11 +70,11 @@
     "squadra": "Pallavolo Rossano A.s.d.",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810012/logo.jpg",
     "punti": 6,
-    "giocate": 4,
+    "giocate": 5,
     "giocate vinte": 2,
-    "giocate perse": 2,
+    "giocate perse": 3,
     "set vinti": 8,
-    "set persi": 7
+    "set persi": 10
   },
   {
     "posizione": 8,
@@ -99,17 +99,6 @@
     "set persi": 10
   },
   {
-    "posizione": 10,
-    "squadra": "Don Russo Cetraro",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810122/logo.png",
-    "punti": 0,
-    "giocate": 5,
-    "giocate vinte": 0,
-    "giocate perse": 5,
-    "set vinti": 3,
-    "set persi": 15
-  },
-  {
     "posizione": 11,
     "squadra": "Games Solution Volley Scalea",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810217/logo.jpg",
@@ -119,5 +108,16 @@
     "giocate perse": 5,
     "set vinti": 1,
     "set persi": 15
+  },
+  {
+    "posizione": 10,
+    "squadra": "Don Russo Cetraro",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810122/logo.png",
+    "punti": 0,
+    "giocate": 6,
+    "giocate vinte": 0,
+    "giocate perse": 6,
+    "set vinti": 3,
+    "set persi": 18
   }
 ]

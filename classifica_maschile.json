@@ -3,11 +3,11 @@
     "posizione": 1,
     "squadra": "Volley Pianopoli",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170800264/logo.jpg",
-    "punti": 27,
-    "giocate": 9,
-    "giocate vinte": 9,
+    "punti": 30,
+    "giocate": 10,
+    "giocate vinte": 10,
     "giocate perse": 0,
-    "set vinti": 27,
+    "set vinti": 30,
     "set persi": 2
   },
   {
@@ -36,12 +36,12 @@
     "posizione": 4,
     "squadra": "Asd School Volley Taurianova",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170820313/logo.jpg",
-    "punti": 16,
-    "giocate": 9,
-    "giocate vinte": 6,
+    "punti": 18,
+    "giocate": 10,
+    "giocate vinte": 7,
     "giocate perse": 3,
-    "set vinti": 21,
-    "set persi": 15
+    "set vinti": 24,
+    "set persi": 17
   },
   {
     "posizione": 5,
@@ -78,17 +78,6 @@
   },
   {
     "posizione": 8,
-    "squadra": "Volley Bianco Bovalino",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170820301/logo.jpg",
-    "punti": 9,
-    "giocate": 9,
-    "giocate vinte": 3,
-    "giocate perse": 6,
-    "set vinti": 13,
-    "set persi": 22
-  },
-  {
-    "posizione": 9,
     "squadra": "Abvt Cosenza Us Acli",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810194/logo.png",
     "punti": 9,
@@ -99,18 +88,29 @@
     "set persi": 22
   },
   {
-    "posizione": 11,
-    "squadra": "Fabbridea Filadelfia",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/171020014/logo.png",
-    "punti": 6,
-    "giocate": 9,
-    "giocate vinte": 1,
-    "giocate perse": 8,
-    "set vinti": 12,
+    "posizione": 9,
+    "squadra": "Volley Bianco Bovalino",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170820301/logo.jpg",
+    "punti": 9,
+    "giocate": 10,
+    "giocate vinte": 3,
+    "giocate perse": 7,
+    "set vinti": 13,
     "set persi": 25
   },
   {
     "posizione": 10,
+    "squadra": "Fabbridea Filadelfia",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/171020014/logo.png",
+    "punti": 7,
+    "giocate": 10,
+    "giocate vinte": 1,
+    "giocate perse": 9,
+    "set vinti": 14,
+    "set persi": 28
+  },
+  {
+    "posizione": 11,
     "squadra": "Crotone",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170800033/logo.png",
     "punti": 6,
