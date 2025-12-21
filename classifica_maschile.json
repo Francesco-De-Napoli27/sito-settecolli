@@ -14,23 +14,23 @@
     "posizione": 2,
     "squadra": "Don Russo Elio Group Cetraro",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810122/logo.png",
-    "punti": 25,
-    "giocate": 10,
-    "giocate vinte": 8,
+    "punti": 28,
+    "giocate": 11,
+    "giocate vinte": 9,
     "giocate perse": 2,
-    "set vinti": 27,
-    "set persi": 9
+    "set vinti": 30,
+    "set persi": 10
   },
   {
     "posizione": 3,
     "squadra": "Umipas Volley Academy",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810212/logo.jpg",
     "punti": 23,
-    "giocate": 10,
+    "giocate": 11,
     "giocate vinte": 8,
-    "giocate perse": 2,
-    "set vinti": 27,
-    "set persi": 12
+    "giocate perse": 3,
+    "set vinti": 28,
+    "set persi": 15
   },
   {
     "posizione": 4,
@@ -67,6 +67,17 @@
   },
   {
     "posizione": 7,
+    "squadra": "Abvt Cosenza Us Acli",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810194/logo.png",
+    "punti": 12,
+    "giocate": 11,
+    "giocate vinte": 4,
+    "giocate perse": 7,
+    "set vinti": 16,
+    "set persi": 25
+  },
+  {
+    "posizione": 8,
     "squadra": "Volley Club Nicotera A.s.d.",
     "logo": "https://www.fipavonline.it/img/loghi_societa/171020026/logo.jpg",
     "punti": 10,
@@ -77,20 +88,9 @@
     "set persi": 26
   },
   {
-    "posizione": 8,
+    "posizione": 9,
     "squadra": "Volley Bianco Bovalino",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170820301/logo.jpg",
-    "punti": 9,
-    "giocate": 10,
-    "giocate vinte": 3,
-    "giocate perse": 7,
-    "set vinti": 13,
-    "set persi": 25
-  },
-  {
-    "posizione": 9,
-    "squadra": "Abvt Cosenza Us Acli",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810194/logo.png",
     "punti": 9,
     "giocate": 10,
     "giocate vinte": 3,
@@ -114,11 +114,11 @@
     "squadra": "Asd Pepea Soverato",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170800294/logo.png",
     "punti": 7,
-    "giocate": 10,
+    "giocate": 11,
     "giocate vinte": 2,
-    "giocate perse": 8,
+    "giocate perse": 9,
     "set vinti": 12,
-    "set persi": 27
+    "set persi": 30
   },
   {
     "posizione": 12,
