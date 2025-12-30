@@ -1,143 +1,64 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Area Riservata | Polisportiva Acli Settecolli</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Redirect...</title>
 </head>
-<body class="contatti-staff" onload="checkAuth()">
+<body>
 
-  <!-- NAVBAR -->
-  <header class="navbar">
-    <div class="navbar-left">
-      <a href="index.html" class="logo-link">
-        <img src="images/logo settecolli.png" alt="Logo" class="logo" />
-      </a>
-    </div>
-
-    <nav class="navbar-center">
-      <ul class="nav-menu" id="navMenu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="staff.html">Staff</a></li>
-        <li><a href="team.html">Team</a></li>
-        <li><a href="notizie.html">Notizie</a></li>
-        <li><a href="sponsor.html">Sponsor</a></li>
-        <li><a href="tv.html">Settecolli TV</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="galleria.html">Galleria</a></li>
-        <li><a href="contatti.html">Contatti</a></li>
-      </ul>
-    </nav>
-
-    <div class="navbar-right">
-    <div class="login-wrapper">
-      <a href="#" class="login-icon" id="user-icon">👤</a>
-      <div class="dropdown-login" id="user-dropdown" style="display: none;">
-        <a href="area-riservata.html">Gestione Account</a>
-        <a href="#" onclick="logout()">Logout</a>
-      </div>
-    </div>
-    <div class="hamburger" id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </div>
-</header>
-
-<section class="hero hero-login">
-  <img src="images/hero.png" alt="Polisportiva Acli Settecolli" class="hero-image">
-</section>
-
-  <div class="contatti-wrapper">
-    <div class="contatti-testo">
-      <h2>Benvenuto nell'Area Riservata</h2>
-      <p>Accesso consentito solo agli utenti registrati.</p>
-    </div>
-    <div class="contatti-form">
-      <button onclick="logout()">Esci</button>
-    </div>
-  </div>
-
-  <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
-    import { getAuth, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
-
-    const firebaseConfig = {
-      apiKey: "AIzaSyDRf3Q_-D7nsVIPKSxxIm78rz1Nn5QY1cQ",
-      authDomain: "settecollisite.firebaseapp.com",
-      projectId: "settecollisite",
-      storageBucket: "settecollisite.firebasestorage.app",
-      messagingSenderId: "928590715316",
-      appId: "1:928590715316:web:031eae061e38bd5ef9bae1",
-      measurementId: "G-HG7C6G0ZPV"
-    };
-
-    const app = initializeApp(firebaseConfig);
-    const auth = getAuth(app);
-
-    window.checkAuth = function () {
-      onAuthStateChanged(auth, user => {
-        if (!user) {
-          alert("Non sei autenticato.");
-          window.location.href = "login.html";
-        }
-      });
-    };
-
-    window.logout = function () {
-      signOut(auth).then(() => {
-        alert("Sei stato disconnesso.");
-        window.location.href = "login.html";
-      });
-    };
-  </script>
-
-<!-- Firebase SDK -->
 <script type="module">
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-  import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
+  import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
+  import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
 
   const firebaseConfig = {
     apiKey: "AIzaSyDRf3Q_-D7nsVIPKSxxIm78rz1Nn5QY1cQ",
     authDomain: "settecollisite.firebaseapp.com",
     projectId: "settecollisite",
-    storageBucket: "settecollisite.appspot.com",
+    storageBucket: "settecollisite.firebasestorage.app",
     messagingSenderId: "928590715316",
-    appId: "1:928590715316:web:031eae061e38bd5ef9bae1",
-    measurementId: "G-HG7C6G0ZPV"
+    appId: "1:928590715316:web:031eae061e38bd5ef9bae1"
   };
 
   const app = initializeApp(firebaseConfig);
   const auth = getAuth(app);
+  const db = getFirestore(app);
 
-  // Mostra il menu se l'utente è loggato
-  onAuthStateChanged(auth, (user) => {
-    const userIcon = document.getElementById("user-icon");
-    const userDropdown = document.getElementById("user-dropdown");
+  onAuthStateChanged(auth, async (user) => {
+    if (!user) {
+      window.location.replace("login.html");
+      return;
+    }
 
-    if (user) {
-      userIcon.addEventListener("click", () => {
-        userDropdown.style.display = userDropdown.style.display === "block" ? "none" : "block";
-      });
-    } else {
-      // Se non loggato, rimanda a login
-      userIcon.addEventListener("click", () => {
-        window.location.href = "login.html";
-      });
+    try {
+      const ref = doc(db, "users", user.uid);
+      const snap = await getDoc(ref);
+
+      if (!snap.exists()) {
+        window.location.replace("login.html");
+        return;
+      }
+
+      const role = snap.data().role;
+
+      if (role === "tifoso") {
+        window.location.replace("area-tifoso.html");
+      } else if (role === "atleta") {
+        window.location.replace("area-atleta.html");
+      } else if (role === "allenatore") {
+        window.location.replace("area-allenatore.html");
+      } else if (role === "dirigente") {
+        window.location.replace("area-dirigente.html");
+      } else {
+        window.location.replace("login.html");
+      }
+
+    } catch (e) {
+      console.error("Errore Firestore:", e);
+      window.location.replace("login.html");
     }
   });
-
-  // Funzione logout
-  window.logout = function () {
-    signOut(auth).then(() => {
-      window.location.href = "index.html";
-    });
-  };
 </script>
 
-  
 </body>
-  
 </html>
