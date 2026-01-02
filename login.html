@@ -202,26 +202,24 @@
 
     switch (ruolo) {
       case "admin":
-        window.location.href = "admin.html";
+        window.location.href = "index.html";
         break;
       case "dirigente":
-        window.location.href = "area-dirigente.html";
+        window.location.href = "index.html";
         break;
       case "allenatore":
-        window.location.href = "area-allenatore.html";
+        window.location.href = "index.html";
         break;
       case "atleta":
-        window.location.href = "area-atleta.html";
+        window.location.href = "index.html";
         break;
       case "tifoso":
-        window.location.href = "area-tifoso.html";
+        window.location.href = "index.html";
         break;
       default:
         window.location.href = "accesso-negato.html";
     }
 
-    // ✅ REDIRECT ESPLICITO
-    window.location.href = "index.html";
 
   } catch (error) {
     alert(error.message);
