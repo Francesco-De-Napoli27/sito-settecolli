@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-import { getAuth } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 const firebaseConfig = {
@@ -15,21 +15,31 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
 
-window.goToAccount = async function () {
-  const user = auth.currentUser;
+let currentUser = null;
 
-  if (!user) {
+/**
+ * 🔐 Stato di autenticazione globale
+ */
+onAuthStateChanged(auth, (user) => {
+  currentUser = user;
+});
+
+/**
+ * 👉 Click su "Gestione account"
+ */
+window.goToAccount = async function () {
+  if (!currentUser) {
     window.location.href = "login.html";
     return;
   }
 
-  const userDoc = await getDoc(doc(db, "users", user.uid));
-  if (!userDoc.exists()) {
+  const snap = await getDoc(doc(db, "users", currentUser.uid));
+  if (!snap.exists()) {
     alert("Profilo utente non trovato");
     return;
   }
 
-  const { ruolo } = userDoc.data();
+  const { ruolo } = snap.data();
 
   switch (ruolo) {
     case "admin":
@@ -50,4 +60,13 @@ window.goToAccount = async function () {
     default:
       alert("Ruolo non valido");
   }
+};
+
+/**
+ * 👉 Logout
+ */
+window.logout = function () {
+  signOut(auth).then(() => {
+    window.location.href = "index.html";
+  });
 };
