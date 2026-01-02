@@ -200,28 +200,12 @@
       return;
     }
 
-    switch (ruolo) {
-      case "admin":
-        window.location.href = "index.html";
-        break;
-      case "dirigente":
-        window.location.href = "index.html";
-        break;
-      case "allenatore":
-        window.location.href = "index.html";
-        break;
-      case "atleta":
-        window.location.href = "index.html";
-        break;
-      case "tifoso":
-        window.location.href = "index.html";
-        break;
-      default:
-        window.location.href = "accesso-negato.html";
-    }
+    // 🔁 TUTTI tornano in index
+    window.location.href = "index.html";
 
+  }
 
-  } catch (error) {
+   catch (error) {
     alert(error.message);
     }
   };
