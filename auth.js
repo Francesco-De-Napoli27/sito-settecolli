@@ -1,5 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import { getAuth } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDRf3Q_-D7nsVIPKSxxIm78rz1Nn5QY1cQ",
@@ -12,23 +13,41 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
+const db = getFirestore(app);
 
-const loginIcon = document.getElementById("user-icon");
-const dropdown = document.getElementById("user-dropdown");
+window.goToAccount = async function () {
+  const user = auth.currentUser;
 
-onAuthStateChanged(auth, (user) => {
-  if (user) {
-    loginIcon.addEventListener("click", (e) => {
-      e.preventDefault();
-      dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
-    });
-  } else {
-    loginIcon.setAttribute("href", "login.html");
+  if (!user) {
+    window.location.href = "login.html";
+    return;
   }
-});
 
-window.logout = function () {
-  signOut(auth).then(() => {
-    window.location.href = "index.html";
-  });
+  const userDoc = await getDoc(doc(db, "users", user.uid));
+  if (!userDoc.exists()) {
+    alert("Profilo utente non trovato");
+    return;
+  }
+
+  const { ruolo } = userDoc.data();
+
+  switch (ruolo) {
+    case "admin":
+      window.location.href = "admin.html";
+      break;
+    case "dirigente":
+      window.location.href = "area-dirigente.html";
+      break;
+    case "allenatore":
+      window.location.href = "area-allenatore.html";
+      break;
+    case "atleta":
+      window.location.href = "area-atleta.html";
+      break;
+    case "tifoso":
+      window.location.href = "area-tifoso.html";
+      break;
+    default:
+      alert("Ruolo non valido");
+  }
 };
