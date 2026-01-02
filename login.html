@@ -109,6 +109,8 @@
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
   import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
+  import { getFirestore, doc, getDoc, setDoc } 
+    from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
 
   const firebaseConfig = {
     apiKey: "AIzaSyDRf3Q_-D7nsVIPKSxxIm78rz1Nn5QY1cQ",
@@ -122,27 +124,81 @@
 
   const app = initializeApp(firebaseConfig);
   const auth = getAuth(app);
+  const db = getFirestore(app);
 
-  window.register = function () {
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
-    createUserWithEmailAndPassword(auth, email, password)
-      .then(() => {
-        alert("Registrazione avvenuta!");
-        window.location.href = "area-riservata.html";
-      })
-      .catch(error => alert(error.message));
-  };
+ window.register = async function () {
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
 
-  window.login = function () {
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
-    signInWithEmailAndPassword(auth, email, password)
-      .then(() => {
-        alert("Login effettuato!");
-        window.location.href = "index.html";
-      })
-      .catch(error => alert(error.message));
+  try {
+    const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+    const user = userCredential.user;
+
+    await setDoc(doc(db, "users", user.uid), {
+      email: email,
+      ruolo: "tifoso",
+      primoAccesso: false
+    });
+
+    alert("Registrazione avvenuta!");
+    window.location.href = "area-tifoso.html";
+
+  } catch (error) {
+    alert(error.message);
+  }
+};
+
+
+  window.login = async function () {
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+
+  try {
+    // 1️⃣ Login Firebase Auth
+    const userCredential = await signInWithEmailAndPassword(auth, email, password);
+    const user = userCredential.user;
+
+    // 2️⃣ Leggi Firestore
+    const userDocRef = doc(db, "users", user.uid);
+    const userDoc = await getDoc(userDocRef);
+
+    if (!userDoc.exists()) {
+      alert("Errore: profilo utente non trovato.");
+      return;
+    }
+
+    const { ruolo, primoAccesso } = userDoc.data();
+    console.log("Ruolo:", ruolo);
+
+    // 3️⃣ Redirect
+    if (primoAccesso) {
+      window.location.href = "cambia-password.html";
+      return;
+    }
+
+    switch (ruolo) {
+      case "admin":
+        window.location.href = "admin.html";
+        break;
+      case "dirigente":
+        window.location.href = "area-dirigente.html";
+        break;
+      case "allenatore":
+        window.location.href = "area-allenatore.html";
+        break;
+      case "atleta":
+        window.location.href = "area-atleta.html";
+        break;
+      case "tifoso":
+        window.location.href = "area-tifoso.html";
+        break;
+      default:
+        window.location.href = "accesso-negato.html";
+    }
+
+  } catch (error) {
+    alert(error.message);
+    }
   };
 </script>
 
