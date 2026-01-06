@@ -47,11 +47,11 @@
     "posizione": 5,
     "squadra": "Craticam Volley Academy",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810212/logo.jpg",
-    "punti": 6,
-    "giocate": 5,
-    "giocate vinte": 2,
+    "punti": 9,
+    "giocate": 6,
+    "giocate vinte": 3,
     "giocate perse": 3,
-    "set vinti": 6,
+    "set vinti": 9,
     "set persi": 9
   },
   {
@@ -59,11 +59,11 @@
     "squadra": "Silan Volley Asd",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810181/logo.jpg",
     "punti": 6,
-    "giocate": 5,
+    "giocate": 6,
     "giocate vinte": 2,
-    "giocate perse": 3,
+    "giocate perse": 4,
     "set vinti": 6,
-    "set persi": 10
+    "set persi": 13
   },
   {
     "posizione": 7,
