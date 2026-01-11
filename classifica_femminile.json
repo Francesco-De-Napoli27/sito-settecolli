@@ -3,22 +3,22 @@
     "posizione": 1,
     "squadra": "Belvolley Centro Diagnostico Impieri",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810072/logo.jpg",
-    "punti": 20,
-    "giocate": 7,
-    "giocate vinte": 7,
+    "punti": 23,
+    "giocate": 8,
+    "giocate vinte": 8,
     "giocate perse": 0,
-    "set vinti": 21,
+    "set vinti": 24,
     "set persi": 2
   },
   {
     "posizione": 2,
     "squadra": "Cusunical Asd",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810213/logo.png",
-    "punti": 16,
-    "giocate": 6,
-    "giocate vinte": 5,
+    "punti": 19,
+    "giocate": 7,
+    "giocate vinte": 6,
     "giocate perse": 1,
-    "set vinti": 17,
+    "set vinti": 20,
     "set persi": 3
   },
   {
@@ -59,22 +59,22 @@
     "squadra": "Sprovieri Volley Corigliano",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810164/logo.png",
     "punti": 11,
-    "giocate": 7,
+    "giocate": 8,
     "giocate vinte": 4,
-    "giocate perse": 3,
+    "giocate perse": 4,
     "set vinti": 13,
-    "set persi": 14
+    "set persi": 17
   },
   {
     "posizione": 7,
     "squadra": "Sabatino Ortofrutta Volley Amantea",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810173/logo.jpg",
     "punti": 9,
-    "giocate": 6,
+    "giocate": 7,
     "giocate vinte": 3,
-    "giocate perse": 3,
+    "giocate perse": 4,
     "set vinti": 10,
-    "set persi": 9
+    "set persi": 12
   },
   {
     "posizione": 8,
@@ -92,25 +92,25 @@
     "squadra": "Volley Fagnano 2010 - Tirrenia Energia",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810235/logo.png",
     "punti": 3,
-    "giocate": 6,
+    "giocate": 7,
     "giocate vinte": 1,
-    "giocate perse": 5,
-    "set vinti": 5,
-    "set persi": 16
-  },
-  {
-    "posizione": 11,
-    "squadra": "Games Solution Volley Scalea",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810217/logo.jpg",
-    "punti": 0,
-    "giocate": 6,
-    "giocate vinte": 0,
     "giocate perse": 6,
-    "set vinti": 1,
-    "set persi": 18
+    "set vinti": 5,
+    "set persi": 19
   },
   {
     "posizione": 10,
+    "squadra": "Games Solution Volley Scalea",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810217/logo.jpg",
+    "punti": 3,
+    "giocate": 7,
+    "giocate vinte": 1,
+    "giocate perse": 6,
+    "set vinti": 4,
+    "set persi": 18
+  },
+  {
+    "posizione": 11,
     "squadra": "Don Russo Cetraro",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810122/logo.png",
     "punti": 0,
