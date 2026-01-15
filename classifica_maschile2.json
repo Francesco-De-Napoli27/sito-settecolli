@@ -1,0 +1,90 @@
+[
+  {
+    "posizione": 1,
+    "squadra": "Tecnofutura Settecolli Nextgen",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810226/logo.png",
+    "punti": 3,
+    "giocate": 1,
+    "giocate vinte": 1,
+    "giocate perse": 0,
+    "set vinti": 3,
+    "set persi": 0
+  },
+  {
+    "posizione": 2,
+    "squadra": "Ital Costruzioni Nova Volley Trebisacce",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810210/logo.jpg",
+    "punti": 3,
+    "giocate": 1,
+    "giocate vinte": 1,
+    "giocate perse": 0,
+    "set vinti": 3,
+    "set persi": 0
+  },
+  {
+    "posizione": 3,
+    "squadra": "Masterbrico Volley Belmonte",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810228/logo.jpg",
+    "punti": 3,
+    "giocate": 1,
+    "giocate vinte": 1,
+    "giocate perse": 0,
+    "set vinti": 3,
+    "set persi": 1
+  },
+  {
+    "posizione": 4,
+    "squadra": "Pallavolo Rossano A.s.d",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810012/logo.jpg",
+    "punti": 3,
+    "giocate": 1,
+    "giocate vinte": 1,
+    "giocate perse": 0,
+    "set vinti": 3,
+    "set persi": 1
+  },
+  {
+    "posizione": 6,
+    "squadra": "Fattoria Didattica Terre Antiche",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/no-logo-ios4.png",
+    "punti": 0,
+    "giocate": 1,
+    "giocate vinte": 0,
+    "giocate perse": 1,
+    "set vinti": 1,
+    "set persi": 3
+  },
+  {
+    "posizione": 7,
+    "squadra": "Gioelleria Cirilllo Diamante Sport",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810202/logo.jpg",
+    "punti": 0,
+    "giocate": 1,
+    "giocate vinte": 0,
+    "giocate perse": 1,
+    "set vinti": 1,
+    "set persi": 3
+  },
+  {
+    "posizione": 8,
+    "squadra": "Volley Fagnano 2010 - Papi Ristorante",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810235/logo.png",
+    "punti": 0,
+    "giocate": 1,
+    "giocate vinte": 0,
+    "giocate perse": 1,
+    "set vinti": 0,
+    "set persi": 3
+  },
+  {
+    "posizione": 9,
+    "squadra": "Umipas Volley Academy",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810212/logo.jpg",
+    "punti": 0,
+    "giocate": 1,
+    "giocate vinte": 0,
+    "giocate perse": 1,
+    "set vinti": 0,
+    "set persi": 3
+  }
+]
