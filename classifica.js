@@ -43,5 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
     caricaClassifica("classifica_maschile.json", "classifica-maschile");
     caricaClassifica("classifica_femminile.json", "classifica-femminile");
     caricaClassifica("classifica_under18f.json", "classifica-under18f");
+    caricaClassifica("classifica_maschile2.json", "classifica-maschile2");
 });
+
 
