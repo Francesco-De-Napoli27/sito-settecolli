@@ -34,6 +34,17 @@
   },
   {
     "posizione": 4,
+    "squadra": "Bigmat F.lli Crusco Diamante Sport",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810202/logo.jpg",
+    "punti": 16,
+    "giocate": 8,
+    "giocate vinte": 5,
+    "giocate perse": 3,
+    "set vinti": 17,
+    "set persi": 10
+  },
+  {
+    "posizione": 5,
     "squadra": "Acli Settecolli Castrolibero",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810226/logo.png",
     "punti": 15,
@@ -41,17 +52,6 @@
     "giocate vinte": 5,
     "giocate perse": 2,
     "set vinti": 15,
-    "set persi": 10
-  },
-  {
-    "posizione": 5,
-    "squadra": "Bigmat F.lli Crusco Diamante Sport",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810202/logo.jpg",
-    "punti": 13,
-    "giocate": 7,
-    "giocate vinte": 4,
-    "giocate perse": 3,
-    "set vinti": 14,
     "set persi": 10
   },
   {
@@ -80,23 +80,23 @@
     "posizione": 8,
     "squadra": "Pallavolo Rossano A.s.d.",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810012/logo.jpg",
-    "punti": 6,
-    "giocate": 7,
+    "punti": 7,
+    "giocate": 8,
     "giocate vinte": 2,
-    "giocate perse": 5,
-    "set vinti": 10,
-    "set persi": 16
+    "giocate perse": 6,
+    "set vinti": 12,
+    "set persi": 19
   },
   {
     "posizione": 9,
     "squadra": "Volley Fagnano 2010 - Tirrenia Energia",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810235/logo.png",
-    "punti": 3,
-    "giocate": 7,
-    "giocate vinte": 1,
+    "punti": 5,
+    "giocate": 8,
+    "giocate vinte": 2,
     "giocate perse": 6,
-    "set vinti": 5,
-    "set persi": 19
+    "set vinti": 8,
+    "set persi": 21
   },
   {
     "posizione": 10,
@@ -114,10 +114,10 @@
     "squadra": "Don Russo Cetraro",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810122/logo.png",
     "punti": 0,
-    "giocate": 7,
+    "giocate": 8,
     "giocate vinte": 0,
-    "giocate perse": 7,
+    "giocate perse": 8,
     "set vinti": 3,
-    "set persi": 21
+    "set persi": 24
   }
 ]

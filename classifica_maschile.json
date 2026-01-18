@@ -3,12 +3,12 @@
     "posizione": 1,
     "squadra": "Volley Pianopoli",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170800264/logo.jpg",
-    "punti": 36,
-    "giocate": 12,
+    "punti": 37,
+    "giocate": 13,
     "giocate vinte": 12,
-    "giocate perse": 0,
-    "set vinti": 36,
-    "set persi": 4
+    "giocate perse": 1,
+    "set vinti": 38,
+    "set persi": 7
   },
   {
     "posizione": 2,
@@ -25,12 +25,12 @@
     "posizione": 3,
     "squadra": "Umipas Volley Academy",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810212/logo.jpg",
-    "punti": 26,
-    "giocate": 12,
-    "giocate vinte": 9,
+    "punti": 28,
+    "giocate": 13,
+    "giocate vinte": 10,
     "giocate perse": 3,
-    "set vinti": 31,
-    "set persi": 15
+    "set vinti": 34,
+    "set persi": 17
   },
   {
     "posizione": 4,
