@@ -14,34 +14,34 @@
     "posizione": 2,
     "squadra": "Don Russo Elio Group Cetraro",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810122/logo.png",
-    "punti": 34,
-    "giocate": 13,
-    "giocate vinte": 11,
+    "punti": 36,
+    "giocate": 14,
+    "giocate vinte": 12,
     "giocate perse": 2,
-    "set vinti": 36,
-    "set persi": 12
+    "set vinti": 39,
+    "set persi": 14
   },
   {
     "posizione": 3,
     "squadra": "Umipas Volley Academy",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810212/logo.jpg",
-    "punti": 28,
-    "giocate": 13,
-    "giocate vinte": 10,
+    "punti": 30,
+    "giocate": 14,
+    "giocate vinte": 11,
     "giocate perse": 3,
-    "set vinti": 34,
-    "set persi": 17
+    "set vinti": 37,
+    "set persi": 19
   },
   {
     "posizione": 4,
     "squadra": "Asd School Volley Taurianova",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170820313/logo.jpg",
-    "punti": 27,
-    "giocate": 13,
+    "punti": 28,
+    "giocate": 14,
     "giocate vinte": 10,
-    "giocate perse": 3,
-    "set vinti": 33,
-    "set persi": 17
+    "giocate perse": 4,
+    "set vinti": 35,
+    "set persi": 20
   },
   {
     "posizione": 5,
@@ -58,45 +58,45 @@
     "posizione": 6,
     "squadra": "Acli Settecolli Castrolibero",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810226/logo.png",
-    "punti": 19,
-    "giocate": 13,
-    "giocate vinte": 6,
+    "punti": 22,
+    "giocate": 14,
+    "giocate vinte": 7,
     "giocate perse": 7,
-    "set vinti": 21,
-    "set persi": 24
+    "set vinti": 24,
+    "set persi": 25
   },
   {
     "posizione": 7,
     "squadra": "Volley Bianco Bovalino",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170820301/logo.jpg",
-    "punti": 17,
-    "giocate": 13,
+    "punti": 18,
+    "giocate": 14,
     "giocate vinte": 6,
-    "giocate perse": 7,
-    "set vinti": 22,
-    "set persi": 28
+    "giocate perse": 8,
+    "set vinti": 24,
+    "set persi": 31
   },
   {
     "posizione": 8,
-    "squadra": "Volley Club Nicotera A.s.d.",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/171020026/logo.jpg",
-    "punti": 13,
-    "giocate": 13,
+    "squadra": "Abvt Cosenza Us Acli",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810194/logo.png",
+    "punti": 15,
+    "giocate": 14,
     "giocate vinte": 5,
-    "giocate perse": 8,
-    "set vinti": 22,
+    "giocate perse": 9,
+    "set vinti": 21,
     "set persi": 32
   },
   {
     "posizione": 9,
-    "squadra": "Abvt Cosenza Us Acli",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810194/logo.png",
-    "punti": 12,
-    "giocate": 13,
-    "giocate vinte": 4,
+    "squadra": "Volley Club Nicotera A.s.d.",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/171020026/logo.jpg",
+    "punti": 13,
+    "giocate": 14,
+    "giocate vinte": 5,
     "giocate perse": 9,
-    "set vinti": 18,
-    "set persi": 31
+    "set vinti": 23,
+    "set persi": 35
   },
   {
     "posizione": 10,
@@ -125,10 +125,10 @@
     "squadra": "Crotone",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170800033/logo.png",
     "punti": 6,
-    "giocate": 13,
+    "giocate": 14,
     "giocate vinte": 2,
-    "giocate perse": 11,
-    "set vinti": 12,
-    "set persi": 36
+    "giocate perse": 12,
+    "set vinti": 13,
+    "set persi": 39
   }
 ]
