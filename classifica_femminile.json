@@ -14,11 +14,11 @@
     "posizione": 2,
     "squadra": "Cusunical Asd",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810213/logo.png",
-    "punti": 22,
-    "giocate": 8,
-    "giocate vinte": 7,
+    "punti": 25,
+    "giocate": 9,
+    "giocate vinte": 8,
     "giocate perse": 1,
-    "set vinti": 23,
+    "set vinti": 26,
     "set persi": 3
   },
   {
@@ -26,66 +26,66 @@
     "squadra": "Yes We Call San Lucido",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810116/logo.jpg",
     "punti": 18,
-    "giocate": 9,
+    "giocate": 10,
     "giocate vinte": 6,
-    "giocate perse": 3,
+    "giocate perse": 4,
     "set vinti": 20,
+    "set persi": 16
+  },
+  {
+    "posizione": 5,
+    "squadra": "Bigmat F.lli Crusco Diamante Sport",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810202/logo.jpg",
+    "punti": 17,
+    "giocate": 9,
+    "giocate vinte": 5,
+    "giocate perse": 4,
+    "set vinti": 19,
     "set persi": 13
   },
   {
     "posizione": 4,
-    "squadra": "Bigmat F.lli Crusco Diamante Sport",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810202/logo.jpg",
-    "punti": 16,
-    "giocate": 8,
-    "giocate vinte": 5,
-    "giocate perse": 3,
-    "set vinti": 17,
-    "set persi": 10
-  },
-  {
-    "posizione": 5,
     "squadra": "Acli Settecolli Castrolibero",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810226/logo.png",
-    "punti": 15,
-    "giocate": 8,
-    "giocate vinte": 5,
+    "punti": 17,
+    "giocate": 9,
+    "giocate vinte": 6,
     "giocate perse": 3,
-    "set vinti": 15,
-    "set persi": 13
+    "set vinti": 18,
+    "set persi": 15
   },
   {
     "posizione": 6,
     "squadra": "Sabatino Ortofrutta Volley Amantea",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810173/logo.jpg",
-    "punti": 12,
-    "giocate": 8,
-    "giocate vinte": 4,
+    "punti": 15,
+    "giocate": 9,
+    "giocate vinte": 5,
     "giocate perse": 4,
-    "set vinti": 13,
+    "set vinti": 16,
     "set persi": 12
   },
   {
     "posizione": 7,
     "squadra": "Sprovieri Volley Corigliano",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810164/logo.png",
-    "punti": 11,
-    "giocate": 8,
+    "punti": 12,
+    "giocate": 9,
     "giocate vinte": 4,
-    "giocate perse": 4,
-    "set vinti": 13,
-    "set persi": 17
+    "giocate perse": 5,
+    "set vinti": 15,
+    "set persi": 20
   },
   {
     "posizione": 8,
     "squadra": "Pallavolo Rossano A.s.d.",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810012/logo.jpg",
     "punti": 7,
-    "giocate": 8,
+    "giocate": 9,
     "giocate vinte": 2,
-    "giocate perse": 6,
+    "giocate perse": 7,
     "set vinti": 12,
-    "set persi": 19
+    "set persi": 22
   },
   {
     "posizione": 9,
@@ -113,11 +113,11 @@
     "posizione": 11,
     "squadra": "Don Russo Cetraro",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810122/logo.png",
-    "punti": 0,
-    "giocate": 8,
-    "giocate vinte": 0,
+    "punti": 2,
+    "giocate": 9,
+    "giocate vinte": 1,
     "giocate perse": 8,
-    "set vinti": 3,
-    "set persi": 24
+    "set vinti": 6,
+    "set persi": 26
   }
 ]

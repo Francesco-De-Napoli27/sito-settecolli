@@ -3,11 +3,11 @@
     "posizione": 1,
     "squadra": "Volley Pianopoli",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170800264/logo.jpg",
-    "punti": 37,
-    "giocate": 13,
-    "giocate vinte": 12,
+    "punti": 40,
+    "giocate": 14,
+    "giocate vinte": 13,
     "giocate perse": 1,
-    "set vinti": 38,
+    "set vinti": 41,
     "set persi": 7
   },
   {
@@ -47,11 +47,11 @@
     "posizione": 5,
     "squadra": "La Boschiva Volley San Giovanni In Fiore",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810058/logo.jpg",
-    "punti": 23,
-    "giocate": 13,
-    "giocate vinte": 8,
+    "punti": 26,
+    "giocate": 14,
+    "giocate vinte": 9,
     "giocate perse": 5,
-    "set vinti": 27,
+    "set vinti": 30,
     "set persi": 21
   },
   {
@@ -103,22 +103,22 @@
     "squadra": "Fabbridea Filadelfia",
     "logo": "https://www.fipavonline.it/img/loghi_societa/171020014/logo.png",
     "punti": 10,
-    "giocate": 13,
+    "giocate": 14,
     "giocate vinte": 2,
-    "giocate perse": 11,
+    "giocate perse": 12,
     "set vinti": 18,
-    "set persi": 34
+    "set persi": 37
   },
   {
     "posizione": 11,
     "squadra": "Asd Pepea Soverato",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170800294/logo.png",
     "punti": 8,
-    "giocate": 13,
+    "giocate": 14,
     "giocate vinte": 2,
-    "giocate perse": 11,
+    "giocate perse": 12,
     "set vinti": 14,
-    "set persi": 36
+    "set persi": 39
   },
   {
     "posizione": 12,

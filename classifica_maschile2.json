@@ -1,6 +1,17 @@
 [
   {
     "posizione": 1,
+    "squadra": "Masterbrico Volley Belmonte",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810228/logo.jpg",
+    "punti": 9,
+    "giocate": 3,
+    "giocate vinte": 3,
+    "giocate perse": 0,
+    "set vinti": 9,
+    "set persi": 2
+  },
+  {
+    "posizione": 2,
     "squadra": "Pallavolo Rossano A.s.d",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810012/logo.jpg",
     "punti": 9,
@@ -11,7 +22,7 @@
     "set persi": 3
   },
   {
-    "posizione": 2,
+    "posizione": 3,
     "squadra": "Tecnofutura Settecolli Nextgen",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810226/logo.png",
     "punti": 6,
@@ -20,17 +31,6 @@
     "giocate perse": 0,
     "set vinti": 6,
     "set persi": 0
-  },
-  {
-    "posizione": 3,
-    "squadra": "Masterbrico Volley Belmonte",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810228/logo.jpg",
-    "punti": 6,
-    "giocate": 2,
-    "giocate vinte": 2,
-    "giocate perse": 0,
-    "set vinti": 6,
-    "set persi": 2
   },
   {
     "posizione": 4,
@@ -55,18 +55,18 @@
     "set persi": 6
   },
   {
-    "posizione": 9,
-    "squadra": "Ristorante La Perla Del Mare Vg Pure Volley",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810224/logo.jpg",
-    "punti": 0,
-    "giocate": 1,
-    "giocate vinte": 0,
-    "giocate perse": 1,
-    "set vinti": 0,
-    "set persi": 3
+    "posizione": 6,
+    "squadra": "Volley Fagnano 2010 - Papi Ristorante",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810235/logo.png",
+    "punti": 3,
+    "giocate": 3,
+    "giocate vinte": 1,
+    "giocate perse": 2,
+    "set vinti": 3,
+    "set persi": 7
   },
   {
-    "posizione": 6,
+    "posizione": 7,
     "squadra": "Fattoria Didattica Terre Antiche",
     "logo": "https://www.fipavonline.it/img/loghi_societa/no-logo-ios4.png",
     "punti": 0,
@@ -77,25 +77,25 @@
     "set persi": 6
   },
   {
-    "posizione": 7,
-    "squadra": "Umipas Volley Academy",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810212/logo.jpg",
-    "punti": 0,
-    "giocate": 2,
-    "giocate vinte": 0,
-    "giocate perse": 2,
-    "set vinti": 1,
-    "set persi": 6
-  },
-  {
-    "posizione": 8,
-    "squadra": "Volley Fagnano 2010 - Papi Ristorante",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810235/logo.png",
+    "posizione": 9,
+    "squadra": "Ristorante La Perla Del Mare Vg Pure Volley",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810224/logo.jpg",
     "punti": 0,
     "giocate": 2,
     "giocate vinte": 0,
     "giocate perse": 2,
     "set vinti": 0,
     "set persi": 6
+  },
+  {
+    "posizione": 8,
+    "squadra": "Umipas Volley Academy",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810212/logo.jpg",
+    "punti": 0,
+    "giocate": 3,
+    "giocate vinte": 0,
+    "giocate perse": 3,
+    "set vinti": 2,
+    "set persi": 9
   }
 ]
