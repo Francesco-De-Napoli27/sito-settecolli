@@ -25,11 +25,11 @@
     "posizione": 3,
     "squadra": "San Lucido Volley",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810116/logo.jpg",
-    "punti": 15,
-    "giocate": 7,
-    "giocate vinte": 5,
+    "punti": 18,
+    "giocate": 8,
+    "giocate vinte": 6,
     "giocate perse": 2,
-    "set vinti": 15,
+    "set vinti": 18,
     "set persi": 7
   },
   {
@@ -81,10 +81,10 @@
     "squadra": "Acli Settecolli Castrolibero",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810226/logo.png",
     "punti": 0,
-    "giocate": 8,
+    "giocate": 9,
     "giocate vinte": 0,
-    "giocate perse": 8,
+    "giocate perse": 9,
     "set vinti": 0,
-    "set persi": 24
+    "set persi": 27
   }
 ]
