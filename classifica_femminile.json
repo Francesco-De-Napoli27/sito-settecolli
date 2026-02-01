@@ -23,6 +23,17 @@
   },
   {
     "posizione": 3,
+    "squadra": "Bigmat F.lli Crusco Diamante Sport",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810202/logo.jpg",
+    "punti": 20,
+    "giocate": 10,
+    "giocate vinte": 6,
+    "giocate perse": 4,
+    "set vinti": 22,
+    "set persi": 14
+  },
+  {
+    "posizione": 4,
     "squadra": "Yes We Call San Lucido",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810116/logo.jpg",
     "punti": 18,
@@ -34,17 +45,6 @@
   },
   {
     "posizione": 5,
-    "squadra": "Bigmat F.lli Crusco Diamante Sport",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810202/logo.jpg",
-    "punti": 17,
-    "giocate": 9,
-    "giocate vinte": 5,
-    "giocate perse": 4,
-    "set vinti": 19,
-    "set persi": 13
-  },
-  {
-    "posizione": 4,
     "squadra": "Acli Settecolli Castrolibero",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810226/logo.png",
     "punti": 17,
@@ -103,11 +103,11 @@
     "squadra": "Volley Fagnano 2010 - Tirrenia Energia",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810235/logo.png",
     "punti": 5,
-    "giocate": 9,
+    "giocate": 10,
     "giocate vinte": 2,
-    "giocate perse": 7,
-    "set vinti": 9,
-    "set persi": 24
+    "giocate perse": 8,
+    "set vinti": 10,
+    "set persi": 27
   },
   {
     "posizione": 11,
