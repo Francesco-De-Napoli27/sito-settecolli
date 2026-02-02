@@ -58,23 +58,12 @@
     "posizione": 6,
     "squadra": "Volley Fagnano 2010 - Papi Ristorante",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810235/logo.png",
-    "punti": 3,
-    "giocate": 3,
-    "giocate vinte": 1,
+    "punti": 6,
+    "giocate": 4,
+    "giocate vinte": 2,
     "giocate perse": 2,
-    "set vinti": 3,
+    "set vinti": 6,
     "set persi": 7
-  },
-  {
-    "posizione": 9,
-    "squadra": "Ristorante La Perla Del Mare Vg Pure Volley",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810224/logo.jpg",
-    "punti": 0,
-    "giocate": 2,
-    "giocate vinte": 0,
-    "giocate perse": 2,
-    "set vinti": 0,
-    "set persi": 6
   },
   {
     "posizione": 8,
@@ -97,5 +86,16 @@
     "giocate perse": 4,
     "set vinti": 3,
     "set persi": 12
+  },
+  {
+    "posizione": 9,
+    "squadra": "Ristorante La Perla Del Mare Vg Pure Volley",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810224/logo.jpg",
+    "punti": 0,
+    "giocate": 3,
+    "giocate vinte": 0,
+    "giocate perse": 3,
+    "set vinti": 0,
+    "set persi": 9
   }
 ]

@@ -3,11 +3,11 @@
     "posizione": 1,
     "squadra": "Belvolley Centro Diagnostico Impieri",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810072/logo.jpg",
-    "punti": 26,
-    "giocate": 9,
-    "giocate vinte": 9,
+    "punti": 29,
+    "giocate": 10,
+    "giocate vinte": 10,
     "giocate perse": 0,
-    "set vinti": 27,
+    "set vinti": 30,
     "set persi": 2
   },
   {
@@ -34,6 +34,17 @@
   },
   {
     "posizione": 4,
+    "squadra": "Sabatino Ortofrutta Volley Amantea",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810173/logo.jpg",
+    "punti": 18,
+    "giocate": 10,
+    "giocate vinte": 6,
+    "giocate perse": 4,
+    "set vinti": 19,
+    "set persi": 13
+  },
+  {
+    "posizione": 5,
     "squadra": "Yes We Call San Lucido",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810116/logo.jpg",
     "punti": 18,
@@ -44,37 +55,26 @@
     "set persi": 16
   },
   {
-    "posizione": 5,
+    "posizione": 6,
     "squadra": "Acli Settecolli Castrolibero",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810226/logo.png",
     "punti": 17,
-    "giocate": 9,
+    "giocate": 10,
     "giocate vinte": 6,
-    "giocate perse": 3,
-    "set vinti": 18,
-    "set persi": 15
-  },
-  {
-    "posizione": 6,
-    "squadra": "Sabatino Ortofrutta Volley Amantea",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810173/logo.jpg",
-    "punti": 15,
-    "giocate": 9,
-    "giocate vinte": 5,
     "giocate perse": 4,
-    "set vinti": 16,
-    "set persi": 12
+    "set vinti": 19,
+    "set persi": 18
   },
   {
     "posizione": 7,
     "squadra": "Sprovieri Volley Corigliano",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810164/logo.png",
     "punti": 12,
-    "giocate": 9,
+    "giocate": 10,
     "giocate vinte": 4,
-    "giocate perse": 5,
+    "giocate perse": 6,
     "set vinti": 15,
-    "set persi": 20
+    "set persi": 23
   },
   {
     "posizione": 8,
