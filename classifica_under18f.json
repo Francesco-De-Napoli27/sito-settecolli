@@ -34,6 +34,17 @@
   },
   {
     "posizione": 4,
+    "squadra": "Galliano Cosenza Volley",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810214/logo.png",
+    "punti": 15,
+    "giocate": 8,
+    "giocate vinte": 5,
+    "giocate perse": 3,
+    "set vinti": 17,
+    "set persi": 10
+  },
+  {
+    "posizione": 5,
     "squadra": "Craticam Volley Academy",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810212/logo.jpg",
     "punti": 15,
@@ -44,26 +55,15 @@
     "set persi": 13
   },
   {
-    "posizione": 5,
-    "squadra": "Galliano Cosenza Volley",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810214/logo.png",
-    "punti": 12,
-    "giocate": 7,
-    "giocate vinte": 4,
-    "giocate perse": 3,
-    "set vinti": 14,
-    "set persi": 10
-  },
-  {
     "posizione": 6,
     "squadra": "Silan Volley Asd",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810181/logo.jpg",
     "punti": 8,
-    "giocate": 8,
+    "giocate": 9,
     "giocate vinte": 3,
-    "giocate perse": 5,
+    "giocate perse": 6,
     "set vinti": 9,
-    "set persi": 18
+    "set persi": 21
   },
   {
     "posizione": 7,
