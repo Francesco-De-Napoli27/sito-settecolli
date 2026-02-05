@@ -78,6 +78,17 @@
   },
   {
     "posizione": 8,
+    "squadra": "Games Solution Volley Scalea",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810217/logo.jpg",
+    "punti": 9,
+    "giocate": 10,
+    "giocate vinte": 3,
+    "giocate perse": 7,
+    "set vinti": 10,
+    "set persi": 22
+  },
+  {
+    "posizione": 9,
     "squadra": "Pallavolo Rossano A.s.d.",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810012/logo.jpg",
     "punti": 7,
@@ -85,17 +96,6 @@
     "giocate vinte": 2,
     "giocate perse": 7,
     "set vinti": 12,
-    "set persi": 22
-  },
-  {
-    "posizione": 9,
-    "squadra": "Games Solution Volley Scalea",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810217/logo.jpg",
-    "punti": 6,
-    "giocate": 9,
-    "giocate vinte": 2,
-    "giocate perse": 7,
-    "set vinti": 7,
     "set persi": 22
   },
   {
@@ -114,10 +114,10 @@
     "squadra": "Don Russo Cetraro",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810122/logo.png",
     "punti": 2,
-    "giocate": 9,
+    "giocate": 10,
     "giocate vinte": 1,
-    "giocate perse": 8,
+    "giocate perse": 9,
     "set vinti": 6,
-    "set persi": 26
+    "set persi": 29
   }
 ]

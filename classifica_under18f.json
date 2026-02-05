@@ -3,11 +3,11 @@
     "posizione": 1,
     "squadra": "Ascensori Montanaro Avolio Nova Volley",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810002/logo.png",
-    "punti": 24,
-    "giocate": 8,
-    "giocate vinte": 8,
+    "punti": 27,
+    "giocate": 9,
+    "giocate vinte": 9,
     "giocate perse": 0,
-    "set vinti": 24,
+    "set vinti": 27,
     "set persi": 1
   },
   {
@@ -26,11 +26,11 @@
     "squadra": "San Lucido Volley",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810116/logo.jpg",
     "punti": 18,
-    "giocate": 8,
+    "giocate": 9,
     "giocate vinte": 6,
-    "giocate perse": 2,
+    "giocate perse": 3,
     "set vinti": 18,
-    "set persi": 7
+    "set persi": 10
   },
   {
     "posizione": 4,
