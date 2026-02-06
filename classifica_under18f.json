@@ -23,6 +23,17 @@
   },
   {
     "posizione": 3,
+    "squadra": "Galliano Cosenza Volley",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810214/logo.png",
+    "punti": 18,
+    "giocate": 9,
+    "giocate vinte": 6,
+    "giocate perse": 3,
+    "set vinti": 20,
+    "set persi": 10
+  },
+  {
+    "posizione": 4,
     "squadra": "San Lucido Volley",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810116/logo.jpg",
     "punti": 18,
@@ -30,17 +41,6 @@
     "giocate vinte": 6,
     "giocate perse": 3,
     "set vinti": 18,
-    "set persi": 10
-  },
-  {
-    "posizione": 4,
-    "squadra": "Galliano Cosenza Volley",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810214/logo.png",
-    "punti": 15,
-    "giocate": 8,
-    "giocate vinte": 5,
-    "giocate perse": 3,
-    "set vinti": 17,
     "set persi": 10
   },
   {
@@ -70,11 +70,11 @@
     "squadra": "Sabatino Ortofrutta Volley Amantea",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810173/logo.jpg",
     "punti": 4,
-    "giocate": 9,
+    "giocate": 10,
     "giocate vinte": 1,
-    "giocate perse": 8,
+    "giocate perse": 9,
     "set vinti": 6,
-    "set persi": 24
+    "set persi": 27
   },
   {
     "posizione": 8,
