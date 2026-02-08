@@ -22,6 +22,17 @@
     "set persi": 4
   },
   {
+    "posizione": 3,
+    "squadra": "Tecnofutura Settecolli Nextgen",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810226/logo.png",
+    "punti": 9,
+    "giocate": 4,
+    "giocate vinte": 3,
+    "giocate perse": 1,
+    "set vinti": 9,
+    "set persi": 3
+  },
+  {
     "posizione": 4,
     "squadra": "Ital Costruzioni Nova Volley Trebisacce",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810210/logo.jpg",
@@ -31,17 +42,6 @@
     "giocate perse": 1,
     "set vinti": 7,
     "set persi": 4
-  },
-  {
-    "posizione": 3,
-    "squadra": "Tecnofutura Settecolli Nextgen",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810226/logo.png",
-    "punti": 6,
-    "giocate": 3,
-    "giocate vinte": 2,
-    "giocate perse": 1,
-    "set vinti": 6,
-    "set persi": 3
   },
   {
     "posizione": 5,
@@ -59,11 +59,11 @@
     "squadra": "Volley Fagnano 2010 - Papi Ristorante",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810235/logo.png",
     "punti": 6,
-    "giocate": 4,
+    "giocate": 5,
     "giocate vinte": 2,
-    "giocate perse": 2,
+    "giocate perse": 3,
     "set vinti": 6,
-    "set persi": 7
+    "set persi": 10
   },
   {
     "posizione": 8,

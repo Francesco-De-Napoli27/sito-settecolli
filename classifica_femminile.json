@@ -3,11 +3,11 @@
     "posizione": 1,
     "squadra": "Belvolley Centro Diagnostico Impieri",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810072/logo.jpg",
-    "punti": 29,
-    "giocate": 10,
-    "giocate vinte": 10,
+    "punti": 32,
+    "giocate": 11,
+    "giocate vinte": 11,
     "giocate perse": 0,
-    "set vinti": 30,
+    "set vinti": 33,
     "set persi": 2
   },
   {
@@ -25,12 +25,12 @@
     "posizione": 3,
     "squadra": "Bigmat F.lli Crusco Diamante Sport",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810202/logo.jpg",
-    "punti": 20,
-    "giocate": 10,
-    "giocate vinte": 6,
+    "punti": 23,
+    "giocate": 11,
+    "giocate vinte": 7,
     "giocate perse": 4,
-    "set vinti": 22,
-    "set persi": 14
+    "set vinti": 25,
+    "set persi": 15
   },
   {
     "posizione": 4,
@@ -92,11 +92,11 @@
     "squadra": "Pallavolo Rossano A.s.d.",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810012/logo.jpg",
     "punti": 7,
-    "giocate": 10,
+    "giocate": 11,
     "giocate vinte": 2,
-    "giocate perse": 8,
-    "set vinti": 12,
-    "set persi": 25
+    "giocate perse": 9,
+    "set vinti": 13,
+    "set persi": 28
   },
   {
     "posizione": 10,
@@ -114,10 +114,10 @@
     "squadra": "Don Russo Cetraro",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810122/logo.png",
     "punti": 2,
-    "giocate": 10,
+    "giocate": 11,
     "giocate vinte": 1,
-    "giocate perse": 9,
+    "giocate perse": 10,
     "set vinti": 6,
-    "set persi": 29
+    "set persi": 32
   }
 ]
