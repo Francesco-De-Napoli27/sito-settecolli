@@ -12,17 +12,6 @@
   },
   {
     "posizione": 2,
-    "squadra": "Pallavolo Rossano A.s.d",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810012/logo.jpg",
-    "punti": 18,
-    "giocate": 9,
-    "giocate vinte": 6,
-    "giocate perse": 3,
-    "set vinti": 20,
-    "set persi": 9
-  },
-  {
-    "posizione": 3,
     "squadra": "Galliano Cosenza Volley",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810214/logo.png",
     "punti": 18,
@@ -34,6 +23,17 @@
   },
   {
     "posizione": 4,
+    "squadra": "Pallavolo Rossano A.s.d",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810012/logo.jpg",
+    "punti": 18,
+    "giocate": 10,
+    "giocate vinte": 6,
+    "giocate perse": 4,
+    "set vinti": 20,
+    "set persi": 12
+  },
+  {
+    "posizione": 3,
     "squadra": "San Lucido Volley",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810116/logo.jpg",
     "punti": 18,
@@ -47,11 +47,11 @@
     "posizione": 5,
     "squadra": "Craticam Volley Academy",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810212/logo.jpg",
-    "punti": 15,
-    "giocate": 9,
-    "giocate vinte": 5,
+    "punti": 18,
+    "giocate": 10,
+    "giocate vinte": 6,
     "giocate perse": 4,
-    "set vinti": 15,
+    "set vinti": 18,
     "set persi": 13
   },
   {
