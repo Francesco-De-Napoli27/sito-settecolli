@@ -3,11 +3,11 @@
     "posizione": 1,
     "squadra": "Belvolley Centro Diagnostico Impieri",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810072/logo.jpg",
-    "punti": 32,
-    "giocate": 11,
-    "giocate vinte": 11,
+    "punti": 35,
+    "giocate": 12,
+    "giocate vinte": 12,
     "giocate perse": 0,
-    "set vinti": 33,
+    "set vinti": 36,
     "set persi": 2
   },
   {
@@ -26,11 +26,11 @@
     "squadra": "Bigmat F.lli Crusco Diamante Sport",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810202/logo.jpg",
     "punti": 23,
-    "giocate": 11,
+    "giocate": 12,
     "giocate vinte": 7,
-    "giocate perse": 4,
+    "giocate perse": 5,
     "set vinti": 25,
-    "set persi": 15
+    "set persi": 18
   },
   {
     "posizione": 4,

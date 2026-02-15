@@ -3,11 +3,11 @@
     "posizione": 1,
     "squadra": "Volley Pianopoli",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170800264/logo.jpg",
-    "punti": 46,
-    "giocate": 16,
-    "giocate vinte": 15,
+    "punti": 49,
+    "giocate": 17,
+    "giocate vinte": 16,
     "giocate perse": 1,
-    "set vinti": 47,
+    "set vinti": 50,
     "set persi": 8
   },
   {
@@ -25,11 +25,11 @@
     "posizione": 3,
     "squadra": "Umipas Volley Academy",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810212/logo.jpg",
-    "punti": 36,
-    "giocate": 16,
-    "giocate vinte": 13,
+    "punti": 39,
+    "giocate": 17,
+    "giocate vinte": 14,
     "giocate perse": 3,
-    "set vinti": 43,
+    "set vinti": 46,
     "set persi": 19
   },
   {
@@ -37,22 +37,22 @@
     "squadra": "Asd School Volley Taurianova",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170820313/logo.jpg",
     "punti": 31,
-    "giocate": 16,
+    "giocate": 17,
     "giocate vinte": 11,
-    "giocate perse": 5,
-    "set vinti": 39,
-    "set persi": 23
+    "giocate perse": 6,
+    "set vinti": 40,
+    "set persi": 26
   },
   {
     "posizione": 5,
     "squadra": "La Boschiva Volley San Giovanni In Fiore",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810058/logo.jpg",
     "punti": 29,
-    "giocate": 16,
+    "giocate": 17,
     "giocate vinte": 10,
-    "giocate perse": 6,
+    "giocate perse": 7,
     "set vinti": 33,
-    "set persi": 25
+    "set persi": 28
   },
   {
     "posizione": 6,
@@ -80,23 +80,23 @@
     "posizione": 8,
     "squadra": "Volley Club Nicotera A.s.d.",
     "logo": "https://www.fipavonline.it/img/loghi_societa/171020026/logo.jpg",
-    "punti": 16,
-    "giocate": 16,
-    "giocate vinte": 6,
+    "punti": 19,
+    "giocate": 17,
+    "giocate vinte": 7,
     "giocate perse": 10,
-    "set vinti": 26,
-    "set persi": 39
+    "set vinti": 29,
+    "set persi": 40
   },
   {
     "posizione": 9,
     "squadra": "Abvt Cosenza Us Acli",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810194/logo.png",
     "punti": 15,
-    "giocate": 16,
+    "giocate": 17,
     "giocate vinte": 5,
-    "giocate perse": 11,
+    "giocate perse": 12,
     "set vinti": 21,
-    "set persi": 38
+    "set persi": 41
   },
   {
     "posizione": 10,
