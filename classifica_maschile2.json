@@ -3,37 +3,48 @@
     "posizione": 1,
     "squadra": "Pallavolo Rossano A.s.d",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810012/logo.jpg",
-    "punti": 15,
-    "giocate": 5,
-    "giocate vinte": 5,
+    "punti": 18,
+    "giocate": 6,
+    "giocate vinte": 6,
     "giocate perse": 0,
-    "set vinti": 15,
+    "set vinti": 18,
     "set persi": 5
   },
   {
     "posizione": 2,
     "squadra": "Masterbrico Volley Belmonte",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810228/logo.jpg",
-    "punti": 12,
-    "giocate": 4,
-    "giocate vinte": 4,
+    "punti": 15,
+    "giocate": 5,
+    "giocate vinte": 5,
     "giocate perse": 0,
-    "set vinti": 12,
-    "set persi": 2
-  },
-  {
-    "posizione": 3,
-    "squadra": "Tecnofutura Settecolli Nextgen",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810226/logo.png",
-    "punti": 9,
-    "giocate": 4,
-    "giocate vinte": 3,
-    "giocate perse": 1,
-    "set vinti": 9,
+    "set vinti": 15,
     "set persi": 3
   },
   {
+    "posizione": 3,
+    "squadra": "Ital Costruzioni Nova Volley Trebisacce",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810210/logo.jpg",
+    "punti": 10,
+    "giocate": 5,
+    "giocate vinte": 3,
+    "giocate perse": 2,
+    "set vinti": 12,
+    "set persi": 7
+  },
+  {
     "posizione": 4,
+    "squadra": "Tecnofutura Settecolli Nextgen",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810226/logo.png",
+    "punti": 9,
+    "giocate": 5,
+    "giocate vinte": 3,
+    "giocate perse": 2,
+    "set vinti": 9,
+    "set persi": 6
+  },
+  {
+    "posizione": 5,
     "squadra": "Gioelleria Cirilllo Diamante Sport",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810202/logo.jpg",
     "punti": 8,
@@ -44,58 +55,47 @@
     "set persi": 8
   },
   {
-    "posizione": 5,
-    "squadra": "Ital Costruzioni Nova Volley Trebisacce",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810210/logo.jpg",
-    "punti": 7,
-    "giocate": 4,
-    "giocate vinte": 2,
-    "giocate perse": 2,
-    "set vinti": 9,
-    "set persi": 7
-  },
-  {
     "posizione": 6,
     "squadra": "Volley Fagnano 2010 - Papi Ristorante",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810235/logo.png",
     "punti": 6,
-    "giocate": 5,
+    "giocate": 6,
     "giocate vinte": 2,
-    "giocate perse": 3,
-    "set vinti": 6,
-    "set persi": 10
+    "giocate perse": 4,
+    "set vinti": 7,
+    "set persi": 13
   },
   {
     "posizione": 7,
     "squadra": "Fattoria Didattica Terre Antiche",
     "logo": "https://www.fipavonline.it/img/loghi_societa/no-logo-ios4.png",
     "punti": 3,
-    "giocate": 4,
+    "giocate": 5,
     "giocate vinte": 1,
-    "giocate perse": 3,
-    "set vinti": 5,
-    "set persi": 9
-  },
-  {
-    "posizione": 9,
-    "squadra": "Ristorante La Perla Del Mare Vg Pure Volley",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810224/logo.jpg",
-    "punti": 0,
-    "giocate": 4,
-    "giocate vinte": 0,
     "giocate perse": 4,
-    "set vinti": 1,
+    "set vinti": 6,
     "set persi": 12
   },
   {
     "posizione": 8,
+    "squadra": "Ristorante La Perla Del Mare Vg Pure Volley",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810224/logo.jpg",
+    "punti": 3,
+    "giocate": 5,
+    "giocate vinte": 1,
+    "giocate perse": 4,
+    "set vinti": 4,
+    "set persi": 13
+  },
+  {
+    "posizione": 9,
     "squadra": "Umipas Volley Academy",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810212/logo.jpg",
     "punti": 0,
-    "giocate": 5,
+    "giocate": 6,
     "giocate vinte": 0,
-    "giocate perse": 5,
+    "giocate perse": 6,
     "set vinti": 3,
-    "set persi": 15
+    "set persi": 18
   }
 ]

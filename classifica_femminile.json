@@ -14,11 +14,11 @@
     "posizione": 2,
     "squadra": "Cusunical Asd",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810213/logo.png",
-    "punti": 31,
-    "giocate": 11,
-    "giocate vinte": 10,
+    "punti": 34,
+    "giocate": 12,
+    "giocate vinte": 11,
     "giocate perse": 1,
-    "set vinti": 32,
+    "set vinti": 35,
     "set persi": 3
   },
   {
@@ -34,6 +34,28 @@
   },
   {
     "posizione": 4,
+    "squadra": "Yes We Call San Lucido",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810116/logo.jpg",
+    "punti": 21,
+    "giocate": 11,
+    "giocate vinte": 7,
+    "giocate perse": 4,
+    "set vinti": 23,
+    "set persi": 16
+  },
+  {
+    "posizione": 5,
+    "squadra": "Sabatino Ortofrutta Volley Amantea",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810173/logo.jpg",
+    "punti": 21,
+    "giocate": 12,
+    "giocate vinte": 7,
+    "giocate perse": 5,
+    "set vinti": 22,
+    "set persi": 17
+  },
+  {
+    "posizione": 6,
     "squadra": "Acli Settecolli Castrolibero",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810226/logo.png",
     "punti": 20,
@@ -44,48 +66,26 @@
     "set persi": 18
   },
   {
-    "posizione": 5,
-    "squadra": "Yes We Call San Lucido",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810116/logo.jpg",
-    "punti": 18,
-    "giocate": 10,
-    "giocate vinte": 6,
-    "giocate perse": 4,
-    "set vinti": 20,
-    "set persi": 16
-  },
-  {
-    "posizione": 6,
-    "squadra": "Sabatino Ortofrutta Volley Amantea",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810173/logo.jpg",
-    "punti": 18,
-    "giocate": 11,
-    "giocate vinte": 6,
-    "giocate perse": 5,
-    "set vinti": 19,
-    "set persi": 16
-  },
-  {
     "posizione": 7,
     "squadra": "Sprovieri Volley Corigliano",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810164/logo.png",
     "punti": 12,
-    "giocate": 11,
+    "giocate": 12,
     "giocate vinte": 4,
-    "giocate perse": 7,
+    "giocate perse": 8,
     "set vinti": 15,
-    "set persi": 26
+    "set persi": 29
   },
   {
     "posizione": 8,
     "squadra": "Games Solution Volley Scalea",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810217/logo.jpg",
     "punti": 9,
-    "giocate": 10,
+    "giocate": 11,
     "giocate vinte": 3,
-    "giocate perse": 7,
+    "giocate perse": 8,
     "set vinti": 10,
-    "set persi": 22
+    "set persi": 25
   },
   {
     "posizione": 9,
@@ -103,11 +103,11 @@
     "squadra": "Volley Fagnano 2010 - Tirrenia Energia",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810235/logo.png",
     "punti": 5,
-    "giocate": 10,
+    "giocate": 11,
     "giocate vinte": 2,
-    "giocate perse": 8,
-    "set vinti": 10,
-    "set persi": 27
+    "giocate perse": 9,
+    "set vinti": 11,
+    "set persi": 30
   },
   {
     "posizione": 11,
