@@ -23,6 +23,17 @@
   },
   {
     "posizione": 3,
+    "squadra": "Craticam Volley Academy",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810212/logo.jpg",
+    "punti": 21,
+    "giocate": 11,
+    "giocate vinte": 7,
+    "giocate perse": 4,
+    "set vinti": 21,
+    "set persi": 13
+  },
+  {
+    "posizione": 4,
     "squadra": "Pallavolo Rossano A.s.d",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810012/logo.jpg",
     "punti": 18,
@@ -31,17 +42,6 @@
     "giocate perse": 4,
     "set vinti": 20,
     "set persi": 12
-  },
-  {
-    "posizione": 4,
-    "squadra": "Craticam Volley Academy",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810212/logo.jpg",
-    "punti": 18,
-    "giocate": 10,
-    "giocate vinte": 6,
-    "giocate perse": 4,
-    "set vinti": 18,
-    "set persi": 13
   },
   {
     "posizione": 5,
@@ -70,11 +70,11 @@
     "squadra": "Sabatino Ortofrutta Volley Amantea",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810173/logo.jpg",
     "punti": 4,
-    "giocate": 10,
+    "giocate": 11,
     "giocate vinte": 1,
-    "giocate perse": 9,
+    "giocate perse": 10,
     "set vinti": 6,
-    "set persi": 27
+    "set persi": 30
   },
   {
     "posizione": 8,
