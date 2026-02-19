@@ -3,22 +3,22 @@
     "posizione": 1,
     "squadra": "Ascensori Montanaro Avolio Nova Volley",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810002/logo.png",
-    "punti": 30,
-    "giocate": 10,
-    "giocate vinte": 10,
+    "punti": 33,
+    "giocate": 11,
+    "giocate vinte": 11,
     "giocate perse": 0,
-    "set vinti": 30,
+    "set vinti": 33,
     "set persi": 1
   },
   {
     "posizione": 2,
     "squadra": "Galliano Cosenza Volley",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810214/logo.png",
-    "punti": 21,
-    "giocate": 10,
-    "giocate vinte": 7,
+    "punti": 24,
+    "giocate": 11,
+    "giocate vinte": 8,
     "giocate perse": 3,
-    "set vinti": 23,
+    "set vinti": 26,
     "set persi": 10
   },
   {
@@ -34,36 +34,36 @@
   },
   {
     "posizione": 4,
-    "squadra": "Pallavolo Rossano A.s.d",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810012/logo.jpg",
-    "punti": 18,
-    "giocate": 10,
-    "giocate vinte": 6,
+    "squadra": "San Lucido Volley",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810116/logo.jpg",
+    "punti": 21,
+    "giocate": 11,
+    "giocate vinte": 7,
     "giocate perse": 4,
-    "set vinti": 20,
-    "set persi": 12
+    "set vinti": 21,
+    "set persi": 13
   },
   {
     "posizione": 5,
-    "squadra": "San Lucido Volley",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810116/logo.jpg",
+    "squadra": "Pallavolo Rossano A.s.d",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810012/logo.jpg",
     "punti": 18,
-    "giocate": 10,
+    "giocate": 11,
     "giocate vinte": 6,
-    "giocate perse": 4,
-    "set vinti": 18,
-    "set persi": 13
+    "giocate perse": 5,
+    "set vinti": 20,
+    "set persi": 15
   },
   {
     "posizione": 6,
     "squadra": "Silan Volley Asd",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810181/logo.jpg",
     "punti": 11,
-    "giocate": 10,
+    "giocate": 11,
     "giocate vinte": 4,
-    "giocate perse": 6,
+    "giocate perse": 7,
     "set vinti": 12,
-    "set persi": 21
+    "set persi": 24
   },
   {
     "posizione": 7,
@@ -81,10 +81,10 @@
     "squadra": "Acli Settecolli Castrolibero",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810226/logo.png",
     "punti": 0,
-    "giocate": 10,
+    "giocate": 11,
     "giocate vinte": 0,
-    "giocate perse": 10,
+    "giocate perse": 11,
     "set vinti": 0,
-    "set persi": 30
+    "set persi": 33
   }
 ]
