@@ -3,22 +3,22 @@
     "posizione": 1,
     "squadra": "Belvolley Centro Diagnostico Impieri",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810072/logo.jpg",
-    "punti": 35,
-    "giocate": 12,
-    "giocate vinte": 12,
+    "punti": 38,
+    "giocate": 13,
+    "giocate vinte": 13,
     "giocate perse": 0,
-    "set vinti": 36,
+    "set vinti": 39,
     "set persi": 2
   },
   {
     "posizione": 2,
     "squadra": "Cusunical Asd",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810213/logo.png",
-    "punti": 34,
-    "giocate": 12,
-    "giocate vinte": 11,
+    "punti": 37,
+    "giocate": 13,
+    "giocate vinte": 12,
     "giocate perse": 1,
-    "set vinti": 35,
+    "set vinti": 38,
     "set persi": 3
   },
   {
@@ -37,11 +37,11 @@
     "squadra": "Bigmat F.lli Crusco Diamante Sport",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810202/logo.jpg",
     "punti": 23,
-    "giocate": 12,
+    "giocate": 13,
     "giocate vinte": 7,
-    "giocate perse": 5,
+    "giocate perse": 6,
     "set vinti": 25,
-    "set persi": 18
+    "set persi": 21
   },
   {
     "posizione": 5,
@@ -103,11 +103,11 @@
     "squadra": "Volley Fagnano 2010 - Tirrenia Energia",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810235/logo.png",
     "punti": 5,
-    "giocate": 11,
+    "giocate": 12,
     "giocate vinte": 2,
-    "giocate perse": 9,
+    "giocate perse": 10,
     "set vinti": 11,
-    "set persi": 30
+    "set persi": 33
   },
   {
     "posizione": 11,

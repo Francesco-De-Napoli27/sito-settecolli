@@ -37,11 +37,11 @@
     "squadra": "Tecnofutura Settecolli Nextgen",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810226/logo.png",
     "punti": 9,
-    "giocate": 5,
+    "giocate": 6,
     "giocate vinte": 3,
-    "giocate perse": 2,
-    "set vinti": 9,
-    "set persi": 6
+    "giocate perse": 3,
+    "set vinti": 10,
+    "set persi": 9
   },
   {
     "posizione": 5,
@@ -56,6 +56,17 @@
   },
   {
     "posizione": 6,
+    "squadra": "Fattoria Didattica Terre Antiche",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/no-logo-ios4.png",
+    "punti": 6,
+    "giocate": 6,
+    "giocate vinte": 2,
+    "giocate perse": 4,
+    "set vinti": 9,
+    "set persi": 13
+  },
+  {
+    "posizione": 7,
     "squadra": "Volley Fagnano 2010 - Papi Ristorante",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810235/logo.png",
     "punti": 6,
@@ -64,17 +75,6 @@
     "giocate perse": 4,
     "set vinti": 7,
     "set persi": 13
-  },
-  {
-    "posizione": 7,
-    "squadra": "Fattoria Didattica Terre Antiche",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/no-logo-ios4.png",
-    "punti": 3,
-    "giocate": 5,
-    "giocate vinte": 1,
-    "giocate perse": 4,
-    "set vinti": 6,
-    "set persi": 12
   },
   {
     "posizione": 8,
