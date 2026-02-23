@@ -4,21 +4,21 @@
     "squadra": "Volley Pianopoli",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170800264/logo.jpg",
     "punti": 49,
-    "giocate": 17,
+    "giocate": 18,
     "giocate vinte": 16,
-    "giocate perse": 1,
+    "giocate perse": 2,
     "set vinti": 50,
-    "set persi": 8
+    "set persi": 11
   },
   {
     "posizione": 2,
     "squadra": "Don Russo Elio Group Cetraro",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810122/logo.png",
-    "punti": 45,
-    "giocate": 17,
-    "giocate vinte": 15,
+    "punti": 48,
+    "giocate": 18,
+    "giocate vinte": 16,
     "giocate perse": 2,
-    "set vinti": 48,
+    "set vinti": 51,
     "set persi": 15
   },
   {
@@ -34,6 +34,17 @@
   },
   {
     "posizione": 4,
+    "squadra": "La Boschiva Volley San Giovanni In Fiore",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810058/logo.jpg",
+    "punti": 32,
+    "giocate": 18,
+    "giocate vinte": 11,
+    "giocate perse": 7,
+    "set vinti": 36,
+    "set persi": 28
+  },
+  {
+    "posizione": 5,
     "squadra": "Asd School Volley Taurianova",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170820313/logo.jpg",
     "punti": 31,
@@ -42,17 +53,6 @@
     "giocate perse": 6,
     "set vinti": 40,
     "set persi": 26
-  },
-  {
-    "posizione": 5,
-    "squadra": "La Boschiva Volley San Giovanni In Fiore",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810058/logo.jpg",
-    "punti": 29,
-    "giocate": 17,
-    "giocate vinte": 10,
-    "giocate perse": 7,
-    "set vinti": 33,
-    "set persi": 28
   },
   {
     "posizione": 6,
@@ -70,63 +70,63 @@
     "squadra": "Acli Settecolli Castrolibero",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810226/logo.png",
     "punti": 22,
-    "giocate": 17,
+    "giocate": 18,
     "giocate vinte": 7,
-    "giocate perse": 10,
-    "set vinti": 26,
-    "set persi": 34
+    "giocate perse": 11,
+    "set vinti": 27,
+    "set persi": 37
   },
   {
     "posizione": 8,
     "squadra": "Volley Club Nicotera A.s.d.",
     "logo": "https://www.fipavonline.it/img/loghi_societa/171020026/logo.jpg",
     "punti": 19,
-    "giocate": 17,
+    "giocate": 18,
     "giocate vinte": 7,
-    "giocate perse": 10,
+    "giocate perse": 11,
     "set vinti": 29,
-    "set persi": 40
+    "set persi": 43
   },
   {
     "posizione": 9,
-    "squadra": "Abvt Cosenza Us Acli",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810194/logo.png",
-    "punti": 15,
-    "giocate": 17,
-    "giocate vinte": 5,
-    "giocate perse": 12,
-    "set vinti": 21,
-    "set persi": 41
+    "squadra": "Fabbridea Filadelfia",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/171020014/logo.png",
+    "punti": 16,
+    "giocate": 18,
+    "giocate vinte": 4,
+    "giocate perse": 14,
+    "set vinti": 27,
+    "set persi": 46
   },
   {
     "posizione": 10,
-    "squadra": "Fabbridea Filadelfia",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/171020014/logo.png",
-    "punti": 13,
-    "giocate": 17,
-    "giocate vinte": 3,
-    "giocate perse": 14,
-    "set vinti": 24,
-    "set persi": 45
+    "squadra": "Abvt Cosenza Us Acli",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810194/logo.png",
+    "punti": 15,
+    "giocate": 18,
+    "giocate vinte": 5,
+    "giocate perse": 13,
+    "set vinti": 22,
+    "set persi": 44
   },
   {
     "posizione": 11,
+    "squadra": "Asd Pepea Soverato",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170800294/logo.png",
+    "punti": 12,
+    "giocate": 18,
+    "giocate vinte": 3,
+    "giocate perse": 15,
+    "set vinti": 19,
+    "set persi": 49
+  },
+  {
+    "posizione": 12,
     "squadra": "Crotone",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170800033/logo.png",
     "punti": 9,
     "giocate": 18,
     "giocate vinte": 3,
-    "giocate perse": 15,
-    "set vinti": 16,
-    "set persi": 48
-  },
-  {
-    "posizione": 12,
-    "squadra": "Asd Pepea Soverato",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170800294/logo.png",
-    "punti": 9,
-    "giocate": 17,
-    "giocate vinte": 2,
     "giocate perse": 15,
     "set vinti": 16,
     "set persi": 48
