@@ -34,6 +34,17 @@
   },
   {
     "posizione": 4,
+    "squadra": "Asd School Volley Taurianova",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170820313/logo.jpg",
+    "punti": 34,
+    "giocate": 18,
+    "giocate vinte": 12,
+    "giocate perse": 6,
+    "set vinti": 43,
+    "set persi": 26
+  },
+  {
+    "posizione": 5,
     "squadra": "La Boschiva Volley San Giovanni In Fiore",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810058/logo.jpg",
     "punti": 32,
@@ -44,26 +55,15 @@
     "set persi": 28
   },
   {
-    "posizione": 5,
-    "squadra": "Asd School Volley Taurianova",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170820313/logo.jpg",
-    "punti": 31,
-    "giocate": 17,
-    "giocate vinte": 11,
-    "giocate perse": 6,
-    "set vinti": 40,
-    "set persi": 26
-  },
-  {
     "posizione": 6,
     "squadra": "Volley Bianco Bovalino",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170820301/logo.jpg",
     "punti": 26,
-    "giocate": 17,
+    "giocate": 18,
     "giocate vinte": 9,
-    "giocate perse": 8,
+    "giocate perse": 9,
     "set vinti": 33,
-    "set persi": 33
+    "set persi": 36
   },
   {
     "posizione": 7,
