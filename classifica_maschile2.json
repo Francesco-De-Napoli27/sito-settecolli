@@ -34,6 +34,17 @@
   },
   {
     "posizione": 4,
+    "squadra": "Gioelleria Cirilllo Diamante Sport",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810202/logo.jpg",
+    "punti": 9,
+    "giocate": 6,
+    "giocate vinte": 3,
+    "giocate perse": 3,
+    "set vinti": 13,
+    "set persi": 11
+  },
+  {
+    "posizione": 5,
     "squadra": "Tecnofutura Settecolli Nextgen",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810226/logo.png",
     "punti": 9,
@@ -42,17 +53,6 @@
     "giocate perse": 3,
     "set vinti": 10,
     "set persi": 9
-  },
-  {
-    "posizione": 5,
-    "squadra": "Gioelleria Cirilllo Diamante Sport",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810202/logo.jpg",
-    "punti": 8,
-    "giocate": 5,
-    "giocate vinte": 3,
-    "giocate perse": 2,
-    "set vinti": 11,
-    "set persi": 8
   },
   {
     "posizione": 6,
@@ -91,11 +91,11 @@
     "posizione": 9,
     "squadra": "Umipas Volley Academy",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810212/logo.jpg",
-    "punti": 0,
-    "giocate": 6,
-    "giocate vinte": 0,
+    "punti": 2,
+    "giocate": 7,
+    "giocate vinte": 1,
     "giocate perse": 6,
-    "set vinti": 3,
-    "set persi": 18
+    "set vinti": 6,
+    "set persi": 20
   }
 ]
