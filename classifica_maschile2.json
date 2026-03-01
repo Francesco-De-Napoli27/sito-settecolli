@@ -14,11 +14,11 @@
     "posizione": 2,
     "squadra": "Masterbrico Volley Belmonte",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810228/logo.jpg",
-    "punti": 15,
-    "giocate": 5,
-    "giocate vinte": 5,
+    "punti": 18,
+    "giocate": 6,
+    "giocate vinte": 6,
     "giocate perse": 0,
-    "set vinti": 15,
+    "set vinti": 18,
     "set persi": 3
   },
   {
@@ -59,11 +59,11 @@
     "squadra": "Fattoria Didattica Terre Antiche",
     "logo": "https://www.fipavonline.it/img/loghi_societa/no-logo-ios4.png",
     "punti": 6,
-    "giocate": 6,
+    "giocate": 7,
     "giocate vinte": 2,
-    "giocate perse": 4,
+    "giocate perse": 5,
     "set vinti": 9,
-    "set persi": 13
+    "set persi": 16
   },
   {
     "posizione": 7,
