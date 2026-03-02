@@ -48,21 +48,21 @@
     "squadra": "La Boschiva Volley San Giovanni In Fiore",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810058/logo.jpg",
     "punti": 32,
-    "giocate": 18,
+    "giocate": 19,
     "giocate vinte": 11,
-    "giocate perse": 7,
+    "giocate perse": 8,
     "set vinti": 36,
-    "set persi": 28
+    "set persi": 31
   },
   {
     "posizione": 6,
     "squadra": "Volley Bianco Bovalino",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170820301/logo.jpg",
-    "punti": 26,
-    "giocate": 18,
-    "giocate vinte": 9,
+    "punti": 29,
+    "giocate": 19,
+    "giocate vinte": 10,
     "giocate perse": 9,
-    "set vinti": 33,
+    "set vinti": 36,
     "set persi": 36
   },
   {
@@ -91,12 +91,12 @@
     "posizione": 9,
     "squadra": "Fabbridea Filadelfia",
     "logo": "https://www.fipavonline.it/img/loghi_societa/171020014/logo.png",
-    "punti": 16,
-    "giocate": 18,
-    "giocate vinte": 4,
+    "punti": 19,
+    "giocate": 19,
+    "giocate vinte": 5,
     "giocate perse": 14,
-    "set vinti": 27,
-    "set persi": 46
+    "set vinti": 30,
+    "set persi": 47
   },
   {
     "posizione": 10,
@@ -125,10 +125,10 @@
     "squadra": "Crotone",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170800033/logo.png",
     "punti": 9,
-    "giocate": 18,
+    "giocate": 19,
     "giocate vinte": 3,
-    "giocate perse": 15,
-    "set vinti": 16,
-    "set persi": 48
+    "giocate perse": 16,
+    "set vinti": 17,
+    "set persi": 51
   }
 ]
