@@ -47,44 +47,44 @@
     "posizione": 5,
     "squadra": "Pallavolo Rossano A.s.d",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810012/logo.jpg",
-    "punti": 18,
-    "giocate": 11,
-    "giocate vinte": 6,
+    "punti": 20,
+    "giocate": 12,
+    "giocate vinte": 7,
     "giocate perse": 5,
-    "set vinti": 20,
-    "set persi": 15
+    "set vinti": 23,
+    "set persi": 17
   },
   {
     "posizione": 6,
     "squadra": "Silan Volley Asd",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810181/logo.jpg",
-    "punti": 11,
-    "giocate": 11,
+    "punti": 12,
+    "giocate": 12,
     "giocate vinte": 4,
-    "giocate perse": 7,
-    "set vinti": 12,
-    "set persi": 24
+    "giocate perse": 8,
+    "set vinti": 14,
+    "set persi": 27
   },
   {
     "posizione": 7,
     "squadra": "Sabatino Ortofrutta Volley Amantea",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810173/logo.jpg",
-    "punti": 4,
-    "giocate": 11,
-    "giocate vinte": 1,
+    "punti": 7,
+    "giocate": 12,
+    "giocate vinte": 2,
     "giocate perse": 10,
-    "set vinti": 6,
-    "set persi": 30
+    "set vinti": 9,
+    "set persi": 31
   },
   {
     "posizione": 8,
     "squadra": "Acli Settecolli Castrolibero",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810226/logo.png",
     "punti": 0,
-    "giocate": 11,
+    "giocate": 12,
     "giocate vinte": 0,
-    "giocate perse": 11,
-    "set vinti": 0,
-    "set persi": 33
+    "giocate perse": 12,
+    "set vinti": 1,
+    "set persi": 36
   }
 ]
