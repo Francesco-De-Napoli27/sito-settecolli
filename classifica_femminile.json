@@ -22,7 +22,7 @@
     "set persi": 3
   },
   {
-    "posizione": 3,
+    "posizione": 4,
     "squadra": "Bigmat F.lli Crusco Diamante Sport",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810202/logo.jpg",
     "punti": 24,
@@ -33,7 +33,18 @@
     "set persi": 24
   },
   {
-    "posizione": 4,
+    "posizione": 3,
+    "squadra": "Yes We Call San Lucido",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810116/logo.jpg",
+    "punti": 24,
+    "giocate": 14,
+    "giocate vinte": 8,
+    "giocate perse": 6,
+    "set vinti": 26,
+    "set persi": 23
+  },
+  {
+    "posizione": 5,
     "squadra": "Sabatino Ortofrutta Volley Amantea",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810173/logo.jpg",
     "punti": 23,
@@ -44,7 +55,7 @@
     "set persi": 19
   },
   {
-    "posizione": 5,
+    "posizione": 6,
     "squadra": "Acli Settecolli Castrolibero",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810226/logo.png",
     "punti": 23,
@@ -53,17 +64,6 @@
     "giocate perse": 5,
     "set vinti": 25,
     "set persi": 21
-  },
-  {
-    "posizione": 6,
-    "squadra": "Yes We Call San Lucido",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810116/logo.jpg",
-    "punti": 21,
-    "giocate": 13,
-    "giocate vinte": 7,
-    "giocate perse": 6,
-    "set vinti": 23,
-    "set persi": 22
   },
   {
     "posizione": 7,
@@ -114,10 +114,10 @@
     "squadra": "Don Russo Cetraro",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810122/logo.png",
     "punti": 2,
-    "giocate": 13,
+    "giocate": 14,
     "giocate vinte": 1,
-    "giocate perse": 12,
-    "set vinti": 7,
-    "set persi": 38
+    "giocate perse": 13,
+    "set vinti": 8,
+    "set persi": 41
   }
 ]
