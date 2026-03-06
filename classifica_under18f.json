@@ -3,11 +3,11 @@
     "posizione": 1,
     "squadra": "Ascensori Montanaro Avolio Nova Volley",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810002/logo.png",
-    "punti": 33,
-    "giocate": 11,
-    "giocate vinte": 11,
+    "punti": 36,
+    "giocate": 12,
+    "giocate vinte": 12,
     "giocate perse": 0,
-    "set vinti": 33,
+    "set vinti": 36,
     "set persi": 1
   },
   {
@@ -15,11 +15,11 @@
     "squadra": "Galliano Cosenza Volley",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810214/logo.png",
     "punti": 24,
-    "giocate": 11,
+    "giocate": 12,
     "giocate vinte": 8,
-    "giocate perse": 3,
+    "giocate perse": 4,
     "set vinti": 26,
-    "set persi": 10
+    "set persi": 13
   },
   {
     "posizione": 3,
