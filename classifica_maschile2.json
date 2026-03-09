@@ -14,23 +14,23 @@
     "posizione": 2,
     "squadra": "Masterbrico Volley Belmonte",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810228/logo.jpg",
-    "punti": 18,
-    "giocate": 6,
+    "punti": 19,
+    "giocate": 7,
     "giocate vinte": 6,
-    "giocate perse": 0,
-    "set vinti": 18,
-    "set persi": 3
+    "giocate perse": 1,
+    "set vinti": 20,
+    "set persi": 6
   },
   {
     "posizione": 3,
     "squadra": "Ital Costruzioni Nova Volley Trebisacce",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810210/logo.jpg",
-    "punti": 15,
-    "giocate": 7,
-    "giocate vinte": 5,
+    "punti": 17,
+    "giocate": 8,
+    "giocate vinte": 6,
     "giocate perse": 2,
-    "set vinti": 18,
-    "set persi": 10
+    "set vinti": 21,
+    "set persi": 12
   },
   {
     "posizione": 4,
@@ -78,24 +78,24 @@
   },
   {
     "posizione": 8,
-    "squadra": "Ristorante La Perla Del Mare Vg Pure Volley",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810224/logo.jpg",
-    "punti": 4,
-    "giocate": 7,
-    "giocate vinte": 1,
+    "squadra": "Umipas Volley Academy",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810212/logo.jpg",
+    "punti": 5,
+    "giocate": 8,
+    "giocate vinte": 2,
     "giocate perse": 6,
-    "set vinti": 7,
-    "set persi": 19
+    "set vinti": 9,
+    "set persi": 20
   },
   {
     "posizione": 9,
-    "squadra": "Umipas Volley Academy",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810212/logo.jpg",
-    "punti": 2,
-    "giocate": 7,
+    "squadra": "Ristorante La Perla Del Mare Vg Pure Volley",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810224/logo.jpg",
+    "punti": 4,
+    "giocate": 8,
     "giocate vinte": 1,
-    "giocate perse": 6,
-    "set vinti": 6,
-    "set persi": 20
+    "giocate perse": 7,
+    "set vinti": 7,
+    "set persi": 22
   }
 ]
