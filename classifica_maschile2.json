@@ -12,6 +12,17 @@
   },
   {
     "posizione": 2,
+    "squadra": "Ital Costruzioni Nova Volley Trebisacce",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810210/logo.jpg",
+    "punti": 20,
+    "giocate": 9,
+    "giocate vinte": 7,
+    "giocate perse": 2,
+    "set vinti": 24,
+    "set persi": 12
+  },
+  {
+    "posizione": 3,
     "squadra": "Masterbrico Volley Belmonte",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810228/logo.jpg",
     "punti": 19,
@@ -20,17 +31,6 @@
     "giocate perse": 2,
     "set vinti": 21,
     "set persi": 9
-  },
-  {
-    "posizione": 3,
-    "squadra": "Ital Costruzioni Nova Volley Trebisacce",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810210/logo.jpg",
-    "punti": 17,
-    "giocate": 8,
-    "giocate vinte": 6,
-    "giocate perse": 2,
-    "set vinti": 21,
-    "set persi": 12
   },
   {
     "posizione": 4,
@@ -66,17 +66,6 @@
     "set persi": 20
   },
   {
-    "posizione": 8,
-    "squadra": "Volley Fagnano 2010 - Papi Ristorante",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810235/logo.png",
-    "punti": 6,
-    "giocate": 8,
-    "giocate vinte": 2,
-    "giocate perse": 6,
-    "set vinti": 8,
-    "set persi": 19
-  },
-  {
     "posizione": 7,
     "squadra": "Umipas Volley Academy",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810212/logo.jpg",
@@ -86,6 +75,17 @@
     "giocate perse": 7,
     "set vinti": 11,
     "set persi": 23
+  },
+  {
+    "posizione": 8,
+    "squadra": "Volley Fagnano 2010 - Papi Ristorante",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810235/logo.png",
+    "punti": 6,
+    "giocate": 9,
+    "giocate vinte": 2,
+    "giocate perse": 7,
+    "set vinti": 8,
+    "set persi": 22
   },
   {
     "posizione": 9,

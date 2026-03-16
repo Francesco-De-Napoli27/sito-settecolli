@@ -3,11 +3,11 @@
     "posizione": 1,
     "squadra": "Volley Pianopoli",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170800264/logo.jpg",
-    "punti": 55,
-    "giocate": 20,
-    "giocate vinte": 18,
+    "punti": 58,
+    "giocate": 21,
+    "giocate vinte": 19,
     "giocate perse": 2,
-    "set vinti": 56,
+    "set vinti": 59,
     "set persi": 11
   },
   {
@@ -59,11 +59,11 @@
     "squadra": "Volley Bianco Bovalino",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170820301/logo.jpg",
     "punti": 29,
-    "giocate": 20,
+    "giocate": 21,
     "giocate vinte": 10,
-    "giocate perse": 10,
+    "giocate perse": 11,
     "set vinti": 36,
-    "set persi": 39
+    "set persi": 42
   },
   {
     "posizione": 7,
@@ -113,22 +113,22 @@
     "posizione": 11,
     "squadra": "Asd Pepea Soverato",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170800294/logo.png",
-    "punti": 12,
-    "giocate": 20,
-    "giocate vinte": 3,
+    "punti": 15,
+    "giocate": 21,
+    "giocate vinte": 4,
     "giocate perse": 17,
-    "set vinti": 19,
-    "set persi": 55
+    "set vinti": 22,
+    "set persi": 56
   },
   {
     "posizione": 12,
     "squadra": "Crotone",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170800033/logo.png",
     "punti": 9,
-    "giocate": 20,
+    "giocate": 21,
     "giocate vinte": 3,
-    "giocate perse": 17,
-    "set vinti": 17,
-    "set persi": 54
+    "giocate perse": 18,
+    "set vinti": 18,
+    "set persi": 57
   }
 ]
