@@ -25,11 +25,11 @@
     "posizione": 3,
     "squadra": "Yes We Call San Lucido",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810116/logo.jpg",
-    "punti": 27,
-    "giocate": 16,
-    "giocate vinte": 9,
+    "punti": 30,
+    "giocate": 17,
+    "giocate vinte": 10,
     "giocate perse": 7,
-    "set vinti": 30,
+    "set vinti": 33,
     "set persi": 27
   },
   {
@@ -81,11 +81,11 @@
     "squadra": "Pallavolo Rossano A.s.d.",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810012/logo.jpg",
     "punti": 15,
-    "giocate": 15,
+    "giocate": 16,
     "giocate vinte": 5,
-    "giocate perse": 10,
+    "giocate perse": 11,
     "set vinti": 22,
-    "set persi": 33
+    "set persi": 36
   },
   {
     "posizione": 9,
