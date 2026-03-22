@@ -3,11 +3,11 @@
     "posizione": 1,
     "squadra": "Belvolley Centro Diagnostico Impieri",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810072/logo.jpg",
-    "punti": 47,
-    "giocate": 16,
-    "giocate vinte": 16,
+    "punti": 50,
+    "giocate": 17,
+    "giocate vinte": 17,
     "giocate perse": 0,
-    "set vinti": 48,
+    "set vinti": 51,
     "set persi": 2
   },
   {
@@ -15,11 +15,11 @@
     "squadra": "Cusunical Asd",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810213/logo.png",
     "punti": 43,
-    "giocate": 15,
+    "giocate": 16,
     "giocate vinte": 14,
-    "giocate perse": 1,
+    "giocate perse": 2,
     "set vinti": 44,
-    "set persi": 3
+    "set persi": 6
   },
   {
     "posizione": 3,
@@ -36,22 +36,22 @@
     "posizione": 4,
     "squadra": "Sabatino Ortofrutta Volley Amantea",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810173/logo.jpg",
-    "punti": 26,
-    "giocate": 15,
-    "giocate vinte": 9,
+    "punti": 29,
+    "giocate": 16,
+    "giocate vinte": 10,
     "giocate perse": 6,
-    "set vinti": 29,
+    "set vinti": 32,
     "set persi": 22
   },
   {
     "posizione": 5,
     "squadra": "Acli Settecolli Castrolibero",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810226/logo.png",
-    "punti": 26,
-    "giocate": 15,
-    "giocate vinte": 9,
+    "punti": 29,
+    "giocate": 16,
+    "giocate vinte": 10,
     "giocate perse": 6,
-    "set vinti": 28,
+    "set vinti": 31,
     "set persi": 25
   },
   {
@@ -59,11 +59,11 @@
     "squadra": "Bigmat F.lli Crusco Diamante Sport",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810202/logo.jpg",
     "punti": 24,
-    "giocate": 15,
+    "giocate": 16,
     "giocate vinte": 7,
-    "giocate perse": 8,
-    "set vinti": 27,
-    "set persi": 27
+    "giocate perse": 9,
+    "set vinti": 28,
+    "set persi": 30
   },
   {
     "posizione": 7,
@@ -91,33 +91,33 @@
     "posizione": 9,
     "squadra": "Sprovieri Volley Corigliano",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810164/logo.png",
-    "punti": 12,
-    "giocate": 16,
-    "giocate vinte": 4,
+    "punti": 15,
+    "giocate": 17,
+    "giocate vinte": 5,
     "giocate perse": 12,
-    "set vinti": 16,
-    "set persi": 41
+    "set vinti": 19,
+    "set persi": 42
   },
   {
     "posizione": 10,
     "squadra": "Volley Fagnano 2010 - Tirrenia Energia",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810235/logo.png",
     "punti": 11,
-    "giocate": 15,
+    "giocate": 16,
     "giocate vinte": 4,
-    "giocate perse": 11,
+    "giocate perse": 12,
     "set vinti": 18,
-    "set persi": 38
+    "set persi": 41
   },
   {
     "posizione": 11,
     "squadra": "Don Russo Cetraro",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810122/logo.png",
     "punti": 3,
-    "giocate": 16,
+    "giocate": 17,
     "giocate vinte": 1,
-    "giocate perse": 15,
+    "giocate perse": 16,
     "set vinti": 10,
-    "set persi": 47
+    "set persi": 50
   }
 ]

@@ -36,11 +36,11 @@
     "posizione": 4,
     "squadra": "Asd School Volley Taurianova",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170820313/logo.jpg",
-    "punti": 40,
-    "giocate": 21,
-    "giocate vinte": 14,
+    "punti": 43,
+    "giocate": 22,
+    "giocate vinte": 15,
     "giocate perse": 7,
-    "set vinti": 50,
+    "set vinti": 53,
     "set persi": 30
   },
   {
@@ -125,10 +125,10 @@
     "squadra": "Crotone",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170800033/logo.png",
     "punti": 9,
-    "giocate": 21,
+    "giocate": 22,
     "giocate vinte": 3,
-    "giocate perse": 18,
+    "giocate perse": 19,
     "set vinti": 18,
-    "set persi": 57
+    "set persi": 60
   }
 ]

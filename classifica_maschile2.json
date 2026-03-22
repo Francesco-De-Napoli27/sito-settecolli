@@ -3,34 +3,34 @@
     "posizione": 1,
     "squadra": "Pallavolo Rossano A.s.d",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810012/logo.jpg",
-    "punti": 23,
-    "giocate": 8,
-    "giocate vinte": 8,
+    "punti": 26,
+    "giocate": 9,
+    "giocate vinte": 9,
     "giocate perse": 0,
-    "set vinti": 24,
+    "set vinti": 27,
     "set persi": 7
   },
   {
     "posizione": 2,
-    "squadra": "Ital Costruzioni Nova Volley Trebisacce",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810210/logo.jpg",
-    "punti": 20,
+    "squadra": "Masterbrico Volley Belmonte",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810228/logo.jpg",
+    "punti": 22,
     "giocate": 9,
     "giocate vinte": 7,
     "giocate perse": 2,
     "set vinti": 24,
-    "set persi": 12
+    "set persi": 9
   },
   {
     "posizione": 3,
-    "squadra": "Masterbrico Volley Belmonte",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810228/logo.jpg",
-    "punti": 19,
-    "giocate": 8,
-    "giocate vinte": 6,
-    "giocate perse": 2,
-    "set vinti": 21,
-    "set persi": 9
+    "squadra": "Ital Costruzioni Nova Volley Trebisacce",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810210/logo.jpg",
+    "punti": 20,
+    "giocate": 10,
+    "giocate vinte": 7,
+    "giocate perse": 3,
+    "set vinti": 24,
+    "set persi": 15
   },
   {
     "posizione": 4,
@@ -66,17 +66,6 @@
     "set persi": 20
   },
   {
-    "posizione": 7,
-    "squadra": "Umipas Volley Academy",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810212/logo.jpg",
-    "punti": 6,
-    "giocate": 9,
-    "giocate vinte": 2,
-    "giocate perse": 7,
-    "set vinti": 11,
-    "set persi": 23
-  },
-  {
     "posizione": 8,
     "squadra": "Volley Fagnano 2010 - Papi Ristorante",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810235/logo.png",
@@ -86,6 +75,17 @@
     "giocate perse": 7,
     "set vinti": 8,
     "set persi": 22
+  },
+  {
+    "posizione": 7,
+    "squadra": "Umipas Volley Academy",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810212/logo.jpg",
+    "punti": 6,
+    "giocate": 10,
+    "giocate vinte": 2,
+    "giocate perse": 8,
+    "set vinti": 11,
+    "set persi": 26
   },
   {
     "posizione": 9,
