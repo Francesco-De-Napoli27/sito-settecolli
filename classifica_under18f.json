@@ -4,11 +4,11 @@
     "squadra": "Ascensori Montanaro Avolio Nova Volley",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810002/logo.png",
     "punti": 39,
-    "giocate": 13,
+    "giocate": 14,
     "giocate vinte": 13,
-    "giocate perse": 0,
+    "giocate perse": 1,
     "set vinti": 39,
-    "set persi": 1
+    "set persi": 4
   },
   {
     "posizione": 2,
@@ -23,6 +23,17 @@
   },
   {
     "posizione": 3,
+    "squadra": "Craticam Volley Academy",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810212/logo.jpg",
+    "punti": 26,
+    "giocate": 13,
+    "giocate vinte": 9,
+    "giocate perse": 4,
+    "set vinti": 27,
+    "set persi": 15
+  },
+  {
+    "posizione": 4,
     "squadra": "San Lucido Volley",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810116/logo.jpg",
     "punti": 25,
@@ -31,17 +42,6 @@
     "giocate perse": 5,
     "set vinti": 26,
     "set persi": 16
-  },
-  {
-    "posizione": 4,
-    "squadra": "Craticam Volley Academy",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810212/logo.jpg",
-    "punti": 23,
-    "giocate": 12,
-    "giocate vinte": 8,
-    "giocate perse": 4,
-    "set vinti": 24,
-    "set persi": 15
   },
   {
     "posizione": 5,
@@ -59,21 +59,21 @@
     "squadra": "Silan Volley Asd",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810181/logo.jpg",
     "punti": 12,
-    "giocate": 12,
+    "giocate": 13,
     "giocate vinte": 4,
-    "giocate perse": 8,
+    "giocate perse": 9,
     "set vinti": 14,
-    "set persi": 27
+    "set persi": 30
   },
   {
     "posizione": 7,
     "squadra": "Sabatino Ortofrutta Volley Amantea",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810173/logo.jpg",
-    "punti": 7,
-    "giocate": 13,
-    "giocate vinte": 2,
+    "punti": 10,
+    "giocate": 14,
+    "giocate vinte": 3,
     "giocate perse": 11,
-    "set vinti": 9,
+    "set vinti": 12,
     "set persi": 34
   },
   {
