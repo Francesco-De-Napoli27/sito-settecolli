@@ -47,11 +47,11 @@
     "posizione": 5,
     "squadra": "Pallavolo Rossano A.s.d",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810012/logo.jpg",
-    "punti": 20,
-    "giocate": 13,
-    "giocate vinte": 7,
+    "punti": 23,
+    "giocate": 14,
+    "giocate vinte": 8,
     "giocate perse": 6,
-    "set vinti": 23,
+    "set vinti": 26,
     "set persi": 20
   },
   {
@@ -81,10 +81,10 @@
     "squadra": "Acli Settecolli Castrolibero",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810226/logo.png",
     "punti": 0,
-    "giocate": 13,
+    "giocate": 14,
     "giocate vinte": 0,
-    "giocate perse": 13,
+    "giocate perse": 14,
     "set vinti": 1,
-    "set persi": 39
+    "set persi": 42
   }
 ]
