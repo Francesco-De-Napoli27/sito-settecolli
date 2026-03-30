@@ -14,22 +14,22 @@
     "posizione": 2,
     "squadra": "Masterbrico Volley Belmonte",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810228/logo.jpg",
-    "punti": 22,
-    "giocate": 9,
-    "giocate vinte": 7,
+    "punti": 25,
+    "giocate": 10,
+    "giocate vinte": 8,
     "giocate perse": 2,
-    "set vinti": 24,
-    "set persi": 9
+    "set vinti": 27,
+    "set persi": 10
   },
   {
     "posizione": 3,
     "squadra": "Ital Costruzioni Nova Volley Trebisacce",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810210/logo.jpg",
-    "punti": 20,
-    "giocate": 10,
-    "giocate vinte": 7,
+    "punti": 23,
+    "giocate": 11,
+    "giocate vinte": 8,
     "giocate perse": 3,
-    "set vinti": 24,
+    "set vinti": 27,
     "set persi": 15
   },
   {
@@ -59,11 +59,11 @@
     "squadra": "Fattoria Didattica Terre Antiche",
     "logo": "https://www.fipavonline.it/img/loghi_societa/no-logo-ios4.png",
     "punti": 10,
-    "giocate": 9,
+    "giocate": 10,
     "giocate vinte": 3,
-    "giocate perse": 6,
+    "giocate perse": 7,
     "set vinti": 14,
-    "set persi": 20
+    "set persi": 23
   },
   {
     "posizione": 7,
@@ -92,10 +92,10 @@
     "squadra": "Ristorante La Perla Del Mare Vg Pure Volley",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810224/logo.jpg",
     "punti": 1,
-    "giocate": 9,
+    "giocate": 10,
     "giocate vinte": 1,
-    "giocate perse": 8,
-    "set vinti": 7,
-    "set persi": 25
+    "giocate perse": 9,
+    "set vinti": 8,
+    "set persi": 28
   }
 ]

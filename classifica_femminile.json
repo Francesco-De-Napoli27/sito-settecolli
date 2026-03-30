@@ -3,26 +3,37 @@
     "posizione": 1,
     "squadra": "Belvolley Centro Diagnostico Impieri",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810072/logo.jpg",
-    "punti": 50,
-    "giocate": 17,
-    "giocate vinte": 17,
+    "punti": 53,
+    "giocate": 18,
+    "giocate vinte": 18,
     "giocate perse": 0,
-    "set vinti": 51,
-    "set persi": 2
+    "set vinti": 54,
+    "set persi": 3
   },
   {
     "posizione": 2,
     "squadra": "Cusunical Asd",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810213/logo.png",
-    "punti": 43,
-    "giocate": 16,
-    "giocate vinte": 14,
+    "punti": 46,
+    "giocate": 17,
+    "giocate vinte": 15,
     "giocate perse": 2,
-    "set vinti": 44,
+    "set vinti": 47,
     "set persi": 6
   },
   {
     "posizione": 3,
+    "squadra": "Acli Settecolli Castrolibero",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810226/logo.png",
+    "punti": 31,
+    "giocate": 17,
+    "giocate vinte": 11,
+    "giocate perse": 6,
+    "set vinti": 34,
+    "set persi": 27
+  },
+  {
+    "posizione": 4,
     "squadra": "Yes We Call San Lucido",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810116/logo.jpg",
     "punti": 30,
@@ -33,29 +44,18 @@
     "set persi": 27
   },
   {
-    "posizione": 4,
+    "posizione": 5,
     "squadra": "Sabatino Ortofrutta Volley Amantea",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810173/logo.jpg",
     "punti": 29,
-    "giocate": 16,
+    "giocate": 17,
     "giocate vinte": 10,
-    "giocate perse": 6,
-    "set vinti": 32,
-    "set persi": 22
-  },
-  {
-    "posizione": 5,
-    "squadra": "Acli Settecolli Castrolibero",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810226/logo.png",
-    "punti": 29,
-    "giocate": 16,
-    "giocate vinte": 10,
-    "giocate perse": 6,
-    "set vinti": 31,
+    "giocate perse": 7,
+    "set vinti": 33,
     "set persi": 25
   },
   {
-    "posizione": 6,
+    "posizione": 7,
     "squadra": "Bigmat F.lli Crusco Diamante Sport",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810202/logo.jpg",
     "punti": 24,
@@ -66,48 +66,48 @@
     "set persi": 30
   },
   {
-    "posizione": 7,
+    "posizione": 6,
     "squadra": "Games Solution Volley Scalea",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810217/logo.jpg",
-    "punti": 21,
-    "giocate": 16,
-    "giocate vinte": 7,
+    "punti": 24,
+    "giocate": 17,
+    "giocate vinte": 8,
     "giocate perse": 9,
-    "set vinti": 22,
+    "set vinti": 25,
     "set persi": 29
   },
   {
     "posizione": 8,
     "squadra": "Pallavolo Rossano A.s.d.",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810012/logo.jpg",
-    "punti": 15,
-    "giocate": 16,
+    "punti": 16,
+    "giocate": 17,
     "giocate vinte": 5,
-    "giocate perse": 11,
-    "set vinti": 22,
-    "set persi": 36
+    "giocate perse": 12,
+    "set vinti": 24,
+    "set persi": 39
   },
   {
     "posizione": 9,
     "squadra": "Sprovieri Volley Corigliano",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810164/logo.png",
     "punti": 15,
-    "giocate": 17,
+    "giocate": 18,
     "giocate vinte": 5,
-    "giocate perse": 12,
+    "giocate perse": 13,
     "set vinti": 19,
-    "set persi": 42
+    "set persi": 45
   },
   {
     "posizione": 10,
     "squadra": "Volley Fagnano 2010 - Tirrenia Energia",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810235/logo.png",
     "punti": 11,
-    "giocate": 16,
+    "giocate": 17,
     "giocate vinte": 4,
-    "giocate perse": 12,
+    "giocate perse": 13,
     "set vinti": 18,
-    "set persi": 41
+    "set persi": 44
   },
   {
     "posizione": 11,
