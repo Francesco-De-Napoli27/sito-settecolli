@@ -23,6 +23,17 @@
   },
   {
     "posizione": 3,
+    "squadra": "Yes We Call San Lucido",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810116/logo.jpg",
+    "punti": 33,
+    "giocate": 18,
+    "giocate vinte": 11,
+    "giocate perse": 7,
+    "set vinti": 36,
+    "set persi": 27
+  },
+  {
+    "posizione": 4,
     "squadra": "Acli Settecolli Castrolibero",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810226/logo.png",
     "punti": 31,
@@ -30,17 +41,6 @@
     "giocate vinte": 11,
     "giocate perse": 6,
     "set vinti": 34,
-    "set persi": 27
-  },
-  {
-    "posizione": 4,
-    "squadra": "Yes We Call San Lucido",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810116/logo.jpg",
-    "punti": 30,
-    "giocate": 17,
-    "giocate vinte": 10,
-    "giocate perse": 7,
-    "set vinti": 33,
     "set persi": 27
   },
   {
@@ -55,17 +55,6 @@
     "set persi": 25
   },
   {
-    "posizione": 7,
-    "squadra": "Bigmat F.lli Crusco Diamante Sport",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810202/logo.jpg",
-    "punti": 24,
-    "giocate": 16,
-    "giocate vinte": 7,
-    "giocate perse": 9,
-    "set vinti": 28,
-    "set persi": 30
-  },
-  {
     "posizione": 6,
     "squadra": "Games Solution Volley Scalea",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810217/logo.jpg",
@@ -75,6 +64,17 @@
     "giocate perse": 9,
     "set vinti": 25,
     "set persi": 29
+  },
+  {
+    "posizione": 7,
+    "squadra": "Bigmat F.lli Crusco Diamante Sport",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810202/logo.jpg",
+    "punti": 24,
+    "giocate": 17,
+    "giocate vinte": 7,
+    "giocate perse": 10,
+    "set vinti": 28,
+    "set persi": 33
   },
   {
     "posizione": 8,
