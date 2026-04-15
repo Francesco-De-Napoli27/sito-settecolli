@@ -3,11 +3,11 @@
     "posizione": 1,
     "squadra": "Pallavolo Rossano A.s.d",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810012/logo.jpg",
-    "punti": 32,
-    "giocate": 11,
-    "giocate vinte": 11,
+    "punti": 35,
+    "giocate": 12,
+    "giocate vinte": 12,
     "giocate perse": 0,
-    "set vinti": 33,
+    "set vinti": 36,
     "set persi": 8
   },
   {
@@ -15,11 +15,11 @@
     "squadra": "Masterbrico Volley Belmonte",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810228/logo.jpg",
     "punti": 28,
-    "giocate": 11,
+    "giocate": 12,
     "giocate vinte": 9,
-    "giocate perse": 2,
+    "giocate perse": 3,
     "set vinti": 30,
-    "set persi": 10
+    "set persi": 13
   },
   {
     "posizione": 3,
