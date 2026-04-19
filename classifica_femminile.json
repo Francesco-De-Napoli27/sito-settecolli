@@ -36,12 +36,12 @@
     "posizione": 4,
     "squadra": "Acli Settecolli Castrolibero",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810226/logo.png",
-    "punti": 31,
-    "giocate": 18,
-    "giocate vinte": 11,
+    "punti": 33,
+    "giocate": 19,
+    "giocate vinte": 12,
     "giocate perse": 7,
-    "set vinti": 34,
-    "set persi": 30
+    "set vinti": 37,
+    "set persi": 32
   },
   {
     "posizione": 5,
@@ -58,12 +58,12 @@
     "posizione": 6,
     "squadra": "Bigmat F.lli Crusco Diamante Sport",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810202/logo.jpg",
-    "punti": 27,
-    "giocate": 18,
+    "punti": 28,
+    "giocate": 19,
     "giocate vinte": 8,
-    "giocate perse": 10,
-    "set vinti": 31,
-    "set persi": 34
+    "giocate perse": 11,
+    "set vinti": 33,
+    "set persi": 37
   },
   {
     "posizione": 7,
@@ -91,11 +91,11 @@
     "posizione": 9,
     "squadra": "Sprovieri Volley Corigliano",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810164/logo.png",
-    "punti": 15,
-    "giocate": 18,
-    "giocate vinte": 5,
+    "punti": 18,
+    "giocate": 19,
+    "giocate vinte": 6,
     "giocate perse": 13,
-    "set vinti": 19,
+    "set vinti": 22,
     "set persi": 45
   },
   {
@@ -114,10 +114,10 @@
     "squadra": "Don Russo Cetraro",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810122/logo.png",
     "punti": 3,
-    "giocate": 18,
+    "giocate": 19,
     "giocate vinte": 1,
-    "giocate perse": 17,
+    "giocate perse": 18,
     "set vinti": 11,
-    "set persi": 53
+    "set persi": 56
   }
 ]
