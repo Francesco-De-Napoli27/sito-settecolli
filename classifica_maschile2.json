@@ -3,11 +3,11 @@
     "posizione": 1,
     "squadra": "Pallavolo Rossano A.s.d",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810012/logo.jpg",
-    "punti": 38,
-    "giocate": 13,
-    "giocate vinte": 13,
+    "punti": 41,
+    "giocate": 14,
+    "giocate vinte": 14,
     "giocate perse": 0,
-    "set vinti": 39,
+    "set vinti": 42,
     "set persi": 9
   },
   {
@@ -45,17 +45,6 @@
   },
   {
     "posizione": 5,
-    "squadra": "Tecnofutura Settecolli Nextgen",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810226/logo.png",
-    "punti": 16,
-    "giocate": 12,
-    "giocate vinte": 5,
-    "giocate perse": 7,
-    "set vinti": 21,
-    "set persi": 23
-  },
-  {
-    "posizione": 6,
     "squadra": "Fattoria Didattica Terre Antiche",
     "logo": "https://www.fipavonline.it/img/loghi_societa/no-logo-ios4.png",
     "punti": 16,
@@ -64,6 +53,17 @@
     "giocate perse": 7,
     "set vinti": 20,
     "set persi": 24
+  },
+  {
+    "posizione": 6,
+    "squadra": "Tecnofutura Settecolli Nextgen",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810226/logo.png",
+    "punti": 16,
+    "giocate": 13,
+    "giocate vinte": 5,
+    "giocate perse": 8,
+    "set vinti": 21,
+    "set persi": 26
   },
   {
     "posizione": 7,
