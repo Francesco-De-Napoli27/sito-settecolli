@@ -14,15 +14,26 @@
     "posizione": 2,
     "squadra": "Cusunical Asd",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810213/logo.png",
-    "punti": 52,
-    "giocate": 19,
-    "giocate vinte": 17,
+    "punti": 55,
+    "giocate": 20,
+    "giocate vinte": 18,
     "giocate perse": 2,
-    "set vinti": 53,
-    "set persi": 6
+    "set vinti": 56,
+    "set persi": 7
   },
   {
     "posizione": 3,
+    "squadra": "Sabatino Ortofrutta Volley Amantea",
+    "logo": "https://www.fipavonline.it/img/loghi_societa/170810173/logo.jpg",
+    "punti": 35,
+    "giocate": 20,
+    "giocate vinte": 12,
+    "giocate perse": 8,
+    "set vinti": 41,
+    "set persi": 30
+  },
+  {
+    "posizione": 4,
     "squadra": "Yes We Call San Lucido",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810116/logo.jpg",
     "punti": 35,
@@ -33,26 +44,15 @@
     "set persi": 32
   },
   {
-    "posizione": 4,
+    "posizione": 5,
     "squadra": "Acli Settecolli Castrolibero",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810226/logo.png",
     "punti": 33,
-    "giocate": 19,
+    "giocate": 20,
     "giocate vinte": 12,
-    "giocate perse": 7,
-    "set vinti": 37,
-    "set persi": 32
-  },
-  {
-    "posizione": 5,
-    "squadra": "Sabatino Ortofrutta Volley Amantea",
-    "logo": "https://www.fipavonline.it/img/loghi_societa/170810173/logo.jpg",
-    "punti": 32,
-    "giocate": 19,
-    "giocate vinte": 11,
     "giocate perse": 8,
-    "set vinti": 38,
-    "set persi": 30
+    "set vinti": 37,
+    "set persi": 35
   },
   {
     "posizione": 6,
@@ -81,11 +81,11 @@
     "squadra": "Pallavolo Rossano A.s.d.",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810012/logo.jpg",
     "punti": 20,
-    "giocate": 19,
+    "giocate": 20,
     "giocate vinte": 6,
-    "giocate perse": 13,
-    "set vinti": 29,
-    "set persi": 43
+    "giocate perse": 14,
+    "set vinti": 30,
+    "set persi": 46
   },
   {
     "posizione": 9,

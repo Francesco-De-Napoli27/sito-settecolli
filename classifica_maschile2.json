@@ -47,11 +47,11 @@
     "posizione": 5,
     "squadra": "Fattoria Didattica Terre Antiche",
     "logo": "https://www.fipavonline.it/img/loghi_societa/no-logo-ios4.png",
-    "punti": 16,
-    "giocate": 12,
-    "giocate vinte": 5,
+    "punti": 19,
+    "giocate": 13,
+    "giocate vinte": 6,
     "giocate perse": 7,
-    "set vinti": 20,
+    "set vinti": 23,
     "set persi": 24
   },
   {
@@ -92,10 +92,10 @@
     "squadra": "Ristorante La Perla Del Mare Vg Pure Volley",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810224/logo.jpg",
     "punti": 1,
-    "giocate": 12,
+    "giocate": 13,
     "giocate vinte": 1,
-    "giocate perse": 11,
+    "giocate perse": 12,
     "set vinti": 10,
-    "set persi": 34
+    "set persi": 37
   }
 ]
