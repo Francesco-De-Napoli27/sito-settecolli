@@ -47,12 +47,12 @@
     "posizione": 5,
     "squadra": "Fattoria Didattica Terre Antiche",
     "logo": "https://www.fipavonline.it/img/loghi_societa/no-logo-ios4.png",
-    "punti": 23,
-    "giocate": 15,
-    "giocate vinte": 7,
+    "punti": 26,
+    "giocate": 16,
+    "giocate vinte": 8,
     "giocate perse": 8,
-    "set vinti": 28,
-    "set persi": 28
+    "set vinti": 31,
+    "set persi": 29
   },
   {
     "posizione": 6,
@@ -70,21 +70,21 @@
     "squadra": "Volley Fagnano 2010 - Papi Ristorante",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810235/logo.png",
     "punti": 15,
-    "giocate": 15,
+    "giocate": 16,
     "giocate vinte": 5,
-    "giocate perse": 10,
-    "set vinti": 20,
-    "set persi": 34
+    "giocate perse": 11,
+    "set vinti": 21,
+    "set persi": 37
   },
   {
     "posizione": 8,
     "squadra": "Ristorante La Perla Del Mare Vg Pure Volley",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810224/logo.jpg",
-    "punti": 4,
-    "giocate": 15,
-    "giocate vinte": 2,
+    "punti": 7,
+    "giocate": 16,
+    "giocate vinte": 3,
     "giocate perse": 13,
-    "set vinti": 13,
+    "set vinti": 16,
     "set persi": 40
   },
   {
@@ -92,10 +92,10 @@
     "squadra": "Umipas Volley Academy",
     "logo": "https://www.fipavonline.it/img/loghi_societa/170810212/logo.jpg",
     "punti": 3,
-    "giocate": 15,
+    "giocate": 16,
     "giocate vinte": 2,
-    "giocate perse": 13,
+    "giocate perse": 14,
     "set vinti": 12,
-    "set persi": 41
+    "set persi": 44
   }
 ]
