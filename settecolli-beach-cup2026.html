@@ -1,1 +1,108 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notizie - Polisportiva Acli Settecolli</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="navbar-left">
+    <a href="index.html" class="logo-link">
+      <img src="images/logo settecolli.png" alt="Logo" class="logo" />
+    </a>
+  </div>
+
+  <nav class="navbar-center"></nav>
+  <ul class="nav-menu" id="navMenu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="staff.html">Staff</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li><a href="notizie.html">Notizie</a></li>
+    <li><a href="sponsor.html">Sponsor</a></li>
+    <li><a href="tv.html">Settecolli TV</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="galleria.html">Galleria</a></li>
+    <li><a href="contatti.html">Contatti</a></li>
+  </ul>
+
+
+  <div class="navbar-right">
+  <div class="login-wrapper">
+    <a href="login.html" class="login-icon" id="user-icon">👤</a>
+    <div class="dropdown-login" id="user-dropdown" style="display: none;">
+      <a href="#" onclick="goToAccount()">Gestione Account</a>
+      <a href="#" onclick="logout()">Logout</a>
+    </div>
+  </div>
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+</header>
+
+<section class="notizie-banner">
+  <img src="images/notizie-home.png" alt="Banner Notizie" class="hero-image">
+</section>
+
+
+<section class="container py-5">
+  <h1>Settecolli Beach Cup 2026</h1>
+  <p>Tutte le informazioni sul campionato!</p>
+
+  <!-- Link al PDF caricato nello Step 1 -->
+  <a href="modulo-iscrizione-beach-volley.pdf" download class="btn btn-primary">
+    Scarica Modulo di Iscrizione (PDF)
+  </a>
+  <a href="modulo-iscrizione-beach-volley.pdf" download class="btn btn-primary">
+    Scarica Regolamento (PDF)
+  </a>
+</section>
+
+
+<footer class="footer-news">
+  <p>&copy; 2025 Polisportiva Acli Settecolli | Tutti i diritti riservati</p>
+</footer>
+
+<script src="script.js"></script>
+
+<!-- ChatGPT Chatbase Bot -->
+<script>
+(function(){
+  if(!window.chatbase || window.chatbase("getState") !== "initialized") {
+    window.chatbase = (...args) => {
+      if(!window.chatbase.q) window.chatbase.q = [];
+      window.chatbase.q.push(args);
+    };
+    window.chatbase = new Proxy(window.chatbase, {
+      get(target, prop) {
+        if (prop === "q") return target.q;
+        return (...args) => target(prop, ...args);
+      }
+    });
+  }
+  const onLoad = function() {
+    const script = document.createElement("script");
+    script.src = "https://www.chatbase.co/embed.min.js";
+    script.id = "-WQ2tdwDWxK2KlnPxENJP";
+    script.domain = "www.chatbase.co";
+    document.body.appendChild(script);
+  };
+  if (document.readyState === "complete") {
+    onLoad();
+  } else {
+    window.addEventListener("load", onLoad);
+  }
+})();
+</script>
+<script type="module" src="auth.js"></script>
+
+  
+</body>
+</html>
 
