@@ -36,7 +36,7 @@
       border-color: #e02424;
     }
     .lido-logo-card img {
-      max-height: 140px; /* Logo nettamente più grande */
+      max-height: 140px;
       width: auto;
       display: block;
     }
@@ -166,7 +166,7 @@
       gap: 12px;
     }
 
-    /* GIRONI ADATTATI: PERFETTI SU PC, TABLET E MOBILE */
+    /* GIRONI ADATTATI: RISOLTO OVERFLOW DELLA TABELLA */
     .section-title {
       font-size: 1.8rem;
       font-weight: 800;
@@ -182,56 +182,22 @@
     .gironi-grid-4 {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr)); 
-      gap: 10px;
+      gap: 12px;
       margin-bottom: 60px;
       width: 100%;
       box-sizing: border-box;
     }
 
-    /* TABLET (fino a 1024px) */
-    @media (max-width: 1024px) {
-      .gironi-grid-4 {
-        gap: 6px;
-      }
-      .girone-box {
-        padding: 6px !important;
-      }
-      .girone-header {
-        font-size: 0.85rem !important;
-        padding: 5px !important;
-      }
-      .table-mini {
-        font-size: 0.75rem !important;
-      }
-      .table-mini th, .table-mini td {
-        padding: 4px 2px !important;
-      }
-    }
-
-    /* TELEFONO (sotto i 768px) */
-    @media (max-width: 768px) {
-      .gironi-grid-4 {
-        grid-template-columns: 1fr;
-        gap: 20px;
-      }
-      .girone-box {
-        padding: 12px !important;
-      }
-      .girone-header {
-        font-size: 1rem !important;
-      }
-      .table-mini {
-        font-size: 0.85rem !important;
-      }
-    }
-
     .girone-box {
       background: #ffffff;
       border-radius: 12px;
-      padding: 12px;
+      padding: 10px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.06);
       border: 1px solid #eaeaea;
+      overflow: hidden; /* Impedisce al contenuto di uscire dal riquadro */
+      box-sizing: border-box;
     }
+    
     .girone-header {
       background: #0d47a1;
       color: #fff;
@@ -239,25 +205,60 @@
       padding: 8px;
       border-radius: 6px;
       font-weight: 700;
-      font-size: 1rem;
-      margin-bottom: 10px;
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+      white-space: nowrap;
     }
+
+    /* FORZIAMO LA TABELLA A RIMANERE NEI CONFINI */
     .table-mini {
-      width: 100%;
+      width: 100% !important;
+      max-width: 100% !important;
+      table-layout: fixed !important; /* Blocca la larghezza delle colonne */
       border-collapse: collapse;
-      font-size: 0.85rem;
+      font-size: 0.8rem;
     }
+    
     .table-mini th, .table-mini td {
-      padding: 6px 4px;
+      padding: 6px 2px !important;
       text-align: center;
       border-bottom: 1px solid #f0f0f0;
+      overflow: hidden;
+      text-overflow: ellipsis; /* Se il testo è troppo lungo mette i puntini invece di uscire */
+      white-space: nowrap;
     }
+    
     .table-mini th {
       color: #666;
       font-weight: 600;
     }
+    
+    .table-mini th:first-child, .table-mini td:first-child {
+      width: 75%; /* Dà più spazio al nome della squadra */
+    }
+    
+    .table-mini th:last-child, .table-mini td:last-child {
+      width: 25%; /* Spazio ristretto per i punti (PT) */
+    }
 
-    /* TABELLONE FINAL FOUR MODERNO E SCENOGRAFICO */
+    /* RESPONSIVE TELEFONO */
+    @media (max-width: 768px) {
+      .gironi-grid-4 {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      .girone-box {
+        padding: 14px;
+      }
+      .girone-header {
+        font-size: 1rem;
+      }
+      .table-mini {
+        font-size: 0.85rem;
+      }
+    }
+
+    /* TABELLONE FINAL FOUR */
     .tournament-bracket-section {
       background: linear-gradient(135deg, #1e293b, #0f172a);
       padding: 40px 30px;
@@ -326,7 +327,6 @@
       color: #94a3b8;
     }
 
-    /* Card Finale Dorata */
     .match-card.final-card {
       border: 2px solid #ffb703;
       background: linear-gradient(135deg, #334155, #1e293b);
@@ -392,7 +392,7 @@
 
 <div class="beach-page-wrapper">
 
-  <!-- LOGO LIDO IN GRANDE ED EVIDENTE -->
+  <!-- LOGO LIDO -->
   <div class="lido-header-section">
     <div class="lido-logo-card" onclick="openLidoModal()">
       <img src="images/logo-lido.png" alt="Logo Lido il Laghetto" id="lidoLogoImg">
@@ -405,10 +405,9 @@
     <img src="images/logo-lido.png" alt="Logo Lido il Laghetto Ingrandito">
   </div>
 
-  <!-- SEZIONE LOCANDINA A SINISTRA E MODULI A DESTRA -->
+  <!-- SEZIONE LOCANDINA E MODULI -->
   <div class="hero-tournament-grid">
     <div class="poster-box">
-      <!-- Percorso dell'immagine locandina -->
       <img src="images/Torneo Beach Volley.png" alt="Locandina Settecolli Beach Cup 2026" onerror="this.src='Torneo Beach Volley.jpg';">
     </div>
     
@@ -449,11 +448,25 @@
     <div class="girone-box">
       <div class="girone-header">Girone A</div>
       <table class="table-mini">
-        <thead><tr><th>Squadra</th><th>PT</th></tr></thead>
+        <thead>
+          <tr>
+            <th>Squadra</th>
+            <th>PT</th>
+          </tr>
+        </thead>
         <tbody>
-          <tr><td>-- In attesa --</td><td>0</td></tr>
-          <tr><td>-- In attesa --</td><td>0</td></tr>
-          <tr><td>-- In attesa --</td><td>0</td></tr>
+          <tr>
+            <td>-- In attesa --</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>-- In attesa --</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>-- In attesa --</td>
+            <td>0</td>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -462,11 +475,25 @@
     <div class="girone-box">
       <div class="girone-header">Girone B</div>
       <table class="table-mini">
-        <thead><tr><th>Squadra</th><th>PT</th></tr></thead>
+        <thead>
+          <tr>
+            <th>Squadra</th>
+            <th>PT</th>
+          </tr>
+        </thead>
         <tbody>
-          <tr><td>-- In attesa --</td><td>0</td></tr>
-          <tr><td>-- In attesa --</td><td>0</td></tr>
-          <tr><td>-- In attesa --</td><td>0</td></tr>
+          <tr>
+            <td>-- In attesa --</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>-- In attesa --</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>-- In attesa --</td>
+            <td>0</td>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -475,11 +502,25 @@
     <div class="girone-box">
       <div class="girone-header">Girone C</div>
       <table class="table-mini">
-        <thead><tr><th>Squadra</th><th>PT</th></tr></thead>
+        <thead>
+          <tr>
+            <th>Squadra</th>
+            <th>PT</th>
+          </tr>
+        </thead>
         <tbody>
-          <tr><td>-- In attesa --</td><td>0</td></tr>
-          <tr><td>-- In attesa --</td><td>0</td></tr>
-          <tr><td>-- In attesa --</td><td>0</td></tr>
+          <tr>
+            <td>-- In attesa --</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>-- In attesa --</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>-- In attesa --</td>
+            <td>0</td>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -488,17 +529,31 @@
     <div class="girone-box">
       <div class="girone-header">Girone D</div>
       <table class="table-mini">
-        <thead><tr><th>Squadra</th><th>PT</th></tr></thead>
+        <thead>
+          <tr>
+            <th>Squadra</th>
+            <th>PT</th>
+          </tr>
+        </thead>
         <tbody>
-          <tr><td>-- In attesa --</td><td>0</td></tr>
-          <tr><td>-- In attesa --</td><td>0</td></tr>
-          <tr><td>-- In attesa --</td><td>0</td></tr>
+          <tr>
+            <td>-- In attesa --</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>-- In attesa --</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>-- In attesa --</td>
+            <td>0</td>
+          </tr>
         </tbody>
       </table>
     </div>
   </div>
 
-  <!-- TABELLONE FINAL FOUR STILE TORNEO -->
+  <!-- TABELLONE FINAL FOUR -->
   <div class="tournament-bracket-section">
     <div class="section-title">Tabellone Final Four</div>
     
