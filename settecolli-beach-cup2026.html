@@ -166,7 +166,7 @@
       gap: 12px;
     }
 
-    /* GIRONI ADATTATI (4 SULLA STESSA RIGA) */
+    /* GIRONI ADATTATI: PERFETTI SU PC, TABLET E MOBILE */
     .section-title {
       font-size: 1.8rem;
       font-weight: 800;
@@ -181,18 +181,47 @@
 
     .gironi-grid-4 {
       display: grid;
-      grid-template-columns: repeat(4, 1fr); /* 4 gironi compatti sulla stessa riga */
-      gap: 15px;
+      grid-template-columns: repeat(4, minmax(0, 1fr)); 
+      gap: 10px;
       margin-bottom: 60px;
+      width: 100%;
+      box-sizing: border-box;
     }
+
+    /* TABLET (fino a 1024px) */
     @media (max-width: 1024px) {
       .gironi-grid-4 {
-        grid-template-columns: repeat(2, 1fr);
+        gap: 6px;
+      }
+      .girone-box {
+        padding: 6px !important;
+      }
+      .girone-header {
+        font-size: 0.85rem !important;
+        padding: 5px !important;
+      }
+      .table-mini {
+        font-size: 0.75rem !important;
+      }
+      .table-mini th, .table-mini td {
+        padding: 4px 2px !important;
       }
     }
-    @media (max-width: 550px) {
+
+    /* TELEFONO (sotto i 768px) */
+    @media (max-width: 768px) {
       .gironi-grid-4 {
         grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      .girone-box {
+        padding: 12px !important;
+      }
+      .girone-header {
+        font-size: 1rem !important;
+      }
+      .table-mini {
+        font-size: 0.85rem !important;
       }
     }
 
@@ -407,7 +436,7 @@
     </div>
   </div>
 
-  <!-- CLASSIFICA GIRONI (4 COMPATTI SULLA STESSA RIGA) -->
+  <!-- CLASSIFICA GIRONI -->
   <div class="section-title">Classifica Gironi</div>
 
   <div class="wip-banner">
