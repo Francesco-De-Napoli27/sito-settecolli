@@ -13,6 +13,31 @@
       padding: 20px;
     }
 
+    /* FIX BANNER HERO RESPONSIVE */
+    .beach-banner {
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .beach-banner .hero-image {
+      width: 100%;
+      height: auto;
+      max-height: 250px;
+      object-fit: cover;
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      .beach-banner .hero-image {
+        min-height: 120px;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
     /* LOGO LIDO PROMINENTE */
     .lido-header-section {
       text-align: center;
@@ -166,7 +191,7 @@
       gap: 12px;
     }
 
-    /* GIRONI ADATTATI: RISOLTO OVERFLOW DELLA TABELLA */
+    /* CLASSIFICA GIRONI RESTYLING COMPLETO RESPONSIVE */
     .section-title {
       font-size: 1.8rem;
       font-weight: 800;
@@ -182,7 +207,7 @@
     .gironi-grid-4 {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr)); 
-      gap: 12px;
+      gap: 15px;
       margin-bottom: 60px;
       width: 100%;
       box-sizing: border-box;
@@ -190,11 +215,10 @@
 
     .girone-box {
       background: #ffffff;
-      border-radius: 12px;
-      padding: 10px;
+      border-radius: 14px;
+      padding: 12px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.06);
       border: 1px solid #eaeaea;
-      overflow: hidden; /* Impedisce al contenuto di uscire dal riquadro */
       box-sizing: border-box;
     }
     
@@ -202,59 +226,66 @@
       background: #0d47a1;
       color: #fff;
       text-align: center;
-      padding: 8px;
-      border-radius: 6px;
+      padding: 10px;
+      border-radius: 8px;
       font-weight: 700;
-      font-size: 0.95rem;
-      margin-bottom: 8px;
-      white-space: nowrap;
+      font-size: 1rem;
+      margin-bottom: 12px;
     }
 
-    /* FORZIAMO LA TABELLA A RIMANERE NEI CONFINI */
-    .table-mini {
-      width: 100% !important;
-      max-width: 100% !important;
-      table-layout: fixed !important; /* Blocca la larghezza delle colonne */
-      border-collapse: collapse;
-      font-size: 0.8rem;
+    /* STILE TABELLA PULITO SENZA TAGLI */
+    .table-mini-clean {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      font-size: 0.85rem;
     }
-    
-    .table-mini th, .table-mini td {
-      padding: 6px 2px !important;
-      text-align: center;
+
+    .table-row-clean {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 10px;
       border-bottom: 1px solid #f0f0f0;
-      overflow: hidden;
-      text-overflow: ellipsis; /* Se il testo è troppo lungo mette i puntini invece di uscire */
-      white-space: nowrap;
-    }
-    
-    .table-mini th {
-      color: #666;
-      font-weight: 600;
-    }
-    
-    .table-mini th:first-child, .table-mini td:first-child {
-      width: 75%; /* Dà più spazio al nome della squadra */
-    }
-    
-    .table-mini th:last-child, .table-mini td:last-child {
-      width: 25%; /* Spazio ristretto per i punti (PT) */
     }
 
-    /* RESPONSIVE TELEFONO */
+    .table-row-clean.header-row {
+      background-color: #f5f5f5;
+      font-weight: 700;
+      color: #555;
+      border-radius: 6px;
+      margin-bottom: 4px;
+    }
+
+    .table-col-team {
+      flex: 1;
+      text-align: left;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding-right: 10px;
+    }
+
+    .table-col-pts {
+      width: 35px;
+      text-align: center;
+      font-weight: 700;
+      color: #0d47a1;
+    }
+
     @media (max-width: 768px) {
       .gironi-grid-4 {
         grid-template-columns: 1fr;
         gap: 20px;
       }
       .girone-box {
-        padding: 14px;
+        padding: 16px;
       }
-      .girone-header {
-        font-size: 1rem;
+      .table-mini-clean {
+        font-size: 0.9rem;
       }
-      .table-mini {
-        font-size: 0.85rem;
+      .table-row-clean {
+        padding: 10px 12px;
       }
     }
 
@@ -447,109 +478,93 @@
     <!-- GIRONE A -->
     <div class="girone-box">
       <div class="girone-header">Girone A</div>
-      <table class="table-mini">
-        <thead>
-          <tr>
-            <th>Squadra</th>
-            <th>PT</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>-- In attesa --</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <td>-- In attesa --</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <td>-- In attesa --</td>
-            <td>0</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-mini-clean">
+        <div class="table-row-clean header-row">
+          <div class="table-col-team">Squadra</div>
+          <div class="table-col-pts">PT</div>
+        </div>
+        <div class="table-row-clean">
+          <div class="table-col-team">-- In attesa --</div>
+          <div class="table-col-pts">0</div>
+        </div>
+        <div class="table-row-clean">
+          <div class="table-col-team">-- In attesa --</div>
+          <div class="table-col-pts">0</div>
+        </div>
+        <div class="table-row-clean">
+          <div class="table-col-team">-- In attesa --</div>
+          <div class="table-col-pts">0</div>
+        </div>
+      </div>
     </div>
 
     <!-- GIRONE B -->
     <div class="girone-box">
       <div class="girone-header">Girone B</div>
-      <table class="table-mini">
-        <thead>
-          <tr>
-            <th>Squadra</th>
-            <th>PT</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>-- In attesa --</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <td>-- In attesa --</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <td>-- In attesa --</td>
-            <td>0</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-mini-clean">
+        <div class="table-row-clean header-row">
+          <div class="table-col-team">Squadra</div>
+          <div class="table-col-pts">PT</div>
+        </div>
+        <div class="table-row-clean">
+          <div class="table-col-team">-- In attesa --</div>
+          <div class="table-col-pts">0</div>
+        </div>
+        <div class="table-row-clean">
+          <div class="table-col-team">-- In attesa --</div>
+          <div class="table-col-pts">0</div>
+        </div>
+        <div class="table-row-clean">
+          <div class="table-col-team">-- In attesa --</div>
+          <div class="table-col-pts">0</div>
+        </div>
+      </div>
     </div>
 
     <!-- GIRONE C -->
     <div class="girone-box">
       <div class="girone-header">Girone C</div>
-      <table class="table-mini">
-        <thead>
-          <tr>
-            <th>Squadra</th>
-            <th>PT</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>-- In attesa --</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <td>-- In attesa --</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <td>-- In attesa --</td>
-            <td>0</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-mini-clean">
+        <div class="table-row-clean header-row">
+          <div class="table-col-team">Squadra</div>
+          <div class="table-col-pts">PT</div>
+        </div>
+        <div class="table-row-clean">
+          <div class="table-col-team">-- In attesa --</div>
+          <div class="table-col-pts">0</div>
+        </div>
+        <div class="table-row-clean">
+          <div class="table-col-team">-- In attesa --</div>
+          <div class="table-col-pts">0</div>
+        </div>
+        <div class="table-row-clean">
+          <div class="table-col-team">-- In attesa --</div>
+          <div class="table-col-pts">0</div>
+        </div>
+      </div>
     </div>
 
     <!-- GIRONE D -->
     <div class="girone-box">
       <div class="girone-header">Girone D</div>
-      <table class="table-mini">
-        <thead>
-          <tr>
-            <th>Squadra</th>
-            <th>PT</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>-- In attesa --</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <td>-- In attesa --</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <td>-- In attesa --</td>
-            <td>0</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-mini-clean">
+        <div class="table-row-clean header-row">
+          <div class="table-col-team">Squadra</div>
+          <div class="table-col-pts">PT</div>
+        </div>
+        <div class="table-row-clean">
+          <div class="table-col-team">-- In attesa --</div>
+          <div class="table-col-pts">0</div>
+        </div>
+        <div class="table-row-clean">
+          <div class="table-col-team">-- In attesa --</div>
+          <div class="table-col-pts">0</div>
+        </div>
+        <div class="table-row-clean">
+          <div class="table-col-team">-- In attesa --</div>
+          <div class="table-col-pts">0</div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -564,12 +579,12 @@
         
         <div class="match-card">
           <div class="team-row"><span>1° Girone A</span> <span class="score-badge">-</span></div>
-          <div class="team-row"><span>1° Girone C</span> <span class="score-badge">-</span></div>
+          <div class="team-row"><span>2° Girone B</span> <span class="score-badge">-</span></div>
         </div>
 
         <div class="match-card">
-          <div class="team-row"><span>1° Girone B</span> <span class="score-badge">-</span></div>
-          <div class="team-row"><span>1° Girone D</span> <span class="score-badge">-</span></div>
+          <div class="team-row"><span>1° Girone C</span> <span class="score-badge">-</span></div>
+          <div class="team-row"><span>2° Girone D</span> <span class="score-badge">-</span></div>
         </div>
       </div>
 
