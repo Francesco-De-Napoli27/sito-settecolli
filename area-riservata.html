@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smistamento Area Riservata - Polisportiva Acli Settecolli</title>
+    <link rel="icon" href="images/Logo nuovo Settecolli_favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { background-color: #060919; color: #ffffff; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; font-family: Arial, sans-serif; text-align: center; }
+        .loader-box { background-color: #0d1326; padding: 40px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.15); }
+        h2 { color: #ff2800; text-transform: uppercase; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+
+<div class="loader-box">
+    <h2>Accesso in corso...</h2>
+    <p>Verifica del profilo e reindirizzamento alla tua area dedicata.</p>
+</div>
+
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
+  import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
+  import { getFirestore, doc, getDoc, initializeFirestore, memoryLocalCache } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyDRf3Q_-D7nsVIPKSxxIm78rz1Nn5QY1cQ",
+    authDomain: "settecollisite.firebaseapp.com",
+    projectId: "settecollisite",
+    storageBucket: "settecollisite.firebasestorage.app",
+    messagingSenderId: "928590715316",
+    appId: "1:928590715316:web:031eae061e38bd5ef9bae1"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+  const db = initializeFirestore(app, {
+  localCache: memoryLocalCache()
+  });
+
+  onAuthStateChanged(auth, async (user) => {
+    if (!user) {
+      console.log("Nessun utente loggato, reindirizzamento al login.");
+      window.location.href = "login.html";
+      return;
+    }
+
+    console.log("Utente autenticato con UID:", user.uid);
+
+    try {
+      console.log("Tentativo di lettura documento Firestore per UID:", user.uid);
+      
+      const userRef = doc(db, "users", user.uid);
+      const userSnap = await getDoc(userRef);
+
+      console.log("Documento letto con successo!");
+
+      if (!userSnap.exists()) {
+        alert("Errore: Profilo utente non trovato nel database.");
+        window.location.href = "login.html";
+        return;
+      }
+
+      const userData = userSnap.data();
+      const ruolo = userData.ruolo;
+
+      if (ruolo === "dirigente") {
+        window.location.href = "area-dirigente.html";
+      } else if (ruolo === "atleta") {
+        window.location.href = "area-atleta.html";
+      } else if (ruolo === "allenatore") {
+        window.location.href = "area-allenatore.html";
+      } else {
+        window.location.href = "area-tifoso.html";
+      }
+
+    } catch (error) {
+      console.error("Errore critico:", error);
+      alert("Errore di connessione al database: " + error.message);
+      window.location.href = "login.html";
+    }
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "aclisettecolli",
+  "version": "1.0.0",
+  "description": "Script di aggiornamento automatico delle classifiche FIPAV per il sito aclisettecolli.it",
+  "type": "module",
+  "scripts": {
+    "fetch:all": "node scripts/fetch-fipav-standings.mjs --config=scripts/standings.config.json"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "undici": "^6.19.8",
+    "playwright": "^1.48.0"
+  }
+}
+
