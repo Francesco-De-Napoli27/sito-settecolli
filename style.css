@@ -2382,13 +2382,19 @@ footer {
 }
 
 /* ==========================================================================
-   OTTIMIZZAZIONE NAVBAR MOBILE (SOLO SMARTPHONE)
+   OTTIMIZZAZIONE NAVBAR MOBILE DEFINITIVA (SOLO SMARTPHONE)
    ========================================================================== */
 @media (max-width: 992px) {
-    /* Disabilita la navbar verticale (top-page) e forza quella orizzontale in alto */
-    body.top-page { padding-left: 0 !important; }
+    /* 1. Neutralizziamo l'effetto dello scroll (top-page) su mobile per non far impazzire la barra */
+    body.top-page, 
+    body:not(.top-page) { 
+        padding-left: 0 !important; 
+    }
     
-    .navbar, body.top-page .navbar {
+    /* 2. Barra di navigazione fissa, orizzontale e pronta fin da subito */
+    .navbar, 
+    body.top-page .navbar, 
+    body:not(.top-page) .navbar {
         position: fixed !important;
         top: 0 !important;
         left: 0 !important;
@@ -2398,45 +2404,86 @@ footer {
         flex-direction: row !important;
         justify-content: space-between !important;
         align-items: center !important;
-        padding: 0 20px !important;
+        padding: 0 15px !important;
         border-right: none !important;
         border-bottom: 2px solid #ff2800 !important;
         background-color: #060919 !important;
+        z-index: 9999 !important;
     }
     
-    /* 1. Logo a SINISTRA */
-    .navbar-center, body.top-page .navbar .navbar-center {
+    /* 3. LOGO A SINISTRA (Annulla il centraggio assoluto del PC) */
+    .navbar-center, 
+    body.top-page .navbar .navbar-center, 
+    body:not(.top-page) .navbar .navbar-center {
         position: static !important;
         transform: none !important;
         order: 1 !important;
         margin: 0 !important;
+        padding: 0 !important;
+        display: flex !important;
         width: auto !important;
-        justify-content: flex-start !important;
     }
-    .navbar-center .logo, body.top-page .navbar .navbar-center .logo {
+    
+    .navbar-center .logo, 
+    body.top-page .navbar .navbar-center .logo, 
+    body:not(.top-page) .navbar .navbar-center .logo {
         height: 40px !important; 
+        width: auto !important;
         max-width: none !important;
+        display: block !important;
     }
     
-    /* 2. Disposizione per posizionare Hamburger e Omino a DESTRA */
-    .navbar-left { order: 2 !important; display: flex !important; width: auto !important; margin: 0 !important; }
-    .navbar-right { order: 3 !important; display: flex !important; width: auto !important; margin: 0 !important; padding: 0 !important; }
+    /* 4. HAMBURGER E LOGIN A DESTRA (In quest'ordine) */
+    /* Contenitore Hamburger */
+    .navbar-left, 
+    body.top-page .navbar .navbar-left, 
+    body:not(.top-page) .navbar .navbar-left { 
+        order: 2 !important; 
+        display: flex !important; 
+        flex-direction: row !important;
+        margin: 0 15px 0 auto !important; /* Spinge verso destra e lascia spazio dall'omino */
+        padding: 0 !important; 
+        width: auto !important;
+    }
     
-    /* Nascondiamo tutti i link della barra sinistra tranne l'hamburger (il primo elemento) */
-    .nav-menu > li:not(:first-child) { display: none !important; }
-    .nav-menu { gap: 0 !important; margin: 0 !important; padding: 0 !important; }
+    /* Contenitore Login (Omino) */
+    .navbar-right, 
+    body.top-page .navbar .navbar-right, 
+    body:not(.top-page) .navbar .navbar-right { 
+        order: 3 !important; 
+        display: flex !important; 
+        margin: 0 !important; 
+        padding: 0 !important; 
+        width: auto !important;
+    }
     
-    /* Nascondiamo tutti i link della barra destra tranne l'omino del login */
+    /* Mostra SOLO Hamburger a sinistra, nascondi tutti gli altri link desktop */
+    .nav-menu, body.top-page .navbar .nav-menu, body:not(.top-page) .navbar .nav-menu {
+        display: flex !important;
+        margin: 0 !important; 
+        padding: 0 !important;
+        gap: 0 !important;
+    }
+    .nav-menu > li { display: none !important; }
+    .nav-menu > li:first-child { display: block !important; }
+    .menu-toggle-btn { display: flex !important; position: relative !important; z-index: 9999 !important; }
+    
+    /* Mostra SOLO Omino a destra, nascondi gli altri link desktop */
+    .nav-right-items, body.top-page .navbar .nav-right-items, body:not(.top-page) .navbar .nav-right-items {
+        display: flex !important;
+        margin: 0 !important; 
+        padding: 0 !important;
+        gap: 0 !important;
+    }
     .nav-right-items > *:not(.login-wrapper) { display: none !important; }
-    .nav-right-items { gap: 0 !important; margin-left: 20px !important; }
+    .login-wrapper { display: block !important; }
     
-    /* Nascondiamo doppioni e banner visibili su PC */
+    /* 5. Pulisci elementi superflui e posiziona il pannello */
     .floating-top-right, .vertical-social-footer { display: none !important; }
     
-    /* Assicuriamoci che il pannello laterale parta da sinistra e mostri la X */
     .extra-menu-panel, body.top-page .extra-menu-panel {
         left: 0 !important;
-        width: 85vw !important; /* Occupa quasi tutto lo schermo del telefono */
+        width: 85vw !important; 
         max-width: 400px !important;
     }
     .extra-menu-close-btn, body.top-page .extra-menu-close-btn { 
@@ -2444,31 +2491,3 @@ footer {
     }
 }
 
-/* Nasconde le voci del menu aggiunte solo per il telefono quando siamo su PC */
-@media (min-width: 993px) {
-    .mobile-only {
-        display: none !important;
-    }
-}
-
-/* Stile per i sottomenu a tendina dentro il menu laterale del telefono */
-.mobile-submenu {
-    display: none;
-    list-style: none;
-    padding-left: 15px;
-    margin-top: 10px;
-}
-.mobile-submenu.open {
-    display: block;
-}
-.mobile-submenu li {
-    margin-bottom: 12px;
-}
-.mobile-submenu a {
-    font-size: 0.85rem !important;
-    color: #aaaaaa !important;
-    text-transform: uppercase;
-}
-.mobile-submenu a:hover {
-    color: #ff2800 !important;
-}
