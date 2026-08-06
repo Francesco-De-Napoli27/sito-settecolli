@@ -787,12 +787,17 @@ document.addEventListener("DOMContentLoaded", () => {
 <!-- SCRIPT CAROSELLO -->
 <script>
 document.addEventListener("DOMContentLoaded", () => {
+    const carousel = document.querySelector('.settecolli-hero-carousel');
     const slides = document.querySelectorAll('.hero-slide');
     const dots = document.querySelectorAll('.hero-dot');
     const prevBtn = document.getElementById('prevSlide');
     const nextBtn = document.getElementById('nextSlide');
     let currentSlide = 0;
     let slideInterval;
+
+    // Variabili per gestire il touch screen (Swipe)
+    let touchStartX = 0;
+    let touchEndX = 0;
 
     function showSlide(index) {
         slides.forEach(slide => slide.classList.remove('active'));
@@ -826,8 +831,22 @@ document.addEventListener("DOMContentLoaded", () => {
         startTimer();
     }
 
+    // Funzione che valuta la direzione dello swipe
+    function handleGesture() {
+        // Se il movimento verso sinistra supera i 40 pixel -> Avanti
+        if (touchEndX < touchStartX - 40) {
+            nextSlide();
+            resetTimer();
+        }
+        // Se il movimento verso destra supera i 40 pixel -> Indietro
+        if (touchEndX > touchStartX + 40) {
+            prevSlide();
+            resetTimer();
+        }
+    }
+
     if (slides.length > 0) {
-        // Eventi click sulle frecce
+        // Eventi click sulle frecce (rimangono validi per Desktop)
         if (nextBtn) {
             nextBtn.addEventListener('click', () => {
                 nextSlide();
@@ -850,11 +869,24 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
 
+        // ============================================
+        // EVENTI TOUCH SCREEN PER SMARTPHONE E TABLET
+        // ============================================
+        if (carousel) {
+            carousel.addEventListener('touchstart', e => {
+                touchStartX = e.changedTouches[0].screenX;
+            }, { passive: true });
+
+            carousel.addEventListener('touchend', e => {
+                touchEndX = e.changedTouches[0].screenX;
+                handleGesture();
+            }, { passive: true });
+        }
+
         startTimer();
     }
 });
 </script>
-
 <!-- SCRIPT NEWS -->
 <script>
 document.addEventListener("DOMContentLoaded", () => {
