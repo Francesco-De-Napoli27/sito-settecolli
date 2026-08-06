@@ -1030,6 +1030,23 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 </script>
 
+<!-- SCRIPT PER APRIRE I SOTTOMENU NEL MENU LATERALE SU MOBILE -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const mobileDropdowns = document.querySelectorAll('.mobile-dropdown-toggle');
+    
+    mobileDropdowns.forEach(toggle => {
+        toggle.addEventListener('click', (e) => {
+            e.preventDefault();
+            const submenu = toggle.nextElementSibling;
+            if (submenu) {
+                submenu.classList.toggle('open');
+            }
+        });
+    });
+});
+</script>
+
 
 <script src="i18n.js"></script>
 
