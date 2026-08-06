@@ -2319,3 +2319,64 @@ footer {
   padding: 60px 20px;
   color: white; /* o nero, a seconda del contrasto */
 }
+
+/* ==========================================================================
+   OTTIMIZZAZIONE MOBILE: CAROSELLO HERO (SOLO SMARTPHONE/TABLET)
+   ========================================================================== */
+@media (max-width: 768px) {
+    /* Adatta l'altezza dello schermo simulando un design a scorrimento verticale */
+    .settecolli-hero-carousel {
+        height: 70vh !important; 
+        min-height: 450px !important;
+    }
+
+    /* Posiziona i testi più in basso e imposta larghezza piena */
+    .hero-content {
+        padding: 20px 15px !important; 
+        width: 100% !important;
+        text-align: left !important;
+        padding-bottom: 50px !important; /* Lascia spazio ai pallini in basso */
+    }
+
+    /* Titolo più compatto per evitare accavallamenti */
+    .hero-content h2 {
+        font-size: 1.5rem !important; 
+        line-height: 1.2 !important;
+        margin-bottom: 10px !important;
+    }
+
+    /* Etichetta data più piccolina */
+    .hero-date-badge {
+        font-size: 0.75rem !important;
+        padding: 4px 8px !important;
+        margin-bottom: 8px !important;
+    }
+
+    /* Centra i controlli (i pallini) in basso e rimuove lo spostamento laterale */
+    .hero-controls {
+        right: 50% !important;
+        transform: translateX(50%) !important;
+        bottom: 15px !important;
+        width: 100% !important;
+        justify-content: center !important;
+    }
+
+    /* Nasconde le frecce di navigazione su mobile (usiamo lo swipe!) */
+    .hero-arrows {
+        display: none !important; 
+    }
+
+    /* Rende i pallini più visibili e reattivi */
+    .hero-indicators {
+        gap: 8px !important;
+    }
+
+    .hero-dot {
+        width: 18px !important;
+        height: 4px !important;
+    }
+    
+    .hero-dot.active {
+        width: 28px !important;
+    }
+}
