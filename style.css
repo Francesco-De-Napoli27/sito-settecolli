@@ -2473,3 +2473,12 @@ footer {
     .extra-menu-list ul a:hover { color: #ff2800 !important; }
     .extra-menu-list { list-style: none !important; }
 }
+
+/* ==========================================================================
+   NASCONDI FRECCE NEWS SU MOBILE (USIAMO LO SWIPE)
+   ========================================================================== */
+@media (max-width: 992px) {
+    .settecolli-news-controls {
+        display: none !important;
+    }
+}
