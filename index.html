@@ -435,10 +435,18 @@
 
         </div>
 
-        <!-- Frecce di scorrimento in basso a sinistra -->
+        <!-- Controlli News: Trattini (Mobile) + Frecce (PC) -->
         <div class="settecolli-news-controls">
-            <button class="news-arrow-btn" id="prevNews" title="Indietro">&#10094;</button>
-            <button class="news-arrow-btn" id="nextNews" title="Avanti">&#10095;</button>
+            <div class="news-indicators" id="newsDots">
+                <span class="news-dot active" data-index="0"></span>
+                <span class="news-dot" data-index="1"></span>
+                <span class="news-dot" data-index="2"></span>
+                <span class="news-dot" data-index="3"></span>
+            </div>
+            <div class="news-arrows-wrapper">
+                <button class="news-arrow-btn" id="prevNews" title="Indietro">&#10094;</button>
+                <button class="news-arrow-btn" id="nextNews" title="Avanti">&#10095;</button>
+            </div>
         </div>
 
     </div>
