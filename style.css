@@ -2384,63 +2384,87 @@ footer {
 
 
 /* ==========================================================================
-   FIX MENU LATERALE: APERTURA A DESTRA E SOTTOMENU A TENDINA
+   IL BLOCCO MOBILE DEFINITIVO (SOSTITUISCE TUTTI I TENTATIVI PRECEDENTI)
    ========================================================================== */
 @media (max-width: 992px) {
-    /* 1. Sposta l'apertura del pannello a DESTRA */
-    .extra-menu-panel, 
-    body.top-page .extra-menu-panel, 
-    body:not(.top-page) .extra-menu-panel {
-        left: auto !important;
-        right: 0 !important;
-        transform: translateX(100%) !important; /* Parte nascosto fuori dallo schermo a destra */
-        border-left: 2px solid #ff2800 !important; /* Bordino rosso a sinistra del menu */
-        border-right: none !important;
+    /* --- 1. SFONDO E PULIZIA --- */
+    body {
+        background-color: #060919 !important;
+        padding-top: 65px !important; 
+        padding-left: 0 !important;
     }
-    
-    /* Quando si apre, entra da destra verso sinistra */
-    .extra-menu-panel.open, 
-    body.top-page .extra-menu-panel.open, 
-    body:not(.top-page) .extra-menu-panel.open {
+    .settecolli-hero-carousel { margin-top: 0 !important; }
+
+    /* Pulisce la vecchia riga bianca del menu desktop */
+    .nav-menu, body.top-page .navbar .nav-menu, body:not(.top-page) .navbar .nav-menu {
+        position: static !important; background: transparent !important;
+        width: auto !important; height: auto !important;
+        display: flex !important; flex-direction: row !important;
+    }
+
+    /* --- 2. LA NAVBAR FISSA --- */
+    .navbar, body.top-page .navbar, body:not(.top-page) .navbar {
+        position: fixed !important; top: 0 !important; left: 0 !important;
+        width: 100% !important; height: 65px !important;
+        display: flex !important; flex-direction: row !important;
+        justify-content: space-between !important; align-items: center !important;
+        padding: 0 15px !important; background-color: #060919 !important;
+        border-bottom: 2px solid #ff2800 !important; border-right: none !important;
+        z-index: 9999 !important;
+    }
+
+    /* --- 3. POSIZIONAMENTO: LOGO (SX) - HAMBURGER (C-DX) - OMINO (DX) --- */
+    /* Logo forzato a sinistra */
+    .navbar-center, body.top-page .navbar .navbar-center, body:not(.top-page) .navbar .navbar-center {
+        position: static !important; transform: none !important; left: auto !important; top: auto !important;
+        order: 1 !important; margin: 0 !important; padding: 0 !important;
+        display: flex !important; width: auto !important;
+    }
+    .navbar-center .logo { height: 40px !important; width: auto !important; display: block !important; }
+
+    /* Hamburger */
+    .navbar-left, body.top-page .navbar .navbar-left, body:not(.top-page) .navbar .navbar-left {
+        order: 2 !important; display: flex !important; flex-direction: row !important;
+        margin-left: auto !important; margin-right: 20px !important; width: auto !important;
+    }
+    .nav-menu > li { display: none !important; }
+    .nav-menu > li:first-child { display: block !important; margin: 0 !important; padding: 0 !important; }
+    .menu-toggle-btn { display: flex !important; visibility: visible !important; opacity: 1 !important; }
+
+    /* Omino Login */
+    .navbar-right, body.top-page .navbar .navbar-right, body:not(.top-page) .navbar .navbar-right {
+        order: 3 !important; display: flex !important; margin: 0 !important; padding: 0 !important; width: auto !important;
+    }
+    .nav-right-items { display: flex !important; }
+    .nav-right-items > * { display: none !important; }
+    .nav-right-items > .login-wrapper { display: block !important; }
+    .login-icon { display: flex !important; visibility: visible !important; }
+
+    /* Nascondi elementi desktop di disturbo */
+    .floating-top-right, .vertical-social-footer { display: none !important; }
+
+    /* --- 4. PANNELLO LATERALE A DESTRA E SOTTOMENU --- */
+    .extra-menu-panel, body.top-page .extra-menu-panel, body:not(.top-page) .extra-menu-panel {
+        left: auto !important; right: 0 !important;
+        transform: translateX(100%) !important;
+        border-left: 2px solid #ff2800 !important; border-right: none !important;
+    }
+    .extra-menu-panel.open, body.top-page .extra-menu-panel.open, body:not(.top-page) .extra-menu-panel.open {
         transform: translateX(0) !important;
     }
+    .extra-menu-close-btn, body.top-page .extra-menu-close-btn { left: 20px !important; top: 25px !important; }
 
-    /* Posiziona la X di chiusura nel posto giusto */
-    .extra-menu-close-btn, body.top-page .extra-menu-close-btn {
-        left: 20px !important;
-        top: 25px !important;
-    }
-
-    /* 2. Nascondi i sottomenu di default */
+    /* Stile Sottomenu chiuso e piccolo */
     .mobile-submenu {
-        display: none !important; /* Nascosti finché non ci clicchi */
-        padding-left: 15px !important; /* Rientro per far capire che sono sottomenu */
-        margin-top: 10px !important;
-        margin-bottom: 15px !important;
-        list-style: none !important; /* Rimuove i pallini fastidiosi */
+        display: none !important; padding-left: 15px !important;
+        margin-top: 10px !important; margin-bottom: 15px !important; list-style: none !important;
     }
-    
-    /* Mostra i sottomenu quando ci clicchi (tramite JavaScript) */
-    .mobile-submenu.open {
-        display: block !important;
-    }
-
-    /* 3. Stile delle voci dei sottomenu (più piccole e discrete) */
-    .mobile-submenu li {
-        margin-bottom: 10px !important;
-    }
+    .mobile-submenu.open { display: block !important; }
+    .mobile-submenu li { margin-bottom: 10px !important; }
     .mobile-submenu a {
-        font-size: 0.85rem !important; /* Testo più piccolo */
-        color: #aaaaaa !important; /* Grigio chiaro per distinguerlo dal menu principale */
-        font-weight: 500 !important;
-        text-transform: uppercase !important;
+        font-size: 0.85rem !important; color: #aaaaaa !important;
+        font-weight: 500 !important; text-transform: uppercase !important;
     }
-    .mobile-submenu a:hover {
-        color: #ff2800 !important;
-    }
-
-    /* Rimuove eventuali pallini dalla lista principale */
-    .extra-menu-list {
-        list-style: none !important;
-    }
+    .mobile-submenu a:hover { color: #ff2800 !important; }
+    .extra-menu-list { list-style: none !important; }
 }
