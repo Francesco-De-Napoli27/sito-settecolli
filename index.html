@@ -1034,16 +1034,23 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 </script>
 
-<!-- SCRIPT PER APRIRE I SOTTOMENU NEL MENU LATERALE SU MOBILE -->
+<!-- SCRIPT POTENZIATO PER APRIRE I SOTTOMENU SU MOBILE -->
 <script>
-document.addEventListener('DOMContentLoaded', () => {
-    const mobileDropdowns = document.querySelectorAll('.mobile-dropdown-toggle');
+document.addEventListener('DOMContentLoaded', function() {
+    // Cerchiamo tutte le voci con la freccina (CLUB ▾, MASCHILE ▾, ecc.)
+    var mobileToggles = document.querySelectorAll('.mobile-dropdown-toggle');
     
-    mobileDropdowns.forEach(toggle => {
-        toggle.addEventListener('click', (e) => {
+    mobileToggles.forEach(function(toggle) {
+        toggle.addEventListener('click', function(e) {
+            // Blocchiamo il comportamento di base e le interferenze di altri script
             e.preventDefault();
-            const submenu = toggle.nextElementSibling;
-            if (submenu) {
+            e.stopPropagation(); 
+            
+            // Troviamo il sottomenu subito sotto la voce cliccata
+            var submenu = this.nextElementSibling;
+            
+            // Se esiste, gli aggiungiamo o togliamo la classe 'open'
+            if (submenu && submenu.classList.contains('mobile-submenu')) {
                 submenu.classList.toggle('open');
             }
         });
