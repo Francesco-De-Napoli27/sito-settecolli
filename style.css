@@ -2524,3 +2524,12 @@ footer {
         display: none !important; /* Fa sparire le frecce laterali */
     }
 }
+
+/* ==========================================================================
+   NASCONDI VOCI "MOBILE-ONLY" NEL MENU LATERALE SU PC
+   ========================================================================== */
+@media (min-width: 993px) {
+    .mobile-only {
+        display: none !important;
+    }
+}
