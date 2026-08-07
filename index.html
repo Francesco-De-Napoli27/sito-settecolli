@@ -972,16 +972,18 @@ document.addEventListener("DOMContentLoaded", () => {
 </script>
 
     
-<!-- SCRIPT NEWS -->
+<!-- SCRIPT NEWS (CON AUTOPLAY E TRATTINI SOLO SU MOBILE) -->
 <script>
 document.addEventListener("DOMContentLoaded", () => {
     const newsSection = document.querySelector('.settecolli-news-section');
     const newsCards = document.querySelectorAll('.news-slide-item');
     const prevBtn = document.getElementById('prevNews');
     const nextBtn = document.getElementById('nextNews');
+    const dots = document.querySelectorAll('.news-dot');
     let currentIndex = 0;
+    let newsInterval;
     
-    // Funzione intelligente che capisce se siamo su PC o Smartphone
+    // Su telefono 1 card, su PC 3 card
     function getItemsPerPage() {
         return window.innerWidth <= 992 ? 1 : 3; 
     }
@@ -995,6 +997,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 card.style.display = "none";
             }
         });
+
+        // Aggiorna i trattini rossi
+        if (dots.length > 0) {
+            dots.forEach(dot => dot.classList.remove('active'));
+            if (dots[currentIndex]) {
+                dots[currentIndex].classList.add('active');
+            }
+        }
     }
 
     function nextNews() {
@@ -1002,7 +1012,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (currentIndex + itemsPerPage < newsCards.length) {
             currentIndex++;
         } else {
-            currentIndex = 0; // Ricomincia da capo
+            currentIndex = 0; // Ricomincia
         }
         updateNewsView();
     }
@@ -1017,14 +1027,37 @@ document.addEventListener("DOMContentLoaded", () => {
         updateNewsView();
     }
 
-    if (newsCards.length > 0) {
-        // Eventi per i pulsanti (usati principalmente su PC)
-        if (nextBtn) nextBtn.addEventListener('click', nextNews);
-        if (prevBtn) prevBtn.addEventListener('click', prevNews);
+    // Timer automatico: Scorre solo se siamo su mobile (<= 992px)
+    function startNewsTimer() {
+        newsInterval = setInterval(() => {
+            if (window.innerWidth <= 992) {
+                nextNews();
+            }
+        }, 5000); 
+    }
 
-        // ============================================
-        // GESTIONE SWIPE TOUCH (COME IL CAROSELLO IN ALTO)
-        // ============================================
+    function resetNewsTimer() {
+        clearInterval(newsInterval);
+        startNewsTimer();
+    }
+
+    if (newsCards.length > 0) {
+        // Clic sulle frecce (usato su PC)
+        if (nextBtn) nextBtn.addEventListener('click', () => { nextNews(); resetNewsTimer(); });
+        if (prevBtn) prevBtn.addEventListener('click', () => { prevNews(); resetNewsTimer(); });
+
+        // Clic sui trattini (usato su Mobile)
+        dots.forEach(dot => {
+            dot.addEventListener('click', (e) => {
+                currentIndex = parseInt(e.target.getAttribute('data-index'));
+                const maxIndex = Math.max(0, newsCards.length - getItemsPerPage());
+                if (currentIndex > maxIndex) currentIndex = maxIndex;
+                updateNewsView();
+                resetNewsTimer();
+            });
+        });
+
+        // Swipe col dito: Si attiva solo se siamo su mobile (<= 992px)
         let touchStartX = 0;
         let touchEndX = 0;
 
@@ -1035,30 +1068,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
             newsSection.addEventListener('touchend', e => {
                 touchEndX = e.changedTouches[0].screenX;
-                
-                // Attiviamo lo swipe SOLO su smartphone (sotto i 992px)
                 if (window.innerWidth <= 992) {
-                    if (touchEndX < touchStartX - 40) {
-                        nextNews(); // Dito verso sinistra -> Avanti
-                    }
-                    if (touchEndX > touchStartX + 40) {
-                        prevNews(); // Dito verso destra -> Indietro
-                    }
+                    if (touchEndX < touchStartX - 40) { nextNews(); resetNewsTimer(); }
+                    if (touchEndX > touchStartX + 40) { prevNews(); resetNewsTimer(); }
                 }
             }, { passive: true });
         }
 
-        // Se l'utente gira il telefono o allarga la finestra, ricalcoliamo tutto
+        // Ricalcola tutto se si gira lo schermo
         window.addEventListener('resize', () => {
             currentIndex = 0; 
             updateNewsView();
         });
 
-        updateNewsView(); // Caricamento iniziale
+        updateNewsView();
+        startNewsTimer(); 
     }
 });
 </script>
-
 
 <!-- SCRIPT NAVBAR -->
 <script>
