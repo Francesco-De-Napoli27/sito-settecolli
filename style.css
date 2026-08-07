@@ -2384,15 +2384,19 @@ footer {
 /* ==========================================================================
    OTTIMIZZAZIONE NAVBAR MOBILE DEFINITIVA (SOLO SMARTPHONE)
    ========================================================================== */
+/* ==========================================================================
+   OTTIMIZZAZIONE NAVBAR MOBILE DEFINITIVA (FORZATA)
+   ========================================================================== */
 @media (max-width: 992px) {
-    /* Risolve la riga bianca: aggiunge spazio in alto per compensare la navbar fissa */
+    /* 1. Risolve la striscia bianca colorando lo sfondo di scuro come la navbar */
     body {
         padding-top: 65px !important;
         padding-left: 0 !important;
+        background-color: #000000 !important; 
     }
     
-    /* Navbar fissa, bloccata in alto fin da subito */
-    .navbar {
+    /* 2. Barra fissa in alto */
+    .navbar, body.top-page .navbar, body:not(.top-page) .navbar {
         position: fixed !important;
         top: 0 !important;
         left: 0 !important;
@@ -2400,7 +2404,6 @@ footer {
         height: 65px !important;
         display: flex !important;
         flex-direction: row !important;
-        justify-content: space-between !important;
         align-items: center !important;
         padding: 0 15px !important;
         background-color: #060919 !important;
@@ -2409,49 +2412,41 @@ footer {
         z-index: 9999 !important;
     }
     
-    /* Nascondiamo tutto il superfluo che sporca lo schermo */
-    .navbar .floating-top-right,
-    .navbar .vertical-social-footer,
-    .navbar-left .nav-menu > li:not(:first-child), /* Nasconde tutte le voci tranne l'hamburger */
-    .navbar-right .lang-selector,
-    .navbar-right .market-shop-link {
-        display: none !important;
-    }
-    
-    /* 1. LOGO A SINISTRA */
-    .navbar-center {
+    /* 3. LOGO A SINISTRA (Annulla le istruzioni nell'HTML) */
+    .navbar-center, body.top-page .navbar .navbar-center, body:not(.top-page) .navbar .navbar-center {
         position: static !important;
+        left: auto !important;
+        top: auto !important;
         transform: none !important;
         order: 1 !important;
+        margin-right: auto !important; /* Spinge via verso destra tutto il resto */
         display: flex !important;
-        margin: 0 !important;
     }
-    .navbar-center .logo {
-        height: 40px !important;
-    }
+    .navbar-center .logo { height: 40px !important; }
     
-    /* Per ordinare la parte destra (Hamburger + Omino) puliamo il layout */
-    .navbar::after {
-        content: ""; clear: both; display: table;
-    }
-    
-    /* 2. HAMBURGER A DESTRA (Prima dell'omino) */
-    .navbar-left {
+    /* 4. HAMBURGER AL CENTRO-DESTRA */
+    .navbar-left, body.top-page .navbar .navbar-left, body:not(.top-page) .navbar .navbar-left {
         order: 2 !important;
         display: flex !important;
-        flex-direction: row !important;
-        margin-left: auto !important; /* Spinge tutto il blocco a destra */
-        margin-right: 15px !important; /* Lascia un po' di spazio tra Hamburger e Omino */
+        margin: 0 20px 0 0 !important; /* Lascia spazio a destra per l'omino */
+        padding: 0 !important;
     }
-    .navbar-left .nav-menu { display: flex !important; margin: 0 !important; padding: 0 !important; }
-    .menu-toggle-btn { display: flex !important; }
+    .nav-menu { display: flex !important; margin: 0 !important; padding: 0 !important; }
+    .nav-menu > li { display: none !important; } /* Nasconde tutti i link */
+    .nav-menu > li:first-child { display: block !important; } /* Mostra solo l'hamburger */
+    .menu-toggle-btn { display: flex !important; position: relative !important; z-index: 9999 !important; }
     
-    /* 3. OMINO LOGIN ALL'ESTREMA DESTRA */
-    .navbar-right {
+    /* 5. OMINO LOGIN ALL'ESTREMA DESTRA */
+    .navbar-right, body.top-page .navbar .navbar-right, body:not(.top-page) .navbar .navbar-right {
         order: 3 !important;
         display: flex !important;
         margin: 0 !important;
+        padding: 0 !important;
     }
-    .navbar-right .nav-right-items { display: flex !important; margin: 0 !important; }
-    .login-wrapper { display: flex !important; }
+    .nav-right-items { display: flex !important; margin: 0 !important; padding: 0 !important; }
+    .nav-right-items > * { display: none !important; } /* Nasconde scritte come IT|EN */
+    .nav-right-items > .login-wrapper { display: flex !important; } /* Mostra solo l'omino */
+    
+    /* Nasconde elementi doppi o inutili */
+    .floating-top-right, .vertical-social-footer { display: none !important; }
 }
