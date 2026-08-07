@@ -2475,10 +2475,52 @@ footer {
 }
 
 /* ==========================================================================
-   NASCONDI FRECCE NEWS SU MOBILE (USIAMO LO SWIPE)
+   STILE INDICATORI CAROSELLO NEWS (DOTS)
+   ========================================================================== */
+.settecolli-news-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Di base (su PC) nascondiamo i trattini */
+.news-indicators {
+    display: none; 
+    gap: 6px;
+    margin-top: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
+.news-dot {
+    width: 30px;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.news-dot.active {
+    background-color: #ff2800; /* Rosso Settecolli */
+}
+
+.news-arrows-wrapper {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+/* ==========================================================================
+   SOLO SU SMARTPHONE (SOTTO I 992PX)
    ========================================================================== */
 @media (max-width: 992px) {
     .settecolli-news-controls {
-        display: none !important;
+        align-items: center; /* Centra i trattini */
+    }
+    .news-indicators {
+        display: flex !important; /* Fa comparire i trattini */
+    }
+    .news-arrows-wrapper {
+        display: none !important; /* Fa sparire le frecce laterali */
     }
 }
