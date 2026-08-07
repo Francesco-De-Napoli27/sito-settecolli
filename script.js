@@ -124,3 +124,33 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Prende tutti i link dentro il menu laterale
+    var menuLinks = document.querySelectorAll('.extra-menu-list a');
+    
+    menuLinks.forEach(function(link) {
+        // Cerca se subito dopo il link c'è una lista (ul)
+        var submenu = link.nextElementSibling;
+        
+        if (submenu && submenu.tagName.toLowerCase() === 'ul') {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                
+                // Controlla se la tendina è chiusa
+                var currentDisplay = window.getComputedStyle(submenu).display;
+                
+                if (currentDisplay === 'none') {
+                    // La apre con la forza e colora la voce di rosso
+                    submenu.style.setProperty('display', 'block', 'important');
+                    link.style.color = '#ff2800';
+                } else {
+                    // La richiude e toglie il colore
+                    submenu.style.setProperty('display', 'none', 'important');
+                    link.style.color = '';
+                }
+            });
+        }
+    });
+});
