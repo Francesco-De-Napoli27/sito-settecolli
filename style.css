@@ -2384,114 +2384,63 @@ footer {
 
 
 /* ==========================================================================
-   SOLO SMARTPHONE: FIX DEFINITIVO (NON TOCCA IL PC)
+   FIX MENU LATERALE: APERTURA A DESTRA E SOTTOMENU A TENDINA
    ========================================================================== */
 @media (max-width: 992px) {
-    /* 1. UCCIDIAMO LA STRISCIA BIANCA DEL VECCHIO MENU */
-    .nav-menu, body.top-page .navbar .nav-menu, body:not(.top-page) .navbar .nav-menu {
-        position: static !important;
-        background: transparent !important; /* Toglie il bianco! */
-        border: none !important;
-        width: auto !important;
-        height: auto !important;
-        top: auto !important;
-        display: flex !important;
-        flex-direction: row !important;
-        padding: 0 !important;
-    }
-
-    /* 2. Sistema lo sfondo generale e gli ingombri */
-    body {
-        background-color: #060919 !important;
-        padding-top: 65px !important; 
-    }
-    .settecolli-hero-carousel {
-        margin-top: 0 !important;
-    }
-
-    /* 3. Forza la navbar in alto */
-    .navbar, body.top-page .navbar, body:not(.top-page) .navbar {
-        position: fixed !important;
-        top: 0 !important;
-        left: 0 !important;
-        width: 100% !important;
-        height: 65px !important;
-        display: flex !important;
-        flex-direction: row !important;
-        justify-content: space-between !important;
-        align-items: center !important;
-        padding: 0 15px !important;
-        background-color: #060919 !important;
-        border-bottom: 2px solid #ff2800 !important;
-        border-right: none !important;
-        z-index: 9999 !important;
-    }
-
-    /* 4. Logo a sinistra */
-    .navbar-center, body.top-page .navbar .navbar-center, body:not(.top-page) .navbar .navbar-center {
-        position: static !important;
-        transform: none !important;
+    /* 1. Sposta l'apertura del pannello a DESTRA */
+    .extra-menu-panel, 
+    body.top-page .extra-menu-panel, 
+    body:not(.top-page) .extra-menu-panel {
         left: auto !important;
-        top: auto !important;
-        order: 1 !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        display: flex !important;
-        width: auto !important;
+        right: 0 !important;
+        transform: translateX(100%) !important; /* Parte nascosto fuori dallo schermo a destra */
+        border-left: 2px solid #ff2800 !important; /* Bordino rosso a sinistra del menu */
+        border-right: none !important;
     }
-    .navbar-center .logo {
-        height: 40px !important;
-        width: auto !important;
+    
+    /* Quando si apre, entra da destra verso sinistra */
+    .extra-menu-panel.open, 
+    body.top-page .extra-menu-panel.open, 
+    body:not(.top-page) .extra-menu-panel.open {
+        transform: translateX(0) !important;
+    }
+
+    /* Posiziona la X di chiusura nel posto giusto */
+    .extra-menu-close-btn, body.top-page .extra-menu-close-btn {
+        left: 20px !important;
+        top: 25px !important;
+    }
+
+    /* 2. Nascondi i sottomenu di default */
+    .mobile-submenu {
+        display: none !important; /* Nascosti finché non ci clicchi */
+        padding-left: 15px !important; /* Rientro per far capire che sono sottomenu */
+        margin-top: 10px !important;
+        margin-bottom: 15px !important;
+        list-style: none !important; /* Rimuove i pallini fastidiosi */
+    }
+    
+    /* Mostra i sottomenu quando ci clicchi (tramite JavaScript) */
+    .mobile-submenu.open {
         display: block !important;
     }
 
-    /* 5. Contenitore per Hamburger (Centro-Destra) */
-    .navbar-left, body.top-page .navbar .navbar-left, body:not(.top-page) .navbar .navbar-left {
-        order: 2 !important;
-        display: flex !important;
-        flex-direction: row !important;
-        margin-left: auto !important; /* Spinge a destra */
-        margin-right: 20px !important; /* Distanza dall'omino */
-        width: auto !important;
+    /* 3. Stile delle voci dei sottomenu (più piccole e discrete) */
+    .mobile-submenu li {
+        margin-bottom: 10px !important;
     }
-    .nav-menu > li {
-        display: none !important; /* Nasconde le scritte "CLUB", "MASCHILE" ecc. */
+    .mobile-submenu a {
+        font-size: 0.85rem !important; /* Testo più piccolo */
+        color: #aaaaaa !important; /* Grigio chiaro per distinguerlo dal menu principale */
+        font-weight: 500 !important;
+        text-transform: uppercase !important;
     }
-    .nav-menu > li:first-child {
-        display: block !important; /* Mostra SOLO l'hamburger */
-        margin: 0 !important;
-        padding: 0 !important;
-    }
-    .menu-toggle-btn {
-        display: flex !important;
-        visibility: visible !important;
-        opacity: 1 !important;
+    .mobile-submenu a:hover {
+        color: #ff2800 !important;
     }
 
-    /* 6. Omino all'estrema destra */
-    .navbar-right, body.top-page .navbar .navbar-right, body:not(.top-page) .navbar .navbar-right {
-        order: 3 !important;
-        display: flex !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        width: auto !important;
-    }
-    .nav-right-items {
-        display: flex !important;
-    }
-    .nav-right-items > * {
-        display: none !important; /* Nasconde IT/EN, Shop, ecc. */
-    }
-    .nav-right-items > .login-wrapper {
-        display: block !important; /* Mostra SOLO l'omino */
-    }
-    .login-icon {
-        display: flex !important;
-        visibility: visible !important;
-    }
-
-    /* Nascondi roba in più */
-    .floating-top-right, .vertical-social-footer {
-        display: none !important;
+    /* Rimuove eventuali pallini dalla lista principale */
+    .extra-menu-list {
+        list-style: none !important;
     }
 }
