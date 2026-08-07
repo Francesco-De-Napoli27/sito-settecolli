@@ -240,85 +240,116 @@ body {
 }
 
 /* Card Partita Base */
+/* Card Partita Base - Design Moderno e Premium */
 .match-box {
-  border-radius: 6px;
-  padding: 20px;
+  border-radius: 12px; /* Bordi più morbidi */
+  padding: 24px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
   position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  overflow: hidden;
 }
 
-/* Tema Maschile (Blu) */
+/* Effetto Hover: la card si solleva leggermente */
+.match-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.7);
+}
+
+/* Tema Maschile (Sfumatura Blu scuro elegante con accento in alto) */
 .match-box.maschile {
-  background-color: #0033aa;
-  border: 1px solid #2255ff;
+  background: linear-gradient(135deg, #001a4d 0%, #00081a 100%);
+  border-top: 4px solid #0055ff;
 }
 
-/* Tema Femminile (Marrone / Bronzo) */
+/* Tema Femminile (Sfumatura Bronzo scuro elegante con accento in alto) */
 .match-box.femminile {
-  background-color: #a04000;
-  border: 1px solid #c06020;
+  background: linear-gradient(135deg, #592400 0%, #1a0a00 100%);
+  border-top: 4px solid #ff6600;
 }
 
-/* Etichetta "PROSSIMA PARTITA" */
+/* Etichetta "PROSSIMA PARTITA" a pillola */
 .match-tag {
   display: inline-block;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  padding: 4px 10px;
-  font-size: 0.75rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 6px 14px;
+  font-size: 0.7rem;
   text-transform: uppercase;
-  font-weight: bold;
-  margin-bottom: 15px;
-  align-self: flex-start;
+  font-weight: 800;
+  letter-spacing: 1px;
+  border-radius: 20px; 
+  margin-bottom: 22px;
+  color: #fff;
 }
 
 .match-league {
-  font-size: 1rem;
+  font-size: 0.95rem;
   text-transform: uppercase;
-  font-weight: bold;
-  color: #ffc107;
-  margin-bottom: 2px;
+  font-weight: 800;
+  color: #ffffff; /* Rosso settecolli per far risaltare il campionato */
+  opacity: 0.85;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
 }
 
 .match-giornata {
   font-size: 0.85rem;
-  color: #ddd;
-  margin-bottom: 15px;
+  color: #aaaaaa;
+  margin-bottom: 18px;
+  font-weight: 500;
 }
 
 .match-date {
-  font-size: 1.5rem;
-  font-weight: 800;
+  font-size: 1.6rem;
+  font-weight: 900;
   text-transform: uppercase;
   line-height: 1.1;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
 .match-time-location {
-  font-size: 0.9rem;
-  margin-bottom: 20px;
-  color: #eee;
+  font-size: 0.85rem;
+  margin-bottom: 30px;
+  color: #cccccc;
 }
 
 /* Riquadro interno VS squadre */
 .match-vs-box {
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  padding: 15px;
+  background: rgba(0, 0, 0, 0.4); /* Sfondo scuro e semitrasparente */
+  border-radius: 8px;
+  padding: 18px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-weight: bold;
-  font-size: 0.9rem;
+  font-weight: 800;
+  font-size: 0.95rem;
   text-transform: uppercase;
-  background: rgba(0,0,0,0.1);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
+/* Centra i nomi delle squadre per non farli accavallare */
+.match-vs-box span:not(.match-vs-text) {
+  flex: 1;
+  text-align: center;
+  line-height: 1.3;
+}
+
+/* Il testo "VS" pompato */
 .match-vs-text {
-  color: #ffc107;
-  font-size: 1.2rem;
+  color: #ff2800; /* Rosso Settecolli */
+  font-size: 1.5rem;
   font-weight: 900;
+  font-style: italic;
+  margin: 0 15px;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.6);
 }
 
 /* Responsive per Smartphone e Tablet */
@@ -1129,11 +1160,119 @@ body:not(.top-page) .side-drawer {
   z-index: 2;
 }
 
-/* Colonna Destra: I 3 riquadri impilati (Shop, Member, App) */
+/* ==========================================================================
+   STILE ETICHETTE E TITOLI BANNER SPONSOR
+   ========================================================================== */
+
+/* Il badge rosso (ex testo scuro) */
+.sponsor-badge {
+    background-color: #ff2800;
+    color: #ffffff; /* Testo finalmente bianco e leggibile! */
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3); /* Leggera ombra sotto il badge */
+}
+
+/* Il titolo del banner (ex scritta bianca piatta) */
+.sponsor-title {
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 900;
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.9); /* Ombra scura per staccare il testo dallo sfondo */
+}
+
+/* ==========================================================================
+   COLONNA DESTRA: I 3 RIQUADRI (SHOP, MEMBER, APP)
+   ========================================================================== */
 .right-stacked-boxes {
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+
+.stacked-box {
+  position: relative;
+  background-color: #0d1326;
+  background-size: cover;
+  background-position: center right; /* Centra l'immagine verso destra */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 0 25px; /* Spazio ai lati */
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Forza il testo ad allinearsi a sinistra */
+  height: 110px;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  overflow: hidden; 
+  z-index: 1;
+}
+
+/* La sfumatura nera protettiva (da sinistra verso destra) */
+.stacked-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* Crea un'ombra nera a sinistra che sfuma diventando trasparente a destra */
+  background: linear-gradient(to right, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0.1) 100%);
+  z-index: -1;
+  transition: opacity 0.3s ease;
+}
+
+/* Effetto Hover */
+.stacked-box:hover {
+  transform: translateX(-5px); /* Si sposta leggermente verso sinistra al passaggio del mouse */
+  border-color: #ff2800;
+  box-shadow: 5px 8px 20px rgba(0,0,0,0.6);
+}
+
+/* Titolo del riquadro */
+.stacked-box h3 {
+  font-size: 1.15rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0 0 4px 0;
+  color: #ffffff;
+  z-index: 2;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+}
+
+/* Sottotitolo (es. Acquista ora) */
+/* Il nuovo bottone rosso dei riquadri */
+.stacked-box span {
+  font-size: 0.70rem;
+  color: #ffffff !important; /* Testo bianco brillante */
+  background: linear-gradient(to bottom, #ff3b14, #cc1c00); /* Effetto pulsante rosso 3D */
+  border: 1px solid #990000; /* Bordo rosso scuro per definire i contorni */
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 6px 12px; /* Spazio interno per creare il bottone */
+  border-radius: 6px; /* Angoli arrotondati */
+  margin-top: 6px; /* Distanza dal titolo bianco */
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5), inset 0 1px 1px rgba(255, 255, 255, 0.3); /* Ombre per la tridimensionalità */
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Effetto al passaggio del mouse per far sembrare il bottone cliccabile */
+.stacked-box:hover span {
+  background: linear-gradient(to bottom, #ff4e2a, #e62000); /* Diventa leggermente più luminoso */
+  transform: scale(1.02); /* Si ingrandisce impercettibilmente */
 }
 
 .stacked-box {
@@ -2531,5 +2670,24 @@ footer {
 @media (min-width: 993px) {
     .mobile-only {
         display: none !important;
+    }
+}
+
+/* ==========================================================================
+   LAYOUT GRIGLIA NEWS SU DESKTOP (FRECCE SOTTO, STORE A DESTRA)
+   ========================================================================== */
+@media (min-width: 993px) {
+    /* Blocca la card dello Store fissa nella 4° colonna in alto */
+    .store-card {
+        grid-column: 4;
+        grid-row: 1;
+    }
+
+    /* Sposta i controlli (le frecce) nella seconda riga, sotto le notizie */
+    .settecolli-news-controls {
+        grid-column: 1 / -1; /* Si allunga per tutta la larghezza in basso */
+        grid-row: 2;
+        flex-direction: row; 
+        margin-top: 10px;
     }
 }

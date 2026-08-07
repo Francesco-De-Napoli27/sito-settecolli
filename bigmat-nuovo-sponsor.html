@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuovo Logo - Polisportiva Acli Settecolli</title>
+    <link rel="icon" href="images/Logo nuovo Settecolli_favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .comunicato-card .card-content {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .comunicato-card:hover .card-content {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+            border-color: #ff2800;
+        }
+</style>
+    <style>
+        /* Stili specifici per la pagina Marketing */
+        body {
+            background-color: #060919;
+            color: #ffffff;
+            margin: 0;
+            padding-top: 50px; /* Spazio per la navbar fissa */
+        }
+
+        /* Hero Header Marketing */
+        .marketing-hero {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            background: url('images/hero.png') center/cover no-repeat;
+            display: flex;
+            align-items: flex-end;
+            padding: 40px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .marketing-hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(6,9,25,0.95) 0%, rgba(6,9,25,0.3) 100%);
+        }
+
+        .marketing-hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .marketing-hero h1 {
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            font-weight: 900;
+            letter-spacing: 2px;
+            margin: 0;
+            color: #ffffff;
+        }
+
+        /* Contenitore Principale */
+        .marketing-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 60px 20px;
+            line-height: 1.8;
+            font-size: 1.1rem;
+            color: #dddddd;
+        }
+
+        .marketing-container h2 {
+            font-size: 2rem;
+            color: #ffffff;
+            text-transform: uppercase;
+            margin: 50px 0 20px 0;
+            border-left: 4px solid #ff2800;
+            padding-left: 15px;
+        }
+
+        /* Griglia Numeri / Statistiche */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .stat-box {
+            background-color: #0d1326;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 30px;
+        }
+
+        .stat-box h3 {
+            color: #ff2800;
+            font-size: 1.5rem;
+            margin-top: 0;
+            text-transform: uppercase;
+        }
+
+        /* Form Contatti / Richiedi Informazioni */
+        .form-section {
+            background-color: #0d1326;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            padding: 50px;
+            margin: 60px auto;
+            max-width: 900px;
+        }
+
+        .form-section h2 {
+            text-align: center;
+            border: none;
+            padding: 0;
+            margin-bottom: 40px;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group.full-width {
+            grid-column: span 2;
+        }
+
+        .form-group label {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #ffffff;
+        }
+
+        .form-group input, .form-group textarea {
+            background-color: #111832;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+            padding: 12px;
+            color: #ffffff;
+            font-size: 1rem;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            height: 120px;
+        }
+
+        .form-checkbox {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 20px 0;
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+
+        .submit-btn {
+            background-color: #002288;
+            color: #ffffff;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #001a66;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .marketing-hero h1 {
+                font-size: 2.5rem;
+            }
+            .stats-grid, .form-grid {
+                grid-template-columns: 1fr;
+            }
+            .form-group.full-width {
+                grid-column: span 1;
+            }
+            .form-section {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body class="not-top-page">
+
+    <!-- NAVBAR ORIZZONTALE UNIFICATA -->
+    <header class="navbar" style="position: fixed; width: 100%; top: 0; z-index: 100;">
+      <!-- CENTRO: Unico Logo per entrambe le modalità e posizionamento con dimensioni forzati inline -->
+  <div class="navbar-center" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: flex; align-items: center; justify-content: center;">
+    <a href="index.html" class="logo-link">
+      <img src="images/Logo nuovo Settecolli.png" alt="Logo Settecolli" class="logo" style="height: 50px; width: auto; max-width: none;" />
+    </a>
+  </div>
+
+
+  <!-- SINISTRA: Voci del Menu & Hamburger -->
+  <div class="navbar-left">
+    <ul class="nav-menu">
+      <li>
+        <button class="menu-toggle-btn" id="extraMenuBtn" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+      </li>
+        
+      <!-- CLUB -->
+      <li class="has-dropdown">
+        <a href="#">CLUB ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="chi-siamo.html">CHI SIAMO</a></li>
+          <li><a href="organigramma.html">ORGANIGRAMMA</a></li>
+          <li><a href="storia.html">LA STORIA</a></li>
+          <li><a href="palmares.html">PALMARES</a></li>
+          <li><a href="codice-etico.html">CODICE ETICO</a></li>
+        </ul>
+      </li>
+
+      <!-- MASCHILE -->
+      <li class="has-dropdown">
+        <a href="#">MASCHILE ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="roster-maschile.html">ROSTER</a></li>
+          <li><a href="tutte-le-date-maschile.html">TUTTE LE DATE</a></li>
+          <li><a href="calendario-maschile.html">CALENDARIO</a></li>
+          <li><a href="storico-maschile.html">STORICO</a></li>
+          <li><a href="campo-gioco-maschile.html">CAMPO DA GIOCO</a></li>
+        </ul>
+      </li>
+
+      <!-- FEMMINILE -->
+      <li class="has-dropdown">
+        <a href="#">FEMMINILE ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="roster-femminile.html">ROSTER</a></li>
+          <li><a href="tutte-le-date-femminile.html">TUTTE LE DATE</a></li>
+          <li><a href="calendario-femminile.html">CALENDARIO</a></li>
+          <li><a href="storico-femminile.html">STORICO</a></li>
+          <li><a href="campo-gioco-femminile.html">CAMPO DA GIOCO</a></li>
+        </ul>
+      </li>
+
+      <!-- GIOVANILE -->
+      <li class="has-dropdown">
+        <a href="#">GIOVANILE ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="cas.html">C.A.S.</a></li>
+          <li><a href="minivolley.html">MINIVOLLEY</a></li>
+          <li><a href="under15-femminile.html">UNDER 15 FEMMINILE</a></li>
+          <li><a href="under15-maschile.html">UNDER 15 MASCHILE</a></li>
+          <li><a href="under19-femminile.html">UNDER 19 FEMMINILE</a></li>
+          <li><a href="under19-maschile.html">UNDER 19 MASCHILE</a></li>
+          <li><a href="impianti-giovanile.html">IMPIANTI DI GIOCO</a></li>
+          <li><a href="palmares-giovanile.html">PALMARES</a></li>
+        </ul>
+      </li>
+
+      <!-- AMATORIALE -->
+      <li class="has-dropdown">
+        <a href="amatoriale.html">AMATORIALE ▾</a>
+      </li>
+
+      <!-- NEWS -->
+      <li class="has-dropdown">
+        <a href="#">NEWS ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="comunicati_stampa.html">COMUNICATI STAMPA</a></li>
+          <li><a href="notizie-maschile.html">MASCHILE</a></li>
+          <li><a href="notizie-femminile.html">FEMMINILE</a></li>
+          <li><a href="notizie-giovanile.html">GIOVANILE</a></li>
+          <li><a href="ufficio-stampa.html">UFFICIO STAMPA</a></li>
+          <li><a href="whatsapp.html">CANALE WHATSAPP</a></li>
+          <li><a href="app.html">APP UFFICIALE</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- Social in basso nella navbar verticale -->
+    <div class="vertical-social-footer">
+        <a href="https://www.facebook.com/profile.php?id=100056371269546&locale=it_IT" target="_blank">f</a>
+        <a href="https://www.instagram.com/volley_acli_settecolli/" target="_blank">📷</a>
+        <a href="https://www.youtube.com/@VolleyAcliSettecolli" target="_blank">▶</a>
+        <a href="https://tiktok.com/ZN8dmng8f" target="_blank">♪</a>
+    </div>
+  </div>
+
+
+
+  <!-- DESTRA (Visibile nella barra orizzontale dopo lo scroll) -->
+  <div class="navbar-right">
+    <div class="nav-right-items">
+      <div class="lang-selector">
+        <span class="active">IT</span> <span>|</span> <span>EN</span>
+      </div>
+      <a href="sponsor.html" class="market-shop-link partner-link">PARTNER</a>
+      <a href="marketing.html" class="market-shop-link">MARKETING</a>
+      <a href="shop.html" class="market-shop-link">SHOP</a>
+      <div class="login-wrapper">
+        <a href="login.html" class="login-icon" id="user-icon" style="color:#fff; text-decoration:none; font-size:1.3rem;">👤</a>
+      </div>
+    </div>
+  </div>
+    </header>
+
+   <!-- PANNELLO LATERALE (Menu extra su PC / Menu Completo su Smartphone) -->
+<div class="extra-menu-panel" id="extraMenuPanel">
+  <button class="extra-menu-close-btn" id="extraMenuCloseBtn" aria-label="Chiudi">
+    <span></span>
+    <span></span>
+  </button>
+
+  <ul class="extra-menu-list">
+    <!-- VOCI VISIBILI SOLO SU SMARTPHONE -->
+    <li class="mobile-only">
+      <a href="#" class="mobile-dropdown-toggle">CLUB ▾</a>
+      <ul class="mobile-submenu">
+        <li><a href="chi-siamo.html">CHI SIAMO</a></li>
+        <li><a href="organigramma.html">ORGANIGRAMMA</a></li>
+        <li><a href="storia.html">LA STORIA</a></li>
+        <li><a href="palmares.html">PALMARES</a></li>
+        <li><a href="codice-etico.html">CODICE ETICO</a></li>
+      </ul>
+    </li>
+
+    <li class="mobile-only">
+      <a href="#" class="mobile-dropdown-toggle">MASCHILE ▾</a>
+      <ul class="mobile-submenu">
+        <li><a href="roster-maschile.html">ROSTER</a></li>
+        <li><a href="tutte-le-date-maschile.html">TUTTE LE DATE</a></li>
+        <li><a href="calendario-maschile.html">CALENDARIO</a></li>
+        <li><a href="storico-maschile.html">STORICO</a></li>
+        <li><a href="campo-gioco-maschile.html">CAMPO DA GIOCO</a></li>
+      </ul>
+    </li>
+
+    <li class="mobile-only">
+      <a href="#" class="mobile-dropdown-toggle">FEMMINILE ▾</a>
+      <ul class="mobile-submenu">
+        <li><a href="roster-femminile.html">ROSTER</a></li>
+        <li><a href="tutte-le-date-femminile.html">TUTTE LE DATE</a></li>
+        <li><a href="calendario-femminile.html">CALENDARIO</a></li>
+        <li><a href="storico-femminile.html">STORICO</a></li>
+        <li><a href="campo-gioco-femminile.html">CAMPO DA GIOCO</a></li>
+      </ul>
+    </li>
+
+    <li class="mobile-only">
+      <a href="#" class="mobile-dropdown-toggle">GIOVANILE ▾</a>
+      <ul class="mobile-submenu">
+        <li><a href="cas.html">C.A.S.</a></li>
+        <li><a href="minivolley.html">MINIVOLLEY</a></li>
+        <li><a href="under15-femminile.html">UNDER 15 FEMMINILE</a></li>
+        <li><a href="under15-maschile.html">UNDER 15 MASCHILE</a></li>
+        <li><a href="under19-femminile.html">UNDER 19 FEMMINILE</a></li>
+        <li><a href="under19-maschile.html">UNDER 19 MASCHILE</a></li>
+        <li><a href="impianti-giovanile.html">IMPIANTI DI GIOCO</a></li>
+        <li><a href="palmares-giovanile.html">PALMARES</a></li>
+      </ul>
+    </li>
+
+    <li class="mobile-only">
+      <a href="amatoriale.html">AMATORIALE</a>
+    </li>
+
+    <li class="mobile-only">
+      <a href="#" class="mobile-dropdown-toggle">NEWS ▾</a>
+      <ul class="mobile-submenu">
+        <li><a href="comunicati_stampa.html">COMUNICATI STAMPA</a></li>
+        <li><a href="notizie-maschile.html">MASCHILE</a></li>
+        <li><a href="notizie-femminile.html">FEMMINILE</a></li>
+        <li><a href="notizie-giovanile.html">GIOVANILE</a></li>
+        <li><a href="ufficio-stampa.html">UFFICIO STAMPA</a></li>
+        <li><a href="whatsapp.html">CANALE WHATSAPP</a></li>
+        <li><a href="app.html">APP UFFICIALE</a></li>
+      </ul>
+    </li>
+
+    <li class="mobile-only"><a href="sponsor.html">PARTNER</a></li>
+    <li class="mobile-only"><a href="marketing.html">MARKETING</a></li>
+    <li class="mobile-only"><a href="shop.html">SHOP</a></li>
+
+    <!-- VOCI VISIBILI SIA SU PC CHE SU SMARTPHONE -->
+    <li><a href="newsletter.html">NEWSLETTER</a></li>
+    <li><a href="tv.html">SETTECOLLI TV</a></li>
+    
+    <li>
+      <a href="#" id="galleryToggle">GALLERY ▾</a>
+      <ul class="submenu-gallery" id="gallerySubmenu">
+        <li><a href="galleria-maschile.html">MASCHILE</a></li>
+        <li><a href="galleria-partite.html">PARTITE</a></li>
+        <li><a href="galleria-eventi.html">EVENTI</a></li>
+        <li><a href="galleria-femminile.html">FEMMINILE</a></li>
+        <li><a href="galleria-giovanile.html">GIOVANILE</a></li>
+        <li><a href="galleria-amatoriale.html">AMATORIALE</a></li>
+        <li><a href="galleria-storico.html">STORICO</a></li>
+      </ul>
+    </li>
+    
+    <li><a href="contatti.html">CONTATTI</a></li>
+
+    <!-- SELETTORE LINGUA (Solo Mobile) -->
+    <li class="mobile-only" style="margin-top: 15px; color: #fff; font-weight: 900; font-size: 1.1rem;">
+      <span style="color:#ff2800;">IT</span> <span style="color:#888;">|</span> <span>EN</span>
+    </li>
+  </ul>
+</div>
+
+
+
+<!-- Sezione Contenuto Articolo / Comunicato -->
+<article class="comunicato-articolo" style="padding: 100px 20px 60px; max-width: 900px; margin: 0 auto; color: #ffffff;">
+    
+    <!-- Intestazione del Comunicato -->
+    <header style="margin-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 25px;">
+        <span style="display: inline-block; background-color: #ff2800; color: #fff; padding: 4px 10px; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; border-radius: 4px; margin-bottom: 15px;">
+            Ufficio Stampa — 3 GIU 2026
+        </span>
+        <h1 style="font-size: 2.5rem; font-weight: 900; text-transform: uppercase; line-height: 1.2; margin: 0 0 15px 0;">
+            BigMat diventa il nostro nuovo Sponsor nella stagione 2026/2027
+        </h1>
+        <p style="font-size: 1.2rem; color: #aaaaaa; font-weight: 400; line-height: 1.5; margin: 0;">
+            La Polisportiva Acli Settecolli è orgogliosa di annunciare la partnership ufficiale con BigMat, che vestirà la nostra Under 13 dopo la selezione nazionale nel contest.
+        </p>
+    </header>
+
+    <!-- Immagine Principale in Evidenza -->
+    <div style="margin-bottom: 40px; border-radius: 8px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+        <img src="images/BigMat.jpg" alt="BigMat nuovo sponsor Settecolli" style="width: 100%; height: auto; display: block;">
+    </div>
+
+    <!-- Corpo del Testo del Comunicato -->
+    <div class="articolo-corpo" style="font-size: 1.05rem; line-height: 1.8; color: #dddddd;">
+        
+        <p style="margin-bottom: 25px;">
+            <strong style="color: #ffffff; text-transform: uppercase;">CASTROLIBERO</strong> — Cresce la famiglia della Polisportiva Acli Settecolli in vista della prossima annata sportiva. A partire dalla stagione 2026/2027, <strong>BigMat</strong> sarà ufficialmente un nostro nuovo sponsor e partner di prestigio.
+        </p>
+
+        <p style="margin-bottom: 25px;">
+            Un traguardo reso possibile grazie allo straordinario successo ottenuto dalla nostra società: la Polisportiva è stata infatti selezionata tra le realtà sportive di tutta Italia nell'ambito dell'esclusivo contest nazionale promosso dal marchio. 
+        </p>
+
+        <h3 style="color: #ffffff; font-size: 1.4rem; margin: 35px 0 15px 0; text-transform: uppercase;">Le nuove divise per l'Under 13</h3>
+        
+        <p style="margin-bottom: 25px;">
+            Frutto di questa prestigiosa collaborazione e del riconoscimento ottenuto a livello nazionale, BigMat firmerà e fornirà le nuovissime divise ufficiali da gara per la nostra squadra <strong>Under 13</strong>, accompagnando i nostri giovani talenti in un percorso di crescita sportiva e valoriale.
+        </p>
+
+        <blockquote style="border-left: 4px solid #ff2800; margin: 30px 0; padding: 15px 25px; background: #0d1326; border-radius: 0 8px 8px 0; font-style: italic; color: #ffffff;">
+            "Siamo entusiasti di accogliere BigMat nella nostra grande famiglia sportiva. Essere stati selezionati in un contest nazionale così competitivo dimostra la bontà del nostro progetto giovanile. Veder scendere in campo i nostri ragazzi dell'Under 13 con le nuove divise griffate BigMat sarà un orgoglio immenso per tutta la nostra comunità."
+        </blockquote>
+
+        <p style="margin-bottom: 25px;">
+            Nei prossimi giorni verranno svelati in anteprima i dettagli delle nuove divise ufficiali e le iniziative collegate a questa importante partnership in vista dell'avvio della stagione 2026/2027.
+        </p>
+
+    </div>
+
+
+    <!-- Pulsante Indietro -->
+    <div style="margin-top: 40px;">
+        <a href="comunicati_stampa.html" style="display: inline-block; background: transparent; color: #ffffff; border: 1px solid rgba(255,255,255,0.3); padding: 10px 20px; border-radius: 4px; text-decoration: none; font-weight: bold; text-transform: uppercase; font-size: 0.85rem; transition: 0.3s;">
+            ← Torna ai Comunicati Stampa
+        </a>
+    </div>
+
+</article>
+
+
+
+
+<!-- FOOTER ISTITUZIONALE -->
+    <footer class="tv-footer">
+        <div class="tv-footer-container">
+            <div class="tv-footer-left">
+                <img src="images/Logo nuovo Settecolli.png" alt="Logo Settecolli" class="tv-footer-logo">
+                <div class="tv-footer-info">
+                    <strong>POLISPORTIVA ACLI SETTECOLLI A.S.D.</strong>
+                    P.IVA 03212830784 - C.F. 98008660783<br>
+                    Via Santa Lucia 2 – 87040 Castrolibero (CS)<br>
+                    TEL. +39 3457337141<br>
+                    SEGRETERIA@ACLISETTECOLLI.IT<br>
+                    SEGRETERIA@ACLISETTECOLLI.PEC.IT
+                </div>
+            </div>
+
+            <div class="tv-footer-nav">
+                <a href="privacy-policy.html" data-i18n="footer_privacy">PRIVACY POLICY</a>
+                <a href="cookie-policy.html" data-i18n="footer_cookie">COOKIE POLICY</a>
+                <a href="contatti.html" data-i18n="footer_contacts">CONTATTI</a>
+            </div>
+
+            <div class="tv-footer-socials">
+                <a href="https://www.facebook.com/profile.php?id=100056371269546&locale=it_IT" class="tv-social-btn" target="_blank" title="Facebook">f</a>
+                <a href="https://www.instagram.com/volley_acli_settecolli/" class="tv-social-btn" target="_blank" title="Instagram">📷</a>
+                <a href="https://www.youtube.com/@VolleyAcliSettecolli" class="tv-social-btn" target="_blank" title="YouTube">▶</a>
+                <a href="https://tiktok.com/ZN8dmng8f" class="tv-social-btn" target="_blank" title="TikTok">♪</a>
+            </div>
+
+            <div class="tv-footer-right">
+                <a href="#" target="_blank"><img src="images/tecnica.png" alt="Sponsor" class="tv-footer-sponsor-logo"></a>
+                <a href="#" target="_blank"><img src="images/sushi.png" alt="Sponsor" class="tv-footer-sponsor-logo"></a>
+            </div>
+        </div>
+
+        <div class="tv-footer-bottom">
+            &copy; 2026 Polisportiva Acli Settecolli | <span data-i18n="footer_rights">Tutti i diritti riservati</span>
+        </div>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script src="script.js"></script>
+    <script type="module" src="auth.js"></script>
+    <script src="i18n.js"></script>
+</body>
+</html>
