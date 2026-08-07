@@ -42,7 +42,7 @@ body {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 100dvh; /* dvh si adatta dinamicamente alla barra di Safari/Chrome */
     background-color: #000000;
     display: flex;
     justify-content: center;
@@ -53,7 +53,7 @@ body {
 
 .intro-video {
     width: 100vw;
-    height: 100vh;
+    height: 100dvh; /* Evita che il video venga tagliato */
     object-fit: cover;
 }
 
