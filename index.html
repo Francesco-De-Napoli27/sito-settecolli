@@ -1015,18 +1015,22 @@ document.addEventListener("DOMContentLoaded", () => {
     const body = document.body;
 
     function checkScroll() {
-        if (window.scrollY === 0) {
-            body.classList.add("top-page");
+        // Applica l'effetto della navbar che cambia SOLO sui computer (sopra i 992px)
+        if (window.innerWidth > 992) {
+            if (window.scrollY === 0) {
+                body.classList.add("top-page");
+            } else {
+                body.classList.remove("top-page");
+            }
         } else {
+            // Sul telefono la classe top-page viene rimossa sempre per evitare i salti
             body.classList.remove("top-page");
         }
     }
 
-    // Controlla al caricamento della pagina
     checkScroll();
-
-    // Controlla ogni volta che l'utente fa scroll
     window.addEventListener("scroll", checkScroll);
+    window.addEventListener("resize", checkScroll); // Ricalcola se giri lo schermo
 });
 </script>
 
