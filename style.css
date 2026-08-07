@@ -2381,21 +2381,22 @@ footer {
     }
 }
 
+
+
 /* ==========================================================================
-   OTTIMIZZAZIONE NAVBAR MOBILE DEFINITIVA (SOLO SMARTPHONE)
-   ========================================================================== */
-/* ==========================================================================
-   OTTIMIZZAZIONE NAVBAR MOBILE DEFINITIVA (FORZATA)
+   SOLO SMARTPHONE: FIX DEFINITIVO (NON TOCCA IL PC)
    ========================================================================== */
 @media (max-width: 992px) {
-    /* 1. Risolve la striscia bianca colorando lo sfondo di scuro come la navbar */
+    /* 1. Sfondo scuro per far sparire per sempre la striscia bianca */
     body {
-        padding-top: 65px !important;
-        padding-left: 0 !important;
-        background-color: #000000 !important; 
+        background-color: #060919 !important;
+        padding-top: 65px !important; 
     }
-    
-    /* 2. Barra fissa in alto */
+    .settecolli-hero-carousel {
+        margin-top: 0 !important;
+    }
+
+    /* 2. Forza la navbar in alto */
     .navbar, body.top-page .navbar, body:not(.top-page) .navbar {
         position: fixed !important;
         top: 0 !important;
@@ -2404,6 +2405,7 @@ footer {
         height: 65px !important;
         display: flex !important;
         flex-direction: row !important;
+        justify-content: space-between !important;
         align-items: center !important;
         padding: 0 15px !important;
         background-color: #060919 !important;
@@ -2411,42 +2413,78 @@ footer {
         border-right: none !important;
         z-index: 9999 !important;
     }
-    
-    /* 3. LOGO A SINISTRA (Annulla le istruzioni nell'HTML) */
+
+    /* 3. Logo forzato a sinistra (sovrascrive anche gli stili nell'HTML) */
     .navbar-center, body.top-page .navbar .navbar-center, body:not(.top-page) .navbar .navbar-center {
         position: static !important;
+        transform: none !important;
         left: auto !important;
         top: auto !important;
-        transform: none !important;
         order: 1 !important;
-        margin-right: auto !important; /* Spinge via verso destra tutto il resto */
+        margin: 0 !important;
+        padding: 0 !important;
         display: flex !important;
+        width: auto !important;
     }
-    .navbar-center .logo { height: 40px !important; }
-    
-    /* 4. HAMBURGER AL CENTRO-DESTRA */
+    .navbar-center .logo {
+        height: 40px !important;
+        width: auto !important;
+        display: block !important;
+    }
+
+    /* 4. Contenitore Destro per Hamburger */
     .navbar-left, body.top-page .navbar .navbar-left, body:not(.top-page) .navbar .navbar-left {
         order: 2 !important;
         display: flex !important;
-        margin: 0 20px 0 0 !important; /* Lascia spazio a destra per l'omino */
-        padding: 0 !important;
+        flex-direction: row !important;
+        margin-left: auto !important; /* Spinge tutto a destra */
+        margin-right: 20px !important; /* Spazio tra hamburger e omino */
+        width: auto !important;
     }
-    .nav-menu { display: flex !important; margin: 0 !important; padding: 0 !important; }
-    .nav-menu > li { display: none !important; } /* Nasconde tutti i link */
-    .nav-menu > li:first-child { display: block !important; } /* Mostra solo l'hamburger */
-    .menu-toggle-btn { display: flex !important; position: relative !important; z-index: 9999 !important; }
-    
-    /* 5. OMINO LOGIN ALL'ESTREMA DESTRA */
+
+    /* Forza la comparsa dell'Hamburger */
+    .nav-menu {
+        display: flex !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        flex-direction: row !important;
+    }
+    .nav-menu > li {
+        display: none !important; /* Nasconde le voci testuali come "CLUB" dalla barra */
+    }
+    .nav-menu > li:first-child {
+        display: block !important; /* Mostra SOLO il primo <li> (l'hamburger) */
+    }
+    .menu-toggle-btn {
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+    /* 5. Omino all'estrema destra */
     .navbar-right, body.top-page .navbar .navbar-right, body:not(.top-page) .navbar .navbar-right {
         order: 3 !important;
         display: flex !important;
         margin: 0 !important;
         padding: 0 !important;
+        width: auto !important;
     }
-    .nav-right-items { display: flex !important; margin: 0 !important; padding: 0 !important; }
-    .nav-right-items > * { display: none !important; } /* Nasconde scritte come IT|EN */
-    .nav-right-items > .login-wrapper { display: flex !important; } /* Mostra solo l'omino */
-    
-    /* Nasconde elementi doppi o inutili */
-    .floating-top-right, .vertical-social-footer { display: none !important; }
+    .nav-right-items {
+        display: flex !important;
+    }
+    .nav-right-items > * {
+        display: none !important; /* Nasconde IT/EN, Shop, ecc. */
+    }
+    .nav-right-items > .login-wrapper {
+        display: block !important; /* Mostra SOLO l'omino */
+    }
+    .login-icon {
+        display: flex !important;
+        visibility: visible !important;
+    }
+
+    /* Nascondi i doppioni in giro per lo schermo */
+    .floating-top-right, .vertical-social-footer {
+        display: none !important;
+    }
 }
