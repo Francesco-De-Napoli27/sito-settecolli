@@ -2455,16 +2455,21 @@ footer {
     .extra-menu-close-btn, body.top-page .extra-menu-close-btn { left: 20px !important; top: 25px !important; }
 
     /* Stile Sottomenu chiuso e piccolo */
-    .mobile-submenu {
-        display: none !important; padding-left: 15px !important;
-        margin-top: 10px !important; margin-bottom: 15px !important; list-style: none !important;
+    /* Stile Sottomenu Universale (si applica a qualsiasi <ul> dentro il menu laterale) */
+    .extra-menu-list ul {
+        display: none !important; /* Nascosti di base */
+        padding-left: 15px !important;
+        margin-top: 10px !important; 
+        margin-bottom: 15px !important; 
+        list-style: none !important;
     }
-    .mobile-submenu.open { display: block !important; }
-    .mobile-submenu li { margin-bottom: 10px !important; }
-    .mobile-submenu a {
-        font-size: 0.85rem !important; color: #aaaaaa !important;
-        font-weight: 500 !important; text-transform: uppercase !important;
+    .extra-menu-list ul li { margin-bottom: 10px !important; }
+    .extra-menu-list ul a {
+        font-size: 0.85rem !important; 
+        color: #aaaaaa !important;
+        font-weight: 500 !important; 
+        text-transform: uppercase !important;
     }
-    .mobile-submenu a:hover { color: #ff2800 !important; }
+    .extra-menu-list ul a:hover { color: #ff2800 !important; }
     .extra-menu-list { list-style: none !important; }
 }
