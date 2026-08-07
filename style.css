@@ -2385,16 +2385,14 @@ footer {
    OTTIMIZZAZIONE NAVBAR MOBILE DEFINITIVA (SOLO SMARTPHONE)
    ========================================================================== */
 @media (max-width: 992px) {
-    /* 1. Neutralizziamo l'effetto dello scroll (top-page) su mobile per non far impazzire la barra */
-    body.top-page, 
-    body:not(.top-page) { 
-        padding-left: 0 !important; 
+    /* Risolve la riga bianca: aggiunge spazio in alto per compensare la navbar fissa */
+    body {
+        padding-top: 65px !important;
+        padding-left: 0 !important;
     }
     
-    /* 2. Barra di navigazione fissa, orizzontale e pronta fin da subito */
-    .navbar, 
-    body.top-page .navbar, 
-    body:not(.top-page) .navbar {
+    /* Navbar fissa, bloccata in alto fin da subito */
+    .navbar {
         position: fixed !important;
         top: 0 !important;
         left: 0 !important;
@@ -2405,89 +2403,55 @@ footer {
         justify-content: space-between !important;
         align-items: center !important;
         padding: 0 15px !important;
-        border-right: none !important;
-        border-bottom: 2px solid #ff2800 !important;
         background-color: #060919 !important;
+        border-bottom: 2px solid #ff2800 !important;
+        border-right: none !important;
         z-index: 9999 !important;
     }
     
-    /* 3. LOGO A SINISTRA (Annulla il centraggio assoluto del PC) */
-    .navbar-center, 
-    body.top-page .navbar .navbar-center, 
-    body:not(.top-page) .navbar .navbar-center {
+    /* Nascondiamo tutto il superfluo che sporca lo schermo */
+    .navbar .floating-top-right,
+    .navbar .vertical-social-footer,
+    .navbar-left .nav-menu > li:not(:first-child), /* Nasconde tutte le voci tranne l'hamburger */
+    .navbar-right .lang-selector,
+    .navbar-right .market-shop-link {
+        display: none !important;
+    }
+    
+    /* 1. LOGO A SINISTRA */
+    .navbar-center {
         position: static !important;
         transform: none !important;
         order: 1 !important;
+        display: flex !important;
         margin: 0 !important;
-        padding: 0 !important;
+    }
+    .navbar-center .logo {
+        height: 40px !important;
+    }
+    
+    /* Per ordinare la parte destra (Hamburger + Omino) puliamo il layout */
+    .navbar::after {
+        content: ""; clear: both; display: table;
+    }
+    
+    /* 2. HAMBURGER A DESTRA (Prima dell'omino) */
+    .navbar-left {
+        order: 2 !important;
         display: flex !important;
-        width: auto !important;
-    }
-    
-    .navbar-center .logo, 
-    body.top-page .navbar .navbar-center .logo, 
-    body:not(.top-page) .navbar .navbar-center .logo {
-        height: 40px !important; 
-        width: auto !important;
-        max-width: none !important;
-        display: block !important;
-    }
-    
-    /* 4. HAMBURGER E LOGIN A DESTRA (In quest'ordine) */
-    /* Contenitore Hamburger */
-    .navbar-left, 
-    body.top-page .navbar .navbar-left, 
-    body:not(.top-page) .navbar .navbar-left { 
-        order: 2 !important; 
-        display: flex !important; 
         flex-direction: row !important;
-        margin: 0 15px 0 auto !important; /* Spinge verso destra e lascia spazio dall'omino */
-        padding: 0 !important; 
-        width: auto !important;
+        margin-left: auto !important; /* Spinge tutto il blocco a destra */
+        margin-right: 15px !important; /* Lascia un po' di spazio tra Hamburger e Omino */
     }
+    .navbar-left .nav-menu { display: flex !important; margin: 0 !important; padding: 0 !important; }
+    .menu-toggle-btn { display: flex !important; }
     
-    /* Contenitore Login (Omino) */
-    .navbar-right, 
-    body.top-page .navbar .navbar-right, 
-    body:not(.top-page) .navbar .navbar-right { 
-        order: 3 !important; 
-        display: flex !important; 
-        margin: 0 !important; 
-        padding: 0 !important; 
-        width: auto !important;
-    }
-    
-    /* Mostra SOLO Hamburger a sinistra, nascondi tutti gli altri link desktop */
-    .nav-menu, body.top-page .navbar .nav-menu, body:not(.top-page) .navbar .nav-menu {
+    /* 3. OMINO LOGIN ALL'ESTREMA DESTRA */
+    .navbar-right {
+        order: 3 !important;
         display: flex !important;
-        margin: 0 !important; 
-        padding: 0 !important;
-        gap: 0 !important;
+        margin: 0 !important;
     }
-    .nav-menu > li { display: none !important; }
-    .nav-menu > li:first-child { display: block !important; }
-    .menu-toggle-btn { display: flex !important; position: relative !important; z-index: 9999 !important; }
-    
-    /* Mostra SOLO Omino a destra, nascondi gli altri link desktop */
-    .nav-right-items, body.top-page .navbar .nav-right-items, body:not(.top-page) .navbar .nav-right-items {
-        display: flex !important;
-        margin: 0 !important; 
-        padding: 0 !important;
-        gap: 0 !important;
-    }
-    .nav-right-items > *:not(.login-wrapper) { display: none !important; }
-    .login-wrapper { display: block !important; }
-    
-    /* 5. Pulisci elementi superflui e posiziona il pannello */
-    .floating-top-right, .vertical-social-footer { display: none !important; }
-    
-    .extra-menu-panel, body.top-page .extra-menu-panel {
-        left: 0 !important;
-        width: 85vw !important; 
-        max-width: 400px !important;
-    }
-    .extra-menu-close-btn, body.top-page .extra-menu-close-btn { 
-        display: flex !important; 
-    }
+    .navbar-right .nav-right-items { display: flex !important; margin: 0 !important; }
+    .login-wrapper { display: flex !important; }
 }
-
