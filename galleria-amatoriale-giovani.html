@@ -26,124 +26,9 @@
     </style>
 </head>
 <body class="not-top-page">
-    <!-- NAVBAR ORIZZONTALE UNIFICATA -->
-    <header class="navbar" style="position: fixed; width: 100%; top: 0; z-index: 100;">
-      <!-- CENTRO: Unico Logo per entrambe le modalità e posizionamento con dimensioni forzati inline -->
-  <div class="navbar-center" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: flex; align-items: center; justify-content: center;">
-    <a href="index.html" class="logo-link">
-      <img src="images/Logo nuovo Settecolli.png" alt="Logo Settecolli" class="logo" style="height: 50px; width: auto; max-width: none;" />
-    </a>
-  </div>
 
 
-  <!-- SINISTRA: Voci del Menu & Hamburger -->
-  <div class="navbar-left">
-    <ul class="nav-menu">
-      <li>
-        <button class="menu-toggle-btn" id="extraMenuBtn" aria-label="Menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-      </li>
-        
-      <!-- CLUB -->
-      <li class="has-dropdown">
-        <a href="#">CLUB ▾</a>
-        <ul class="dropdown-menu">
-          <li><a href="chi-siamo.html">CHI SIAMO</a></li>
-          <li><a href="organigramma.html">ORGANIGRAMMA</a></li>
-          <li><a href="storia.html">LA STORIA</a></li>
-          <li><a href="palmares.html">PALMARES</a></li>
-          <li><a href="codice-etico.html">CODICE ETICO</a></li>
-        </ul>
-      </li>
-
-      <!-- MASCHILE -->
-      <li class="has-dropdown">
-        <a href="#">MASCHILE ▾</a>
-        <ul class="dropdown-menu">
-          <li><a href="roster-maschile.html">ROSTER</a></li>
-          <li><a href="tutte-le-date-maschile.html">TUTTE LE DATE</a></li>
-          <li><a href="calendario-maschile.html">CALENDARIO</a></li>
-          <li><a href="storico-maschile.html">STORICO</a></li>
-          <li><a href="campo-gioco-maschile.html">CAMPO DA GIOCO</a></li>
-        </ul>
-      </li>
-
-      <!-- FEMMINILE -->
-      <li class="has-dropdown">
-        <a href="#">FEMMINILE ▾</a>
-        <ul class="dropdown-menu">
-          <li><a href="roster-femminile.html">ROSTER</a></li>
-          <li><a href="tutte-le-date-femminile.html">TUTTE LE DATE</a></li>
-          <li><a href="calendario-femminile.html">CALENDARIO</a></li>
-          <li><a href="storico-femminile.html">STORICO</a></li>
-          <li><a href="campo-gioco-femminile.html">CAMPO DA GIOCO</a></li>
-        </ul>
-      </li>
-
-      <!-- GIOVANILE -->
-      <li class="has-dropdown">
-        <a href="#">GIOVANILE ▾</a>
-        <ul class="dropdown-menu">
-          <li><a href="cas.html">C.A.S.</a></li>
-          <li><a href="minivolley.html">MINIVOLLEY</a></li>
-          <li><a href="under15-femminile.html">UNDER 15 FEMMINILE</a></li>
-          <li><a href="under15-maschile.html">UNDER 15 MASCHILE</a></li>
-          <li><a href="under19-femminile.html">UNDER 19 FEMMINILE</a></li>
-          <li><a href="under19-maschile.html">UNDER 19 MASCHILE</a></li>
-          <li><a href="impianti-giovanile.html">IMPIANTI DI GIOCO</a></li>
-          <li><a href="palmares-giovanile.html">PALMARES</a></li>
-        </ul>
-      </li>
-
-      <!-- AMATORIALE -->
-      <li class="has-dropdown">
-        <a href="amatoriale.html">AMATORIALE ▾</a>
-      </li>
-
-      <!-- NEWS -->
-      <li class="has-dropdown">
-        <a href="#">NEWS ▾</a>
-        <ul class="dropdown-menu">
-          <li><a href="comunicati_stampa.html">COMUNICATI STAMPA</a></li>
-          <li><a href="notizie-maschile.html">MASCHILE</a></li>
-          <li><a href="notizie-femminile.html">FEMMINILE</a></li>
-          <li><a href="notizie-giovanile.html">GIOVANILE</a></li>
-          <li><a href="ufficio-stampa.html">UFFICIO STAMPA</a></li>
-          <li><a href="whatsapp.html">CANALE WHATSAPP</a></li>
-          <li><a href="app.html">APP UFFICIALE</a></li>
-        </ul>
-      </li>
-    </ul>
-
-    <!-- Social in basso nella navbar verticale -->
-    <div class="vertical-social-footer">
-        <a href="https://www.facebook.com/profile.php?id=100056371269546&locale=it_IT" target="_blank">f</a>
-        <a href="https://www.instagram.com/volley_acli_settecolli/" target="_blank">📷</a>
-        <a href="https://www.youtube.com/@VolleyAcliSettecolli" target="_blank">▶</a>
-        <a href="https://tiktok.com/ZN8dmng8f" target="_blank">♪</a>
-    </div>
-  </div>
-
-
-
-  <!-- DESTRA (Visibile nella barra orizzontale dopo lo scroll) -->
-  <div class="navbar-right">
-    <div class="nav-right-items">
-      <div class="lang-selector">
-        <span class="active">IT</span> <span>|</span> <span>EN</span>
-      </div>
-      <a href="sponsor.html" class="market-shop-link partner-link">PARTNER</a>
-      <a href="marketing.html" class="market-shop-link">MARKETING</a>
-      <a href="shop.html" class="market-shop-link">SHOP</a>
-      <div class="login-wrapper">
-        <a href="login.html" class="login-icon" id="user-icon" style="color:#fff; text-decoration:none; font-size:1.3rem;">👤</a>
-      </div>
-    </div>
-  </div>
-    </header>
+    <div id="navbar-container"></div>
 
     <!-- PANNELLO LATERALE (Menu extra su PC / Menu Completo su Smartphone) -->
 <div class="extra-menu-panel" id="extraMenuPanel">
@@ -284,44 +169,7 @@
         </div>
     </div>
 
-    <!-- FOOTER ISTITUZIONALE -->
-    <footer class="tv-footer">
-        <div class="tv-footer-container">
-            <div class="tv-footer-left">
-                <img src="images/Logo nuovo Settecolli.png" alt="Logo Settecolli" class="tv-footer-logo">
-                <div class="tv-footer-info">
-                    <strong>POLISPORTIVA ACLI SETTECOLLI A.S.D.</strong>
-                    P.IVA 03212830784 - C.F. 98008660783<br>
-                    Via Santa Lucia 2 – 87040 Castrolibero (CS)<br>
-                    TEL. +39 3457337141<br>
-                    SEGRETERIA@ACLISETTECOLLI.IT<br>
-                    SEGRETERIA@ACLISETTECOLLI.PEC.IT
-                </div>
-            </div>
-
-            <div class="tv-footer-nav">
-                <a href="privacy-policy.html" data-i18n="footer_privacy">PRIVACY POLICY</a>
-                <a href="cookie-policy.html" data-i18n="footer_cookie">COOKIE POLICY</a>
-                <a href="contatti.html" data-i18n="footer_contacts">CONTATTI</a>
-            </div>
-
-            <div class="tv-footer-socials">
-                <a href="https://www.facebook.com/profile.php?id=100056371269546&locale=it_IT" class="tv-social-btn" target="_blank" title="Facebook">f</a>
-                <a href="https://www.instagram.com/volley_acli_settecolli/" class="tv-social-btn" target="_blank" title="Instagram">📷</a>
-                <a href="https://www.youtube.com/@VolleyAcliSettecolli" class="tv-social-btn" target="_blank" title="YouTube">▶</a>
-                <a href="https://tiktok.com/ZN8dmng8f" class="tv-social-btn" target="_blank" title="TikTok">♪</a>
-            </div>
-
-            <div class="tv-footer-right">
-                <a href="#" target="_blank"><img src="images/tecnica.png" alt="Sponsor" class="tv-footer-sponsor-logo"></a>
-                <a href="#" target="_blank"><img src="images/sushi.png" alt="Sponsor" class="tv-footer-sponsor-logo"></a>
-            </div>
-        </div>
-
-        <div class="tv-footer-bottom">
-            &copy; 2026 Polisportiva Acli Settecolli | <span data-i18n="footer_rights">Tutti i diritti riservati</span>
-        </div>
-    </footer>
+   <div id="footer-container"></div>
 
     <!-- SCRIPT -->
     <script src="script.js"></script>

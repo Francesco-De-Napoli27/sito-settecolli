@@ -154,3 +154,155 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const navbarContainer = document.getElementById("navbar-container");
+    
+    if (navbarContainer) {
+        fetch('navbar.html')
+            .then(response => {
+                if (!response.ok) throw new Error("Errore nel caricamento della navbar");
+                return response.text();
+            })
+            .then(data => {
+                navbarContainer.innerHTML = data;
+
+                // 1. Riattiva lo script dello scroll della navbar desktop
+                const body = document.body;
+                function checkScroll() {
+                    if (window.innerWidth > 992) {
+                        if (window.scrollY === 0) {
+                            body.classList.add("top-page");
+                        } else {
+                            body.classList.remove("top-page");
+                        }
+                    } else {
+                        body.classList.remove("top-page");
+                    }
+                }
+                checkScroll();
+                window.addEventListener("scroll", checkScroll);
+                window.addEventListener("resize", checkScroll);
+
+                // 2. ATTIVAZIONE CORRETTA DEL MENU HAMBURGER (Extra Menu Panel)
+                const extraMenuBtn = document.getElementById('extraMenuBtn');
+                const extraMenuPanel = document.getElementById('extraMenuPanel');
+                
+                if (extraMenuBtn && extraMenuPanel) {
+                    extraMenuBtn.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        extraMenuPanel.classList.toggle('open');
+                        extraMenuBtn.classList.toggle('is-active');
+                    });
+                }
+
+                // Chiusura cliccando fuori o sul pulsante di chiusura
+                document.addEventListener('click', (e) => {
+                    const closeBtn = e.target.closest('#extraMenuCloseBtn');
+                    if (closeBtn) {
+                        e.stopPropagation();
+                        if (extraMenuPanel) extraMenuPanel.classList.remove('open');
+                        if (extraMenuBtn) extraMenuBtn.classList.remove('is-active');
+                        return;
+                    }
+
+                    if (extraMenuPanel && extraMenuBtn) {
+                        if (!extraMenuPanel.contains(e.target) && !extraMenuBtn.contains(e.target)) {
+                            extraMenuPanel.classList.remove('open');
+                            extraMenuBtn.classList.remove('is-active');
+                        }
+                    }
+                });
+
+                // 3. Riattiva i sottomenu mobile all'interno del pannello
+                const mobileToggles = document.querySelectorAll('.mobile-dropdown-toggle');
+                mobileToggles.forEach(toggle => {
+                    toggle.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        e.stopPropagation(); 
+                        const submenu = this.nextElementSibling;
+                        if (submenu && submenu.classList.contains('mobile-submenu')) {
+                            submenu.classList.toggle('open');
+                        }
+                    });
+                });
+            })
+            .catch(error => console.error("Errore navbar:", error));
+    }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Caricamento Dinamico Navbar
+    const navbarContainer = document.getElementById("navbar-container");
+    if (navbarContainer) {
+        fetch('navbar.html')
+            .then(res => res.text())
+            .then(data => {
+                navbarContainer.innerHTML = data;
+
+                // Scroll desktop
+                const body = document.body;
+                function checkScroll() {
+                    if (window.innerWidth > 992) {
+                        body.classList.toggle("top-page", window.scrollY === 0);
+                    } else {
+                        body.classList.remove("top-page");
+                    }
+                }
+                checkScroll();
+                window.addEventListener("scroll", checkScroll);
+                window.addEventListener("resize", checkScroll);
+
+                // Menu hamburger
+                const extraMenuBtn = document.getElementById('extraMenuBtn');
+                const extraMenuPanel = document.getElementById('extraMenuPanel');
+                if (extraMenuBtn && extraMenuPanel) {
+                    extraMenuBtn.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        extraMenuPanel.classList.toggle('open');
+                        extraMenuBtn.classList.toggle('is-active');
+                    });
+                }
+
+                document.addEventListener('click', (e) => {
+                    const closeBtn = e.target.closest('#extraMenuCloseBtn');
+                    if (closeBtn) {
+                        e.stopPropagation();
+                        if (extraMenuPanel) extraMenuPanel.classList.remove('open');
+                        if (extraMenuBtn) extraMenuBtn.classList.remove('is-active');
+                        return;
+                    }
+                    if (extraMenuPanel && extraMenuBtn) {
+                        if (!extraMenuPanel.contains(e.target) && !extraMenuBtn.contains(e.target)) {
+                            extraMenuPanel.classList.remove('open');
+                            extraMenuBtn.classList.remove('is-active');
+                        }
+                    }
+                });
+
+                // Sottomenu mobile
+                const mobileToggles = document.querySelectorAll('.mobile-dropdown-toggle');
+                mobileToggles.forEach(toggle => {
+                    toggle.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        e.stopPropagation(); 
+                        const submenu = this.nextElementSibling;
+                        if (submenu && submenu.classList.contains('mobile-submenu')) {
+                            submenu.classList.toggle('open');
+                        }
+                    });
+                });
+            });
+    }
+
+    // Caricamento Dinamico Footer
+    const footerContainer = document.getElementById("footer-container");
+    if (footerContainer) {
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(data => {
+                footerContainer.innerHTML = data;
+            })
+            .catch(err => console.error("Errore footer:", err));
+    }
+});
