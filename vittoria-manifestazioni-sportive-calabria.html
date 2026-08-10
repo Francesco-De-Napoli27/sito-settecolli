@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuovo Logo - Polisportiva Acli Settecolli</title>
+    <link rel="icon" href="images/Logo nuovo Settecolli_favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .comunicato-card .card-content {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .comunicato-card:hover .card-content {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+            border-color: #ff2800;
+        }
+</style>
+    <style>
+        /* Stili specifici per la pagina Marketing */
+        body {
+            background-color: #060919;
+            color: #ffffff;
+            margin: 0;
+            padding-top: 50px; /* Spazio per la navbar fissa */
+        }
+
+        /* Hero Header Marketing */
+        .marketing-hero {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            background: url('images/hero.png') center/cover no-repeat;
+            display: flex;
+            align-items: flex-end;
+            padding: 40px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .marketing-hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(6,9,25,0.95) 0%, rgba(6,9,25,0.3) 100%);
+        }
+
+        .marketing-hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .marketing-hero h1 {
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            font-weight: 900;
+            letter-spacing: 2px;
+            margin: 0;
+            color: #ffffff;
+        }
+
+        /* Contenitore Principale */
+        .marketing-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 60px 20px;
+            line-height: 1.8;
+            font-size: 1.1rem;
+            color: #dddddd;
+        }
+
+        .marketing-container h2 {
+            font-size: 2rem;
+            color: #ffffff;
+            text-transform: uppercase;
+            margin: 50px 0 20px 0;
+            border-left: 4px solid #ff2800;
+            padding-left: 15px;
+        }
+
+        /* Griglia Numeri / Statistiche */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .stat-box {
+            background-color: #0d1326;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 30px;
+        }
+
+        .stat-box h3 {
+            color: #ff2800;
+            font-size: 1.5rem;
+            margin-top: 0;
+            text-transform: uppercase;
+        }
+
+        /* Form Contatti / Richiedi Informazioni */
+        .form-section {
+            background-color: #0d1326;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            padding: 50px;
+            margin: 60px auto;
+            max-width: 900px;
+        }
+
+        .form-section h2 {
+            text-align: center;
+            border: none;
+            padding: 0;
+            margin-bottom: 40px;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group.full-width {
+            grid-column: span 2;
+        }
+
+        .form-group label {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #ffffff;
+        }
+
+        .form-group input, .form-group textarea {
+            background-color: #111832;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+            padding: 12px;
+            color: #ffffff;
+            font-size: 1rem;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            height: 120px;
+        }
+
+        .form-checkbox {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 20px 0;
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+
+        .submit-btn {
+            background-color: #002288;
+            color: #ffffff;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #001a66;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .marketing-hero h1 {
+                font-size: 2.5rem;
+            }
+            .stats-grid, .form-grid {
+                grid-template-columns: 1fr;
+            }
+            .form-group.full-width {
+                grid-column: span 1;
+            }
+            .form-section {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body class="not-top-page">
+
+    <div id="navbar-container"></div>
+
+    
+    <!-- Sezione Contenuto Articolo / Comunicato -->
+<article class="comunicato-articolo" style="padding: 100px 20px 60px; max-width: 900px; margin: 0 auto; color: #ffffff;">
+    
+    <!-- Intestazione del Comunicato -->
+    <header style="margin-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 25px;">
+        <span style="display: inline-block; background-color: #ff2800; color: #fff; padding: 4px 10px; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; border-radius: 4px; margin-bottom: 15px;">
+            Ufficio Stampa — 10 AGO 2026
+        </span>
+        <h1 style="font-size: 2.5rem; font-weight: 900; text-transform: uppercase; line-height: 1.2; margin: 0 0 15px 0;">
+            La Polisportiva Acli Settecolli vince il bando per le manifestazioni sportive della Regione Calabria
+        </h1>
+        <p style="font-size: 1.2rem; color: #aaaaaa; font-weight: 400; line-height: 1.5; margin: 0;">
+            Un riconoscimento di grande valore istituzionale che premia la progettualità e l'impatto sociale della nostra associazione sul territorio.
+        </p>
+    </header>
+
+    <!-- Immagine Principale in Evidenza -->
+    <div style="margin-bottom: 40px; border-radius: 8px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+        <img src="images/Vittoria Bando Manifestazioni Sportive.png" alt="Vittoria Bando Regione Calabria Settecolli" style="width: 100%; height: auto; display: block;">
+    </div>
+
+    <!-- Corpo del Testo del Comunicato -->
+    <div class="articolo-corpo" style="font-size: 1.05rem; line-height: 1.8; color: #dddddd;">
+        
+        <p style="margin-bottom: 25px;">
+            <strong style="color: #ffffff; text-transform: uppercase;">CASTROLIBERO (CS)</strong> — Un altro straordinario traguardo si aggiunge all'anno del sessantesimo anniversario della Polisportiva Acli Settecolli. La società è lieta di annunciare ufficialmente di essere risultata vincitrice nell'ambito del bando regionale destinato al finanziamento delle manifestazioni sportive promosso dalla <strong>Regione Calabria</strong>.
+        </p>
+
+        <p style="margin-bottom: 25px;">
+            Questo importante risultato attesta la qualità della proposta progettuale presentata dal nostro sodalizio, confermando l'efficacia del lavoro svolto nella promozione dei corretti stili di vita, della pratica sportiva inclusiva e della valorizzazione del territorio attraverso lo sport.
+        </p>
+
+        <h3 style="color: #ffffff; font-size: 1.4rem; margin: 35px 0 15px 0; text-transform: uppercase;">Un sostegno concreto per il futuro dello sport</h3>
+        
+        <p style="margin-bottom: 25px;">
+            I fondi ottenuti grazie a questo riconoscimento permetteranno di potenziare le iniziative in programma per la stagione 2026/2027, garantendo un supporto fondamentale per l'organizzazione di eventi di grande impatto sociale, aggregativo e promozionale rivolti ai giovani e a tutta la comunità di Castrolibero e della Calabria.
+        </p>
+
+        <blockquote style="border-left: 4px solid #ff2800; margin: 30px 0; padding: 15px 25px; background: #0d1326; border-radius: 0 8px 8px 0; font-style: italic; color: #ffffff;">
+            "Siamo estremamente orgogliosi di questo risultato — dichiara la dirigenza della Polisportiva Acli Settecolli. Vincere un bando così competitivo della Regione Calabria rappresenta la conferma che la serietà, la programmazione e l'amore per il nostro territorio pagano. È un riconoscimento che dedichiamo a tutti i nostri tesserati, alle famiglie e a chi crede quotidianamente nei valori dello sport pulito."
+        </blockquote>
+
+        <p style="margin-bottom: 25px;">
+            Nei prossimi giorni verranno resi noti i dettagli e il calendario ufficiale delle manifestazioni e degli eventi che saranno realizzati grazie al cofinanziamento della Regione Calabria.
+        </p>
+
+    </div>
+
+    <!-- Pulsante Indietro -->
+    <div style="margin-top: 40px;">
+        <a href="comunicati_stampa.html" style="display: inline-block; background: transparent; color: #ffffff; border: 1px solid rgba(255,255,255,0.3); padding: 10px 20px; border-radius: 4px; text-decoration: none; font-weight: bold; text-transform: uppercase; font-size: 0.85rem; transition: 0.3s;">
+            ← Torna ai Comunicati Stampa
+        </a>
+    </div>
+
+</article>
+
+
+    <div id="footer-container"></div>
+
+
+    <!-- SCRIPT -->
+    <script src="script.js"></script>
+    <script type="module" src="auth.js"></script>
+    <script src="i18n.js"></script>
+</body>
+</html>
