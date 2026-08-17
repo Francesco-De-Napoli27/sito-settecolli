@@ -327,6 +327,15 @@
             </div>
         </div>
 
+
+             <!-- COLONNA FISSA DESTRA: MEMBERSHIP -->
+            <div class="settecolli-news-card" style="background-image: url('images/MembershipHome.png'); border: 2px solid #ff2800;">
+                <div class="settecolli-news-overlay" style="background: rgba(0,0,0,0.6);"></div>
+                <div class="settecolli-news-content" style="align-items: center; text-align: center; width: 100%;">
+                    <h2 style="font-size: 2.2rem; font-weight: 900; text-transform: uppercase; color: #fff; margin-bottom: 15px; letter-spacing: 2px;">Membership</h2>
+                    <a href="membership.html" class="settecolli-btn-red" style="padding: 10px 24px; font-size: 0.9rem;">Entra nel Club</a>
+                </div>
+            </div>
             <!-- COLONNA FISSA DESTRA: STORE -->
             <div class="settecolli-news-card" style="background-image: url('images/ShopHome.png'); border: 2px solid #ff2800;">
                 <div class="settecolli-news-overlay" style="background: rgba(0,0,0,0.6);"></div>
@@ -335,6 +344,7 @@
                     <a href="shop.html" class="settecolli-btn-red" style="padding: 10px 24px; font-size: 0.9rem;">Acquista Qui</a>
                 </div>
             </div>
+            
 
         </div>
 
@@ -733,7 +743,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     // Su telefono 1 card, su PC 3 card
     function getItemsPerPage() {
-        return window.innerWidth <= 992 ? 1 : 3; 
+        return window.innerWidth <= 992 ? 1 : 2; 
     }
 
     function updateNewsView() {
