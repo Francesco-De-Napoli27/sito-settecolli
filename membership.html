@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemberShip - Polisportiva Acli Settecolli</title>
+    <link rel="icon" href="images/Logo nuovo Settecolli_favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .comunicato-card .card-content {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .comunicato-card:hover .card-content {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+            border-color: #ff2800;
+        }
+</style>
+    <style>
+        /* Stili specifici per la pagina Marketing */
+        body {
+            background-color: #060919;
+            color: #ffffff;
+            margin: 0;
+            padding-top: 50px; /* Spazio per la navbar fissa */
+        }
+
+        /* Hero Header Marketing */
+        .marketing-hero {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            background: url('images/hero.png') center/cover no-repeat;
+            display: flex;
+            align-items: flex-end;
+            padding: 40px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .marketing-hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(6,9,25,0.95) 0%, rgba(6,9,25,0.3) 100%);
+        }
+
+        .marketing-hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .marketing-hero h1 {
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            font-weight: 900;
+            letter-spacing: 2px;
+            margin: 0;
+            color: #ffffff;
+        }
+
+        /* Contenitore Principale */
+        .marketing-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 60px 20px;
+            line-height: 1.8;
+            font-size: 1.1rem;
+            color: #dddddd;
+        }
+
+        .marketing-container h2 {
+            font-size: 2rem;
+            color: #ffffff;
+            text-transform: uppercase;
+            margin: 50px 0 20px 0;
+            border-left: 4px solid #ff2800;
+            padding-left: 15px;
+        }
+
+        /* Griglia Numeri / Statistiche */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .stat-box {
+            background-color: #0d1326;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 30px;
+        }
+
+        .stat-box h3 {
+            color: #ff2800;
+            font-size: 1.5rem;
+            margin-top: 0;
+            text-transform: uppercase;
+        }
+
+        /* Form Contatti / Richiedi Informazioni */
+        .form-section {
+            background-color: #0d1326;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            padding: 50px;
+            margin: 60px auto;
+            max-width: 900px;
+        }
+
+        .form-section h2 {
+            text-align: center;
+            border: none;
+            padding: 0;
+            margin-bottom: 40px;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group.full-width {
+            grid-column: span 2;
+        }
+
+        .form-group label {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #ffffff;
+        }
+
+        .form-group input, .form-group textarea {
+            background-color: #111832;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+            padding: 12px;
+            color: #ffffff;
+            font-size: 1rem;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            height: 120px;
+        }
+
+        .form-checkbox {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 20px 0;
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+
+        .submit-btn {
+            background-color: #002288;
+            color: #ffffff;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #001a66;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .marketing-hero h1 {
+                font-size: 2.5rem;
+            }
+            .stats-grid, .form-grid {
+                grid-template-columns: 1fr;
+            }
+            .form-group.full-width {
+                grid-column: span 1;
+            }
+            .form-section {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body class="not-top-page">
+
+    <div id="navbar-container"></div>
+
+
+    <!-- HERO SECTION -->
+    <header class="marketing-hero">
+        <div class="marketing-hero-content">
+            <h1>Tifoso Sostenitore 2026/27</h1>
+        </div>
+    </header>
+
+    <!-- CONTENUTO PRINCIPALE -->
+    <main class="marketing-container">
+        
+        <!-- PRESENTAZIONE E ANTEPRIMA TESSERA -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; margin-bottom: 50px;" class="intro-grid">
+<div>
+                <h2>Vivi la Passione da Protagonista</h2>
+                <p>Entra a far parte della famiglia della <strong>Polisportiva Acli Settecolli</strong>. Sostenere i nostri colori significa contribuire alla crescita della squadra, dei giovani e delle nostre attività sportive.</p>
+                <p>La tessera ha un <strong>contributo associativo di 10€</strong> per la stagione sportiva in corso, un piccolo gesto che per noi vale moltissimo e ti permette di ricevere la card ufficiale personalizzata.</p>
+            </div>
+            <div style="text-align: center;">
+                <!-- Inserisci qui il percorso corretto dell'immagine della tessera -->
+                <img src="images/Tessera Sostenitore Bozza.png" alt="Bozza Tessera Sostenitore Settecolli" style="max-width: 100%; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+            </div>
+        </div>
+
+        <!-- VANTAGGI / STATISTICHE -->
+        <h2>Perché Diventare Sostenitore?</h2>
+        <div class="stats-grid">
+            <div class="stat-box">
+                <h3>Supporto al Club</h3>
+                <p>Aiuti concretamente la gestione delle squadre e lo sviluppo del settore giovanile e amatoriale.</p>
+            </div>
+            <div class="stat-box">
+                <h3>Card Ufficiale</h3>
+                <p>Ricevi la tua Tessera Sostenitore nominale stagionale con numero di member card dedicato.</p>
+            </div>
+        </div>
+
+        <!-- FORM DI RICHIESTA TESSERA -->
+<section class="form-section">
+    <h2>Richiedi la Tessera Sostenitore</h2>
+    
+    <!-- Modifica l'action con il tuo indirizzo email -->
+    <form action="https://formsubmit.co/acli.settecolli@gmail.com" method="POST">
+        
+        <!-- Configurazione FormSubmit -->
+        <input type="hidden" name="_subject" value="Nuova richiesta Tessera Sostenitore!">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <!-- Questo campo permette di cliccare su "Rispondi" e inviare la mail al tifoso -->
+        <input type="hidden" name="_replyto" value="email">
+        
+        <div class="form-grid">
+            <div class="form-group">
+                <label for="nome">Nome *</label>
+                <input type="text" id="nome" name="Nome" required>
+            </div>
+            <div class="form-group">
+                <label for="cognome">Cognome *</label>
+                <input type="text" id="cognome" name="Cognome" required>
+            </div>
+            <div class="form-group">
+                <label for="cognome">Data di Nascita *</label>
+                <input type="text" id="data-di-nascita" name="DataDiNascita" required>
+            </div>
+            <div class="form-group">
+                <label for="cognome">Residenza *</label>
+                <input type="text" id="residenza" name="Residenza" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Telefono / Cellulare *</label>
+                <input type="tel" id="telefono" name="Telefono" required>
+            </div>
+            <div class="form-group full-width">
+                <label for="note">Note o Richieste Particolari (Opzionale)</label>
+                <textarea id="note" name="Note" placeholder="Eventuali informazioni di spedizione..."></textarea>
+            </div>
+        </div>
+
+        <div class="form-checkbox">
+            <input type="checkbox" id="privacy" name="privacy" required>
+            <label for="privacy" style="font-size: 0.85rem; text-transform: none; font-weight: normal;">Autorizzo il trattamento dei dati personali ai sensi del GDPR per la gestione della richiesta della tessera.</label>
+        </div>
+
+        <button type="submit" class="submit-btn">Invia Richiesta</button>
+
+        <input type="hidden" name="_next" value="[https://www.aclisetecolli.it/grazie.html](https://wwww.aclisettecolli.it/grazie.html)">
+    </form>
+</section>
+
+    </main>
+
+
+    <div id="footer-container"></div>
+
+
+    <!-- SCRIPT -->
+    <script src="script.js"></script>
+    <script type="module" src="auth.js"></script>
+    <script src="i18n.js"></script>
+</body>
+</html>
